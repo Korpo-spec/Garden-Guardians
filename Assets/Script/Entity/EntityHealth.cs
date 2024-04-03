@@ -17,9 +17,7 @@ namespace Script.Entity
         [Tooltip("The Scriptable object that contains transforms as keys and health as value. ")] [SerializeField]
         protected TransformHealthDictionary transformHealthDictionary;
 
-        [SerializeField] protected UnityEvent takeDamage;
-        [SerializeField] protected UnityEvent heal;
-        [SerializeField] protected UnityEvent die;
+        [SerializeField] private EntityHealthEvents entityHealthEvents;
 
         private Rigidbody _rigidbody;
         private Animator _animator;
@@ -67,7 +65,7 @@ namespace Script.Entity
             if (health - amount <= 0)
                 KillItself();
             else
-                takeDamage.Invoke();
+                entityHealthEvents.takeDamage.Invoke();
 
             // if (intVariable)
             //     intVariable.Value -= amount;
@@ -89,7 +87,7 @@ namespace Script.Entity
             }
         
 
-            die.Invoke();
+            entityHealthEvents.die.Invoke();
             Destroy(gameObject);
         }
 
@@ -99,10 +97,21 @@ namespace Script.Entity
         /// <param name="amount"> The amount of health to lose</param>
         public virtual void IncreaseHealth(int amount)
         {
-            heal.Invoke();
+            entityHealthEvents.heal.Invoke();
             // if (intVariable)
             //     intVariable.Value += amount;
             health += amount;
         }
+        
+        
+    }
+
+    [System.Serializable]
+    public class EntityHealthEvents
+    {
+        [Header("Events")]
+        [SerializeField] public UnityEvent takeDamage;
+        [SerializeField] public UnityEvent heal;
+        [SerializeField] public UnityEvent die;
     }
 }
