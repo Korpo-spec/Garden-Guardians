@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: PlayerMovementStats
   m_EditorClassIdentifier: 
   speed: 5
+  sprintSpeed: 0
+  dashSpeed: 15
+  dashTime: 0.25

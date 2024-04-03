@@ -1,35 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInputHandler : MonoBehaviour
+namespace Script.PlayerMovement
 {
+    public class PlayerInputHandler : MonoBehaviour
+    {
 
-    [HideInInspector] public Vector2 move;
+        [HideInInspector] public Vector2 move;
 
-    [SerializeField] private KeyCode DashKey;
+        [SerializeField] private KeyCode dashKey;
 
-    [HideInInspector]public bool isDashing;
+        [HideInInspector]public bool isDashing;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void GetPlayerInput()
-    {
-        move = new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
-
-        if (Input.GetKeyDown(DashKey))
+        // Start is called before the first frame update
+        void Start()
         {
-            isDashing = true;
+        
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+        
+        }
+
+        public void GetPlayerInput()
+        {
+            move = new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
+
+            if (Input.GetKeyDown(dashKey))
+            {
+                isDashing = true;
+            }
         }
     }
 }

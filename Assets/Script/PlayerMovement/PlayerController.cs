@@ -1,20 +1,23 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Script.PlayerMovement;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
 
-   public PlayerMovementStats MovementStats;
+   public PlayerMovementStats movementStats;
    
    private PlayerInputHandler _inputHandler;
-   private CharacterController Controller;
+   private CharacterController _controller;
    private Rigidbody _thisRb;
    
    public Animator animator;
 
    private Vector3 _prevDirVector;
+   private bool canMove=true;
 
 
    private void Awake()
@@ -25,7 +28,7 @@ public class PlayerController : MonoBehaviour
    private void Start()
    {
       animator = GetComponent<Animator>();
-      Controller = GetComponent<CharacterController>();
+      _controller = GetComponent<CharacterController>();
       _inputHandler = GetComponent<PlayerInputHandler>();
       _prevDirVector = transform.forward;
    }
@@ -37,20 +40,21 @@ public class PlayerController : MonoBehaviour
 
    private void FixedUpdate()
    {
-      
-      Move(_inputHandler.move,MovementStats.speed*Time.fixedDeltaTime);
+      if (!canMove) return;
+      Move(_inputHandler.move,movementStats.speed*Time.fixedDeltaTime);
       if (_inputHandler.isDashing)
       {
          _inputHandler.isDashing = false;
          StartCoroutine(Dash());
       }
       RotatePlayer(_inputHandler.move);
+
    }
 
    private void Move(Vector2 moveDir, float speed)
    {
       Vector3 moveVector3 = new Vector3(moveDir.x, 0, moveDir.y).normalized;
-      Controller.Move(moveVector3*speed);
+      _controller.Move(moveVector3*speed);
       animator.SetBool("AmRunning",_inputHandler.move.magnitude != 0);
    }
 
@@ -71,8 +75,18 @@ public class PlayerController : MonoBehaviour
 
    private IEnumerator Dash()
    {
-      Debug.Log("dashed");
-      yield break;
+      float startTime = Time.time;
+      Vector3 dashvector = _prevDirVector;
+      canMove = false;
+      animator.SetBool("Dash",true);
+      while (Time.time<startTime+movementStats.dashTime)
+      {
+         _controller.Move(dashvector.normalized* (movementStats.dashSpeed * Time.deltaTime));
+         yield return null;
+      }
+      animator.SetBool("Dash",false);
+      canMove = true;
+
    }
 
    private void OnEnable()

@@ -8,5 +8,9 @@ public class PlayerMovementStats : ScriptableObject
     [SerializeField] public float speed;
     [SerializeField] public float sprintSpeed;
 
+    [SerializeField]
+    public float dashSpeed;
+    public float dashTime;
+
 
 }

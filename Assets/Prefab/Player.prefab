@@ -2252,7 +2252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {x: 0, y: 0}
-  DashKey: 101
+  dashKey: 304
   isDashing: 0
 --- !u!114 &8677088907972969173
 MonoBehaviour:
@@ -2266,7 +2266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7b04f8daf6355548bf6410c1ec210ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementStats: {fileID: 11400000, guid: eedbab068ca39a744aad51146ca98740, type: 2}
+  movementStats: {fileID: 11400000, guid: eedbab068ca39a744aad51146ca98740, type: 2}
   animator: {fileID: 7127825265443040992}
 --- !u!143 &7086357682079536472
 CharacterController:
