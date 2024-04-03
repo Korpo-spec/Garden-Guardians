@@ -2165,6 +2165,9 @@ GameObject:
   - component: {fileID: 7305302783928673403}
   - component: {fileID: 7127825265443040992}
   - component: {fileID: 6315513151003094338}
+  - component: {fileID: 1006171837855907774}
+  - component: {fileID: 8677088907972969173}
+  - component: {fileID: 7086357682079536472}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2225,16 +2228,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   transformHealthDictionary: {fileID: 0}
-  takeDamage:
-    m_PersistentCalls:
-      m_Calls: []
-  heal:
-    m_PersistentCalls:
-      m_Calls: []
-  die:
-    m_PersistentCalls:
-      m_Calls: []
+  entityHealthEvents:
+    takeDamage:
+      m_PersistentCalls:
+        m_Calls: []
+    heal:
+      m_PersistentCalls:
+        m_Calls: []
+    die:
+      m_PersistentCalls:
+        m_Calls: []
   spawnOnDestroy: {fileID: 0}
+--- !u!114 &1006171837855907774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938287593342238401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469515531df80ba46a8384e04f79b99b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: {x: 0, y: 0}
+  DashKey: 101
+  isDashing: 0
+--- !u!114 &8677088907972969173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938287593342238401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7b04f8daf6355548bf6410c1ec210ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementStats: {fileID: 11400000, guid: eedbab068ca39a744aad51146ca98740, type: 2}
+  animator: {fileID: 7127825265443040992}
+--- !u!143 &7086357682079536472
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938287593342238401}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.86, z: 0}
 --- !u!1 &8106037427702051965
 GameObject:
   m_ObjectHideFlags: 0
