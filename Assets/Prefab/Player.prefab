@@ -2164,6 +2164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7305302783928673403}
   - component: {fileID: 7127825265443040992}
+  - component: {fileID: 6315513151003094338}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2210,6 +2211,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6315513151003094338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938287593342238401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b136a30f020853947b3fe093bc9b38f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  transformHealthDictionary: {fileID: 0}
+  takeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  heal:
+    m_PersistentCalls:
+      m_Calls: []
+  die:
+    m_PersistentCalls:
+      m_Calls: []
+  spawnOnDestroy: {fileID: 0}
 --- !u!1 &8106037427702051965
 GameObject:
   m_ObjectHideFlags: 0
