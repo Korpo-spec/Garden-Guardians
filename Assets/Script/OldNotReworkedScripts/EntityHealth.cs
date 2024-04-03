@@ -1,0 +1,108 @@
+
+using UnityEngine;
+using UnityEngine.Events;
+
+namespace Script.Entity
+{
+    public class EntityHealth : MonoBehaviour
+    {
+        //[Tooltip("Optional int variable that can be put in, if this is empty it will use the int")] [SerializeField]
+        //protected IntVariable intVariable;
+
+        [Tooltip("Health if no int variable was used")] [SerializeField]
+        public int health;
+
+        
+
+        [Tooltip("The Scriptable object that contains transforms as keys and health as value. ")] [SerializeField]
+        protected TransformHealthDictionary transformHealthDictionary;
+
+        [SerializeField] protected UnityEvent takeDamage;
+        [SerializeField] protected UnityEvent heal;
+        [SerializeField] protected UnityEvent die;
+
+        private Rigidbody _rigidbody;
+        private Animator _animator;
+        private static readonly int Hurt = Animator.StringToHash("Hurt");
+
+        [SerializeField] private GameObject spawnOnDestroy;
+
+        /// <summary>
+        /// Used to keep track so it can't die multiple times in the same frame
+        /// </summary>
+        private bool _isDead = false;
+        
+
+        void Start()
+        {
+            /*
+            if (intVariable)
+            {
+                health = intVariable.Value;
+            }
+            */
+            transformHealthDictionary.Add(transform, this);
+            _rigidbody = GetComponent<Rigidbody>();
+            _animator = GetComponent<Animator>();
+            Enable();
+        }
+
+        protected virtual void Enable()
+        {
+        }
+
+        private void OnDestroy()
+        {
+            transformHealthDictionary.Remove(transform);
+            //TODO: FIX SPAWN ON DESTROY
+            //Instantiate(spawnOnDestroy);
+        }
+
+        /// <summary>
+        /// Decreases the the health by the input amount. This will also decrease the health of the attached intVariable if present.
+        /// </summary>
+        /// <param name="amount"> The amount of health to lose</param>
+        public virtual void DamageUnit(int amount)
+        {
+            if (health - amount <= 0)
+                KillItself();
+            else
+                takeDamage.Invoke();
+
+            // if (intVariable)
+            //     intVariable.Value -= amount;
+
+            health -= amount;
+            _animator.SetTrigger(Hurt);
+        }
+
+        protected virtual void KillItself()
+        {
+            if (_isDead)
+                return;
+
+            _isDead = true;
+            if (spawnOnDestroy)
+            {
+                var transform1 = transform;
+                Instantiate(spawnOnDestroy, transform1.position, transform1.rotation);
+            }
+        
+
+            die.Invoke();
+            Destroy(gameObject);
+        }
+
+        /// <summary>
+        /// Increases the the health by the input amount. This will also increase the health of the attached intVariable if present.
+        /// </summary>
+        /// <param name="amount"> The amount of health to lose</param>
+        public virtual void IncreaseHealth(int amount)
+        {
+            heal.Invoke();
+            // if (intVariable)
+            //     intVariable.Value += amount;
+            health += amount;
+        }
+    }
+}
