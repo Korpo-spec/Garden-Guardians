@@ -7,19 +7,37 @@ namespace Script.PlayerMovement
     {
         public AttackComboSO weapon;
         public float comboConnectTime;
+        public float comboTimeOutTime;
 
         [SerializeField]public int comboState = 0;
         public float timeSinceLastAttack = 0;
 
         public void Attack(Animator animator)
         {
-            animator.SetTrigger("Combo"+comboState);
-            Debug.Log("Combo"+comboState+ " " +!animator.GetCurrentAnimatorStateInfo(0).IsName("Combo"+comboState));
-            if (comboState != 0  && !animator.GetCurrentAnimatorStateInfo(0).IsName("Combo"+comboState))
+            //Debug.Log(timeSinceLastAttack + comboTimeOutTime + " " + Time.time);
+            if (timeSinceLastAttack + comboTimeOutTime < Time.time)
             {
-                Debug.Log("Returning");
+                Debug.Log("Resetting");
+                ResetTriggers(animator);
+                comboState = 0;
+            }
+
+            if (timeSinceLastAttack + comboConnectTime > Time.time)
+            {
+                Debug.Log("Click too close");
                 return;
             }
+            Debug.Log(comboState);
+            if (comboState != 0&&!animator.GetCurrentAnimatorStateInfo(1).IsName("Combo"+(comboState-1)))
+            {
+                Debug.Log("Has not swtitched to next combo yet"+ comboState);
+                return;
+            }
+            Debug.Log(comboState);
+            animator.SetTrigger("ResetToEntry");
+            animator.SetTrigger("Combo"+comboState);
+            timeSinceLastAttack = Time.time;
+            
             
             if (comboState < weapon.ComboLength-1)
             {

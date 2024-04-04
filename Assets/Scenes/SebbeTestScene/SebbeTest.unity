@@ -1144,7 +1144,12 @@ PrefabInstance:
     - target: {fileID: 8677088907972969173, guid: bfe03260ef6262e4290539448e181343,
         type: 3}
       propertyPath: attackModule.comboConnectTime
-      value: 0.5
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677088907972969173, guid: bfe03260ef6262e4290539448e181343,
+        type: 3}
+      propertyPath: attackModule.comboTimeOutTime
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfe03260ef6262e4290539448e181343, type: 3}
