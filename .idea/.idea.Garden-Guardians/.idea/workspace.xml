@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Combat animations done, polish needed">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Old sword returns">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Prefab/Player.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ExtensionMethods/ExtendVectors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/PlayerMovement/AttackModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerMovement/SO/PlayerMovementStats.cs" root0="FORCE_HIGHLIGHTING" />
@@ -107,7 +108,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1712236394823</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Old sword returns">
+      <created>1712237080399</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1712237080399</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Combat animations done, polish needed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Combat animations done, polish needed" />
+    <MESSAGE value="Old sword returns" />
+    <option name="LAST_COMMIT_MESSAGE" value="Old sword returns" />
   </component>
 </project>
