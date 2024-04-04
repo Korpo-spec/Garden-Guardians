@@ -426,7 +426,6 @@ GameObject:
   - component: {fileID: 313980659}
   - component: {fileID: 313980658}
   - component: {fileID: 313980661}
-  - component: {fileID: 313980662}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -492,7 +491,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313980657}
-  m_LocalRotation: {x: 0.3148185, y: -0.33657235, z: 0.12051049, w: 0.8792529}
+  m_LocalRotation: {x: 0.3148185, y: -0.33657238, z: 0.120510496, w: 0.8792529}
   m_LocalPosition: {x: 9.06, y: 13.51, z: -10.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -533,40 +532,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &313980662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313980657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &512665729
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,13 +948,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3460419851310019060, guid: 839f49c54d9b231479fba5245656c206,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8792529
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460419851310019060, guid: 839f49c54d9b231479fba5245656c206,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.3148185
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460419851310019060, guid: 839f49c54d9b231479fba5245656c206,
+        type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.33657235
+      value: -0.33657238
       objectReference: {fileID: 0}
     - target: {fileID: 3460419851310019060, guid: 839f49c54d9b231479fba5245656c206,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.12051049
+      value: 0.120510496
       objectReference: {fileID: 0}
     - target: {fileID: 3460419851310019061, guid: 839f49c54d9b231479fba5245656c206,
         type: 3}
