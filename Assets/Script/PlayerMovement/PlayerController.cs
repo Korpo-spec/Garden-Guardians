@@ -41,32 +41,32 @@ public class PlayerController : MonoBehaviour
    private void FixedUpdate()
    {
       if (!canMove) return;
-      Move(_inputHandler.move,movementStats.speed*Time.fixedDeltaTime);
+      Move(_inputHandler.moveDir,movementStats.speed*Time.fixedDeltaTime);
       if (_inputHandler.isDashing)
       {
          _inputHandler.isDashing = false;
          StartCoroutine(Dash());
       }
-      RotatePlayer(_inputHandler.move);
+      RotatePlayer(_inputHandler.moveDir);
 
    }
 
-   private void Move(Vector2 moveDir, float speed)
+   private void Move(Vector3 moveDir, float speed)
    {
-      Vector3 moveVector3 = new Vector3(moveDir.x, 0, moveDir.y).normalized;
+      Vector3 moveVector3 = new Vector3(moveDir.x, 0, moveDir.z).normalized;
       _controller.Move(moveVector3*speed);
-      animator.SetBool("AmRunning",_inputHandler.move.magnitude != 0);
+      animator.SetBool("AmRunning",_inputHandler.moveDir.magnitude != 0);
    }
 
-   private void RotatePlayer(Vector2 targetDirection)
+   private void RotatePlayer(Vector3 targetDirection)
    {
-      if (_inputHandler.move.magnitude==0)
+      if (_inputHandler.moveDir.magnitude==0)
       {
          transform.forward = _prevDirVector;
       }
       else
       {
-         Vector3 dirVector3 = new Vector3(targetDirection.x, 0, targetDirection.y);
+         Vector3 dirVector3 = new Vector3(targetDirection.x, 0, targetDirection.z);
          transform.forward = dirVector3;
          _prevDirVector = dirVector3;
       }
@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
    {
       if (_inputHandler)
       {
-         _inputHandler.move = Vector2.zero;
+         _inputHandler.moveDir = Vector2.zero;
       }
    }
 }

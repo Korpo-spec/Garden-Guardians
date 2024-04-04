@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Script.PlayerMovement
 {
     public class PlayerInputHandler : MonoBehaviour
     {
 
-        [HideInInspector] public Vector2 move;
+        [HideInInspector] public Vector3 moveDir;
 
         [SerializeField] private KeyCode dashKey;
 
@@ -25,8 +26,10 @@ namespace Script.PlayerMovement
 
         public void GetPlayerInput()
         {
-            move = new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
-
+            var worldSpaceMoveDir = new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical"));
+            moveDir = worldSpaceMoveDir.Vector3WorldSpaceToIsometricSpace();
+            
+            Debug.Log(moveDir);
             if (Input.GetKeyDown(dashKey))
             {
                 isDashing = true;
