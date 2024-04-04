@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 {
 
    public PlayerMovementStats movementStats;
+   [SerializeField]public AttackModule attackModule;
    
    private PlayerInputHandler _inputHandler;
    private CharacterController _controller;
@@ -46,6 +47,11 @@ public class PlayerController : MonoBehaviour
       {
          _inputHandler.isDashing = false;
          StartCoroutine(Dash());
+      }
+      else if (_inputHandler.attackButtonPressed)
+      {
+         _inputHandler.attackButtonPressed = false;
+         attackModule.Attack(animator);
       }
       RotatePlayer(_inputHandler.moveDir);
 

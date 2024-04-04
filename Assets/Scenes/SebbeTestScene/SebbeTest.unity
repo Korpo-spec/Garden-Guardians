@@ -526,5 +526,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8677088907972969173, guid: bfe03260ef6262e4290539448e181343,
+        type: 3}
+      propertyPath: attackModule.weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f64ef4666d0221428acb16f81b1e377,
+        type: 2}
+    - target: {fileID: 8677088907972969173, guid: bfe03260ef6262e4290539448e181343,
+        type: 3}
+      propertyPath: attackModule.comboConnectTime
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfe03260ef6262e4290539448e181343, type: 3}

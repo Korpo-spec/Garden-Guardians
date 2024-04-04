@@ -11,6 +11,8 @@ namespace Script.PlayerMovement
         [SerializeField] private KeyCode dashKey;
 
         [HideInInspector]public bool isDashing;
+
+        [HideInInspector] public bool attackButtonPressed;
     
         // Start is called before the first frame update
         void Start()
@@ -29,11 +31,16 @@ namespace Script.PlayerMovement
             var worldSpaceMoveDir = new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical"));
             moveDir = worldSpaceMoveDir.Vector3WorldSpaceToIsometricSpace();
             
-            Debug.Log(moveDir);
+            //Debug.Log(moveDir);
             if (Input.GetKeyDown(dashKey))
             {
                 isDashing = true;
             }
+            if (Input.GetMouseButtonDown(0))
+            {
+                attackButtonPressed = true;
+            }
+            
         }
     }
 }
