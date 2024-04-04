@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement/AttackModule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement/AttackModule.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fungus/EditorResources/FungusEditorResources.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fungus/EditorResources/FungusEditorResources.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fungus/EditorResources/FungusEditorResources.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fungus/EditorResources/FungusEditorResources.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerMovement/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerMovement/PlayerInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement/PlayerInputHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,8 +95,15 @@
       <workItem from="1712170565207" duration="3503000" />
       <workItem from="1712213698332" duration="2548000" />
       <workItem from="1712220103669" duration="504000" />
-      <workItem from="1712220635385" duration="4081000" />
+      <workItem from="1712220635385" duration="4167000" />
     </task>
+    <task id="LOCAL−00001" summary="Trying to fix combos">
+      <created>1712224847330</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1712224847330</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,5 +114,7 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Trying to fix combos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix combos" />
   </component>
 </project>
