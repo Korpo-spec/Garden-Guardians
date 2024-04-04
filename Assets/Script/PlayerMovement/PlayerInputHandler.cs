@@ -28,10 +28,8 @@ namespace Script.PlayerMovement
 
         public void GetPlayerInput()
         {
-            var worldSpaceMoveDir = new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical"));
-            moveDir = worldSpaceMoveDir.Vector3WorldSpaceToIsometricSpace();
-            
-            //Debug.Log(moveDir);
+            GetStandardMovementInput(Camera.main.transform.rotation);  
+
             if (Input.GetKeyDown(dashKey))
             {
                 isDashing = true;
@@ -41,6 +39,12 @@ namespace Script.PlayerMovement
                 attackButtonPressed = true;
             }
             
+        }
+
+        private void GetStandardMovementInput(Quaternion rotation)
+        {
+            var worldSpaceMoveDir = new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical"));
+            moveDir = worldSpaceMoveDir.Vector3WorldSpaceToIsometricSpace(rotation.eulerAngles);
         }
     }
 }
