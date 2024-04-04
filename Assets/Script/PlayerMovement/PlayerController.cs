@@ -94,6 +94,7 @@ public class PlayerController : MonoBehaviour
       canMove = true;
 
    }
+   
 
    private void OnEnable()
    {
