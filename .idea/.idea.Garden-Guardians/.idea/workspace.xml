@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="">
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Combat animations done, polish needed">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerMovement/AttackModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement/AttackModule.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +13,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file:////StudentNAS1/StudentHome/2021/a21seber/Downloads/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ExtensionMethods/ExtendVectors.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/PlayerMovement/AttackModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerMovement/SO/PlayerMovementStats.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -104,6 +101,13 @@
       <workItem from="1712220635385" duration="4081000" />
       <workItem from="1712225354816" duration="90000" />
     </task>
+    <task id="LOCAL−00001" summary="Combat animations done, polish needed">
+      <created>1712236394823</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1712236394823</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,5 +118,7 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Combat animations done, polish needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Combat animations done, polish needed" />
   </component>
 </project>
