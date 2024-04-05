@@ -53,15 +53,15 @@ Material:
     - _AlphaClip: 1
     - _Blend: 0
     - _CastShadows: 1
-    - _Clip: 0.02
+    - _Clip: 0.97
     - _Cull: 0
     - _DstBlend: 0
-    - _Grow: 0
+    - _Grow: 0.512
     - _Metallic: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Scale: -0.53
+    - _Scale: -2.44
     - _Smoothness: 0
     - _SrcBlend: 1
     - _Surface: 0
@@ -70,6 +70,6 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 0.5040706, g: 0.8584906, b: 0.3280082, a: 1}
+    - _Color: {r: 0.8584906, g: 0.20652366, b: 0.53200316, a: 1}
     - _Vector3: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
