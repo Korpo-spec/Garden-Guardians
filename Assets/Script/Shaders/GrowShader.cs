@@ -16,6 +16,8 @@ public class GrowShader : MonoBehaviour
     private bool fullyGrown;
     private static readonly int GrowID = Shader.PropertyToID("_Grow");
 
+    public Collider collider;
+
     private void Start()
     {
         for (int i = 0; i < GrowMeshes.Count; i++)
@@ -31,52 +33,109 @@ public class GrowShader : MonoBehaviour
                 
             } 
         }
+        
+        for (int i = 0; i < GrowMaterials.Count; i++)
+        {
+            StartCoroutine(GrowMesh(GrowMaterials[i]));
+        }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Grow");
-            for (int i = 0; i < GrowMaterials.Count; i++)
-            {
-                StartCoroutine(GrowMesh(GrowMaterials[i]));
-            }
-        }
+        LerpYScale();
+        
     }
 
+    private float lerpTimer = 0;
+    private float lerpTimerMax = 3;
+    private bool increaselerpTimer;
+    private void LerpYScale()
+    {
+
+        if (increaselerpTimer)
+        {
+            lerpTimer += Time.deltaTime;
+        }
+        else
+        {
+            lerpTimer -= Time.deltaTime;
+        }
+
+        increaselerpTimer = lerpTimer switch
+        {
+            < 0 => true,
+            > 3 => false,
+            _ => increaselerpTimer
+        };
+
+        var t = lerpTimer / lerpTimerMax;
+        transform.localScale = new Vector3(transform.localScale.x,Mathf.Lerp(0.5f, 2.5f, t),transform.localScale.z);
+    }
+
+    private bool repeat=true;
     IEnumerator GrowMesh(Material material)
     {
         float growValue = material.GetFloat(GrowID);
 
-        if (!fullyGrown)
+        while (repeat)
         {
-            while (growValue<maxGrow)
+            if (!fullyGrown)
             {
-                growValue += 1 / (timeToGrow / refreshrate);
-                material.SetFloat(GrowID,growValue);
+                while (growValue<maxGrow)
+                {
+                    growValue += 1 / (timeToGrow / refreshrate);
+                    material.SetFloat(GrowID,growValue);
 
-                yield return new WaitForSeconds(refreshrate);
+                    yield return new WaitForSeconds(refreshrate);
+                }
+            }
+            else
+            {
+                while (growValue>minGrow)
+                {
+                    growValue -= 1 / (timeToGrow / refreshrate);
+                    material.SetFloat(GrowID,growValue);
+
+                    yield return new WaitForSeconds(refreshrate);
+                }
+            }
+
+            if (growValue>=maxGrow)
+            {
+                fullyGrown = true;
+            }
+            else
+            {
+                fullyGrown = false;
+            } 
+        }
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            repeat = false;
+            for (int i = 0; i < GrowMaterials.Count; i++)
+            {
+                StartCoroutine(changeScale(GrowMaterials[i]));
             }
         }
-        else
-        {
-            while (growValue>minGrow)
-            {
-                growValue -= 1 / (timeToGrow / refreshrate);
-                material.SetFloat(GrowID,growValue);
+    }
 
-                yield return new WaitForSeconds(refreshrate);
-            }
-        }
+    IEnumerator changeScale(Material material)
+    {
+        material.SetFloat("_Scale",8);
+        yield return null;
+    }
 
-        if (growValue>=maxGrow)
+    private void OnValidate()
+    {
+        if (timeToGrow<=0)
         {
-            fullyGrown = true;
-        }
-        else
-        {
-            fullyGrown = false;
+            timeToGrow = 0.1f;
+            Debug.LogWarning("timeToGrow can't be 0 or else the editor chrases in runtime");
         }
     }
 }
