@@ -39,7 +39,7 @@ namespace Script.Entity
                 health = intVariable.Value;
             }
             */
-            transformHealthDictionary.Add(transform, this);
+            //transformHealthDictionary.Add(transform, this);
             _rigidbody = GetComponent<Rigidbody>();
             _animator = GetComponent<Animator>();
             Enable();
@@ -51,7 +51,7 @@ namespace Script.Entity
 
         private void OnDestroy()
         {
-            transformHealthDictionary.Remove(transform);
+            //transformHealthDictionary.Remove(transform);
             //TODO: FIX SPAWN ON DESTROY
             //Instantiate(spawnOnDestroy);
         }
