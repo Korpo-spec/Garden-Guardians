@@ -11,13 +11,14 @@ public class EntityAttack : MonoBehaviour
     [SerializeField] public AttackComboSO weapon;
     [SerializeField] private TransformHealthDictionary targetDictionary;
     
-    [Header("DEBUG OPTIONS")][Range(0, 2)]
-    [SerializeField] public int comboIndex = 0;
+    [Header("DEBUG OPTIONS")]
+    [SerializeField] public bool activateDebug = false;
+    [Range(0, 2)][SerializeField] public int comboIndex = 0;
     public void Attack(int comboIndex)
     {
         Debug.Log("Attack");
         //weapon.comboDamage[comboIndex];
-        Collider[] colliders = Physics.OverlapBox(weapon.colliderInfo[comboIndex].center + transform.position, weapon.colliderInfo[comboIndex].halfsize, Quaternion.identity);
+        Collider[] colliders = Physics.OverlapBox(weapon.attackInfos[comboIndex].colliderInfo.center + transform.position, weapon.attackInfos[comboIndex].colliderInfo.halfsize, Quaternion.identity);
         foreach (var collider in colliders)
         {
             if (collider.transform == transform)
@@ -27,7 +28,12 @@ public class EntityAttack : MonoBehaviour
 
             if (targetDictionary.TryGetHealth(collider.transform, out var health))
             {
-                health.DamageUnit(weapon.comboDamage[comboIndex]);
+                health.DamageUnit(weapon.attackInfos[comboIndex].damage);
+                if (weapon.attackInfos[comboIndex].hitEffect != null)
+                {
+                    Instantiate(weapon.attackInfos[comboIndex].hitEffect, collider.transform.position, Quaternion.identity);
+                }
+                
             }
 
             
@@ -37,6 +43,6 @@ public class EntityAttack : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawCube(transform.position + weapon.colliderInfo[comboIndex].center, weapon.colliderInfo[comboIndex].halfsize);
+        Gizmos.DrawCube(transform.position + weapon.attackInfos[comboIndex].colliderInfo.center, weapon.attackInfos[comboIndex].colliderInfo.halfsize);
     }
 }
