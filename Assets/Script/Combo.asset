@@ -21,6 +21,8 @@ MonoBehaviour:
       center: {x: 0, y: 0.8057604, z: -0.7807358}
       halfsize: {x: 1.5056758, y: 0.72962403, z: 2}
       isTrigger: 0
+    slashEffect: {fileID: 8991263633043074940, guid: b30c61307f93fb848afcdf97b9178ad6,
+      type: 3}
     hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
       type: 3}
   - damage: 5
@@ -28,6 +30,8 @@ MonoBehaviour:
       center: {x: 0, y: 0.96961045, z: -0.68042135}
       halfsize: {x: 1.2869751, y: 0.443927, z: 1.2869751}
       isTrigger: 0
+    slashEffect: {fileID: 8991263633043074940, guid: b30c61307f93fb848afcdf97b9178ad6,
+      type: 3}
     hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
       type: 3}
   - damage: 5
@@ -35,5 +39,7 @@ MonoBehaviour:
       center: {x: 0, y: 0.69572735, z: -1.2169394}
       halfsize: {x: 2, y: 1.011486, z: 2}
       isTrigger: 0
+    slashEffect: {fileID: 8991263633043074940, guid: b30c61307f93fb848afcdf97b9178ad6,
+      type: 3}
     hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
       type: 3}

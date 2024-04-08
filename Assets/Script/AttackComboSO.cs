@@ -27,5 +27,6 @@ public struct AttackInfo
 {
     public float damage;
     public ColliderInfo colliderInfo;
+    public GameObject slashEffect;
     public GameObject hitEffect;
 }

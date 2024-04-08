@@ -10,6 +10,7 @@ public class EntityAttack : MonoBehaviour
     [SerializeField] private int animatorLayer = 1;
     [SerializeField] public AttackComboSO weapon;
     [SerializeField] private TransformHealthDictionary targetDictionary;
+    [SerializeField] private Transform mainHand;
     
     [Header("DEBUG OPTIONS")]
     [SerializeField] public bool activateDebug = false;
@@ -17,6 +18,11 @@ public class EntityAttack : MonoBehaviour
     public void Attack(int comboIndex)
     {
         Debug.Log("Attack");
+        if (weapon.attackInfos[comboIndex].slashEffect != null)
+        {
+           
+            Instantiate(weapon.attackInfos[comboIndex].slashEffect, mainHand.position, mainHand.rotation);
+        }
         //weapon.comboDamage[comboIndex];
         Collider[] colliders = Physics.OverlapBox(weapon.attackInfos[comboIndex].colliderInfo.center + transform.position, weapon.attackInfos[comboIndex].colliderInfo.halfsize, Quaternion.identity);
         foreach (var collider in colliders)
@@ -33,7 +39,9 @@ public class EntityAttack : MonoBehaviour
                 {
                     Instantiate(weapon.attackInfos[comboIndex].hitEffect, collider.transform.position, Quaternion.identity);
                 }
+
                 
+
             }
 
             

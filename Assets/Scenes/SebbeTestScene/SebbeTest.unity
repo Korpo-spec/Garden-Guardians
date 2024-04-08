@@ -958,6 +958,16 @@ PrefabInstance:
       propertyPath: activateDebug
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4113068713067870969, guid: bfe03260ef6262e4290539448e181343,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135438459467918993, guid: bfe03260ef6262e4290539448e181343,
+        type: 3}
+      propertyPath: m_Name
+      value: HandMain
+      objectReference: {fileID: 0}
     - target: {fileID: 6778576495413855506, guid: bfe03260ef6262e4290539448e181343,
         type: 3}
       propertyPath: m_Enabled
