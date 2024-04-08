@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Colliders fixed">
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Moved code to more accecible class">
+      <change afterPath="$PROJECT_DIR$/Assets/Art/VFX/Hit.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/VFX/Hit.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/VFX/Hit.vfx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/VFX/Hit.vfx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/AttackComboSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/AttackComboSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Editor/EntityAttackEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Editor/EntityAttackEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Entity/EntityAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entity/EntityAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Combo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Combo.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Entity/EntityHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entity/EntityHealth.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/AttackComboSO.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/AttackComboSO.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Editor/EntityAttackEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ExtensionMethods/ExtendVectors.cs" root0="FORCE_HIGHLIGHTING" />
@@ -131,7 +138,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1712567098785</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Moved code to more accecible class">
+      <created>1712568099250</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1712568099250</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +160,7 @@
     <MESSAGE value="Old sword returns" />
     <MESSAGE value="Moved sword a bit" />
     <MESSAGE value="Colliders fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Colliders fixed" />
+    <MESSAGE value="Moved code to more accecible class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved code to more accecible class" />
   </component>
 </project>

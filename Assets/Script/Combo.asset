@@ -15,17 +15,25 @@ MonoBehaviour:
   weapon: {fileID: 0}
   newAnims: {fileID: 0}
   comboLength: 3
-  comboDamage:
-  - 5
-  - 5
-  - 10
-  colliderInfo:
-  - center: {x: 0, y: 0.7601881, z: -1.0360553}
-    halfsize: {x: 1.4983536, y: 0.44167948, z: 1.7919854}
-    isTrigger: 0
-  - center: {x: 0, y: 1.0043695, z: -0.9141768}
-    halfsize: {x: 1.5064316, y: 0.8282528, z: 1.4074221}
-    isTrigger: 0
-  - center: {x: 0, y: 0.6682813, z: -1.3084534}
-    halfsize: {x: 2, y: 0.8578758, z: 2}
-    isTrigger: 0
+  attackInfos:
+  - damage: 5
+    colliderInfo:
+      center: {x: 0, y: 0.8057604, z: -0.7807358}
+      halfsize: {x: 1.5056758, y: 0.72962403, z: 2}
+      isTrigger: 0
+    hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
+      type: 3}
+  - damage: 5
+    colliderInfo:
+      center: {x: 0, y: 0.96961045, z: -0.68042135}
+      halfsize: {x: 1.2869751, y: 0.443927, z: 1.2869751}
+      isTrigger: 0
+    hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
+      type: 3}
+  - damage: 5
+    colliderInfo:
+      center: {x: 0, y: 0.69572735, z: -1.2169394}
+      halfsize: {x: 2, y: 1.011486, z: 2}
+      isTrigger: 0
+    hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
+      type: 3}

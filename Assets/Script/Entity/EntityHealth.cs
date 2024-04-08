@@ -71,7 +71,7 @@ namespace Script.Entity
             //     intVariable.Value -= amount;
 
             health -= amount;
-            _animator.SetTrigger(Hurt);
+            //_animator.SetTrigger(Hurt);
         }
 
         protected virtual void KillItself()
