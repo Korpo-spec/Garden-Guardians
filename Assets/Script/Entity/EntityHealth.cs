@@ -10,7 +10,7 @@ namespace Script.Entity
         //protected IntVariable intVariable;
 
         [Tooltip("Health if no int variable was used")] [SerializeField]
-        public int health;
+        public float health;
 
         
 
@@ -39,7 +39,7 @@ namespace Script.Entity
                 health = intVariable.Value;
             }
             */
-            //transformHealthDictionary.Add(transform, this);
+            transformHealthDictionary.Add(transform, this);
             _rigidbody = GetComponent<Rigidbody>();
             _animator = GetComponent<Animator>();
             Enable();
@@ -60,7 +60,7 @@ namespace Script.Entity
         /// Decreases the the health by the input amount. This will also decrease the health of the attached intVariable if present.
         /// </summary>
         /// <param name="amount"> The amount of health to lose</param>
-        public virtual void DamageUnit(int amount)
+        public virtual void DamageUnit(float amount)
         {
             if (health - amount <= 0)
                 KillItself();
