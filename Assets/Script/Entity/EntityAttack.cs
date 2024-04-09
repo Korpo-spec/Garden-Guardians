@@ -21,7 +21,18 @@ public class EntityAttack : MonoBehaviour
         if (weapon.attackInfos[comboIndex].slashEffect != null)
         {
            
-            Instantiate(weapon.attackInfos[comboIndex].slashEffect, mainHand.position, mainHand.rotation);
+            
+            for (int i = 0; i < mainHand.childCount; i++)
+            {
+                Transform child = mainHand.GetChild(i);
+                if (!child.CompareTag("Weapon")) continue;
+                Debug.Log("Slash effect");
+                
+                GameObject g = Instantiate(weapon.attackInfos[comboIndex].slashEffect, child.position, Quaternion.Euler(0,0,0), child);
+                g.transform.localRotation = Quaternion.Euler(new Vector3(313.194489f,181.419785f,83.6417999f));
+                g.transform.localScale = new Vector3(0.01453377f, 0.01453377f, 0.01453377f);
+                child.DetachChildren();
+            }
         }
         //weapon.comboDamage[comboIndex];
         Collider[] colliders = Physics.OverlapBox(weapon.attackInfos[comboIndex].colliderInfo.center + transform.position, weapon.attackInfos[comboIndex].colliderInfo.halfsize, Quaternion.identity);

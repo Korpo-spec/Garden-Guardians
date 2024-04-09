@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
       {
          _inputHandler.attackButtonPressed = false;
          attackModule.Attack(animator);
+         
       }
       RotatePlayer(_inputHandler.moveDir);
 
@@ -77,6 +78,19 @@ public class PlayerController : MonoBehaviour
          _prevDirVector = dirVector3;
       }
       
+   }
+   private IEnumerator WeaponDash()
+   {
+      float startTime = Time.time;
+      Vector3 dashvector = _prevDirVector;
+      canMove = false;
+      while (Time.time<startTime+movementStats.dashTime)
+      {
+         _controller.Move(dashvector.normalized* (movementStats.dashSpeed*0.5f * Time.deltaTime));
+         yield return null;
+      }
+      canMove = true;
+
    }
 
    private IEnumerator Dash()
