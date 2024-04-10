@@ -11,6 +11,10 @@ public class BlightConnectionHandler : MonoBehaviour
     
     public UnityEvent Triggercleanse;
 
+    public bool ShowInfectionRadius;
+
+    public float ConnectionRadius;
+
 
     private void Awake()
     {
@@ -32,12 +36,13 @@ public class BlightConnectionHandler : MonoBehaviour
 
     private void getInfectedGameObejcts()
     {
-        var allobejcts=Physics.OverlapSphere(transform.localPosition, 10);
+        var allobejcts=Physics.OverlapSphere(transform.position, ConnectionRadius);
         
         foreach (var obeject in allobejcts)
         {
             if (obeject.gameObject.TryGetComponent<BlightShader>(out BlightShader blight))
             {
+                blight.increaseBlightScource();
                 connectedCorruption.Add(blight);
             }
         }
@@ -50,6 +55,14 @@ public class BlightConnectionHandler : MonoBehaviour
         foreach (var VARIABLE in connectedCorruption)
         {
             VARIABLE.DecreaseBlight();
+        }
+    }
+    
+    private void OnDrawGizmosSelected()
+    {
+        if (ShowInfectionRadius)
+        {
+            Gizmos.DrawSphere(transform.position,ConnectionRadius);
         }
     }
 }

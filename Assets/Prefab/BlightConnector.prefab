@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4459065603653070835}
   - component: {fileID: 2615511885216639462}
   m_Layer: 0
-  m_Name: BlightMaterialhandler
+  m_Name: BlightConnector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3f5a60e5a06e44e8a478e9eae48f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedCorruption: []
+  Triggercleanse:
+    m_PersistentCalls:
+      m_Calls: []
+  ShowInfectionRadius: 0
+  ConnectionRadius: 10
 --- !u!23 &2615511885216639462
 MeshRenderer:
   m_ObjectHideFlags: 0

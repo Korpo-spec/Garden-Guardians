@@ -6,9 +6,11 @@ using UnityEngine;
 public class BlightShader : MonoBehaviour
 {
     private static readonly int SnowAmount = Shader.PropertyToID("_SnowAmount");
-    public MeshRenderer meshRenderer;
-    
-   
+    private MeshRenderer meshRenderer;
+
+    private int BlightSources;
+
+
 
     private void Start()
     {
@@ -17,8 +19,17 @@ public class BlightShader : MonoBehaviour
 
     public void DecreaseBlight()
     {
-        StartCoroutine(DecreaseBligt(meshRenderer.material));
+        BlightSources--;
+        if (BlightSources==0)
+        {
+            StartCoroutine(DecreaseBligt(meshRenderer.material));
+        }
+        
+    }
 
+    public void increaseBlightScource()
+    {
+        BlightSources++;
     }
 
     IEnumerator DecreaseBligt(Material material)
