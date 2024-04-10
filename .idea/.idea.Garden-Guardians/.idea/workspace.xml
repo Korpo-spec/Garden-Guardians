@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed slash animations" />
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Reduced dash distance">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest/NavMesh.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +24,9 @@
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/AttackComboSO.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/AttackComboSO.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/Combo.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/Combo.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Editor/EntityAttackEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EnemyTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/Entity/EntityAttack.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EntityMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ExtensionMethods/ExtendVectors.cs" root0="FORCE_HIGHLIGHTING" />
@@ -111,7 +121,7 @@
       <workItem from="1712663237102" duration="2818000" />
       <workItem from="1712740625373" duration="145000" />
       <workItem from="1712740824957" duration="2383000" />
-      <workItem from="1712746388518" duration="6095000" />
+      <workItem from="1712746388518" duration="8755000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>
@@ -185,7 +195,13 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1712752035591</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="Reduced dash distance">
+      <created>1712752911943</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1712752911943</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +247,7 @@
     <MESSAGE value="Fixed holding down button for attack" />
     <MESSAGE value="Fixed LOD group for PumpkinVariant1.prefab" />
     <MESSAGE value="Fixed slash animations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed slash animations" />
+    <MESSAGE value="Reduced dash distance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reduced dash distance" />
   </component>
 </project>
