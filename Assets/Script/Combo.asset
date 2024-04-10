@@ -25,6 +25,8 @@ MonoBehaviour:
       type: 3}
     hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
       type: 3}
+    dashSpeed: 10
+    dashTime: 0.25
   - damage: 5
     colliderInfo:
       center: {x: 0, y: 0.96961045, z: -0.68042135}
@@ -34,6 +36,8 @@ MonoBehaviour:
       type: 3}
     hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
       type: 3}
+    dashSpeed: 10
+    dashTime: 0.25
   - damage: 5
     colliderInfo:
       center: {x: 0, y: 0.69572735, z: -1.2169394}
@@ -43,3 +47,5 @@ MonoBehaviour:
       type: 3}
     hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
       type: 3}
+    dashSpeed: 10
+    dashTime: 0.25

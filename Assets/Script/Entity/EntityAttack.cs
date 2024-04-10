@@ -15,6 +15,14 @@ public class EntityAttack : MonoBehaviour
     [Header("DEBUG OPTIONS")]
     [SerializeField] public bool activateDebug = false;
     [Range(0, 2)][SerializeField] public int comboIndex = 0;
+
+    private EntityMovement _movement;
+
+    private void Start()
+    {
+        _movement = GetComponent<EntityMovement>();
+    }
+
     public void Attack(int comboIndex)
     {
         Debug.Log("Attack");
@@ -58,6 +66,26 @@ public class EntityAttack : MonoBehaviour
             
         }
         
+    }
+
+    public void AttackDash()
+    {
+        Debug.Log("AttackDash");
+        StartCoroutine(InternalDash());
+    }
+    
+    private IEnumerator InternalDash()
+    {
+        float startTime = Time.time;
+        Vector3 dashvector = _movement.prevDirVector3;
+        _movement.canMove = false;
+        while (Time.time<startTime+weapon.attackInfos[0].dashTime)
+        {
+            _movement.controller.Move(dashvector.normalized* (weapon.attackInfos[0].dashSpeed * Time.deltaTime));
+            yield return null;
+        }
+        _movement.canMove = true;
+
     }
 
     private void OnDrawGizmosSelected()
