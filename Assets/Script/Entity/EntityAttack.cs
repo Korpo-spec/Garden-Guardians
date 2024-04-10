@@ -15,6 +15,14 @@ public class EntityAttack : MonoBehaviour
     [Header("DEBUG OPTIONS")]
     [SerializeField] public bool activateDebug = false;
     [Range(0, 2)][SerializeField] public int comboIndex = 0;
+
+    private EntityMovement _movement;
+
+    private void Start()
+    {
+        _movement = GetComponent<EntityMovement>();
+    }
+
     public void Attack(int comboIndex)
     {
         Debug.Log("Attack");
@@ -32,6 +40,7 @@ public class EntityAttack : MonoBehaviour
                 g.transform.localRotation = Quaternion.Euler(new Vector3(313.194489f,181.419785f,83.6417999f));
                 g.transform.localScale = new Vector3(0.01453377f, 0.01453377f, 0.01453377f);
                 child.DetachChildren();
+                g.transform.parent = transform;
             }
         }
         //weapon.comboDamage[comboIndex];
@@ -58,6 +67,30 @@ public class EntityAttack : MonoBehaviour
             
         }
         
+    }
+
+    public void AttackDash()
+    {
+        Debug.Log("AttackDash");
+        StartCoroutine(InternalDash());
+    }
+    
+    private IEnumerator InternalDash()
+    {
+        int comboIndex = 0;
+        float startTime = 0;
+        float timecoeficient = 1 / weapon.attackInfos[comboIndex].dashTime;
+        Vector3 dashvector = _movement.prevDirVector3;
+        float dashSpeed =  weapon.attackInfos[comboIndex].dashLenght /weapon.attackInfos[comboIndex].dashTime;
+        _movement.canMove = false;
+        while (startTime < 1)
+        {
+            startTime += Time.deltaTime * timecoeficient;
+            _movement.controller.Move(dashvector.normalized* (dashSpeed * Time.deltaTime *weapon.attackInfos[comboIndex].dashCurve.Evaluate(startTime)));
+            yield return new WaitForEndOfFrame();
+        }
+        _movement.canMove = true;
+
     }
 
     private void OnDrawGizmosSelected()

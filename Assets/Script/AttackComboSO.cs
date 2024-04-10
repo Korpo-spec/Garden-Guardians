@@ -29,4 +29,7 @@ public struct AttackInfo
     public ColliderInfo colliderInfo;
     public GameObject slashEffect;
     public GameObject hitEffect;
+    public float dashLenght;
+    public float dashTime;
+    public AnimationCurve dashCurve;
 }

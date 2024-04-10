@@ -2237,6 +2237,7 @@ GameObject:
   - component: {fileID: 8677088907972969173}
   - component: {fileID: 7086357682079536472}
   - component: {fileID: 628604204669265699}
+  - component: {fileID: 927689100175718382}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2340,7 +2341,7 @@ MonoBehaviour:
   movementStats: {fileID: 11400000, guid: eedbab068ca39a744aad51146ca98740, type: 2}
   attackModule:
     weapon: {fileID: 11400000, guid: 5f64ef4666d0221428acb16f81b1e377, type: 2}
-    comboConnectTime: 0.15
+    comboConnectTime: 0.05
     comboTimeOutTime: 1.5
     comboState: 0
     timeSinceLastAttack: 0
@@ -2381,6 +2382,21 @@ MonoBehaviour:
   mainHand: {fileID: 8889740190418680920}
   activateDebug: 0
   comboIndex: 1
+--- !u!114 &927689100175718382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938287593342238401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad5ffffb52a4eb41a8c56685c0a1165, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementStats: {fileID: 11400000, guid: eedbab068ca39a744aad51146ca98740, type: 2}
+  canMove: 1
+  animator: {fileID: 7127825265443040992}
 --- !u!1 &8106037427702051965
 GameObject:
   m_ObjectHideFlags: 0

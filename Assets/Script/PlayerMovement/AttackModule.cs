@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 
 namespace Script.PlayerMovement
 {
@@ -45,6 +46,8 @@ namespace Script.PlayerMovement
             }
             
         }
+        
+        
         
         private void ResetTriggers(Animator animator)
         {
