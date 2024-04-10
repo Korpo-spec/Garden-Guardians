@@ -37,7 +37,7 @@ public class EntityAttack : MonoBehaviour
                 Debug.Log("Slash effect");
                 
                 GameObject g = Instantiate(weapon.attackInfos[comboIndex].slashEffect, child.position, Quaternion.Euler(0,0,0), child);
-                g.transform.localRotation = Quaternion.Euler(new Vector3(-313.194489f,181.419785f,83.6417999f));
+                g.transform.localRotation = Quaternion.Euler(weapon.attackInfos[comboIndex].useCustomRot ? weapon.attackInfos[comboIndex].customRot :new Vector3(-313.194489f,181.419785f,83.6417999f));
                 g.transform.localScale = new Vector3(0.01453377f, 0.01453377f, 0.01453377f);
                 child.DetachChildren();
                 g.transform.parent = transform;

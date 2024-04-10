@@ -28,6 +28,8 @@ public struct AttackInfo
     public float damage;
     public ColliderInfo colliderInfo;
     public GameObject slashEffect;
+    public bool useCustomRot;
+    public Vector3 customRot;
     public GameObject hitEffect;
     public float dashLenght;
     public float dashTime;
