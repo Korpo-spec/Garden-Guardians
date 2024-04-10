@@ -27,7 +27,7 @@ MonoBehaviour:
     customRot: {x: 0, y: 0, z: 0}
     hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
       type: 3}
-    dashLenght: 3
+    dashLenght: 1.5
     dashTime: 0.3
     dashCurve:
       serializedVersion: 2
@@ -64,7 +64,7 @@ MonoBehaviour:
     customRot: {x: 310.0831, y: 45.506184, z: 305.94098}
     hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
       type: 3}
-    dashLenght: 3
+    dashLenght: 1.5
     dashTime: 0.3
     dashCurve:
       serializedVersion: 2

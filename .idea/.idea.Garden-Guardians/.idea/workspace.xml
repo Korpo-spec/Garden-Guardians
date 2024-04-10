@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed slash animations">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbeTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/AttackComboSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/AttackComboSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Combo.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Entity/EntityAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entity/EntityAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed slash animations" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/AttackComboSO.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/AttackComboSO.cs" root0="SKIP_HIGHLIGHTING" />
@@ -118,7 +111,7 @@
       <workItem from="1712663237102" duration="2818000" />
       <workItem from="1712740625373" duration="145000" />
       <workItem from="1712740824957" duration="2383000" />
-      <workItem from="1712746388518" duration="5462000" />
+      <workItem from="1712746388518" duration="6095000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>
@@ -186,7 +179,13 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1712750487403</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="Fixed slash animations">
+      <created>1712752035591</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1712752035591</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

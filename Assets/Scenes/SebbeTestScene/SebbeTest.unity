@@ -1973,7 +1973,7 @@ MonoBehaviour:
   health: 100
   transformHealthDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325,
     type: 2}
-  destroyOnKill: 0
+  destroyOnKill: 1
   entityHealthEvents:
     takeDamage:
       m_PersistentCalls:
