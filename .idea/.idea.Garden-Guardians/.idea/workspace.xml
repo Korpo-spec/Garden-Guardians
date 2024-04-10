@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Trying movement on sword slash">
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Anim/AnimClips/Dash.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Anim/AnimClips/Dash.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerMovement/PlayerInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement/PlayerInputHandler.cs" afterDir="false" />
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed holding down button for attack">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Entity/EntityAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entity/EntityAttack.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +16,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/AttackComboSO.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/Combo.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Editor/EntityAttackEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EntityMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ExtensionMethods/ExtendVectors.cs" root0="FORCE_HIGHLIGHTING" />
@@ -112,7 +111,7 @@
       <workItem from="1712663237102" duration="2818000" />
       <workItem from="1712740625373" duration="145000" />
       <workItem from="1712740824957" duration="2383000" />
-      <workItem from="1712746388518" duration="2985000" />
+      <workItem from="1712746388518" duration="3603000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>
@@ -168,7 +167,13 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1712749073524</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Fixed holding down button for attack">
+      <created>1712749735292</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1712749735292</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +216,7 @@
     <MESSAGE value="Terrain Textures" />
     <MESSAGE value="Trying out movement on attack" />
     <MESSAGE value="Trying movement on sword slash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying movement on sword slash" />
+    <MESSAGE value="Fixed holding down button for attack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed holding down button for attack" />
   </component>
 </project>
