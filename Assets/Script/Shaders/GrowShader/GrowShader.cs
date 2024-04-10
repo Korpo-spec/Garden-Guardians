@@ -3,26 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 public class GrowShader : MonoBehaviour
 {
     
-    private List<MeshRenderer> GrowMeshes;
+    public List<MeshRenderer> GrowMeshes;
     public float timeToGrow = 5;
     public float refreshrate = 0.05f;
 
     [Range(0, 1)] public float minGrow = 0.2f;
     [Range(0, 1)] public float maxGrow = 0.97f;
 
-    private List<Material> GrowMaterials = new List<Material>();
+    public List<Material> GrowMaterials = new List<Material>();
     private bool fullyGrown;
     private static readonly int GrowID = Shader.PropertyToID("_Grow");
 
-    public UnityEvent Destroyed;
-
+    
     private void Start()
     {
-        GrowMeshes.Add(gameObject.GetComponent<MeshRenderer>());
+        float RandomGrowStart = Random.Range(0f, 0.9f);
+        
+        
+        //GrowMeshes.Add(gameObject.GetComponent<MeshRenderer>());
         for (int i = 0; i < gameObject.transform.childCount; i++)
         {
             GrowMeshes.Add(gameObject.transform.GetChild(i).GetComponent<MeshRenderer>());
@@ -34,7 +37,7 @@ public class GrowShader : MonoBehaviour
             {
                 if (GrowMeshes[i].materials[j].HasProperty(GrowID))
                 {
-                 GrowMeshes[i].materials[j].SetFloat(GrowID,minGrow);   
+                 GrowMeshes[i].materials[j].SetFloat(GrowID,RandomGrowStart);   
                  GrowMaterials.Add(GrowMeshes[i].materials[j]);
                  Debug.Log("added");
                 }
@@ -77,7 +80,7 @@ public class GrowShader : MonoBehaviour
         };
 
         var t = lerpTimer / lerpTimerMax;
-        transform.localScale = new Vector3(transform.localScale.x,Mathf.Lerp(0.5f, 2.5f, t),transform.localScale.z);
+        transform.localScale = new Vector3(transform.localScale.x,Mathf.Lerp(1f, 1.5f, t),transform.localScale.z);
     }
 
     private bool repeat=true;
@@ -138,22 +141,23 @@ public class GrowShader : MonoBehaviour
     {
         var growValue = material.GetFloat(GrowID);
         timeToGrow = 3;
-        while (growValue>minGrow)
+        while (growValue>0.2f)
         {
             growValue -= 1 / (timeToGrow / refreshrate);
             material.SetFloat(GrowID,growValue);
 
             yield return new WaitForSeconds(refreshrate);
         }
+        Destroy(gameObject);
         yield return null;
     }
 
     public void OnDeath()
     {
-        Destroyed.Invoke();
-        foreach (var material in GrowMaterials)
+        StopAllCoroutines();
+        for (int i = 0; i < GrowMaterials.Count; i++)
         {
-            StartCoroutine(DeGrow(material));
+            StartCoroutine(DeGrow(GrowMaterials[i]));
         }
         
     }

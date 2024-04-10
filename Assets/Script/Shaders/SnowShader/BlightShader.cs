@@ -1,18 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Blighthandler : MonoBehaviour
+public class BlightShader : MonoBehaviour
 {
     private static readonly int SnowAmount = Shader.PropertyToID("_SnowAmount");
     public MeshRenderer meshRenderer;
+    
+   
 
-    public List<MeshRenderer> connectedCorruption;
-
+    private void Start()
+    {
+        meshRenderer = GetComponent<MeshRenderer>();
+    }
 
     public void DecreaseBlight()
     {
         StartCoroutine(DecreaseBligt(meshRenderer.material));
+
     }
 
     IEnumerator DecreaseBligt(Material material)
@@ -20,7 +26,7 @@ public class Blighthandler : MonoBehaviour
         var AmountValue = material.GetFloat(SnowAmount);
         while (AmountValue>0)
         {
-            AmountValue -= 1 / (4 / 0.1f);
+            AmountValue -= 1 / (6 / 0.1f);
             material.SetFloat(SnowAmount,AmountValue);
 
             yield return new WaitForSeconds(0.1f);
