@@ -15,12 +15,15 @@ public class EntityAttackEditor : Editor
         if (script.activateDebug == false) return;
 
         EditorGUI.BeginChangeCheck();
-        script.weapon.attackInfos[script.comboIndex].colliderInfo.center = Handles.PositionHandle(script.transform.position + script.weapon.attackInfos[script.comboIndex].colliderInfo.center, Quaternion.identity)- script.transform.position;
+        Vector3 center = Handles.PositionHandle(script.transform.position + script.weapon.attackInfos[script.comboIndex].colliderInfo.center, Quaternion.identity)- script.transform.position;
         
-        script.weapon.attackInfos[script.comboIndex].colliderInfo.halfsize = Handles.ScaleHandle(script.weapon.attackInfos[script.comboIndex].colliderInfo.halfsize, script.transform.position + script.weapon.attackInfos[script.comboIndex].colliderInfo.center, Quaternion.identity, 2);
+        Vector3 halfsize = Handles.ScaleHandle(script.weapon.attackInfos[script.comboIndex].colliderInfo.halfsize, script.transform.position + script.weapon.attackInfos[script.comboIndex].colliderInfo.center, Quaternion.identity, 2);
         if (EditorGUI.EndChangeCheck())
         {
-            
+            Undo.RecordObject(script, "Change weapon bounds");
+            script.weapon.attackInfos[script.comboIndex].colliderInfo.center = center;
+            script.weapon.attackInfos[script.comboIndex].colliderInfo.halfsize = halfsize;
+            EditorUtility.SetDirty(script);
         }
 
         
