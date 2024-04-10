@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: InfectedPumpkin
-  m_Shader: {fileID: -6465566751694194690, guid: 3840b159862245644a0cccc78cc77faf,
+  m_Shader: {fileID: -6465566751694194690, guid: 0edc97dd1a392144e8ed2fb5bc651d2b,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -36,6 +36,18 @@ Material:
     m_TexEnvs:
     - _BaseMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseNormalTexture:
+        m_Texture: {fileID: 2800000, guid: 93ae55dac24313c4091a49631c1079c9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseSmoothnessTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseTexture:
+        m_Texture: {fileID: 2800000, guid: a6336957d874a98468f64dca50e01747, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -97,7 +109,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
+    - _BaseNormalStrength: 0
     - _Blend: 0
+    - _BuildUpSnowSize: 51.4
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -118,6 +132,10 @@ Material:
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
+    - _SnowAmount: 0.92
+    - _SnowBlendDistance: 0.388
+    - _SnowColorNoiseSize: 250
+    - _SnowColorNoiseStrength: 0.517
     - _SnowNoiceScale: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -126,12 +144,16 @@ Material:
     - _ZWrite: 1
     - _snowHeight: 0
     - _snowcolormultiplier: 0
+    - _snowheight: 0
     - _snowsoftedge: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Basetiling: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SnowDirection: {r: 0, g: 0, b: 0, a: 0}
+    - _SnowColor: {r: 0.8113208, g: 0.17221434, b: 0.58100104, a: 1}
+    - _SnowDirection: {r: 0, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _baseOffset: {r: 0, g: 0, b: 0, a: 0}
     - _snowcolor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
