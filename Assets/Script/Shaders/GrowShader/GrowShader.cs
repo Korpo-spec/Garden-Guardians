@@ -2,9 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GrowShader : MonoBehaviour
 {
+    
     public List<MeshRenderer> GrowMeshes;
     public float timeToGrow = 5;
     public float refreshrate = 0.05f;
@@ -16,10 +18,16 @@ public class GrowShader : MonoBehaviour
     private bool fullyGrown;
     private static readonly int GrowID = Shader.PropertyToID("_Grow");
 
-    public Collider collider;
+    public UnityEvent Destroyed;
 
     private void Start()
     {
+        GrowMeshes.Add(gameObject.GetComponent<MeshRenderer>());
+        for (int i = 0; i < gameObject.transform.childCount; i++)
+        {
+            GrowMeshes.Add(gameObject.transform.GetChild(i).GetComponent<MeshRenderer>());
+        }
+        
         for (int i = 0; i < GrowMeshes.Count; i++)
         {
             for (int j = 0; j < GrowMeshes[i].materials.Length; j++)
@@ -81,6 +89,10 @@ public class GrowShader : MonoBehaviour
         {
             if (!fullyGrown)
             {
+                if (!repeat)
+                {
+                    yield break;
+                }
                 while (growValue<maxGrow)
                 {
                     growValue += 1 / (timeToGrow / refreshrate);
@@ -91,6 +103,10 @@ public class GrowShader : MonoBehaviour
             }
             else
             {
+                if (!repeat)
+                {
+                    
+                }
                 while (growValue>minGrow)
                 {
                     growValue -= 1 / (timeToGrow / refreshrate);
@@ -100,33 +116,49 @@ public class GrowShader : MonoBehaviour
                 }
             }
 
-            if (growValue>=maxGrow)
+
+            if (repeat)
             {
-                fullyGrown = true;
+                if (growValue>=maxGrow)
+                {
+                    fullyGrown = true;
+                }
+                else
+                {
+                    fullyGrown = false;
+                }  
             }
-            else
-            {
-                fullyGrown = false;
-            } 
+           
         }
         
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.CompareTag("Player"))
         {
-            repeat = false;
-            for (int i = 0; i < GrowMaterials.Count; i++)
+            Destroyed.Invoke();
+            StopAllCoroutines();
+
+            foreach (var t in GrowMaterials)
             {
-                StartCoroutine(changeScale(GrowMaterials[i]));
+                StartCoroutine(DeGrow(t));
             }
         }
     }
 
-    IEnumerator changeScale(Material material)
+    IEnumerator DeGrow(Material material)
     {
-        material.SetFloat("_Scale",8);
+        var growValue = material.GetFloat(GrowID);
+        timeToGrow = 3;
+        while (growValue>minGrow)
+        {
+            growValue -= 1 / (timeToGrow / refreshrate);
+            material.SetFloat(GrowID,growValue);
+
+            yield return new WaitForSeconds(refreshrate);
+        }
         yield return null;
     }
 
