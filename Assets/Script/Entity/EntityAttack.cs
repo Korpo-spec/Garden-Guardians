@@ -40,6 +40,7 @@ public class EntityAttack : MonoBehaviour
                 g.transform.localRotation = Quaternion.Euler(new Vector3(313.194489f,181.419785f,83.6417999f));
                 g.transform.localScale = new Vector3(0.01453377f, 0.01453377f, 0.01453377f);
                 child.DetachChildren();
+                g.transform.parent = transform;
             }
         }
         //weapon.comboDamage[comboIndex];
@@ -76,13 +77,17 @@ public class EntityAttack : MonoBehaviour
     
     private IEnumerator InternalDash()
     {
-        float startTime = Time.time;
+        int comboIndex = 0;
+        float startTime = 0;
+        float timecoeficient = 1 / weapon.attackInfos[comboIndex].dashTime;
         Vector3 dashvector = _movement.prevDirVector3;
+        float dashSpeed =  weapon.attackInfos[comboIndex].dashLenght /weapon.attackInfos[comboIndex].dashTime;
         _movement.canMove = false;
-        while (Time.time<startTime+weapon.attackInfos[0].dashTime)
+        while (startTime < 1)
         {
-            _movement.controller.Move(dashvector.normalized* (weapon.attackInfos[0].dashSpeed * Time.deltaTime));
-            yield return null;
+            startTime += Time.deltaTime * timecoeficient;
+            _movement.controller.Move(dashvector.normalized* (dashSpeed * Time.deltaTime *weapon.attackInfos[comboIndex].dashCurve.Evaluate(startTime)));
+            yield return new WaitForEndOfFrame();
         }
         _movement.canMove = true;
 
