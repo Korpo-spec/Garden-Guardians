@@ -7,6 +7,8 @@ public class Blighthandler : MonoBehaviour
     private static readonly int SnowAmount = Shader.PropertyToID("_SnowAmount");
     public MeshRenderer meshRenderer;
 
+    public List<MeshRenderer> connectedCorruption;
+
 
     public void DecreaseBlight()
     {
@@ -23,6 +25,7 @@ public class Blighthandler : MonoBehaviour
 
             yield return new WaitForSeconds(0.1f);
         }
-        yield return null;
+       
+        yield return new WaitForEndOfFrame();
     }
 }

@@ -16,6 +16,9 @@ namespace Script.Entity
 
         [Tooltip("The Scriptable object that contains transforms as keys and health as value. ")] [SerializeField]
         protected TransformHealthDictionary transformHealthDictionary;
+        
+        [Tooltip("If the gameobject is destroyed on kill")]
+        [SerializeField] private bool destroyOnKill;
 
         [SerializeField] private EntityHealthEvents entityHealthEvents;
 
@@ -29,6 +32,8 @@ namespace Script.Entity
         /// Used to keep track so it can't die multiple times in the same frame
         /// </summary>
         private bool _isDead = false;
+
+        
         
 
         void Start()
@@ -88,7 +93,11 @@ namespace Script.Entity
         
 
             entityHealthEvents.die.Invoke();
-            Destroy(gameObject);
+            if (destroyOnKill)
+            {
+                Destroy(gameObject); 
+            }
+            
         }
 
         /// <summary>

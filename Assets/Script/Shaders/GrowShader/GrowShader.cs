@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class GrowShader : MonoBehaviour
 {
     
-    public List<MeshRenderer> GrowMeshes;
+    private List<MeshRenderer> GrowMeshes;
     public float timeToGrow = 5;
     public float refreshrate = 0.05f;
 
@@ -132,21 +132,7 @@ public class GrowShader : MonoBehaviour
         }
         
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
-        if (other.CompareTag("Player"))
-        {
-            Destroyed.Invoke();
-            StopAllCoroutines();
-
-            foreach (var t in GrowMaterials)
-            {
-                StartCoroutine(DeGrow(t));
-            }
-        }
-    }
+    
 
     IEnumerator DeGrow(Material material)
     {
@@ -160,6 +146,16 @@ public class GrowShader : MonoBehaviour
             yield return new WaitForSeconds(refreshrate);
         }
         yield return null;
+    }
+
+    public void OnDeath()
+    {
+        Destroyed.Invoke();
+        foreach (var material in GrowMaterials)
+        {
+            StartCoroutine(DeGrow(material));
+        }
+        
     }
 
     private void OnValidate()
