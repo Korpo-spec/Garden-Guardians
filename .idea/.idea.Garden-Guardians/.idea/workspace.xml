@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="First iteration enemy">
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Removed onödig set trigger">
+      <change afterPath="$PROJECT_DIR$/Assets/Script/OldNotReworkedScripts/PrepareAttack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/OldNotReworkedScripts/PrepareAttack.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerMovement/AttackModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement/AttackModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/InfectedMaterials/InfectedGrass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/InfectedMaterials/InfectedGrass.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/FBX/Bite Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/FBX/Bite Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Materials/Shell.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Materials/Shell.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Prefabs/Shell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Prefabs/Shell.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/States/AttackState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/States/AttackState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +29,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EntityFaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EntityMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ExtensionMethods/ExtendVectors.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/OldNotReworkedScripts/PrepareAttack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/PlayerMovement/AttackModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerMovement/SO/PlayerMovementStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/States/AttackState.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/States/AttackState.asset" root0="SKIP_HIGHLIGHTING" />
@@ -119,7 +129,7 @@
       <workItem from="1712826555486" duration="314000" />
       <workItem from="1712826982726" duration="406000" />
       <workItem from="1712827497442" duration="3001000" />
-      <workItem from="1712837727418" duration="4447000" />
+      <workItem from="1712837727418" duration="5361000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>
@@ -235,7 +245,13 @@
       <option name="presentableId" value="LOCAL−00019" />
       <updated>1712840836029</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL−00020" summary="Removed onödig set trigger">
+      <created>1712842320798</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1712842320798</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +304,7 @@
     <MESSAGE value="extra things" />
     <MESSAGE value="Enemy walking towards you" />
     <MESSAGE value="First iteration enemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="First iteration enemy" />
+    <MESSAGE value="Removed onödig set trigger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed onödig set trigger" />
   </component>
 </project>
