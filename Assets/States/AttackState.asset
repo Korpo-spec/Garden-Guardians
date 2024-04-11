@@ -18,12 +18,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _radius: 4
+  _attackRange: 2
+  _attackSpeed: 1
   _factionToAttack: 0
   _stateToTransistion: {fileID: 0}
   _attackModule:
-    weapon: {fileID: 0}
-    comboConnectTime: 0
-    comboTimeOutTime: 0
+    weapon: {fileID: 11400000, guid: 87bcece14bac64c489464004e1da9377, type: 2}
+    comboConnectTime: 0.1
+    comboTimeOutTime: 1.5
     comboState: 0
     timeSinceLastAttack: 0
   _target: {fileID: 0}
