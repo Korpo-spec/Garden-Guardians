@@ -94,7 +94,7 @@ Material:
     - _AlphaClip: 0
     - _BaseNormalStrength: 0
     - _Blend: 0
-    - _BuildUpSnowSize: 66.23
+    - _BuildUpSnowSize: 67.72
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -115,25 +115,26 @@ Material:
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _Smoothstepedge1: 0.127
-    - _SnowAmount: 0.57
-    - _SnowBlendDistance: 0
-    - _SnowColorNoiseSize: 250.26
+    - _Smoothstepedge1: 0.167
+    - _SnowAmount: 0.93
+    - _SnowBlendDistance: 0.194
+    - _SnowColorNoiseSize: 251.1
     - _SnowColorNoiseStrength: 1
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _TransparentRadie: 0.25
+    - _TransparentRadie: -0.12
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _smoothstepedge2: 0.211
-    - _snowheight: 2.57
+    - _smoothstepedge2: 0.188
+    - _snowheight: 5.4
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
     - _Basetiling: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SnowColor: {r: 0.6792453, g: 0.067283705, b: 0.109167494, a: 1}
+    - _RadialOffset: {r: -0.51, g: -0.52, b: 0, a: 0}
+    - _SnowColor: {r: 0.5754717, g: 0.12484477, b: 0.08414916, a: 1}
     - _SnowDirection: {r: 0, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _baseOffset: {r: 0, g: 0, b: 0, a: 0}
