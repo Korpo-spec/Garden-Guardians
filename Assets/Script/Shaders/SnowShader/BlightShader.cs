@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BlightShader : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class BlightShader : MonoBehaviour
     private void Start()
     {
         meshRenderer = GetComponent<MeshRenderer>();
+        smallRandomiseToAmount(meshRenderer.material);
     }
 
     public void DecreaseBlight()
@@ -25,6 +27,13 @@ public class BlightShader : MonoBehaviour
             StartCoroutine(DecreaseBligt(meshRenderer.material));
         }
         
+    }
+
+    private void smallRandomiseToAmount(Material material)
+    {
+        var Amount = material.GetFloat(SnowAmount);
+        var random = Random.Range(-0.1f, 0.1f);
+        material.SetFloat(SnowAmount,Amount+random);
     }
 
     public void increaseBlightScource()
