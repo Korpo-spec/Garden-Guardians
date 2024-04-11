@@ -31,7 +31,6 @@ namespace Script.PlayerMovement
                 
                 return;
             }
-            animator.SetTrigger("ResetToEntry");
             animator.SetTrigger("Combo"+comboState);
             timeSinceLastAttack = Time.time;
             
