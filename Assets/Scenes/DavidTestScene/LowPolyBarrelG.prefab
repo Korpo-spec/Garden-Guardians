@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5455908236607290752}
-  - component: {fileID: -8627643421240038340}
+  - component: {fileID: 6544548002380423722}
   m_Layer: 0
   m_Name: LowPolyBarrelG
   m_TagString: Untagged
@@ -33,8 +33,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &-8627643421240038340
-CapsuleCollider:
+--- !u!65 &6544548002380423722
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -43,9 +43,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.63
-  m_Height: 1.96
-  m_Direction: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 1.2, z: 0.8}
   m_Center: {x: 0, y: 0.6, z: 0}
 --- !u!1 &9219156265576730972
 GameObject:
