@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EntityMovement : MonoBehaviour
 { 
@@ -8,9 +9,11 @@ public class EntityMovement : MonoBehaviour
    private CharacterController _controller;
    private Rigidbody _thisRb;
    private Vector3 _prevDirVector;
+   
    public bool canMove=true;
 
-
+   private NavMeshAgent _agent;
+   private int _currentCorner = 1;
    public Vector3 prevDirVector3 => _prevDirVector;
    public CharacterController controller => _controller;
    public Animator animator;
@@ -19,6 +22,7 @@ public class EntityMovement : MonoBehaviour
     {
        animator = GetComponent<Animator>();
        _controller = GetComponent<CharacterController>();
+       TryGetComponent<NavMeshAgent>(out _agent);
        _prevDirVector = transform.forward;
     }
 
@@ -26,6 +30,24 @@ public class EntityMovement : MonoBehaviour
     void Update()
     {
         
+    }
+    public void SetDestinationTo(Vector3 destination)
+    {
+       if (_agent == null) return;
+       _agent.destination = destination;
+       _agent.isStopped = true;
+    }
+    public void UpdateMoveTo()
+    {
+       if (_agent.path.corners.Length <= 1)
+       {
+          return;
+       }
+        
+       Vector3 movDir = _agent.path.corners[_currentCorner] - transform.position;
+       movDir.y = 0;
+
+       Move(movDir, movementStats.speed * Time.deltaTime);
     }
     
     public void Move(Vector3 moveDir, float speed)

@@ -15,4 +15,9 @@ public static class ExtendVectors
         return matrix.MultiplyPoint3x4(vector2);
         
     }
+    
+    public static Vector3 RemoveY(this Vector3 vector3)
+    {
+        return new Vector3(vector3.x,0,vector3.z);
+    }
 }

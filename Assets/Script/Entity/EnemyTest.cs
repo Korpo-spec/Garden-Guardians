@@ -37,14 +37,6 @@ public class EnemyTest : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_agent.path.corners.Length <= 1)
-        {
-            return;
-        }
-        
-        Vector3 movDir = _agent.path.corners[_currentCorner] - transform.position;
-        movDir.y = 0;
-
-        _movement.Move(movDir, _movement.movementStats.speed * Time.deltaTime);
+       
     }
 }

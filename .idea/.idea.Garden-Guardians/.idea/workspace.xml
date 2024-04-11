@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Adding meshes for enemy">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/SebbePlane.fbx.meta" afterDir="false" />
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Prefabs/Shell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Prefabs/Shell.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Read Me.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Read Me/Evolve your monsters - Cute Series.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Read Me/Evolve your monsters - Cute Series.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Read Me/General Introduction.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Read Me/General Introduction.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Scenes/Demo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Scenes/Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/CasperTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SebbeTestScene/CasperTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Entity/EnemyAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entity/EnemyAttackState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Entity/EnemyTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entity/EnemyTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Entity/EntityMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entity/EntityMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ExtensionMethods/ExtendVectors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ExtensionMethods/ExtendVectors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/StateMachine/StateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/StateMachine/StateController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/States/AttackState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/States/AttackState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Scenes/SebbeTestScene/CasperTest.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Editor/EntityAttackEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EnemyAttackState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EnemyTest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -31,6 +31,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EntityMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ExtensionMethods/ExtendVectors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerMovement/SO/PlayerMovementStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/ProjectSettings/URPProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2eaKWJi52qP0Gb5HSrXFVupBGC4" />
@@ -125,7 +126,8 @@
       <workItem from="1712768352759" duration="2894000" />
       <workItem from="1712826555486" duration="314000" />
       <workItem from="1712826982726" duration="406000" />
-      <workItem from="1712827497442" duration="2944000" />
+      <workItem from="1712827497442" duration="3001000" />
+      <workItem from="1712837727418" duration="1195000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>
@@ -217,7 +219,19 @@
       <option name="presentableId" value="LOCAL−00015" />
       <updated>1712830117974</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL−00016" summary="I'm going for lunch state machine on its way">
+      <created>1712830509024</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1712830509024</updated>
+    </task>
+    <task id="LOCAL−00017" summary="extra things">
+      <created>1712830523448</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1712830523448</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +280,8 @@
     <MESSAGE value="Reduced dash distance" />
     <MESSAGE value="Trying enemy movement" />
     <MESSAGE value="Adding meshes for enemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding meshes for enemy" />
+    <MESSAGE value="I'm going for lunch state machine on its way" />
+    <MESSAGE value="extra things" />
+    <option name="LAST_COMMIT_MESSAGE" value="extra things" />
   </component>
 </project>

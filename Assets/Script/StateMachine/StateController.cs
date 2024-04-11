@@ -10,7 +10,7 @@ public class StateController : MonoBehaviour
 {
     [SerializeField] private State defaultState;
 
-    private List<State> currentState;
+    [SerializeField]private List<State> currentState;
 
     private Queue<(State state, bool hardshift)> nextState;
 
@@ -25,6 +25,8 @@ public class StateController : MonoBehaviour
         
         currentState = new List<State>();
         nextState = new Queue<(State state, bool hardshift)>();
+        currentState.Add( Instantiate(defaultState));
+        currentState[0].OnEnter(this);
     }
 
     
@@ -68,6 +70,7 @@ public class StateController : MonoBehaviour
 
     public void Transistion(State newstate)
     {
+        Debug.Log("Wants to transistion");
         nextState.Enqueue((newstate, true)); 
         changeState = true;
     }
