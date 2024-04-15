@@ -9,6 +9,7 @@ public class AttackComboSO : ScriptableObject
     [SerializeField] private AnimatorOverrideController newAnims;
     [SerializeField] public int comboLength;
     [SerializeField] public AttackInfo[] attackInfos;
+    [SerializeField] public Effect weaponEffect;
 
     public GameObject Weapon => weapon;
     public AnimatorOverrideController NewAnims => newAnims;

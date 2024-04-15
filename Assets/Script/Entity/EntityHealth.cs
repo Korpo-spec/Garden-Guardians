@@ -1,9 +1,11 @@
 
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Script.Entity
 {
+    [RequireComponent(typeof(EffectManager))]
     public class EntityHealth : MonoBehaviour
     {
         //[Tooltip("Optional int variable that can be put in, if this is empty it will use the int")] [SerializeField]
@@ -33,8 +35,13 @@ namespace Script.Entity
         /// </summary>
         private bool _isDead = false;
 
-        
-        
+        [HideInInspector] public EffectManager effectManager;
+
+
+        private void Awake()
+        {
+            effectManager = GetComponent<EffectManager>();
+        }
 
         void Start()
         {

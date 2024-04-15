@@ -25,6 +25,7 @@ public class EntityAttack : MonoBehaviour
 
     public void Attack(int comboIndex)
     {
+        //Handle slash effect
         Debug.Log("Attack");
         if (weapon.attackInfos[comboIndex].slashEffect != null)
         {
@@ -43,6 +44,8 @@ public class EntityAttack : MonoBehaviour
                 g.transform.parent = transform;
             }
         }
+        
+        // Handle effects and damage
         //weapon.comboDamage[comboIndex];
         Collider[] colliders = Physics.OverlapBox(weapon.attackInfos[comboIndex].colliderInfo.center + transform.position, weapon.attackInfos[comboIndex].colliderInfo.halfsize, Quaternion.identity);
         foreach (var collider in colliders)
@@ -59,12 +62,7 @@ public class EntityAttack : MonoBehaviour
                 {
                     Instantiate(weapon.attackInfos[comboIndex].hitEffect, collider.transform.position, Quaternion.identity);
                 }
-
-                
-
             }
-
-            
         }
         
     }
