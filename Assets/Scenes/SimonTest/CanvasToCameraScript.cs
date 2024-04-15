@@ -10,7 +10,7 @@ public class CanvasToCameraScript : MonoBehaviour
     void Start()
     {
         camera = Instantiate(camera) as GameObject;
-        camera.renderMode = RenderMode.ScreenSpaceCamera;
+        //camera.renderMode = RenderMode.ScreenSpaceCamera;
     }
 
     // Update is called once per frame
