@@ -62,6 +62,11 @@ public class EntityAttack : MonoBehaviour
                 {
                     Instantiate(weapon.attackInfos[comboIndex].hitEffect, collider.transform.position, Quaternion.identity);
                 }
+
+                if (weapon.weaponEffect)
+                {
+                    health.effectManager.AddEffect(weapon.weaponEffect);
+                }
             }
         }
         

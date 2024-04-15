@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Mushroom
   m_EditorClassIdentifier: 
   name: Mushroom
-  amount: 1
+  amountInStack: 0
+  value: 1
   icon: {fileID: 21300000, guid: ea8f56c43254d41728f5ac4e8299b6c9, type: 3}

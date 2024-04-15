@@ -39,7 +39,6 @@ public class GrowShader : MonoBehaviour
                 {
                  GrowMeshes[i].materials[j].SetFloat(GrowID,RandomGrowStart);   
                  GrowMaterials.Add(GrowMeshes[i].materials[j]);
-                 Debug.Log("added");
                 }
                 
             } 

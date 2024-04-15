@@ -847,6 +847,7 @@ GameObject:
   - component: {fileID: 5525573922375719498}
   - component: {fileID: 7546304874296760914}
   - component: {fileID: 7103959323214045947}
+  - component: {fileID: 1165451953649785648}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -983,7 +984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b136a30f020853947b3fe093bc9b38f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 200
   transformHealthDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325,
     type: 2}
   destroyOnKill: 1
@@ -998,6 +999,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   spawnOnDestroy: {fileID: 0}
+  effectManager: {fileID: 0}
 --- !u!114 &4205534073432884127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,6 +1060,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackWindup: 0.2
   meshParent: {fileID: 545682315351394890}
+--- !u!114 &1165451953649785648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545682315351394890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77233ccb59c29eb4dbb4412bfe9e11db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeEffects: []
 --- !u!1 &545682315351394892
 GameObject:
   m_ObjectHideFlags: 0
