@@ -32,7 +32,11 @@ public class Effect : ScriptableObject
 
     public virtual void Enter(EffectManager obj)
     {
-        ParticleSystem = Instantiate(ParticleSystem, obj.transform, false);
+        if (ParticleSystem)
+        {
+            ParticleSystem = Instantiate(ParticleSystem, obj.transform, false);
+        }
+ 
     }
 
     public virtual void OnReapply()
