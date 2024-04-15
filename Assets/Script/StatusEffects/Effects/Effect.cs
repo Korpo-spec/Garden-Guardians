@@ -6,7 +6,7 @@ using UnityEngine;
 [System.Serializable]
 public class Effect : ScriptableObject
 {
-    public string name;
+    public new string name;
     protected float time;
     public float duration;
     public GameObject ParticleSystem;
