@@ -54,12 +54,14 @@ public class EnemyAttackState : State
         if (_attackSpeed > _time)
         {
             _time += Time.deltaTime;
+            
             return;
         }
         
         if (_attackRange >= Vector3.Distance(_controller.transform.position.RemoveY(), _target.position.RemoveY()))
         {
             _attackModule.Attack(_animator);
+            _animator.SetTrigger("Recover");
             _time = 0;
         }
         else
