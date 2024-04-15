@@ -28,6 +28,7 @@ public class EnemyAttackState : State
         _colliders = new Collider[15];
         _movement = controller.GetComponent<EntityMovement>();
         _animator = controller.GetComponent<Animator>();
+        _time = _attackSpeed + 1;
         int amount = Physics.OverlapSphereNonAlloc(_controller.transform.position, _radius, _colliders, _mask);
 
         for (int i = 0; i < amount; i++)

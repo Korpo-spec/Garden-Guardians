@@ -48,7 +48,7 @@ namespace Script.PlayerMovement
             }
             
             // Show how many stamina point you have
-            if (staminaPoints > 0)
+            if (staminaPoints > 0 && point1)
             {
                 point1.SetActive(true);
             }
@@ -57,7 +57,7 @@ namespace Script.PlayerMovement
                 point1.SetActive(false);
             }
             
-            if (staminaPoints > 1)
+            if (staminaPoints > 1 && point2)
             {
                 point2.SetActive(true);
             }
