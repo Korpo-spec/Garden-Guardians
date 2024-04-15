@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Removed onödig set trigger">
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed canvas">
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Inventory.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Inventory/Inventory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Inventory/Inventory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Inventory/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Inventory/Item.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SimonTest/CanvasToCameraScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SimonTest/CanvasToCameraScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SimonTest/SimonTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SimonTest/SimonTestScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,18 +19,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/FBX/Shell.controller" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Scenes/SimonTest/CanvasToCameraScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Editor/EntityAttackEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EnemyAttackState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EnemyTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EntityFaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/EntityMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ExtensionMethods/ExtendVectors.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Inventory/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/OldNotReworkedScripts/PrepareAttack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Script/PlayerMovement/AttackModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerMovement/SO/PlayerMovementStats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/States/AttackState.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/States/AttackState.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2eaKWJi52qP0Gb5HSrXFVupBGC4" />
@@ -246,7 +248,13 @@
       <option name="presentableId" value="LOCAL−00020" />
       <updated>1712842320798</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL−00021" summary="Fixed canvas">
+      <created>1713169935174</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1713169935174</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +308,7 @@
     <MESSAGE value="Enemy walking towards you" />
     <MESSAGE value="First iteration enemy" />
     <MESSAGE value="Removed onödig set trigger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed onödig set trigger" />
+    <MESSAGE value="Fixed canvas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed canvas" />
   </component>
 </project>
