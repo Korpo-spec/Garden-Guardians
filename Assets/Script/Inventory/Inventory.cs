@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] private int maxInventorySize;
-    private List<Item> Items;
+    private List<Item> Items=new List<Item>();
     public bool AddItem(Item item)
     {
         

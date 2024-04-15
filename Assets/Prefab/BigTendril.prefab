@@ -2668,6 +2668,7 @@ GameObject:
   - component: {fileID: 6972609897131789715}
   - component: {fileID: 631924249309725807}
   - component: {fileID: 2472931452348656689}
+  - component: {fileID: 3901618079991813881}
   m_Layer: 0
   m_Name: BigTendril
   m_TagString: Untagged
@@ -2764,6 +2765,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 3901618079991813881}
+          m_TargetAssemblyTypeName: EntityDrop, Assembly-CSharp
+          m_MethodName: Drop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   spawnOnDestroy: {fileID: 0}
 --- !u!114 &631924249309725807
 MonoBehaviour:
@@ -2796,6 +2809,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.24, z: -0.45}
+--- !u!114 &3901618079991813881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8440356997934613553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d59a344f0262a84eadd1466ec156706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DropList:
+  - GameObject: {fileID: 3165748147989574631, guid: 0619488df09c81644a7b94b0d075d5e0,
+      type: 3}
+    dropChance: 100
 --- !u!1 &8489619610052081663
 GameObject:
   m_ObjectHideFlags: 0

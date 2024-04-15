@@ -2241,6 +2241,7 @@ GameObject:
   - component: {fileID: 628604204669265699}
   - component: {fileID: 927689100175718382}
   - component: {fileID: 5683531515325901090}
+  - component: {fileID: -638426140864839371}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -2335,6 +2336,10 @@ MonoBehaviour:
   dashKey: 101
   isDashing: 0
   attackButtonPressed: 0
+  staminaPoints: 0
+  staminaPointMax: 0
+  point1: {fileID: 0}
+  point2: {fileID: 0}
 --- !u!114 &8677088907972969173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2428,6 +2433,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faction: 0
+--- !u!114 &-638426140864839371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938287593342238401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef43ca496a2e7544b0c5d6de43270ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxInventorySize: 10
 --- !u!1 &8106037427702051965
 GameObject:
   m_ObjectHideFlags: 0
