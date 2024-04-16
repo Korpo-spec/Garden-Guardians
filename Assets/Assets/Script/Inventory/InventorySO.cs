@@ -33,6 +33,12 @@ public class InventorySO : ScriptableObject
         return true;
     }
 
+    public void ChangeItemPlaceInInventory(int newIndex)
+    {
+        itemsSlots.Swap(0,newIndex);
+    }
+    
+
     private void AdjustSize()
     {
         itemsSlots ??= new List<InventorySlot>();

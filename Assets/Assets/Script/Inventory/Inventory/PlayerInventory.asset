@@ -15,13 +15,13 @@ MonoBehaviour:
   maxInventorySize: 8
   itemsSlots:
   - itemStack:
-      _item: {fileID: 11400000, guid: a50a78ee91f797b40beb264d3b599afc, type: 2}
-      numberOfItemsInStack: 3
-    active: 1
+      _item: {fileID: 0}
+      numberOfItemsInStack: 0
+    active: 0
   - itemStack:
-      _item: {fileID: 11400000, guid: aa6cb613da9fa4d4494d0a3e697d18fd, type: 2}
-      numberOfItemsInStack: 2
-    active: 1
+      _item: {fileID: 0}
+      numberOfItemsInStack: 0
+    active: 0
   - itemStack:
       _item: {fileID: 0}
       numberOfItemsInStack: 0
