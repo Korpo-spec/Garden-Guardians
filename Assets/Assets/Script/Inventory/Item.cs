@@ -6,11 +6,7 @@ using UnityEngine.Serialization;
 public class Item : ScriptableObject
 {
     public new string name;
-    public int amountInStack;
     public int value;
-    public readonly int stackSize=8;
-    public bool isFull => amountInStack >= stackSize;
-
     public Sprite icon;
 
 }

@@ -9,7 +9,7 @@ using UnityEngine;
 public class InventorySO : ScriptableObject
 {
     [SerializeField] private int maxInventorySize;
-    private List<InventorySlot> itemsSlots=new List<InventorySlot>();
+    [SerializeField]private List<InventorySlot> itemsSlots;
     public bool AddItem(Item item)
     {
         
@@ -17,15 +17,15 @@ public class InventorySO : ScriptableObject
         {
             if (!itemsSlots[i].active)
             {
-                itemsSlots[i].Item = item;
+                itemsSlots[i].itemStack._item = item;
                 itemsSlots[i].active = true;
             }
-            if (itemsSlots[i].Item.name == item.name)
-            {
-                if (itemsSlots[i].Item.isFull) return false;
+            if (itemsSlots[i].itemStack._item.name == item.name)
+            { 
+                if (itemsSlots[i].itemStack.isFull) return false;
                 
-                itemsSlots[i].Item.amountInStack += item.value;
-                Debug.Log(item.amountInStack);
+                itemsSlots[i].itemStack.numberOfItemsInStack += item.value;
+                Debug.Log(itemsSlots[i].itemStack.numberOfItemsInStack);
                 return true;
             }
         }
