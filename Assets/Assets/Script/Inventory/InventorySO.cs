@@ -10,6 +10,7 @@ public class InventorySO : ScriptableObject
 {
     [SerializeField] private int maxInventorySize;
     [SerializeField]private List<InventorySlot> itemsSlots;
+    
     public bool AddItem(Item item)
     {
         
@@ -33,10 +34,49 @@ public class InventorySO : ScriptableObject
         return true;
     }
 
-    public void ChangeItemPlaceInInventory(int newIndex)
+    public bool TryAddItem(Item item)
     {
-        itemsSlots.Swap(0,newIndex);
+        
+        //loop to check if there is an item of that type if there is add amount to the stack if not full
+        for (int i = 0; i < itemsSlots.Count; i++)
+        {
+            if (itemsSlots[i].itemStack.isFull||itemsSlots[i].itemStack._item==null)
+            {
+                continue;
+            }
+            if (itemsSlots[i].itemStack._item.name == item.name)
+            {
+                itemsSlots[i].itemStack.numberOfItemsInStack += item.value;
+                Debug.Log(itemsSlots[i].itemStack.numberOfItemsInStack);
+                
+                return true;
+            }
+            
+            
+        }
+        
+        
+        //loop to check if there is an empty spot to add a new item
+        for (int i = 0; i < itemsSlots.Count; i++)
+        {
+            
+            if (itemsSlots[i].itemStack._item==null)
+            {
+                itemsSlots[i].itemStack._item = item;
+                itemsSlots[i].itemStack.numberOfItemsInStack += item.value;
+                return true;
+            }
+        }
+
+        return false;
     }
+    
+
+    public void ChangeItemPlaceInInventory(int activeindex,int newIndex)
+    {
+        itemsSlots.Swap(activeindex,newIndex);
+    }
+    
     
 
     private void AdjustSize()

@@ -33,7 +33,7 @@ public class GameItem : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
-            if (other.GetComponent<InventoryHolder>().Inventory.AddItem(ItemData))
+            if (other.GetComponent<InventoryHolder>().Inventory.TryAddItem(ItemData))
             {
                 Destroy(gameObject);
             }

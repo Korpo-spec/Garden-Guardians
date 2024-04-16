@@ -13,5 +13,7 @@ public class ItemStack
   public readonly int maxStackSize=8;
   
   public bool isFull => numberOfItemsInStack >= maxStackSize;
+  
+  public bool isEmpty=>numberOfItemsInStack<=0;
 
 }

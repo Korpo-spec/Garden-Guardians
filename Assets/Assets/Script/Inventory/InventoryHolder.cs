@@ -11,7 +11,7 @@ public class InventoryHolder : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            Inventory.ChangeItemPlaceInInventory(3);
+            Inventory.ChangeItemPlaceInInventory(0,3);
         }
     }
 }
