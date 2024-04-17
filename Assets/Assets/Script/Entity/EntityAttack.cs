@@ -3,20 +3,39 @@ using System.Collections;
 using System.Collections.Generic;
 using Script;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class EntityAttack : MonoBehaviour
 {
     private Animator animator;
     [SerializeField] private int animatorLayer = 1;
-    [SerializeField] public AttackComboSO weapon;
+    [SerializeField] private AttackComboSO _weapon;
     [SerializeField] private TransformHealthDictionary targetDictionary;
     [SerializeField] private Transform mainHand;
+
+    public AttackComboSO weapon
+    {
+        get => _weapon;
+        set
+        {
+            
+            _weapon = value;
+            
+            mainHand.Find(value.Weapon.name).gameObject.SetActive(true);
+        }
+    }
+    public event Action<AttackComboSO> OnWeaponChange;
     
     [Header("DEBUG OPTIONS")]
     [SerializeField] public bool activateDebug = false;
     [Range(0, 2)][SerializeField] public int comboIndex = 0;
 
     private EntityMovement _movement;
+
+    private void Awake()
+    {
+        weapon = _weapon;
+    }
 
     private void Start()
     {
@@ -27,7 +46,7 @@ public class EntityAttack : MonoBehaviour
     {
         //Handle slash effect
         Debug.Log("Attack");
-        if (weapon.attackInfos[comboIndex].slashEffect != null)
+        if (_weapon.attackInfos[comboIndex].slashEffect != null)
         {
            
             
@@ -37,8 +56,8 @@ public class EntityAttack : MonoBehaviour
                 if (!child.CompareTag("Weapon")) continue;
                 Debug.Log("Slash effect");
                 
-                GameObject g = Instantiate(weapon.attackInfos[comboIndex].slashEffect, child.position, Quaternion.Euler(0,0,0), child);
-                g.transform.localRotation = Quaternion.Euler(weapon.attackInfos[comboIndex].useCustomRot ? weapon.attackInfos[comboIndex].customRot :new Vector3(-313.194489f,181.419785f,83.6417999f));
+                GameObject g = Instantiate(_weapon.attackInfos[comboIndex].slashEffect, child.position, Quaternion.Euler(0,0,0), child);
+                g.transform.localRotation = Quaternion.Euler(_weapon.attackInfos[comboIndex].useCustomRot ? _weapon.attackInfos[comboIndex].customRot :new Vector3(-313.194489f,181.419785f,83.6417999f));
                 g.transform.localScale = new Vector3(0.01453377f, 0.01453377f, 0.01453377f);
                 child.DetachChildren();
                 g.transform.parent = transform;
@@ -47,7 +66,7 @@ public class EntityAttack : MonoBehaviour
         
         // Handle effects and damage
         //weapon.comboDamage[comboIndex];
-        Collider[] colliders = Physics.OverlapBox(weapon.attackInfos[comboIndex].colliderInfo.center + transform.position, weapon.attackInfos[comboIndex].colliderInfo.halfsize, Quaternion.identity);
+        Collider[] colliders = Physics.OverlapBox(_weapon.attackInfos[comboIndex].colliderInfo.center + transform.position, _weapon.attackInfos[comboIndex].colliderInfo.halfsize, Quaternion.identity);
         foreach (var collider in colliders)
         {
             if (collider.transform == transform)
@@ -57,15 +76,15 @@ public class EntityAttack : MonoBehaviour
 
             if (targetDictionary.TryGetHealth(collider.transform, out var health))
             {
-                health.DamageUnit(weapon.attackInfos[comboIndex].damage);
-                if (weapon.attackInfos[comboIndex].hitEffect != null)
+                health.DamageUnit(_weapon.attackInfos[comboIndex].damage);
+                if (_weapon.attackInfos[comboIndex].hitEffect != null)
                 {
-                    Instantiate(weapon.attackInfos[comboIndex].hitEffect, collider.transform.position, Quaternion.identity);
+                    Instantiate(_weapon.attackInfos[comboIndex].hitEffect, collider.transform.position, Quaternion.identity);
                 }
 
-                if (weapon.weaponEffect)
+                if (_weapon.weaponEffect)
                 {
-                    health.effectManager.AddEffect(weapon.weaponEffect);
+                    health.effectManager.AddEffect(_weapon.weaponEffect);
                 }
             }
         }
@@ -82,14 +101,14 @@ public class EntityAttack : MonoBehaviour
     {
         int comboIndex = 0;
         float startTime = 0;
-        float timecoeficient = 1 / weapon.attackInfos[comboIndex].dashTime;
+        float timecoeficient = 1 / _weapon.attackInfos[comboIndex].dashTime;
         Vector3 dashvector = _movement.prevDirVector3;
-        float dashSpeed =  weapon.attackInfos[comboIndex].dashLenght /weapon.attackInfos[comboIndex].dashTime;
+        float dashSpeed =  _weapon.attackInfos[comboIndex].dashLenght /_weapon.attackInfos[comboIndex].dashTime;
         _movement.canMove = false;
         while (startTime < 1)
         {
             startTime += Time.deltaTime * timecoeficient;
-            _movement.controller.Move(dashvector.normalized* (dashSpeed * Time.deltaTime *weapon.attackInfos[comboIndex].dashCurve.Evaluate(startTime)));
+            _movement.controller.Move(dashvector.normalized* (dashSpeed * Time.deltaTime *_weapon.attackInfos[comboIndex].dashCurve.Evaluate(startTime)));
             yield return new WaitForEndOfFrame();
         }
         _movement.canMove = true;
@@ -102,6 +121,6 @@ public class EntityAttack : MonoBehaviour
         {
             return;
         }
-        Gizmos.DrawCube(transform.position + weapon.attackInfos[comboIndex].colliderInfo.center, weapon.attackInfos[comboIndex].colliderInfo.halfsize);
+        Gizmos.DrawCube(transform.position + _weapon.attackInfos[comboIndex].colliderInfo.center, _weapon.attackInfos[comboIndex].colliderInfo.halfsize);
     }
 }

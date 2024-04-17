@@ -33,7 +33,7 @@ namespace Script.PlayerMovement
             }
             animator.SetTrigger("Combo"+comboState);
             timeSinceLastAttack = Time.time;
-            
+            weapon = animator.GetComponent<EntityAttack>().weapon;
             
             if (comboState < weapon.ComboLength-1)
             {

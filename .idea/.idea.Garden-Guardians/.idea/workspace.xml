@@ -5,19 +5,247 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed canvas">
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/VectorVariable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/VectorVariable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/VectorVariables.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/VectorVariables/WindDirection.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/VectorVariables/WindDirection.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_01_A.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_01_A.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_01_B.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_01_B.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_01_C.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_01_C.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_01_D.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_01_D.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_02_A.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_02_A.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_02_B.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_02_B.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_02_C.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_02_C.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_02_D.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_02_D.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_03_A.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_03_A.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_03_B.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_03_B.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_03_C.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_03_C.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_03_D.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_03_D.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_04_A.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_04_A.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_04_B.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_04_B.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_04_C.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_04_C.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_04_D.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Alternatives/Dungeon_Material_04_D.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeon_Material_01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeon_Material_01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeon_Material_02.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeon_Material_02.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeon_Material_03.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeon_Material_03.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeon_Material_04.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeon_Material_04.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeons_Material_Characters_01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Dungeons_Material_Characters_01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_Ice.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_Ice.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_Snow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_Snow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_TextureFloor.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_TextureFloor.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_TextureFloor_09.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_TextureFloor_09.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_TextureFloor_10.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_TextureFloor_10.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_TextureWalls.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_TextureWalls.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_Transparent.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeon_Material_Transparent.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeons_Material_Dust_Soft.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeons_Material_Dust_Soft.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeons_Material_Emmision.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeons_Material_Emmision.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeons_Material_Ghost_Soft.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeons_Material_Ghost_Soft.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeons_Material_Lava.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeons_Material_Lava.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeons_Texture_Ghost.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/Dungeons_Texture_Ghost.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_CandleFlame.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_CandleFlame.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Dirt.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Dirt.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Fog_Breakup.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Fog_Breakup.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Fog_Dark.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Fog_Dark.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Fog_Light.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Fog_Light.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_LightRay.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_LightRay.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Standard.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Standard.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Water.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Water.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Water_Sewer.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Materials/Misc/FX_Water_Sewer.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Axe_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Axe_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Crystal_Axe_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Crystal_Axe_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Crystal_DoubleSword_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Crystal_DoubleSword_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Cutlass_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Cutlass_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Goblin_Halberd_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Goblin_Halberd_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_HandAxe_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_HandAxe_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Ornate_Sword_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Ornate_Sword_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Shield_Ornate_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Models/SM_Wep_Shield_Ornate_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Axe_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Axe_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Crystal_Axe_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Crystal_Axe_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Crystal_DoubleSword_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Crystal_DoubleSword_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Cutlass_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Cutlass_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Goblin_Halberd_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Goblin_Halberd_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_HandAxe_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_HandAxe_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Ornate_Sword_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Ornate_Sword_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Shield_Ornate_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Prefabs/Weapons/SM_Wep_Shield_Ornate_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_01_A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_01_A.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_01_B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_01_B.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_01_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_01_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_01_D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_01_D.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_A.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_B.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_D.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_03_A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_03_A.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_03_B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_03_B.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_03_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_03_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_03_D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_03_D.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_A.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_B.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_D.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Dungeons_Texture_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Dungeons_Texture_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Dungeons_Texture_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Dungeons_Texture_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Dungeons_Texture_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Dungeons_Texture_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Dungeons_Texture_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Dungeons_Texture_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Emmisive.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Emmisive/Emmisive_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Emmisive/Emmisive_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Emmisive/Emmisive_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Emmisive/Emmisive_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Emmisive/Emmisive_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Emmisive/Emmisive_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Emmisive/Emmisive_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Emmisive/Emmisive_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeon_Fog_Breakup.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeon_Fog_Breakup.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Crystal_Metallic.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Crystal_Metallic.tif.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_mask.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_Ghosts.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_Ghosts.tif.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_Soft_Particle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_Soft_Particle.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_mask.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_09_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_09_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_09_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_09_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_09_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_09_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_09_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_09_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_09_normals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_09_normals.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_10_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_10_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_10_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_10_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_10_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_10_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_10_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_10_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_10_normals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PolygonDungeon/Textures/Misc/ExtraTiles/Dungeons_Texture_FloorTile_10_normals.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/Infectedprefabs/BigTendril.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/Infectedprefabs/BigTendril.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/Infectedprefabs/InfectedCorn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/Infectedprefabs/InfectedCorn.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/RegularProps/Prefab_ModularFenceBase01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/RegularProps/Prefab_ModularFenceBase01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/RegularProps/Prefab_WindMill.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/RegularProps/Prefab_WindMill.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/VFX/Slash.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/VFX/Slash.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerInputHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Combo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Combo.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/AttackModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/AttackModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/Fungus/EditorResources/FungusEditorResources.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Fungus/EditorResources/FungusEditorResources.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/Fungus/EditorResources/FungusEditorResources.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Fungus/EditorResources/FungusEditorResources.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +281,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\a21seber\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\a21seber\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\a21seber\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\b21cassa\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -129,6 +357,8 @@
       <workItem from="1713255276939" duration="2260000" />
       <workItem from="1713334856501" duration="3673000" />
       <workItem from="1713344279792" duration="3705000" />
+      <workItem from="1713354024572" duration="3000" />
+      <workItem from="1713354035426" duration="3259000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>
