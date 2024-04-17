@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class GameItem : MonoBehaviour
 {
-    public Item ItemData;
+    //public Item ItemData;
 
+    public ItemStack Stack;
+
+    [SerializeField]
     private SpriteRenderer _spriteRenderer;
 
     private Collider trigger;
@@ -20,7 +23,7 @@ public class GameItem : MonoBehaviour
 
     private void Start()
     {
-        _spriteRenderer.sprite = ItemData.icon;
+        _spriteRenderer.sprite = Stack._item.icon;
         
     }
 
@@ -33,11 +36,21 @@ public class GameItem : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
-            if (other.GetComponent<InventoryHolder>().Inventory.TryAddItem(ItemData))
+            if (other.GetComponent<InventoryHolder>().Inventory.TryAddItem(Stack))
             {
                 Destroy(gameObject);
             }
             
         }
+    }
+
+    private void OnValidate()
+    {
+        if (_spriteRenderer==null)
+        {
+            
+            TryGetComponent<SpriteRenderer>(out _spriteRenderer);
+        }
+        _spriteRenderer.sprite = Stack._item.icon;
     }
 }

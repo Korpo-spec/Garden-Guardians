@@ -46,7 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fe73dc443e69e45b0cc3bb0f596c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemData: {fileID: 11400000, guid: a50a78ee91f797b40beb264d3b599afc, type: 2}
+  Stack:
+    _item: {fileID: 11400000, guid: a50a78ee91f797b40beb264d3b599afc, type: 2}
+    numberOfItemsInStack: 2
+  _spriteRenderer: {fileID: 2858713900979754574}
 --- !u!212 &2858713900979754574
 SpriteRenderer:
   m_ObjectHideFlags: 0

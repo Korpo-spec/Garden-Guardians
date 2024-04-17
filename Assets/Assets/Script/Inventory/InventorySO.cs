@@ -9,24 +9,24 @@ using UnityEngine;
 public class InventorySO : ScriptableObject
 {
     [SerializeField] private int maxInventorySize;
-    [SerializeField]private List<InventorySlot> itemsSlots;
+    public List<InventorySlot> itemsSlots;
     
-    public bool AddItem(Item item)
+    public bool AddItem(ItemStack itemStack)
     {
         
         for (int i = 0; i < itemsSlots.Count; i++)
         {
             if (!itemsSlots[i].active)
             {
-                itemsSlots[i].itemStack._item = item;
+                itemsSlots[i].Stack._item = itemStack._item;
                 itemsSlots[i].active = true;
             }
-            if (itemsSlots[i].itemStack._item.name == item.name)
+            if (itemsSlots[i].Stack._item.name == itemStack._item.name)
             { 
-                if (itemsSlots[i].itemStack.isFull) return false;
+                if (itemsSlots[i].Stack.isFull) return false;
                 
-                itemsSlots[i].itemStack.numberOfItemsInStack += item.value;
-                Debug.Log(itemsSlots[i].itemStack.numberOfItemsInStack);
+                itemsSlots[i].Stack.numberOfItemsInStack += itemStack.numberOfItemsInStack;
+                Debug.Log(itemsSlots[i].Stack.numberOfItemsInStack);
                 return true;
             }
         }
@@ -34,20 +34,20 @@ public class InventorySO : ScriptableObject
         return true;
     }
 
-    public bool TryAddItem(Item item)
+    public bool TryAddItem(ItemStack itemStack)
     {
         
         //loop to check if there is an item of that type if there is add amount to the stack if not full
         for (int i = 0; i < itemsSlots.Count; i++)
         {
-            if (itemsSlots[i].itemStack.isFull||itemsSlots[i].itemStack._item==null)
+            if (itemsSlots[i].Stack.isFull||itemsSlots[i].Stack._item==null)
             {
                 continue;
             }
-            if (itemsSlots[i].itemStack._item.name == item.name)
+            if (itemsSlots[i].Stack._item.name == itemStack._item.name)
             {
-                itemsSlots[i].itemStack.numberOfItemsInStack += item.value;
-                Debug.Log(itemsSlots[i].itemStack.numberOfItemsInStack);
+                itemsSlots[i].Stack.numberOfItemsInStack += itemStack.numberOfItemsInStack;
+                Debug.Log(itemsSlots[i].Stack.numberOfItemsInStack);
                 
                 return true;
             }
@@ -60,10 +60,10 @@ public class InventorySO : ScriptableObject
         for (int i = 0; i < itemsSlots.Count; i++)
         {
             
-            if (itemsSlots[i].itemStack._item==null)
+            if (itemsSlots[i].Stack._item==null)
             {
-                itemsSlots[i].itemStack._item = item;
-                itemsSlots[i].itemStack.numberOfItemsInStack += item.value;
+                itemsSlots[i].Stack._item = itemStack._item;
+                itemsSlots[i].Stack.numberOfItemsInStack += itemStack.numberOfItemsInStack;
                 return true;
             }
         }

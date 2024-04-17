@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 public class Item : ScriptableObject
 {
     public new string name;
-    public int value;
+    //public int value;
     public Sprite icon;
 
 }
