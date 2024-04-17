@@ -10,29 +10,6 @@ public class InventorySO : ScriptableObject
 {
     [SerializeField] private int maxInventorySize;
     public List<InventorySlot> itemsSlots;
-    
-    public bool AddItem(ItemStack itemStack)
-    {
-        
-        for (int i = 0; i < itemsSlots.Count; i++)
-        {
-            if (!itemsSlots[i].active)
-            {
-                itemsSlots[i].Stack._item = itemStack._item;
-                itemsSlots[i].active = true;
-            }
-            if (itemsSlots[i].Stack._item.name == itemStack._item.name)
-            { 
-                if (itemsSlots[i].Stack.isFull) return false;
-                
-                itemsSlots[i].Stack.numberOfItemsInStack += itemStack.numberOfItemsInStack;
-                Debug.Log(itemsSlots[i].Stack.numberOfItemsInStack);
-                return true;
-            }
-        }
-
-        return true;
-    }
 
     public bool TryAddItem(ItemStack itemStack)
     {
@@ -40,21 +17,20 @@ public class InventorySO : ScriptableObject
         //loop to check if there is an item of that type if there is add amount to the stack if not full
         for (int i = 0; i < itemsSlots.Count; i++)
         {
-            if (itemsSlots[i].Stack.isFull||itemsSlots[i].Stack._item==null)
+            if (itemsSlots[i].Stack.isFull||itemsSlots[i].Stack._item==null||!itemsSlots[i].Stack._item.isStackable)
             {
                 continue;
             }
             if (itemsSlots[i].Stack._item.name == itemStack._item.name)
             {
-                itemsSlots[i].Stack.numberOfItemsInStack += itemStack.numberOfItemsInStack;
-                Debug.Log(itemsSlots[i].Stack.numberOfItemsInStack);
                 
+                increaseAmountInstack(i,itemStack.numberOfItemsInStack,itemStack);
+
                 return true;
             }
             
             
         }
-        
         
         //loop to check if there is an empty spot to add a new item
         for (int i = 0; i < itemsSlots.Count; i++)
@@ -63,12 +39,41 @@ public class InventorySO : ScriptableObject
             if (itemsSlots[i].Stack._item==null)
             {
                 itemsSlots[i].Stack._item = itemStack._item;
-                itemsSlots[i].Stack.numberOfItemsInStack += itemStack.numberOfItemsInStack;
+                
+                
+                increaseAmountInstack(i,itemStack.numberOfItemsInStack,itemStack);
                 return true;
             }
         }
 
         return false;
+    }
+
+    private void increaseAmountInstack(int index,int amount,ItemStack itemStack)
+    {
+        
+        itemsSlots[index].Stack.numberOfItemsInStack += amount;
+
+        if (itemsSlots[index].Stack.numberOfItemsInStack>itemsSlots[index].Stack.maxStackSize)
+        {
+            
+            var rest = amount - itemsSlots[index].Stack.maxStackSize;
+            
+            itemsSlots[index].Stack.numberOfItemsInStack = itemsSlots[index].Stack.maxStackSize;
+
+            for (int i = 0; i < itemsSlots.Count; i++)
+            {
+                if (!itemsSlots[i].Stack._item) { continue; }
+                
+                
+                if(itemsSlots[i].Stack._item.name == itemStack._item.name&&!itemsSlots[i].Stack.isFull)
+                {
+                    increaseAmountInstack(i,rest,itemStack);
+                    
+                }
+            }
+            
+        }
     }
     
 
