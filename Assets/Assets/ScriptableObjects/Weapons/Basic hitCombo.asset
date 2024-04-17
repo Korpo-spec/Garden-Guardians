@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c33e65d84a874a24b8ada08c8cf192a0, type: 3}
-  m_Name: Combo
+  m_Name: Basic hitCombo
   m_EditorClassIdentifier: 
-  weapon: {fileID: 197142, guid: eca7ededb3db2234c90bef2213ce5799, type: 3}
+  weapon: {fileID: 164944, guid: 9695911e504498140aa7aeea19670d11, type: 3}
   newAnims: {fileID: 0}
-  comboLength: 3
+  comboLength: 2
   attackInfos:
   - damage: 5
     colliderInfo:
@@ -66,43 +66,6 @@ MonoBehaviour:
       type: 3}
     dashLenght: 1.5
     dashTime: 0.3
-    dashCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 2
-        outSlope: 2
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  - damage: 5
-    colliderInfo:
-      center: {x: 0, y: 0.69572735, z: -1.2169394}
-      halfsize: {x: 2, y: 1.011486, z: 2}
-      isTrigger: 0
-    slashEffect: {fileID: 8991263633043074940, guid: b30c61307f93fb848afcdf97b9178ad6,
-      type: 3}
-    useCustomRot: 1
-    customRot: {x: -305.9226, y: 193.32297, z: 223.14629}
-    hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
-      type: 3}
-    dashLenght: 3
-    dashTime: 0.5
     dashCurve:
       serializedVersion: 2
       m_Curve:

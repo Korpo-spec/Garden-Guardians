@@ -8,6 +8,7 @@ using UnityEngine.Serialization;
 public class EntityAttack : MonoBehaviour
 {
     private Animator animator;
+    private RuntimeAnimatorController _originalController;
     [SerializeField] private int animatorLayer = 1;
     [SerializeField] private AttackComboSO _weapon;
     [SerializeField] private TransformHealthDictionary targetDictionary;
@@ -18,10 +19,26 @@ public class EntityAttack : MonoBehaviour
         get => _weapon;
         set
         {
+
+            Transform g = mainHand.Find(value.Weapon.name);
+            if (g)
+            {
+                g.gameObject.SetActive(false);
+            }
             
             _weapon = value;
             
             mainHand.Find(value.Weapon.name).gameObject.SetActive(true);
+            if (weapon.NewAnims)
+            {
+                animator.runtimeAnimatorController = _weapon.NewAnims;
+            }
+            else
+            {
+                animator.runtimeAnimatorController = _originalController;
+            }
+            
+            OnWeaponChange?.Invoke(value);
         }
     }
     public event Action<AttackComboSO> OnWeaponChange;
@@ -34,6 +51,9 @@ public class EntityAttack : MonoBehaviour
 
     private void Awake()
     {
+        
+        animator = GetComponent<Animator>();
+        _originalController = animator.runtimeAnimatorController;
         weapon = _weapon;
     }
 
@@ -102,6 +122,7 @@ public class EntityAttack : MonoBehaviour
         int comboIndex = 0;
         float startTime = 0;
         float timecoeficient = 1 / _weapon.attackInfos[comboIndex].dashTime;
+        Debug.Log(_movement);
         Vector3 dashvector = _movement.prevDirVector3;
         float dashSpeed =  _weapon.attackInfos[comboIndex].dashLenght /_weapon.attackInfos[comboIndex].dashTime;
         _movement.canMove = false;
