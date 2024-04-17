@@ -24,9 +24,8 @@ public class InventorySO : ScriptableObject
             if (itemsSlots[i].Stack._item.name == itemStack._item.name)
             {
                 
-                increaseAmountInstack(i,itemStack.numberOfItemsInStack,itemStack);
-
-                return true;
+                return increaseAmountInstack(i,itemStack.numberOfItemsInStack,itemStack);
+                
             }
             
             
@@ -41,15 +40,14 @@ public class InventorySO : ScriptableObject
                 itemsSlots[i].Stack._item = itemStack._item;
                 
                 
-                increaseAmountInstack(i,itemStack.numberOfItemsInStack,itemStack);
-                return true;
+                return increaseAmountInstack(i,itemStack.numberOfItemsInStack,itemStack);
             }
         }
 
         return false;
     }
 
-    private void increaseAmountInstack(int index,int amount,ItemStack itemStack)
+    private bool increaseAmountInstack(int index,int amount,ItemStack itemStack)
     {
         
         itemsSlots[index].Stack.numberOfItemsInStack += amount;
@@ -57,23 +55,50 @@ public class InventorySO : ScriptableObject
         if (itemsSlots[index].Stack.numberOfItemsInStack>itemsSlots[index].Stack.maxStackSize)
         {
             
-            var rest = amount - itemsSlots[index].Stack.maxStackSize;
+            var rest = itemsSlots[index].Stack.numberOfItemsInStack - itemsSlots[index].Stack.maxStackSize;
             
             itemsSlots[index].Stack.numberOfItemsInStack = itemsSlots[index].Stack.maxStackSize;
-
+            
             for (int i = 0; i < itemsSlots.Count; i++)
             {
                 if (!itemsSlots[i].Stack._item) { continue; }
                 
-                
                 if(itemsSlots[i].Stack._item.name == itemStack._item.name&&!itemsSlots[i].Stack.isFull)
                 {
-                    increaseAmountInstack(i,rest,itemStack);
+                    itemsSlots[i].Stack.numberOfItemsInStack += rest;
+                    if (itemsSlots[i].Stack.numberOfItemsInStack<=itemStack.maxStackSize)
+                    {
+                        return true;
+                    }
+                    rest = itemsSlots[i].Stack.numberOfItemsInStack - itemsSlots[i].Stack.maxStackSize;
                     
+                    itemsSlots[i].Stack.numberOfItemsInStack = itemsSlots[i].Stack.maxStackSize;
+
                 }
             }
-            
+
+            for (int i = 0; i < itemsSlots.Count; i++)
+            {
+
+                if (!itemsSlots[i].Stack._item)
+                {
+                    itemsSlots[i].Stack._item = itemStack._item;
+                    itemsSlots[i].Stack.numberOfItemsInStack += rest;
+                    if (itemsSlots[i].Stack.numberOfItemsInStack<=itemStack.maxStackSize)
+                    {
+                        return true;
+                    }
+                    rest = itemsSlots[i].Stack.numberOfItemsInStack - itemsSlots[i].Stack.maxStackSize;
+                    itemsSlots[i].Stack.numberOfItemsInStack = itemsSlots[i].Stack.maxStackSize;
+                }
+                
+            }
+
+            itemStack.numberOfItemsInStack = rest;
+
         }
+        
+        return false;
     }
     
 

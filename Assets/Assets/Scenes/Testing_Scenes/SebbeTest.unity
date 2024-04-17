@@ -1906,6 +1906,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2491025551550483678, guid: 0619488df09c81644a7b94b0d075d5e0,
+        type: 3}
+      propertyPath: Stack.numberOfItemsInStack
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1469985219597893746, guid: 0619488df09c81644a7b94b0d075d5e0,
         type: 3}
       propertyPath: m_RootOrder
