@@ -2669,6 +2669,7 @@ GameObject:
   - component: {fileID: 631924249309725807}
   - component: {fileID: 2472931452348656689}
   - component: {fileID: 3901618079991813881}
+  - component: {fileID: 4821999977212216752}
   m_Layer: 0
   m_Name: BigTendril
   m_TagString: Untagged
@@ -2778,6 +2779,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   spawnOnDestroy: {fileID: 0}
+  effectManager: {fileID: 0}
 --- !u!114 &631924249309725807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2834,6 +2836,19 @@ MonoBehaviour:
   - GameObject: {fileID: 3165748147989574631, guid: 9a34e2aceb96a0d4ea91b3a57e5fcbd0,
       type: 3}
     dropChance: 50
+--- !u!114 &4821999977212216752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8440356997934613553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77233ccb59c29eb4dbb4412bfe9e11db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeEffects: []
 --- !u!1 &8489619610052081663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3099,6 +3114,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BlightMaterialhandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609776741267371529, guid: 62e06ba861b7d8d499b302c9ae9c8160,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459065603653070835, guid: 62e06ba861b7d8d499b302c9ae9c8160,
         type: 3}

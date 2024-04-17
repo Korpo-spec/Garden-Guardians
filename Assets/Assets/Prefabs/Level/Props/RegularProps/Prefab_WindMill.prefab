@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2883507092954973783}
+  - component: {fileID: 3698654100433968378}
   m_Layer: 0
   m_Name: Prefab_WindMill
   m_TagString: Untagged
@@ -33,6 +34,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &3698654100433968378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544418069964840173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01188416ab1b667409941e154bba640a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windDirection: {fileID: 11400000, guid: 2644e4094fceebf4d8d5764a42e17d35, type: 2}
+  turnTransform: {fileID: 83230577314698991}
+  RotationGroup: {fileID: 850370280593171525}
+  windSpeed: 1
 --- !u!1 &3783081797684215838
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +322,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8252675178309123753}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.11667088, z: -0, w: -0.9931707}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -314,4 +331,4 @@ Transform:
   - {fileID: 272606744136692240}
   m_Father: {fileID: 2883507092954973783}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 346.6, z: 0}
