@@ -19,7 +19,7 @@ namespace Script.PlayerMovement
         [SerializeField] private int staminaPointMax;
 
         private int timer;
-        private int resetTime = 300;
+        private int resetTime = 210;
 
         [SerializeField] private GameObject point1;
 
