@@ -13,5 +13,10 @@ public class InventoryHolder : MonoBehaviour
         {
             Inventory.ChangeItemPlaceInInventory(0,3);
         }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            Inventory.ThrowActiveItem();
+        }
     }
 }

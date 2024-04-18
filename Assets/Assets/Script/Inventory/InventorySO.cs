@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Script;
 using UnityEngine;
 
@@ -105,6 +106,37 @@ public class InventorySO : ScriptableObject
     public void ChangeItemPlaceInInventory(int activeindex,int newIndex)
     {
         itemsSlots.Swap(activeindex,newIndex);
+    }
+
+    public void ThrowActiveItem()
+    {
+        var activeItemslot = FindActiveInvSlot();
+        
+        Debug.Log(activeItemslot.Stack._item.name);
+    }
+
+    public bool HasItem(ItemStack itemStack, bool CheckNumberOfItems=false)
+    {
+        var itemSlot = FindSlot(itemStack._item);
+        if (itemSlot==null)  return false;
+        if (!CheckNumberOfItems) return true;
+
+        if (itemStack._item.isStackable)
+        {
+            return itemSlot.NumberOfItems >= itemStack.numberOfItemsInStack;
+        }
+
+        return itemsSlots.Count(slot => slot.Stack._item == itemStack._item) >= itemStack.numberOfItemsInStack;
+    }
+
+    private InventorySlot FindSlot(Item item, bool onlyStackable=false)
+    {
+        return itemsSlots.FirstOrDefault(slot => slot.Stack._item == item && item.isStackable || !onlyStackable);
+    }
+
+    private InventorySlot FindActiveInvSlot()
+    {
+        return itemsSlots.Find(slot => slot.active);
     }
     
     
