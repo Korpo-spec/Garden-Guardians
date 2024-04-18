@@ -18,10 +18,10 @@ public static class ExtendedList
         list[index1] = list[index2];
         list[index2] = temp;
     }
-    public static void Swap<T>(this List<T> list,List<T> To, int index1, int index2)
+    public static void Swap<T>(this List<T> list,List<T> To, int fromIndex, int ToIndex)
     {
-        T temp = list[index1];
-        list[index1] = To[index2];
-        To[index2] = temp;
+        T temp = list[fromIndex];
+        list[fromIndex] = To[ToIndex];
+        To[ToIndex] = temp;
     }
 }

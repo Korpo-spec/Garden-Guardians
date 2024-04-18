@@ -134,7 +134,7 @@ public class InventorySO : ScriptableObject
         return itemsSlots.FirstOrDefault(slot => slot.Stack._item == item && item.isStackable || !onlyStackable);
     }
 
-    private InventorySlot FindActiveInvSlot()
+    public InventorySlot FindActiveInvSlot()
     {
         return itemsSlots.Find(slot => slot.active);
     }

@@ -11,6 +11,11 @@ public class ActiveItemHandler : MonoBehaviour
    public event EventHandler <MouseWheelUpdateArg>MouseWheelUpdate;
 
 
+   private void Start()
+   {
+      _inventorySo.itemsSlots[0].active = true;
+   }
+
    private void Update()
    {
       chooseActiveItem();
