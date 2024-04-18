@@ -38,10 +38,7 @@ public class InventoryHolder : MonoBehaviour
     {
         
         var activeslot = Inventory.FindActiveInvSlot();
-        if (!activeslot.Stack._item)
-        {
-            return false;
-        }
+       
         var activeindex = 0;
         for (int i = 0; i < Inventory.itemsSlots.Count; i++)
         {
@@ -50,6 +47,13 @@ public class InventoryHolder : MonoBehaviour
                 activeindex = i;
                 break;
             }
+        }
+        
+        if (!activeslot.Stack._item)
+        {
+            Inventory.itemsSlots.Swap(weaponSlot.itemsSlots,activeindex,0);
+            GetComponent<EntityAttack>().weapon = null;
+            return false;
         }
         
         if (activeslot.Stack._item.itemType != ItemType.Equipment)

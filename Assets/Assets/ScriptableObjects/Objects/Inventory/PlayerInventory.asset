@@ -15,22 +15,22 @@ MonoBehaviour:
   maxInventorySize: 5
   itemsSlots:
   - itemStack:
+      _item: {fileID: 11400000, guid: c6fc9099ef1acae47a8aeea45ef67028, type: 2}
+      numberOfItemsInStack: 2
+    active: 1
+  - itemStack:
       _item: {fileID: 11400000, guid: 839607ddc64ac614e8e91b021e8ddfba, type: 2}
-      numberOfItemsInStack: 0
+      numberOfItemsInStack: 1
     active: 0
   - itemStack:
-      _item: {fileID: 0}
-      numberOfItemsInStack: 0
+      _item: {fileID: 11400000, guid: a50a78ee91f797b40beb264d3b599afc, type: 2}
+      numberOfItemsInStack: 8
     active: 0
   - itemStack:
-      _item: {fileID: 0}
-      numberOfItemsInStack: 0
+      _item: {fileID: 11400000, guid: a50a78ee91f797b40beb264d3b599afc, type: 2}
+      numberOfItemsInStack: 8
     active: 0
   - itemStack:
-      _item: {fileID: 0}
-      numberOfItemsInStack: 0
-    active: 0
-  - itemStack:
-      _item: {fileID: 0}
+      _item: {fileID: 11400000, guid: 839607ddc64ac614e8e91b021e8ddfba, type: 2}
       numberOfItemsInStack: 0
     active: 0
