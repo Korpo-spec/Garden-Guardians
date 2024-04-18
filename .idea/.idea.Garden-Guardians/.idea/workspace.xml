@@ -4,37 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Added new weapons">
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/Axe hitCombo1.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/Axe hitCombo1.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/Axe hitCombo2.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/Axe hitCombo2.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/Axe hitCombo3.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/Axe hitCombo3.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/SwordAirSlash.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/SwordAirSlash.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/Standing Melee Attack Horizontal.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/Standing Melee Attack Horizontal.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/Standing Melee Combo Attack Ver. 2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/Standing Melee Combo Attack Ver. 2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/Sword And Shield Slash (2).fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/Sword And Shield Slash (2).fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/AxeAirFinisher.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/AxeAirFinisher.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic SwordCombo.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic SwordCombo.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic hitCombo.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic hitCombo.asset.meta" afterDir="false" />
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/GameItem/Cutlass.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/GameItem/Cutlass.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/GameItem/WeaponAxe.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/GameItem/WeaponAxe.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerOverrideController.overrideController" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerOverrideController.overrideController" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Combo.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Combo.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NoneofOurStuff/PolygonDungeon/Prefabs/Weapons/SM_Wep_HandAxe_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NoneofOurStuff/PolygonDungeon/Prefabs/Weapons/SM_Wep_HandAxe_01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/GameItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/GameItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/GameItem/Mushroom/MushroomGameItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/GameItem/Mushroom/MushroomGameItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/PlayerInventory.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/PlayerInventory.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,27 +37,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\b21cassa\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\b21cassa\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.24f1\Editor\Unity.exe" />
@@ -147,7 +129,8 @@
       <workItem from="1713334856501" duration="3673000" />
       <workItem from="1713344279792" duration="3705000" />
       <workItem from="1713354024572" duration="3000" />
-      <workItem from="1713354035426" duration="6231000" />
+      <workItem from="1713354035426" duration="6691000" />
+      <workItem from="1713432029737" duration="1390000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>
@@ -281,7 +264,13 @@
       <option name="presentableId" value="LOCAL−00022" />
       <updated>1713357493022</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL−00023" summary="WeaponChanges working">
+      <created>1713361882301</created>
+      <option name="number" value="LOCAL−00023" />
+      <option name="presentableId" value="LOCAL−00023" />
+      <updated>1713361882301</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +326,7 @@
     <MESSAGE value="Removed onödig set trigger" />
     <MESSAGE value="Fixed canvas" />
     <MESSAGE value="Added new weapons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new weapons" />
+    <MESSAGE value="WeaponChanges working" />
+    <option name="LAST_COMMIT_MESSAGE" value="WeaponChanges working" />
   </component>
 </project>

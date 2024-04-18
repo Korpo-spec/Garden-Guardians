@@ -14,21 +14,24 @@ public class EntityAttack : MonoBehaviour
     [SerializeField] private TransformHealthDictionary targetDictionary;
     [SerializeField] private Transform mainHand;
 
+    private GameObject _currentWeapon;
+
     public AttackComboSO weapon
     {
         get => _weapon;
         set
         {
-
-            Transform g = mainHand.Find(value.Weapon.name);
-            if (g)
+            if (_currentWeapon)
             {
-                g.gameObject.SetActive(false);
+                _currentWeapon.SetActive(false);
             }
             
             _weapon = value;
             
-            mainHand.Find(value.Weapon.name).gameObject.SetActive(true);
+            
+            GameObject weaponObj = mainHand.Find(value.Weapon.name).gameObject;
+            weaponObj.SetActive(true);
+            _currentWeapon = weaponObj;
             if (weapon.NewAnims)
             {
                 animator.runtimeAnimatorController = _weapon.NewAnims;

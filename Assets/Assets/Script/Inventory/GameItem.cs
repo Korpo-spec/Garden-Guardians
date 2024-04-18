@@ -38,6 +38,10 @@ public class GameItem : MonoBehaviour
         {
             if (other.GetComponent<InventoryHolder>().Inventory.TryAddItem(Stack))
             {
+                if (Stack._item.itemType == ItemType.Equipment)
+                {
+                    other.GetComponent<EntityAttack>().weapon = Stack._item.equipment;
+                }
                 Destroy(gameObject);
             }
             

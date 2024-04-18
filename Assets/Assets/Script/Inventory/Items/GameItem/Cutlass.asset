@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b1b9d6a4b1a5b41b87630136bc6f06, type: 3}
+  m_Name: Cutlass
+  m_EditorClassIdentifier: 
+  name: Cutlass
+  icon: {fileID: 21300000, guid: ea8f56c43254d41728f5ac4e8299b6c9, type: 3}
+  isStackable: 0
+  itemType: 1
+  equipmentType: 0
+  equipment: {fileID: 11400000, guid: 172a09df0254674418a18163f3598505, type: 2}
