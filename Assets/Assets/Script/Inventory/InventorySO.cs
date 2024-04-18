@@ -95,10 +95,10 @@ public class InventorySO : ScriptableObject
             }
 
             itemStack.numberOfItemsInStack = rest;
-
+            return false;
         }
         
-        return false;
+        return true;
     }
     
 
