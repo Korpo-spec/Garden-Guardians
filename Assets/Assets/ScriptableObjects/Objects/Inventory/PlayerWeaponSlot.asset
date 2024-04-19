@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b567dcab7bbc3af4a92c4f22ae944223, type: 3}
   m_Name: PlayerWeaponSlot
   m_EditorClassIdentifier: 
-  maxInventorySize: 1
+  maxInventorySize: 2
   itemsSlots:
   - itemStack:
-      _item: {fileID: 11400000, guid: 839607ddc64ac614e8e91b021e8ddfba, type: 2}
-      numberOfItemsInStack: 2
+      _item: {fileID: 0}
+      numberOfItemsInStack: 0
     active: 1
+  - itemStack:
+      _item: {fileID: 11400000, guid: 678757e2225786041bdbc65d36ea461a, type: 2}
+      numberOfItemsInStack: 0
+    active: 0

@@ -52,7 +52,7 @@ public class InventoryHolder : MonoBehaviour
         if (!activeslot.Stack._item)
         {
             Inventory.itemsSlots.Swap(weaponSlot.itemsSlots,activeindex,0);
-            GetComponent<EntityAttack>().weapon = null;
+            GetComponent<EntityAttack>().weapon = weaponSlot.itemsSlots[1].Stack._item.equipment;
             return false;
         }
         

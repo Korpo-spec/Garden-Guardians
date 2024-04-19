@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33e65d84a874a24b8ada08c8cf192a0, type: 3}
+  m_Name: DefaultFist
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 141166, guid: 76e5869740b242247a097e9b9b65e634, type: 3}
+  newAnims: {fileID: 0}
+  comboLength: 2
+  attackInfos:
+  - damage: 5
+    colliderInfo:
+      center: {x: 0, y: 0.8057604, z: -0.7807358}
+      halfsize: {x: 1.5056758, y: 0.72962403, z: 2}
+      isTrigger: 0
+    slashEffect: {fileID: 8991263633043074940, guid: b30c61307f93fb848afcdf97b9178ad6,
+      type: 3}
+    useCustomRot: 0
+    customRot: {x: 0, y: 0, z: 0}
+    hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
+      type: 3}
+    dashLenght: 1.5
+    dashTime: 0.3
+    dashCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 3.6084905
+        outSlope: 3.6084905
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.033333335
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: -4.1239934
+        outSlope: -4.1239934
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.029166639
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  - damage: 5
+    colliderInfo:
+      center: {x: 0, y: 0.96961045, z: -0.68042135}
+      halfsize: {x: 1.2869751, y: 0.443927, z: 1.2869751}
+      isTrigger: 0
+    slashEffect: {fileID: 8991263633043074940, guid: b30c61307f93fb848afcdf97b9178ad6,
+      type: 3}
+    useCustomRot: 1
+    customRot: {x: 310.0831, y: 45.506184, z: 305.94098}
+    hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
+      type: 3}
+    dashLenght: 1.5
+    dashTime: 0.3
+    dashCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  weaponEffect: {fileID: 11400000, guid: 6effb13a0ecfb5b44b64c852435317f0, type: 2}
