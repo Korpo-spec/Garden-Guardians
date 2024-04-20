@@ -2,31 +2,63 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class GameItem : MonoBehaviour
 {
     //public Item ItemData;
 
-    public ItemStack Stack;
+    [FormerlySerializedAs("Stack")] public ItemStack stack;
 
-    [SerializeField]
-    private SpriteRenderer _spriteRenderer;
+    [FormerlySerializedAs("_spriteRenderer")] [SerializeField]
+    private SpriteRenderer spriteRenderer;
 
-    private Collider trigger;
+    private Collider _trigger;
 
+    [Header("Throw settings")]
+    [FormerlySerializedAs("TimeBeforeTriggerEnable")] [SerializeField] private float timeBeforeTriggerEnable = 1f;
+    private Rigidbody _thisrb;
+    [SerializeField] private float _throwGravity;
+    [SerializeField] private float _minXForce=3;
+    [SerializeField] private float _maxXForce=5;
+    
+    [SerializeField] private float _throwYForce=5;
 
     private void Awake()
     {
-        _spriteRenderer=GetComponent<SpriteRenderer>();
-        trigger = GetComponent<Collider>();
+        spriteRenderer=GetComponent<SpriteRenderer>();
+        _trigger = GetComponent<Collider>();
+        _thisrb = GetComponent<Rigidbody>();
+        _trigger.enabled = false;
     }
 
     private void Start()
     {
-        _spriteRenderer.sprite = Stack._item.icon;
-        
+        spriteRenderer.sprite = stack._item.icon;
+        StartCoroutine(EnableTrigger(timeBeforeTriggerEnable));
     }
 
+    private IEnumerator EnableTrigger(float time)
+    {
+        yield return new WaitForSeconds(time);
+        _trigger.enabled = true;
+    }
+
+    public void Throw(Vector3 direction)
+    {
+        _thisrb.useGravity = true;
+        var throwForce = Random.Range(_minXForce, _maxXForce);
+        _thisrb.velocity = new Vector3(direction.x, _throwYForce, direction.z)*throwForce;
+        StartCoroutine(DisableGravity(throwForce));
+    }
+
+    private IEnumerator DisableGravity(float atYvelocity)
+    {
+        yield return new WaitUntil(()=>_thisrb.velocity.y<-atYvelocity);
+        _thisrb.velocity = Vector3.zero;
+        _thisrb.useGravity = false;
+    }
     private void Update()
     {
         transform.Rotate(new Vector3(0,0.5f,0));
@@ -36,12 +68,8 @@ public class GameItem : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
-            if (other.GetComponent<InventoryHolder>().Inventory.TryAddItem(Stack))
+            if (other.GetComponent<InventoryHolder>().Inventory.TryAddItem(stack))
             {
-                // if (Stack._item.itemType == ItemType.Equipment)
-                // {
-                //     other.GetComponent<EntityAttack>().weapon = Stack._item.equipment;
-                // }
                 Destroy(gameObject);
             }
             
@@ -50,11 +78,11 @@ public class GameItem : MonoBehaviour
 
     private void OnValidate()
     {
-        if (_spriteRenderer==null)
+        if (spriteRenderer==null)
         {
             
-            TryGetComponent<SpriteRenderer>(out _spriteRenderer);
+            TryGetComponent<SpriteRenderer>(out spriteRenderer);
         }
-        _spriteRenderer.sprite = Stack._item.icon;
+        spriteRenderer.sprite = stack._item.icon;
     }
 }

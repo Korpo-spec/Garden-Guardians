@@ -10,10 +10,17 @@ public class ItemStack
   
   public int numberOfItemsInStack;
 
-  public readonly int maxStackSize=8;
+  [HideInInspector]
+  public int maxStackSize=8;
   
   public bool isFull => numberOfItemsInStack >= maxStackSize;
   
   public bool isEmpty=>numberOfItemsInStack<=0;
+
+  // public ItemStack(int numberOfItemsInStack, Item item)
+  // {
+  //   this.numberOfItemsInStack = numberOfItemsInStack;
+  //   _item = item;
+  // }
 
 }

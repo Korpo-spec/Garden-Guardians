@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Fungus;
 using Script;
 using UnityEngine;
 
@@ -107,13 +108,7 @@ public class InventorySO : ScriptableObject
     {
         itemsSlots.Swap(activeindex,newIndex);
     }
-
-    public void ThrowActiveItem()
-    {
-        var activeItemslot = FindActiveInvSlot();
-        
-        Debug.Log(activeItemslot.Stack._item.name);
-    }
+    
 
     public bool HasItem(ItemStack itemStack, bool CheckNumberOfItems=false)
     {
@@ -134,11 +129,74 @@ public class InventorySO : ScriptableObject
         return itemsSlots.FirstOrDefault(slot => slot.Stack._item == item && item.isStackable || !onlyStackable);
     }
 
-    public InventorySlot FindActiveInvSlot()
+    public ActiveItemInfo FindActiveInvSlot()
     {
-        return itemsSlots.Find(slot => slot.active);
+        var slot = itemsSlots.Find(slot => slot.active);
+        var activeindex = 0;
+        for (int i = 0; i < itemsSlots.Count; i++)
+        {
+            if (itemsSlots[i].active)
+            {
+                activeindex = i;
+                break;
+            }
+        }
+        return new ActiveItemInfo(activeindex,slot);
     }
     
+    public struct ActiveItemInfo
+    {
+        public int indexOfItem;
+        public InventorySlot Slot;
+
+        public ActiveItemInfo(int index,InventorySlot slot)
+        {
+            indexOfItem = index;
+            Slot = slot;
+        }
+    }
+
+    public ItemStack RemoveItem(int Index,GameItemSpawn itemSpawner, bool spwawn = false)
+    {
+        
+        if (spwawn)
+        {
+            itemSpawner.SpawnItem(itemsSlots[Index].Stack);
+        }
+        
+        clearSlot(Index);
+
+        return new ItemStack();
+    }
+
+    public ItemStack RemoveItem(ItemStack itemStack)
+    {
+        var itemSlot = FindSlot(itemStack._item);
+        if (itemSlot==null)
+        {
+            throw new Exception("No Item in the Inventory");
+        }
+
+        if (itemSlot.Stack._item.isStackable&&itemSlot.NumberOfItems<itemStack.numberOfItemsInStack)
+        {
+            Debug.LogWarning("Not enough Items");
+        }
+
+        itemSlot.NumberOfItems -= itemStack.numberOfItemsInStack;
+        if (itemSlot.Stack._item.isStackable&&itemSlot.NumberOfItems>0)
+        {
+            return itemSlot.Stack;
+        }
+        
+        itemSlot.ClearSlot();
+        return new ItemStack();
+
+    }
+
+    public void clearSlot(int index)
+    {
+        itemsSlots[index].ClearSlot();
+    }
     
 
     private void AdjustSize()

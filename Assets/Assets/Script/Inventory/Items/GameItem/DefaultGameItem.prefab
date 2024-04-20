@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: -2491025551550483678}
   - component: {fileID: 2858713900979754574}
   - component: {fileID: 4133000448234734652}
-  - component: {fileID: 8131615361982629176}
+  - component: {fileID: -6298985374863164856}
   m_Layer: 0
-  m_Name: MushroomGameItem
+  m_Name: DefaultGameItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,10 +47,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fe73dc443e69e45b0cc3bb0f596c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stack:
-    _item: {fileID: 11400000, guid: a50a78ee91f797b40beb264d3b599afc, type: 2}
+  stack:
+    _item: {fileID: 11400000, guid: aa6cb613da9fa4d4494d0a3e697d18fd, type: 2}
     numberOfItemsInStack: 1
-  _spriteRenderer: {fileID: 2858713900979754574}
+    maxStackSize: 8
+  spriteRenderer: {fileID: 2858713900979754574}
+  timeBeforeTriggerEnable: 1
+  _throwGravity: 0
+  _minXForce: 3
+  _maxXForce: 5
+  _throwYForce: 1
 --- !u!212 &2858713900979754574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92,8 +98,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ea8f56c43254d41728f5ac4e8299b6c9, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 888feb4a32e3b564fb7e6f9b28cc8e10, type: 3}
+  m_Color: {r: 0.5857099, g: 0.28475437, b: 0.764151, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -116,7 +122,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 3, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &8131615361982629176
+--- !u!54 &-6298985374863164856
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

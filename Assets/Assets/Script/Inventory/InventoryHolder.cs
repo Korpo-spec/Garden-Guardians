@@ -29,39 +29,45 @@ public class InventoryHolder : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.T))
         {
-            Inventory.ThrowActiveItem();
+            ThrowActiveItemInInventory();
         }
     }
 
-
+    public void ThrowActiveItemInInventory()
+    {
+        var activeItemslot = Inventory.FindActiveInvSlot();
+        if (activeItemslot.Slot.Stack._item&&TryGetComponent<GameItemSpawn>(out var itemSpawner))
+        {
+            Inventory.RemoveItem(activeItemslot.indexOfItem,itemSpawner, true);
+            
+        }
+        
+    }
+    
+    
     private bool TryChangeWeapon()
     {
         
         var activeslot = Inventory.FindActiveInvSlot();
-       
-        var activeindex = 0;
-        for (int i = 0; i < Inventory.itemsSlots.Count; i++)
-        {
-            if (Inventory.itemsSlots[i].active)
-            {
-                activeindex = i;
-                break;
-            }
-        }
+        var slot = activeslot.Slot;
+        var index = activeslot.indexOfItem;
         
-        if (!activeslot.Stack._item)
+        
+        if (!slot.Stack._item)
         {
-            Inventory.itemsSlots.Swap(weaponSlot.itemsSlots,activeindex,0);
+            Inventory.itemsSlots.Swap(weaponSlot.itemsSlots,index,0);
             GetComponent<EntityAttack>().weapon = weaponSlot.itemsSlots[1].Stack._item.equipment;
             return false;
         }
         
-        if (activeslot.Stack._item.itemType != ItemType.Equipment)
+        if (slot.Stack._item.itemType != ItemType.Equipment)
         {
             return false;
         }
         
-        Inventory.itemsSlots.Swap(weaponSlot.itemsSlots,activeindex,0);
+        Inventory.itemsSlots.Swap(weaponSlot.itemsSlots,index,0);
         return true;
     }
+    
+    
 }
