@@ -27,11 +27,16 @@ public class EntityAttack : MonoBehaviour
             }
             
             _weapon = value;
+
+
             
+            Transform weaponObj = mainHand ? mainHand.Find(value.Weapon.name) : null;
+            if (weaponObj)
+            {
+                weaponObj.gameObject.SetActive(true);
+                _currentWeapon = weaponObj.gameObject; 
+            }
             
-            GameObject weaponObj = mainHand.Find(value.Weapon.name).gameObject;
-            weaponObj.SetActive(true);
-            _currentWeapon = weaponObj;
             if (weapon.NewAnims)
             {
                 animator.runtimeAnimatorController = _weapon.NewAnims;

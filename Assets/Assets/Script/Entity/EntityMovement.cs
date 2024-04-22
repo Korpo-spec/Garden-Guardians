@@ -24,12 +24,13 @@ public class EntityMovement : MonoBehaviour
        _controller = GetComponent<CharacterController>();
        TryGetComponent<NavMeshAgent>(out _agent);
        _prevDirVector = transform.forward;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
     public void SetDestinationTo(Vector3 destination)
     {
@@ -55,8 +56,24 @@ public class EntityMovement : MonoBehaviour
        if (!canMove) return;
        RotatePlayer(moveDir);
        Vector3 moveVector3 = new Vector3(moveDir.x, 0, moveDir.z).normalized;
+       moveVector3 = ApplyGravity(moveVector3);
        _controller.Move(moveVector3*speed);
        animator.SetBool("AmRunning",moveDir.magnitude != 0);
+    }
+
+    private float gravity = 0;
+    private Vector3 ApplyGravity(Vector3 moveVec)
+    {
+       if (controller.isGrounded)
+       {
+          gravity = 0;
+          return moveVec;
+       }
+       
+       gravity =- 9.81f * Time.deltaTime;
+       moveVec.y = gravity;
+       return moveVec;
+
     }
  
     private void RotatePlayer( Vector3 moveDir)

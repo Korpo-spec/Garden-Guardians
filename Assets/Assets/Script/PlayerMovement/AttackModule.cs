@@ -50,7 +50,7 @@ namespace Script.PlayerMovement
         
         private void ResetTriggers(Animator animator)
         {
-            for (int i = 0; i < weapon.ComboLength; i++)
+            for (int i = 0; i < 3; i++)
             {
                 animator.ResetTrigger("Combo"+i);
             }

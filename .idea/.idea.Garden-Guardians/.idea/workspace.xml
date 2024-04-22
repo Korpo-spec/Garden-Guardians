@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Start of enemy spawns">
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed weapon">
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/LT1Scene.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/LT1Scene/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/LT1Scene/NavMesh.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/LT1Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/LT1Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/AttackModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/AttackModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Prefabs/Shell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Prefabs/Shell.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +24,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Entity/EnemyCircleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/VectorVariable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/ScriptableObjects/Weapons/DefaultFist.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/ProjectSettings/ShaderGraphSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/UserSettings/EditorUserSettings.asset" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -275,7 +287,13 @@
       <option name="presentableId" value="LOCAL−00025" />
       <updated>1713779346437</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL−00026" summary="Fixed weapon">
+      <created>1713779682150</created>
+      <option name="number" value="LOCAL−00026" />
+      <option name="presentableId" value="LOCAL−00026" />
+      <updated>1713779682150</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +352,7 @@
     <MESSAGE value="WeaponChanges working" />
     <MESSAGE value="Added fences made with splines" />
     <MESSAGE value="Start of enemy spawns" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start of enemy spawns" />
+    <MESSAGE value="Fixed weapon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed weapon" />
   </component>
 </project>
