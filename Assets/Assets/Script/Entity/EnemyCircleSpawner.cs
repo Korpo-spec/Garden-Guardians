@@ -2,14 +2,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyCircleSpawner : MonoBehaviour
 {
     [SerializeField] private float radius;
     [SerializeField] private int amountPoints;
+    
+    [SerializeField] private bool spawnEnemies;
+    [SerializeField] private float spawnRate;
+    [SerializeField] private GameObject enemyPrefab;
+    
 
-    [SerializeField]private float _angleBetweenPoints;
-    [SerializeField]private Vector3[] _points;
+    private float _time;
+    private float _angleBetweenPoints;
+    private Vector3[] _points;
     
     private void OnValidate()
     {
@@ -41,7 +48,18 @@ public class EnemyCircleSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!spawnEnemies)return;
         
+        if ((_time += Time.deltaTime) >= spawnRate)
+        {
+            _time = 0;
+            SpawnEnemy();
+        }
+    }
+    
+    private void SpawnEnemy()
+    {
+        Instantiate(enemyPrefab, _points[Random.Range(0, _points.Length)]+transform.position, Quaternion.identity);
     }
 
     private void OnDrawGizmosSelected()
