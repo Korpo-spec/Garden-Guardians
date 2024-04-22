@@ -18,6 +18,8 @@ namespace Script.PlayerMovement
         [SerializeField] public int staminaPoints;
 
         [SerializeField] private int staminaPointMax;
+        
+        [SerializeField] public bool staminaPointsChanged;
 
         private int timer;
         private int resetTime = 210;
@@ -47,6 +49,7 @@ namespace Script.PlayerMovement
             if (timer <= 0 && staminaPoints < staminaPointMax)
             {
                 staminaPoints++;
+                staminaPointsChanged = true;
                 timer = resetTime;
             }
 
@@ -62,6 +65,7 @@ namespace Script.PlayerMovement
             {
                 isDashing = true;
                 staminaPoints--;
+                staminaPointsChanged = true;
                 timer = resetTime;
             }
             if (Input.GetMouseButton(0))
