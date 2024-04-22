@@ -20,14 +20,16 @@ public class CanvasScript : MonoBehaviour
     
     
     
-    // Start is called before the first frame update
+    
     void Start()
     {
+        // Sets all UI objects to correct Active or Inactive state
         hud.SetActive(true);
         inventory.SetActive(false);
     }
+    
+    
 
-    // Update is called once per frame
     void Update()
     {
         // Activates inventory and deactivates HUD when inventory is open. Activates HUD when inventory closes
@@ -50,6 +52,8 @@ public class CanvasScript : MonoBehaviour
         }
     }
     
+    
+    
     // Closes active menu and reactivates HUD on Button Press
     public void CloseMenu()
     {
@@ -60,6 +64,8 @@ public class CanvasScript : MonoBehaviour
         
         hud.SetActive(true);
     }
+    
+    
     
     // Updates the UI to match amount of stamina the player has
     private void UpdateStaminaPoints()
