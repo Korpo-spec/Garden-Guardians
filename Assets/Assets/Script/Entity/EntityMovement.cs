@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,6 +33,12 @@ public class EntityMovement : MonoBehaviour
     {
        
     }
+
+    private void FixedUpdate()
+    {
+       controller.Move(ApplyGravity(Vector3.zero));
+    }
+
     public void SetDestinationTo(Vector3 destination)
     {
        if (_agent == null) return;
@@ -56,7 +63,7 @@ public class EntityMovement : MonoBehaviour
        if (!canMove) return;
        RotatePlayer(moveDir);
        Vector3 moveVector3 = new Vector3(moveDir.x, 0, moveDir.z).normalized;
-       moveVector3 = ApplyGravity(moveVector3);
+       
        _controller.Move(moveVector3*speed);
        animator.SetBool("AmRunning",moveDir.magnitude != 0);
     }
@@ -64,14 +71,16 @@ public class EntityMovement : MonoBehaviour
     private float gravity = 0;
     private Vector3 ApplyGravity(Vector3 moveVec)
     {
+       gravity =- 9.81f * Time.fixedDeltaTime*2;
+       moveVec.y = gravity;
        if (controller.isGrounded)
        {
           gravity = 0;
           return moveVec;
        }
        
-       gravity =- 9.81f * Time.deltaTime;
-       moveVec.y = gravity;
+      
+       
        return moveVec;
 
     }
