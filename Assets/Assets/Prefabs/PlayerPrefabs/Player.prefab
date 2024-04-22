@@ -2249,6 +2249,7 @@ GameObject:
   - component: {fileID: 8576870797664957056}
   - component: {fileID: 5124299565582006369}
   - component: {fileID: 7724473823018123276}
+  - component: {fileID: 1232172892076376952}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -2495,6 +2496,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemBasePrefab: {fileID: 3165748147989574631, guid: 82169f59e5c70504684b9eb1831fbfc4,
     type: 3}
+--- !u!114 &1232172892076376952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938287593342238401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f3761568e72a449bfdc783901b6ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 35
+  amountPoints: 16
+  _angleBetweenPoints: 22.5
+  _points:
+  - {x: 0, y: 0, z: 35}
+  - {x: -13.393921, y: 0, z: 32.33578}
+  - {x: -24.748737, y: 0, z: 24.748737}
+  - {x: -32.33578, y: 0, z: 13.39392}
+  - {x: -35, y: 0, z: -0.0000015298986}
+  - {x: -32.335785, y: 0, z: -13.393919}
+  - {x: -24.748737, y: 0, z: -24.748737}
+  - {x: -13.393922, y: 0, z: -32.33578}
+  - {x: 0.000003059797, y: 0, z: -35}
+  - {x: 13.39392, y: 0, z: -32.33578}
+  - {x: 24.748735, y: 0, z: -24.74874}
+  - {x: 32.33578, y: 0, z: -13.393925}
+  - {x: 35, y: 0, z: 0.0000004173708}
+  - {x: 32.33578, y: 0, z: 13.393927}
+  - {x: 24.748741, y: 0, z: 24.748734}
+  - {x: 13.39392, y: 0, z: 32.335785}
 --- !u!1 &8106037427702051965
 GameObject:
   m_ObjectHideFlags: 0

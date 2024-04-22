@@ -29,4 +29,10 @@ public static class ExtendVectors
     {
         return new Vector2(Random.Range(xmin, xmax), Random.Range(ymin, ymax));
     }
+    public static Vector2 RotateVector2(this Vector2 v, float delta) {
+        return new Vector2(
+            v.x * Mathf.Cos(delta) - v.y * Mathf.Sin(delta),
+            v.x * Mathf.Sin(delta) + v.y * Mathf.Cos(delta)
+        );
+    }
 }
