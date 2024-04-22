@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 namespace Script.PlayerMovement
@@ -24,6 +25,8 @@ namespace Script.PlayerMovement
         [SerializeField] private GameObject point1;
 
         [SerializeField] private GameObject point2;
+
+       
     
         // Start is called before the first frame update
         void Start()
@@ -46,7 +49,7 @@ namespace Script.PlayerMovement
                 staminaPoints++;
                 timer = resetTime;
             }
-            
+
             // Show how many stamina point you have
             
         }
