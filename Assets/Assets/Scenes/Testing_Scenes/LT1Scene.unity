@@ -2372,10 +2372,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1360985075, guid: bfe03260ef6262e4290539448e181343, type: 3}
-      propertyPath: m_Height
-      value: 1.88
-      objectReference: {fileID: 0}
     - target: {fileID: 628604204669265699, guid: bfe03260ef6262e4290539448e181343,
         type: 3}
       propertyPath: comboIndex
@@ -2390,16 +2386,6 @@ PrefabInstance:
         type: 3}
       propertyPath: dashKey
       value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 7086357682079536472, guid: bfe03260ef6262e4290539448e181343,
-        type: 3}
-      propertyPath: m_Height
-      value: 1.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127825265443040992, guid: bfe03260ef6262e4290539448e181343,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7305302783928673403, guid: bfe03260ef6262e4290539448e181343,
         type: 3}
