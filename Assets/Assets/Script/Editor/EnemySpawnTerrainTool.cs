@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.TerrainTools;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.TerrainTools;
 
 public class EnemySpawnTerrainTool : TerrainPaintTool<EnemySpawnTerrainTool>
 {
@@ -30,17 +31,17 @@ public class EnemySpawnTerrainTool : TerrainPaintTool<EnemySpawnTerrainTool>
     }
 
     // Ease of use function for rendering modified Terrain Texture data into a PaintContext. This is used in both OnRenderBrushPreview and OnPaint.
-    private void RenderIntoPaintContext(UnityEngine.TerrainTools.PaintContext paintContext, Texture brushTexture, UnityEngine.TerrainTools.BrushTransform brushXform)
+    private void RenderIntoPaintContext(PaintContext paintContext, Texture brushTexture, BrushTransform brushXform)
     {
         // Get the built-in painting Material reference
-        Material mat = UnityEngine.TerrainTools.TerrainPaintUtility.GetBuiltinPaintMaterial();
+        Material mat = TerrainPaintUtility.GetBuiltinPaintMaterial();
         // Bind the current brush texture
         mat.SetTexture("_BrushTex", brushTexture);
         // Bind the tool-specific shader properties
         var opacity = Event.current.control ? -m_BrushOpacity : m_BrushOpacity;
         mat.SetVector("_BrushParams", new Vector4(opacity, 0.0f, 0.0f, 0.0f));
         // Setup the material for reading from/writing into the PaintContext texture data. This is a necessary step to setup the correct shader properties for appropriately transforming UVs and sampling textures within the shader
-        UnityEngine.TerrainTools.TerrainPaintUtility.SetupTerrainToolMaterialProperties(paintContext, brushXform, mat);
+        TerrainPaintUtility.SetupTerrainToolMaterialProperties(paintContext, brushXform, mat);
         // Render into the PaintContext's destinationRenderTexture using the built-in painting Material - the id for the Raise/Lower pass is 0.
         Graphics.Blit(paintContext.sourceRenderTexture, paintContext.destinationRenderTexture, mat, 0);
     }
@@ -55,9 +56,9 @@ public class EnemySpawnTerrainTool : TerrainPaintTool<EnemySpawnTerrainTool>
         if (!editContext.hitValidTerrain) return;
 
         // Get the current BrushTransform under the mouse position relative to the Terrain
-        UnityEngine.TerrainTools.BrushTransform brushXform = UnityEngine.TerrainTools.TerrainPaintUtility.CalculateBrushTransform(terrain, editContext.raycastHit.textureCoord, m_BrushSize, m_BrushRotation);
+        BrushTransform brushXform = TerrainPaintUtility.CalculateBrushTransform(terrain, editContext.raycastHit.textureCoord, m_BrushSize, m_BrushRotation);
         // Get the PaintContext for the current BrushTransform. This has a sourceRenderTexture from which to read existing Terrain texture data.
-        UnityEngine.TerrainTools.PaintContext paintContext = UnityEngine.TerrainTools.TerrainPaintUtility.BeginPaintHeightmap(terrain, brushXform.GetBrushXYBounds(), 1);
+        PaintContext paintContext = TerrainPaintUtility.BeginPaintHeightmap(terrain, brushXform.GetBrushXYBounds(), 1);
         // Get the built-in Material for rendering Brush Previews
         Material previewMaterial = TerrainPaintUtilityEditor.GetDefaultBrushPreviewMaterial();
         // Render the brush preview for the sourceRenderTexture. This will show up as a projected brush mesh rendered on top of the Terrain
@@ -71,21 +72,21 @@ public class EnemySpawnTerrainTool : TerrainPaintTool<EnemySpawnTerrainTool>
         // Render a procedural mesh displaying the delta/displacement in height from the source Terrain texture data. When modifying Terrain height, this shows how much the next paint operation will alter the Terrain height
         TerrainPaintUtilityEditor.DrawBrushPreview(paintContext, TerrainBrushPreviewMode.DestinationRenderTexture, editContext.brushTexture, brushXform, previewMaterial, 1);
         // Cleanup resources
-        UnityEngine.TerrainTools.TerrainPaintUtility.ReleaseContextResources(paintContext);
+        TerrainPaintUtility.ReleaseContextResources(paintContext);
     }
 
     // Perform painting operations that modify the Terrain texture data
     public override bool OnPaint(Terrain terrain, IOnPaint editContext)
     {
         // Get the current BrushTransform under the mouse position relative to the Terrain
-        UnityEngine.TerrainTools.BrushTransform brushXform = UnityEngine.TerrainTools.TerrainPaintUtility.CalculateBrushTransform(terrain, editContext.uv, m_BrushSize, m_BrushRotation);
+        BrushTransform brushXform = TerrainPaintUtility.CalculateBrushTransform(terrain, editContext.uv, m_BrushSize, m_BrushRotation);
         // Get the PaintContext for the current BrushTransform. This has a sourceRenderTexture from which to read existing Terrain texture data
         // and a destinationRenderTexture into which to write new Terrain texture data
-        UnityEngine.TerrainTools.PaintContext paintContext = UnityEngine.TerrainTools.TerrainPaintUtility.BeginPaintHeightmap(terrain, brushXform.GetBrushXYBounds());
+        PaintContext paintContext = TerrainPaintUtility.BeginPaintHeightmap(terrain, brushXform.GetBrushXYBounds());
         // Call the common rendering function used by OnRenderBrushPreview and OnPaint
         RenderIntoPaintContext(paintContext, editContext.brushTexture, brushXform);
         // Commit the modified PaintContext with a provided string for tracking Undo operations. This function handles Undo and resource cleanup for you
-        UnityEngine.TerrainTools.TerrainPaintUtility.EndPaintHeightmap(paintContext, "Terrain Paint - Raise or Lower Height");
+        TerrainPaintUtility.EndPaintHeightmap(paintContext, "Terrain Paint - Raise or Lower Height");
 
         // Return whether or not Trees and Details should be hidden while painting with this Terrain Tool
         return true;
