@@ -15,10 +15,13 @@ MonoBehaviour:
   maxInventorySize: 2
   itemsSlots:
   - itemStack:
-      _item: {fileID: 0}
-      numberOfItemsInStack: 0
+      _item: {fileID: 11400000, guid: 839607ddc64ac614e8e91b021e8ddfba, type: 2}
+      numberOfItemsInStack: 1
+      maxStackSize: 8
     active: 1
   - itemStack:
       _item: {fileID: 11400000, guid: 678757e2225786041bdbc65d36ea461a, type: 2}
       numberOfItemsInStack: 0
+      maxStackSize: 8
     active: 0
+  UniversalMaterial: {fileID: 11400000, guid: b28bed60e7512e3408f2d12441ad64c9, type: 2}

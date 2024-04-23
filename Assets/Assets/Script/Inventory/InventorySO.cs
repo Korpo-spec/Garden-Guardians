@@ -5,6 +5,7 @@ using System.Linq;
 using Fungus;
 using Script;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [Serializable]
 [CreateAssetMenu(menuName = "Inventory/Inventory")]
@@ -13,8 +14,15 @@ public class InventorySO : ScriptableObject
     [SerializeField] private int maxInventorySize;
     public List<InventorySlot> itemsSlots;
 
+    public UniversalMaterials UniversalMaterial;
+
     public bool TryAddItem(ItemStack itemStack)
     {
+        if (itemStack._item.itemType==ItemType.Biomass)
+        {
+            UniversalMaterial.addUniversalMaterials(itemStack.numberOfItemsInStack,2);
+            return true;
+        }
         
         //loop to check if there is an item of that type if there is add amount to the stack if not full
         for (int i = 0; i < itemsSlots.Count; i++)

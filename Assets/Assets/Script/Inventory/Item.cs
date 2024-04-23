@@ -19,7 +19,8 @@ public class Item : ScriptableObject
 public enum ItemType
 {
     Item,
-    Equipment
+    Equipment,
+    Biomass
 }
 
 public enum EquipmentType

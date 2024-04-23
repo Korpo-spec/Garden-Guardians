@@ -5,11 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed weapon">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/TerrainData/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/TerrainData/New Terrain.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SimonTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SimonTestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerInputHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/GameItem/Sword.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/GameItem/Sword.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/UniversalMaterials.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/UniversalMaterials.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/UMs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/UMs/PlayerUM.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/UMs/PlayerUM.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/BasicAxeWeaponButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/BasicAxeWeaponButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/BasicCutlasWeaponButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/BasicCutlasWeaponButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/BasicSwordWeaponButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/BasicSwordWeaponButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/DefaultWeaponButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/DefaultWeaponButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/GameItemSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/GameItemSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventoryHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventoryHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/GameItem/Mushroom/Mushroom.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/GameItem/Mushroom/Mushroom.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/ItemStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/ItemStack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/UI/WeaponButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/UI/WeaponButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/Dont Touch, Ask Sebbe/PlayerWeaponSlot.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/Dont Touch, Ask Sebbe/PlayerWeaponSlot.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/PlayerInventory.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/PlayerInventory.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,28 +52,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\a20siman\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\a20siman\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\a20siman\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\a20siman\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\a20siman\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\a20siman\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.24f1\Editor\Unity.exe" />

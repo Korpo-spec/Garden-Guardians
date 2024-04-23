@@ -7,6 +7,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
+        type: 3}
+      propertyPath: weaponModul
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f64ef4666d0221428acb16f81b1e377,
+        type: 2}
+    - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
+        type: 3}
+      propertyPath: weaponModul._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 93a907546dc846948a1639f48b9d13da,
+        type: 2}
+    - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
+        type: 3}
+      propertyPath: upgradeCost.UMCost
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8143433180810153654, guid: fd6e16006e27d184fac62b5f608c9486,
         type: 3}
       propertyPath: m_Pivot.x

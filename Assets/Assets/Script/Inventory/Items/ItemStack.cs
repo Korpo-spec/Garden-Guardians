@@ -16,6 +16,8 @@ public class ItemStack
   public bool isFull => numberOfItemsInStack >= maxStackSize;
   
   public bool isEmpty=>numberOfItemsInStack<=0;
+  
+  
 
   // public ItemStack(int numberOfItemsInStack, Item item)
   // {

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66b1b9d6a4b1a5b41b87630136bc6f06, type: 3}
-  m_Name: Mushroom
+  m_Name: Sword
   m_EditorClassIdentifier: 
-  name: Mushroom
+  name: Sword
   icon: {fileID: 21300000, guid: ea8f56c43254d41728f5ac4e8299b6c9, type: 3}
-  isStackable: 1
-  itemType: 2
+  isStackable: 0
+  itemType: 1
   equipmentType: 0
-  equipment: {fileID: 0}
+  equipment: {fileID: 11400000, guid: 5f64ef4666d0221428acb16f81b1e377, type: 2}

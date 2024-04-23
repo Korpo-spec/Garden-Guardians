@@ -14,8 +14,7 @@ public class GameItemSpawn : MonoBehaviour
         {
             return;
         }
-
-        var item = PrefabUtility.InstantiatePrefab(_itemBasePrefab) as GameObject;
+        var item = Instantiate(_itemBasePrefab);
         item.transform.position = transform.position;
         var gameItemScript = item.GetComponent<GameItem>();
         

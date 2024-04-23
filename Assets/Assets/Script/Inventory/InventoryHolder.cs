@@ -1,9 +1,21 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InventoryHolder : MonoBehaviour
 {
     public InventorySO Inventory;
     public InventorySO weaponSlot;
+    
+    private void Start()
+    {
+        WeaponButton.weaponBought += OnactivateWeapon;
+    }
+
+    private void OnDestroy()
+    {
+        WeaponButton.weaponBought -= OnactivateWeapon;
+    }
 
 
     private void Update()
@@ -12,7 +24,7 @@ public class InventoryHolder : MonoBehaviour
         {
             if (TryChangeWeapon())
             {
-                GetComponent<EntityAttack>().weapon = weaponSlot.itemsSlots[0].Stack._item.equipment;
+                OnactivateWeapon(null,null);
             }
         }
 
@@ -31,6 +43,14 @@ public class InventoryHolder : MonoBehaviour
         }
     }
 
+
+
+
+    private void OnactivateWeapon(object sender,EventArgs eventArgs)
+    {
+        GetComponent<EntityAttack>().weapon = weaponSlot.itemsSlots[0].Stack._item.equipment;
+    }
+    
 
     private bool TryChangeWeapon()
     {
