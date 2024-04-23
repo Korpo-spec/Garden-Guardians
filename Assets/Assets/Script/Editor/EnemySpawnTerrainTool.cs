@@ -54,7 +54,8 @@ public class EnemySpawnTerrainTool : TerrainPaintTool<EnemySpawnTerrainTool>
 
         // Only do the rest if user mouse hits valid terrain
         if (!editContext.hitValidTerrain) return;
-
+        //Debug.Log(terrain.terrainData.heightmapTexture.height + " " + terrain.terrainData.heightmapTexture.width);
+        
         // Get the current BrushTransform under the mouse position relative to the Terrain
         BrushTransform brushXform = TerrainPaintUtility.CalculateBrushTransform(terrain, editContext.raycastHit.textureCoord, m_BrushSize, m_BrushRotation);
         // Get the PaintContext for the current BrushTransform. This has a sourceRenderTexture from which to read existing Terrain texture data.
@@ -68,10 +69,16 @@ public class EnemySpawnTerrainTool : TerrainPaintTool<EnemySpawnTerrainTool>
         // Restore old render target.
         RenderTexture.active = paintContext.oldRenderTexture;
         // Bind the sourceRenderTexture to the preview Material. This is used to compute deltas in height
-        previewMaterial.SetTexture("_HeightmapOrig", paintContext.sourceRenderTexture);
+        //previewMaterial.SetTexture("_HeightmapOrig", paintContext.sourceRenderTexture);
+        previewMaterial.SetTexture("_Splat0", new Texture2D(513, 513, TextureFormat.RGBA32, false));
         // Render a procedural mesh displaying the delta/displacement in height from the source Terrain texture data. When modifying Terrain height, this shows how much the next paint operation will alter the Terrain height
-        TerrainPaintUtilityEditor.DrawBrushPreview(paintContext, TerrainBrushPreviewMode.DestinationRenderTexture, editContext.brushTexture, brushXform, previewMaterial, 1);
+        //TerrainPaintUtilityEditor.DrawBrushPreview(paintContext, TerrainBrushPreviewMode.DestinationRenderTexture, editContext.brushTexture, brushXform, previewMaterial, 1);
         // Cleanup resources
+        
+        //paintContext = TerrainPaintUtility.BeginPaintTexture(terrain, brushXform.GetBrushXYBounds(), new TerrainLayer(), 0);
+        //TerrainPaintUtilityEditor.DrawBrushPreview(paintContext, TerrainBrushPreviewMode.SourceRenderTexture, editContext.brushTexture, brushXform, previewMaterial, 0);
+
+
         TerrainPaintUtility.ReleaseContextResources(paintContext);
     }
 
