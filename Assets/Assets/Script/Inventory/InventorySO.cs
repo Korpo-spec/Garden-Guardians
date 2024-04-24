@@ -133,6 +133,20 @@ public class InventorySO : ScriptableObject
         return itemsSlots.Count(slot => slot.Stack._item == itemStack._item) >= itemStack._numberofItemsInStack;
     }
 
+    public int TotalNumberOfItemsInInventory(Item item)
+    {
+        var totalItemsOfType = 0;
+        foreach (var itemsSlot in itemsSlots)
+        {
+            if (itemsSlot.Stack._item==item)
+            {
+                totalItemsOfType += itemsSlot.NumberOfItems;
+            }
+        }
+
+        return totalItemsOfType;
+    }
+
     private InventorySlot FindSlot(Item item, bool onlyStackable=false)
     {
         for (int i = 0; i < itemsSlots.Count; i++)
@@ -191,6 +205,36 @@ public class InventorySO : ScriptableObject
         return new ItemStack();
     }
 
+
+    public void RemoveReqItemFromInventory(ItemStack itemStack)
+    {
+        var totalNumberOfItemsInInventory = TotalNumberOfItemsInInventory(itemStack._item);
+        var totalNumberOfReqItems = itemStack._numberofItemsInStack;
+
+        foreach (var slot in itemsSlots)
+        {
+            if (slot.Stack._item==itemStack._item)
+            {
+                var rest=totalNumberOfReqItems-slot.NumberOfItems;
+                if (rest<0)
+                {
+                    slot.NumberOfItems -= totalNumberOfReqItems;
+                    return;
+                }
+
+                if (slot.NumberOfItems - totalNumberOfReqItems<=0)
+                {
+                    slot.Stack = new ItemStack();
+                }
+
+                totalNumberOfReqItems = rest;
+            }
+            
+        }
+        
+        //FindSlot(itemStack._item).ClearSlot();
+
+    }
     public ItemStack RemoveItem(ItemStack itemStack)
     {
         var itemSlot = FindSlot(itemStack._item);
@@ -201,7 +245,7 @@ public class InventorySO : ScriptableObject
 
         if (itemSlot.Stack._item.isStackable&&itemSlot.NumberOfItems<itemStack._numberofItemsInStack)
         {
-            Debug.LogWarning("Not enough Items");
+            throw new Exception("Not enough Items");
         }
 
         itemSlot.NumberOfItems -= itemStack._numberofItemsInStack;

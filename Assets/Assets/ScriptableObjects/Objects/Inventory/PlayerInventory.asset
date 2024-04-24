@@ -12,13 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b567dcab7bbc3af4a92c4f22ae944223, type: 3}
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
-  maxInventorySize: 3
+  maxInventorySize: 5
   itemsSlots:
   - itemStack:
-      _item: {fileID: 11400000, guid: aa6cb613da9fa4d4494d0a3e697d18fd, type: 2}
-      numberOfItemsInStack: 2
+      _item: {fileID: 0}
+      numberOfItemsInStack: 0
       maxStackSize: 8
     active: 1
+  - itemStack:
+      _item: {fileID: 0}
+      numberOfItemsInStack: 0
+      maxStackSize: 8
+    active: 0
+  - itemStack:
+      _item: {fileID: 11400000, guid: aa6cb613da9fa4d4494d0a3e697d18fd, type: 2}
+      numberOfItemsInStack: 1
+      maxStackSize: 8
+    active: 0
   - itemStack:
       _item: {fileID: 0}
       numberOfItemsInStack: 0

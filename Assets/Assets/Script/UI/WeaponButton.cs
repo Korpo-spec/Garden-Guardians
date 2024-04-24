@@ -76,15 +76,25 @@ public class WeaponButton : MonoBehaviour
             BuyUpgrade();
             PlayerWeaponSlot.itemsSlots[0].Stack = weaponModul;
             weaponBought?.Invoke(this,null);
-            Debug.Log("Weapon got");
         }
     }
 
     private void BuyUpgrade()
     {
-        PlayerWeaponSlot.UniversalMaterial.removeUniversalMaterials(upgradeCost._UMCost,upgradeCost._SUMCost);
+        removeFromUniversalMaterial();
+        foreach (var reqItem in ItemRequierments)
+        {
+            PlayerInventory.RemoveReqItemFromInventory(reqItem);
+        }
+        
     }
 
+    private void removeFromUniversalMaterial()
+    {
+        PlayerWeaponSlot.UniversalMaterial.removeUniversalMaterials(upgradeCost._UMCost,upgradeCost._SUMCost);
+        
+    }
+    
     private void writeConnections()
     {
         
@@ -115,7 +125,13 @@ public class WeaponButton : MonoBehaviour
             {
                 return false;
             }
+
+            if (reqItem._numberofItemsInStack>PlayerInventory.TotalNumberOfItemsInInventory(reqItem._item))
+            {
+                return false;
+            }
         }
+        
         return true;
     }
 
