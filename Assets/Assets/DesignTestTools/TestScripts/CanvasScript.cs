@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using Script.PlayerMovement;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CanvasScript : MonoBehaviour
 {
+    // ------ Functionality ------
+    private bool gameStarted;
+    
     // Get script for stamina points
     public PlayerInputHandler playerInputHandler;
     
@@ -16,16 +20,23 @@ public class CanvasScript : MonoBehaviour
     [SerializeField] private GameObject sPoint2;
     
     // Inventory
-    [SerializeField] private GameObject inventory;
-    
+    [SerializeField] private GameObject inventoryMenu;
+    [SerializeField] private GameObject equipmentNMaterials;
+    [SerializeField] private GameObject craftingOverview;
+    [SerializeField] private Button inventoryButton;
     
     
     
     void Start()
     {
+        gameStarted = true;
+        
         // Sets all UI objects to correct Active or Inactive state
         hud.SetActive(true);
-        inventory.SetActive(false);
+        inventoryMenu.SetActive(false);
+        equipmentNMaterials.SetActive(false);
+        craftingOverview.SetActive(false);
+        inventoryButton.onClick.Invoke();
     }
     
     
@@ -33,14 +44,20 @@ public class CanvasScript : MonoBehaviour
     void Update()
     {
         // Activates inventory and deactivates HUD when inventory is open. Activates HUD when inventory closes
-        if (Input.GetKeyDown(KeyCode.Tab) && inventory.activeSelf == false)
+        if (Input.GetKeyDown(KeyCode.Tab) && inventoryMenu.activeSelf == false)
         {
             hud.SetActive(false);
-            inventory.SetActive(true);
+            inventoryMenu.SetActive(true);
+
+            if (gameStarted == true)
+            {
+                inventoryButton.Select();
+                gameStarted = false;
+            }
         }
-        else if ((Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown(KeyCode.Escape)) && inventory.activeSelf == true)
+        else if ((Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown(KeyCode.Escape)) && inventoryMenu.activeSelf == true)
         {
-            inventory.SetActive(false);
+            inventoryMenu.SetActive(false);
             hud.SetActive(true);
         }
         
@@ -63,6 +80,21 @@ public class CanvasScript : MonoBehaviour
         }
         
         hud.SetActive(true);
+    }
+
+    
+    
+    // Buttons to switch between crafting overview and inventory
+    public void OpenCraftingOverview()
+    {
+        equipmentNMaterials.SetActive(false);
+        craftingOverview.SetActive(true);
+    }
+
+    public void OpenEquipmentNMaterials()
+    {
+        equipmentNMaterials.SetActive(true);
+        craftingOverview.SetActive(false);
     }
     
     
