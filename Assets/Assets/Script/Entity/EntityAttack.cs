@@ -73,7 +73,7 @@ public class EntityAttack : MonoBehaviour
     public void Attack(int comboIndex)
     {
         //Handle slash effect
-        Debug.Log("Attack");
+        //Debug.Log("Attack");
         if (_weapon.attackInfos[comboIndex].slashEffect != null)
         {
            
@@ -82,7 +82,7 @@ public class EntityAttack : MonoBehaviour
             {
                 Transform child = mainHand.GetChild(i);
                 if (!child.CompareTag("Weapon")) continue;
-                Debug.Log("Slash effect");
+                //Debug.Log("Slash effect");
                 
                 GameObject g = Instantiate(_weapon.attackInfos[comboIndex].slashEffect, child.position, Quaternion.Euler(0,0,0), child);
                 g.transform.localRotation = Quaternion.Euler(_weapon.attackInfos[comboIndex].useCustomRot ? _weapon.attackInfos[comboIndex].customRot :new Vector3(-313.194489f,181.419785f,83.6417999f));
@@ -121,7 +121,7 @@ public class EntityAttack : MonoBehaviour
 
     public void AttackDash()
     {
-        Debug.Log("AttackDash");
+        //Debug.Log("AttackDash");
         StartCoroutine(InternalDash());
     }
     
@@ -130,7 +130,7 @@ public class EntityAttack : MonoBehaviour
         int comboIndex = 0;
         float startTime = 0;
         float timecoeficient = 1 / _weapon.attackInfos[comboIndex].dashTime;
-        Debug.Log(_movement);
+        //Debug.Log(_movement);
         Vector3 dashvector = _movement.prevDirVector3;
         float dashSpeed =  _weapon.attackInfos[comboIndex].dashLenght /_weapon.attackInfos[comboIndex].dashTime;
         _movement.canMove = false;

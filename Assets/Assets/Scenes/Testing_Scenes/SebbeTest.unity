@@ -1911,6 +1911,11 @@ PrefabInstance:
       propertyPath: Stack.numberOfItemsInStack
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: -2491025551550483678, guid: 0619488df09c81644a7b94b0d075d5e0,
+        type: 3}
+      propertyPath: stack.numberOfItemsInStack
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1469985219597893746, guid: 0619488df09c81644a7b94b0d075d5e0,
         type: 3}
       propertyPath: m_RootOrder
@@ -2032,6 +2037,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7535135778264701822, guid: 4bdc717cd105b8146a5a50620e1ba17c,
     type: 3}
   m_PrefabInstance: {fileID: 997118039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &224048091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 620830857421168130, guid: 20d913a21488c4b40882488f8187da52,
+    type: 3}
+  m_PrefabInstance: {fileID: 620830858974497080}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &230476747
 PrefabInstance:
@@ -13129,6 +13140,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: -2491025551550483678, guid: 0619488df09c81644a7b94b0d075d5e0,
         type: 3}
+      propertyPath: stack._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 839607ddc64ac614e8e91b021e8ddfba,
+        type: 2}
+    - target: {fileID: -2491025551550483678, guid: 0619488df09c81644a7b94b0d075d5e0,
+        type: 3}
       propertyPath: Stack.numberOfItemsInStack
       value: 1
       objectReference: {fileID: 0}
@@ -14337,6 +14354,12 @@ PrefabInstance:
     - target: {fileID: -2491025551550483678, guid: 0619488df09c81644a7b94b0d075d5e0,
         type: 3}
       propertyPath: Stack._item
+      value: 
+      objectReference: {fileID: 11400000, guid: c6fc9099ef1acae47a8aeea45ef67028,
+        type: 2}
+    - target: {fileID: -2491025551550483678, guid: 0619488df09c81644a7b94b0d075d5e0,
+        type: 3}
+      propertyPath: stack._item
       value: 
       objectReference: {fileID: 11400000, guid: c6fc9099ef1acae47a8aeea45ef67028,
         type: 2}
@@ -19719,6 +19742,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 620830857421168135, guid: 20d913a21488c4b40882488f8187da52,
+        type: 3}
+      propertyPath: OpenWeaponTree.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 620830857421168135, guid: 20d913a21488c4b40882488f8187da52,
+        type: 3}
+      propertyPath: OpenWeaponTree.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 620830857421168135, guid: 20d913a21488c4b40882488f8187da52,
+        type: 3}
+      propertyPath: OpenWeaponTree.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 224048091}
+    - target: {fileID: 620830857421168135, guid: 20d913a21488c4b40882488f8187da52,
+        type: 3}
+      propertyPath: OpenWeaponTree.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 620830857421168135, guid: 20d913a21488c4b40882488f8187da52,
+        type: 3}
+      propertyPath: OpenWeaponTree.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UIHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5884516299139567303, guid: 20d913a21488c4b40882488f8187da52,
         type: 3}

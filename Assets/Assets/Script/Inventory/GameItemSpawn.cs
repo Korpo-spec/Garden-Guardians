@@ -20,7 +20,7 @@ public class GameItemSpawn : MonoBehaviour
         
         gameItemScript.stack = new ItemStack();
         gameItemScript.stack._item = itemStack._item;
-        gameItemScript.stack.numberOfItemsInStack = itemStack.numberOfItemsInStack;
+        gameItemScript.stack._numberofItemsInStack = itemStack._numberofItemsInStack;
         gameItemScript.stack.maxStackSize = itemStack.maxStackSize;
         
         gameItemScript.Throw(transform.forward);

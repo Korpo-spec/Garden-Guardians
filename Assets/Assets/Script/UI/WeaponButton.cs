@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
+using Script;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -15,16 +16,23 @@ public class WeaponButton : MonoBehaviour
     public static event EventHandler weaponBought;
     public Button Button;
     public InventorySO PlayerWeaponSlot;
-    
-    
-    [Header("Requierments")]
+    public InventorySO PlayerInventory;
     public List<WeaponButton> parents;
 
+    [Header("Requierments")]
+    public List<ItemStack> ItemRequierments;
     public UpgradeCost upgradeCost;
 
     private void Start()
     {
         PlayerWeaponSlot.UniversalMaterial.UpdatedMaterialValue += OnUpdateMaterial;
+        InventoryHolder.UpdateWeaponButton += OnUpdateMaterial;
+        GameItem.ItemPickUp += OnUpdateMaterial;
+        foreach (var slot in PlayerInventory.itemsSlots)
+        {
+            slot.ValueChangedinStack += OnUpdateMaterialStack;
+            slot.Stack.NumberOfItemsChanged+= OnUpdateMaterial;
+        }
         canGet=CheckIfcanGet();
         HandleIfCanGet(canGet);
         writeConnections();
@@ -33,11 +41,30 @@ public class WeaponButton : MonoBehaviour
     private void OnDestroy()
     {
         PlayerWeaponSlot.UniversalMaterial.UpdatedMaterialValue -= OnUpdateMaterial;
+        InventoryHolder.UpdateWeaponButton -= OnUpdateMaterial;
+        GameItem.ItemPickUp -= OnUpdateMaterial;
+        foreach (var slot in PlayerInventory.itemsSlots)
+        {
+            slot.ValueChangedinStack -= OnUpdateMaterialStack;
+            slot.Stack.NumberOfItemsChanged-= OnUpdateMaterial;
+        }
+    }
+
+    private void OnEnable()
+    {
+        canGet=CheckIfcanGet();
+        HandleIfCanGet(canGet);
     }
 
     private void OnUpdateMaterial(object sender,EventArgs e)
     {
         
+        canGet=CheckIfcanGet();
+        HandleIfCanGet(canGet);
+    }
+    private void OnUpdateMaterialStack(object sender,InventorySlot.InventoryStackChangeArgs e)
+    {
+        Debug.Log("Changed");
         canGet=CheckIfcanGet();
         HandleIfCanGet(canGet);
     }
@@ -66,12 +93,30 @@ public class WeaponButton : MonoBehaviour
 
     private bool CheckIfcanGet()
     {
-        if (checkIfEnoughUM())
+        if (!checkIfEnoughUM())
         {
-            return true;
+            return false;
         }
 
-        return false;
+        if (!checkIfHaveRequieredItems())
+        {
+            Debug.Log("Not all items");
+            return false;
+        }
+
+        return true;
+    }
+
+    private bool checkIfHaveRequieredItems()
+    {
+        foreach (var reqItem in ItemRequierments)
+        {
+            if (!PlayerInventory.HasItem(reqItem))
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     private bool checkIfEnoughUM()

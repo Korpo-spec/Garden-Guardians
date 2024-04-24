@@ -9,14 +9,15 @@ namespace Script
     {
         [SerializeField]
         private ItemStack itemStack;
-        public bool active;
+        [SerializeField]
+        private bool active;
 
         public event EventHandler<InventoryStackChangeArgs> ValueChangedinStack; 
 
 
         public void ClearSlot()
         {
-            itemStack = null;
+            Stack = null;
         }
 
         public ItemStack Stack
@@ -42,10 +43,10 @@ namespace Script
 
         public int NumberOfItems
         {
-            get => itemStack.numberOfItemsInStack;
+            get => itemStack._numberofItemsInStack;
             set
             {
-                itemStack.numberOfItemsInStack = value;
+                itemStack._numberofItemsInStack = value;
                 OnValueChangedinStack();
             }
         }

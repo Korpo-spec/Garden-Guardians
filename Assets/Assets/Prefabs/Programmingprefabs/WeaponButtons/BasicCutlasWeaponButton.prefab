@@ -29,6 +29,22 @@ PrefabInstance:
       propertyPath: upgradeCost.SUMCost
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
+        type: 3}
+      propertyPath: ItemRequierments.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
+        type: 3}
+      propertyPath: ItemRequierments.Array.data[0]._item
+      value: 
+      objectReference: {fileID: 11400000, guid: aa6cb613da9fa4d4494d0a3e697d18fd,
+        type: 2}
+    - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
+        type: 3}
+      propertyPath: ItemRequierments.Array.data[0].numberOfItemsInStack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8143433180810153654, guid: fd6e16006e27d184fac62b5f608c9486,
         type: 3}
       propertyPath: m_Pivot.x

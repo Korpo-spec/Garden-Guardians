@@ -13,7 +13,7 @@ public class ActiveItemHandler : MonoBehaviour
 
    private void Start()
    {
-      _inventorySo.itemsSlots[0].active = true;
+      _inventorySo.itemsSlots[0].Active = true;
    }
 
    private void Update()
@@ -52,10 +52,10 @@ public class ActiveItemHandler : MonoBehaviour
       //every inventory to false
       foreach (var VARIABLE in _inventorySo.itemsSlots)
       {
-         VARIABLE.active = false;
+         VARIABLE.Active = false;
       }
       //active inventoryspot to true
-      _inventorySo.itemsSlots[currentPosInInventory].active = true;
+      _inventorySo.itemsSlots[currentPosInInventory].Active = true;
    }
 
 

@@ -6,6 +6,8 @@ public class InventoryHolder : MonoBehaviour
 {
     public InventorySO Inventory;
     public InventorySO weaponSlot;
+
+    public static event EventHandler UpdateWeaponButton;
     
     private void Start()
     {
@@ -31,6 +33,7 @@ public class InventoryHolder : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             ThrowActiveItemInInventory();
+            UpdateWeaponButton.Invoke(this,null);
         }
     }
 

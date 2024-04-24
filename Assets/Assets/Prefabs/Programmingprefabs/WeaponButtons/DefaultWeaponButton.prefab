@@ -92,8 +92,13 @@ MonoBehaviour:
     numberOfItemsInStack: 1
     maxStackSize: 8
   Button: {fileID: 8143433181432550149}
-  parents: []
   PlayerWeaponSlot: {fileID: 11400000, guid: 3977ccd0eeeebf34fa3c3f76c4a0ff8a, type: 2}
+  PlayerInventory: {fileID: 11400000, guid: 17bf045369c8ed0458855753c8358783, type: 2}
+  parents: []
+  ItemRequierments: []
+  upgradeCost:
+    UMCost: 0
+    SUMCost: 0
 --- !u!1 &8143433181432550155
 GameObject:
   m_ObjectHideFlags: 0

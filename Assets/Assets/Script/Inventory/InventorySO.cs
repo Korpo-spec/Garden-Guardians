@@ -20,7 +20,7 @@ public class InventorySO : ScriptableObject
     {
         if (itemStack._item.itemType==ItemType.Biomass)
         {
-            UniversalMaterial.addUniversalMaterials(itemStack.numberOfItemsInStack,2);
+            UniversalMaterial.addUniversalMaterials(itemStack._numberofItemsInStack,2);
             return true;
         }
         
@@ -34,7 +34,7 @@ public class InventorySO : ScriptableObject
             if (itemsSlots[i].Stack._item.name == itemStack._item.name)
             {
                 
-                return increaseAmountInstack(i,itemStack.numberOfItemsInStack,itemStack);
+                return increaseAmountInstack(i,itemStack._numberofItemsInStack,itemStack);
                 
             }
             
@@ -50,7 +50,7 @@ public class InventorySO : ScriptableObject
                 itemsSlots[i].Stack._item = itemStack._item;
                 
                 
-                return increaseAmountInstack(i,itemStack.numberOfItemsInStack,itemStack);
+                return increaseAmountInstack(i,itemStack._numberofItemsInStack,itemStack);
             }
         }
 
@@ -60,14 +60,14 @@ public class InventorySO : ScriptableObject
     private bool increaseAmountInstack(int index,int amount,ItemStack itemStack)
     {
         
-        itemsSlots[index].Stack.numberOfItemsInStack += amount;
+        itemsSlots[index].Stack._numberofItemsInStack += amount;
 
-        if (itemsSlots[index].Stack.numberOfItemsInStack>itemsSlots[index].Stack.maxStackSize)
+        if (itemsSlots[index].Stack._numberofItemsInStack>itemsSlots[index].Stack.maxStackSize)
         {
             
-            var rest = itemsSlots[index].Stack.numberOfItemsInStack - itemsSlots[index].Stack.maxStackSize;
+            var rest = itemsSlots[index].Stack._numberofItemsInStack - itemsSlots[index].Stack.maxStackSize;
             
-            itemsSlots[index].Stack.numberOfItemsInStack = itemsSlots[index].Stack.maxStackSize;
+            itemsSlots[index].Stack._numberofItemsInStack = itemsSlots[index].Stack.maxStackSize;
             
             for (int i = 0; i < itemsSlots.Count; i++)
             {
@@ -75,14 +75,14 @@ public class InventorySO : ScriptableObject
                 
                 if(itemsSlots[i].Stack._item.name == itemStack._item.name&&!itemsSlots[i].Stack.isFull)
                 {
-                    itemsSlots[i].Stack.numberOfItemsInStack += rest;
-                    if (itemsSlots[i].Stack.numberOfItemsInStack<=itemStack.maxStackSize)
+                    itemsSlots[i].Stack._numberofItemsInStack += rest;
+                    if (itemsSlots[i].Stack._numberofItemsInStack<=itemStack.maxStackSize)
                     {
                         return true;
                     }
-                    rest = itemsSlots[i].Stack.numberOfItemsInStack - itemsSlots[i].Stack.maxStackSize;
+                    rest = itemsSlots[i].Stack._numberofItemsInStack - itemsSlots[i].Stack.maxStackSize;
                     
-                    itemsSlots[i].Stack.numberOfItemsInStack = itemsSlots[i].Stack.maxStackSize;
+                    itemsSlots[i].Stack._numberofItemsInStack = itemsSlots[i].Stack.maxStackSize;
 
                 }
             }
@@ -93,18 +93,18 @@ public class InventorySO : ScriptableObject
                 if (!itemsSlots[i].Stack._item)
                 {
                     itemsSlots[i].Stack._item = itemStack._item;
-                    itemsSlots[i].Stack.numberOfItemsInStack += rest;
-                    if (itemsSlots[i].Stack.numberOfItemsInStack<=itemStack.maxStackSize)
+                    itemsSlots[i].Stack._numberofItemsInStack += rest;
+                    if (itemsSlots[i].Stack._numberofItemsInStack<=itemStack.maxStackSize)
                     {
                         return true;
                     }
-                    rest = itemsSlots[i].Stack.numberOfItemsInStack - itemsSlots[i].Stack.maxStackSize;
-                    itemsSlots[i].Stack.numberOfItemsInStack = itemsSlots[i].Stack.maxStackSize;
+                    rest = itemsSlots[i].Stack._numberofItemsInStack - itemsSlots[i].Stack.maxStackSize;
+                    itemsSlots[i].Stack._numberofItemsInStack = itemsSlots[i].Stack.maxStackSize;
                 }
                 
             }
 
-            itemStack.numberOfItemsInStack = rest;
+            itemStack._numberofItemsInStack = rest;
             return false;
         }
         
@@ -121,29 +121,43 @@ public class InventorySO : ScriptableObject
     public bool HasItem(ItemStack itemStack, bool CheckNumberOfItems=false)
     {
         var itemSlot = FindSlot(itemStack._item);
-        if (itemSlot==null)  return false;
+        if (itemSlot == null) return false;
+        if (itemSlot.Stack._item==null)  return false;
         if (!CheckNumberOfItems) return true;
 
         if (itemStack._item.isStackable)
         {
-            return itemSlot.NumberOfItems >= itemStack.numberOfItemsInStack;
+            return itemSlot.NumberOfItems >= itemStack._numberofItemsInStack;
         }
 
-        return itemsSlots.Count(slot => slot.Stack._item == itemStack._item) >= itemStack.numberOfItemsInStack;
+        return itemsSlots.Count(slot => slot.Stack._item == itemStack._item) >= itemStack._numberofItemsInStack;
     }
 
     private InventorySlot FindSlot(Item item, bool onlyStackable=false)
     {
-        return itemsSlots.FirstOrDefault(slot => slot.Stack._item == item && item.isStackable || !onlyStackable);
+        for (int i = 0; i < itemsSlots.Count; i++)
+        {
+            if (itemsSlots[i].Stack==null)
+            {
+                continue;
+            }
+            if (itemsSlots[i].Stack._item==item)
+            {
+                return itemsSlots[i];
+            }
+        }
+
+        return null;
+        //return itemsSlots.FirstOrDefault(slot => slot.Stack._item == item && item.isStackable || !onlyStackable);
     }
 
     public ActiveItemInfo FindActiveInvSlot()
     {
-        var slot = itemsSlots.Find(slot => slot.active);
+        var slot = itemsSlots.Find(slot => slot.Active);
         var activeindex = 0;
         for (int i = 0; i < itemsSlots.Count; i++)
         {
-            if (itemsSlots[i].active)
+            if (itemsSlots[i].Active)
             {
                 activeindex = i;
                 break;
@@ -185,12 +199,12 @@ public class InventorySO : ScriptableObject
             throw new Exception("No Item in the Inventory");
         }
 
-        if (itemSlot.Stack._item.isStackable&&itemSlot.NumberOfItems<itemStack.numberOfItemsInStack)
+        if (itemSlot.Stack._item.isStackable&&itemSlot.NumberOfItems<itemStack._numberofItemsInStack)
         {
             Debug.LogWarning("Not enough Items");
         }
 
-        itemSlot.NumberOfItems -= itemStack.numberOfItemsInStack;
+        itemSlot.NumberOfItems -= itemStack._numberofItemsInStack;
         if (itemSlot.Stack._item.isStackable&&itemSlot.NumberOfItems>0)
         {
             return itemSlot.Stack;

@@ -70,11 +70,14 @@ public class GameItem : MonoBehaviour
         {
             if (other.GetComponent<InventoryHolder>().Inventory.TryAddItem(stack))
             {
+                ItemPickUp.Invoke(this,null);
                 Destroy(gameObject);
             }
             
         }
     }
+
+    public static event EventHandler ItemPickUp;
 
     private void OnValidate()
     {

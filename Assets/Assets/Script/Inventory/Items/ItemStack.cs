@@ -8,7 +8,18 @@ public class ItemStack
 {
   public Item _item;
   
-  public int numberOfItemsInStack;
+  [SerializeField]
+  private int numberOfItemsInStack;
+
+  public int _numberofItemsInStack
+  {
+    get => numberOfItemsInStack;
+    set
+    {
+      numberOfItemsInStack = value;
+      NumberOfItemsChanged?.Invoke(this,null);
+    }
+  }
 
   [HideInInspector]
   public int maxStackSize=8;
@@ -16,8 +27,10 @@ public class ItemStack
   public bool isFull => numberOfItemsInStack >= maxStackSize;
   
   public bool isEmpty=>numberOfItemsInStack<=0;
-  
-  
+
+  public event EventHandler NumberOfItemsChanged;
+
+
 
   // public ItemStack(int numberOfItemsInStack, Item item)
   // {
