@@ -23,6 +23,7 @@ namespace Script.Entity
         [SerializeField] private bool destroyOnKill;
 
         [SerializeField] private EntityHealthEvents entityHealthEvents;
+        public event Action<GameObject> OnDeath; 
 
         private Rigidbody _rigidbody;
         private Animator _animator;
@@ -100,6 +101,7 @@ namespace Script.Entity
         
 
             entityHealthEvents.die.Invoke();
+            OnDeath?.Invoke(gameObject);
             if (destroyOnKill)
             {
                 Destroy(gameObject); 
