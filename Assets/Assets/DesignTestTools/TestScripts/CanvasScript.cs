@@ -25,6 +25,12 @@ public class CanvasScript : MonoBehaviour
     [SerializeField] private GameObject craftingOverview;
     [SerializeField] private Button inventoryButton;
     
+    // Crafting Menu
+    [SerializeField] private GameObject craftingMenu;
+    [SerializeField] private GameObject mainHandObject;
+    [SerializeField] private GameObject offHandObject;
+    [SerializeField] private GameObject armObject;
+    [SerializeField] private GameObject legObject;
     
     
     void Start()
@@ -37,6 +43,11 @@ public class CanvasScript : MonoBehaviour
         equipmentNMaterials.SetActive(false);
         craftingOverview.SetActive(false);
         inventoryButton.onClick.Invoke();
+        craftingMenu.SetActive(false);
+        mainHandObject.SetActive(false);
+        offHandObject.SetActive(false);
+        armObject.SetActive(false);
+        legObject.SetActive(false);
     }
     
     
@@ -95,6 +106,41 @@ public class CanvasScript : MonoBehaviour
     {
         equipmentNMaterials.SetActive(true);
         craftingOverview.SetActive(false);
+    }
+    
+    
+    
+    // Buttons for Crafting Menu
+    public void CraftingSlotMainHand()
+    {
+        mainHandObject.SetActive(true);
+        offHandObject.SetActive(false);
+        armObject.SetActive(false);
+        legObject.SetActive(false);
+    }
+
+    public void CraftingSlotOffHand()
+    {
+        mainHandObject.SetActive(false);
+        offHandObject.SetActive(true);
+        armObject.SetActive(false);
+        legObject.SetActive(false);
+    }
+
+    public void CraftingSlotArm()
+    {
+        mainHandObject.SetActive(false);
+        offHandObject.SetActive(false);
+        armObject.SetActive(true);
+        legObject.SetActive(false);
+    }
+
+    public void CraftingSlotLeg()
+    {
+        mainHandObject.SetActive(false);
+        offHandObject.SetActive(false);
+        armObject.SetActive(false);
+        legObject.SetActive(true);
     }
     
     
