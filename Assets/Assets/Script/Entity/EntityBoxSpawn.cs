@@ -45,7 +45,7 @@ public class EntityBoxSpawn : MonoBehaviour
         }
     }
     
-    private GameObject GetRandomSpawnObject()
+    private SpawnData GetRandomSpawnObject()
     {
         float random = Random.Range(0f, 1f);
         float current = 0;
@@ -54,7 +54,7 @@ public class EntityBoxSpawn : MonoBehaviour
             current += spawnData[i].spawnChance;
             if (random <= current)
             {
-                return spawnData[i].spawnObject;
+                return spawnData[i];
             }
         }
 
@@ -68,21 +68,23 @@ public class EntityBoxSpawn : MonoBehaviour
             return;
         }
 
-        GameObject spawnObject = GetRandomSpawnObject();
+        SpawnData spawnObject = GetRandomSpawnObject();
         if (spawnObject == null)
         {
             return;
         }
-        Vector3 randomPos = new Vector3(Random.Range(-size.x/2, size.x/2), transform.position.y, Random.Range(-size.z/2, size.z/2)) + transform.position;
-        NavMesh.SamplePosition(randomPos, out var hit, 1000, NavMesh.AllAreas);
-        //Physics.Raycast(randomPos, Vector3.down, out var hit, 1000, terrainLayer);
-        
 
-        randomPos = hit.position;
-        randomPos.y -= 0.5f;
-        GameObject entity = Instantiate(spawnObject, randomPos, Quaternion.identity);
-        SubscribeToDeathEvent(entity);
-        _aliveObjects.Add(entity);
+        for (int i = 0; i < spawnObject.spawnAmount; i++)
+        {
+            Vector3 randomPos = new Vector3(Random.Range(-size.x/2, size.x/2), transform.position.y, Random.Range(-size.z/2, size.z/2)) + transform.position;
+            NavMesh.SamplePosition(randomPos, out var hit, 1000, NavMesh.AllAreas);
+            randomPos = hit.position;
+            randomPos.y -= 0.5f;
+            GameObject entity = Instantiate(spawnObject.spawnObject, randomPos, Quaternion.identity);
+            SubscribeToDeathEvent(entity);
+            _aliveObjects.Add(entity);
+        }
+        
     }
 
     
@@ -186,5 +188,6 @@ public class EntityBoxSpawn : MonoBehaviour
 public class SpawnData
 {
     public GameObject spawnObject;
+    public int spawnAmount = 1;
     public float spawnChance;
 }
