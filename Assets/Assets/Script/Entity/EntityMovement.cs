@@ -26,6 +26,7 @@ public class EntityMovement : MonoBehaviour
        TryGetComponent<NavMeshAgent>(out _agent);
        _prevDirVector = transform.forward;
        
+       
     }
 
     // Update is called once per frame

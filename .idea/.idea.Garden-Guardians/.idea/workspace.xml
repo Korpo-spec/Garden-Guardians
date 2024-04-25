@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed weapon">
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Spawn fixing">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/BasicCutlasWeaponButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/BasicCutlasWeaponButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/DefaultWeaponButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/DefaultWeaponButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/ActiveItemHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/ActiveItemHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/GameItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/GameItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/GameItemSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/GameItemSpawn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventoryHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventoryHolder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/InventorySlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/InventorySlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/ItemStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/ItemStack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/UI/WeaponButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/UI/WeaponButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/PlayerInventory.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/PlayerInventory.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/UMs/PlayerUM.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/UMs/PlayerUM.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityBoxSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityBoxSpawn.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +14,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d630687edd41403db17561f5afda04df10fc00/ac/92a26f48/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Scenes/Testing_Scenes/LT1Scene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Entity/EnemyCircleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Script/Entity/EntityBoxSpawn.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Script/Entity/EntityBoxSpawn.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/VectorVariable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -42,31 +30,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Sebas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Sebas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Sebas\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\b21cassa\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\Unity 2021.3.24f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.24f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Temp\github\Garden-Guardians -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Temp\github\Garden-Guardians" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -74,7 +62,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\Unity 2021.3.24f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.24f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Temp\github\Garden-Guardians -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Temp\github\Garden-Guardians" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -91,10 +79,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="39476">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="39476" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -140,6 +128,9 @@
       <workItem from="1713514991313" duration="1135000" />
       <workItem from="1713792838130" duration="2330000" />
       <workItem from="1713945590125" duration="8187000" />
+      <workItem from="1714037383411" duration="48000" />
+      <workItem from="1714037468145" duration="3095000" />
+      <workItem from="1714046278098" duration="4649000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>
@@ -297,7 +288,31 @@
       <option name="presentableId" value="LOCAL−00026" />
       <updated>1713779682150</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL−00027" summary="Working range modifier">
+      <created>1714049581043</created>
+      <option name="number" value="LOCAL−00027" />
+      <option name="presentableId" value="LOCAL−00027" />
+      <updated>1714049581043</updated>
+    </task>
+    <task id="LOCAL−00028" summary="Fixed some stuffs for spawn">
+      <created>1714049846909</created>
+      <option name="number" value="LOCAL−00028" />
+      <option name="presentableId" value="LOCAL−00028" />
+      <updated>1714049846909</updated>
+    </task>
+    <task id="LOCAL−00029" summary="Fixed spawn amount">
+      <created>1714050849411</created>
+      <option name="number" value="LOCAL−00029" />
+      <option name="presentableId" value="LOCAL−00029" />
+      <updated>1714050849411</updated>
+    </task>
+    <task id="LOCAL−00030" summary="Spawn fixing">
+      <created>1714051235535</created>
+      <option name="number" value="LOCAL−00030" />
+      <option name="presentableId" value="LOCAL−00030" />
+      <updated>1714051235535</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,10 +347,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Combat animations done, polish needed" />
-    <MESSAGE value="Old sword returns" />
-    <MESSAGE value="Moved sword a bit" />
-    <MESSAGE value="Colliders fixed" />
     <MESSAGE value="Moved code to more accecible class" />
     <MESSAGE value="Terrain Textures" />
     <MESSAGE value="Trying out movement on attack" />
@@ -357,6 +368,10 @@
     <MESSAGE value="Added fences made with splines" />
     <MESSAGE value="Start of enemy spawns" />
     <MESSAGE value="Fixed weapon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed weapon" />
+    <MESSAGE value="Working range modifier" />
+    <MESSAGE value="Fixed some stuffs for spawn" />
+    <MESSAGE value="Fixed spawn amount" />
+    <MESSAGE value="Spawn fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spawn fixing" />
   </component>
 </project>
