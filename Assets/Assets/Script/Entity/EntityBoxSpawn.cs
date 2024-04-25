@@ -15,7 +15,6 @@ public class EntityBoxSpawn : MonoBehaviour
     [SerializeField] private float spawnRate = 1f;
     [SerializeField] private int maxSpawnedEntities = 10;
     [SerializeField] private List<SpawnData> spawnData = new List<SpawnData>();
-    [SerializeField] private LayerMask terrainLayer;
     private HashSet<GameObject> _aliveObjects = new HashSet<GameObject>();
     
     private float _spawnTimer = 0;
