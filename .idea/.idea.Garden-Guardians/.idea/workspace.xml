@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed spawn amount">
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Spawn fixing">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityBoxSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityBoxSpawn.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Scenes/Testing_Scenes/LT1Scene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Entity/EnemyCircleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Script/Entity/EntityBoxSpawn.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Script/Entity/EntityBoxSpawn.cs" root0="SKIP_HIGHLIGHTING" />
@@ -128,7 +130,7 @@
       <workItem from="1713945590125" duration="8187000" />
       <workItem from="1714037383411" duration="48000" />
       <workItem from="1714037468145" duration="3095000" />
-      <workItem from="1714046278098" duration="4311000" />
+      <workItem from="1714046278098" duration="4649000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>
@@ -304,7 +306,13 @@
       <option name="presentableId" value="LOCAL−00029" />
       <updated>1714050849411</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL−00030" summary="Spawn fixing">
+      <created>1714051235535</created>
+      <option name="number" value="LOCAL−00030" />
+      <option name="presentableId" value="LOCAL−00030" />
+      <updated>1714051235535</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +347,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Colliders fixed" />
     <MESSAGE value="Moved code to more accecible class" />
     <MESSAGE value="Terrain Textures" />
     <MESSAGE value="Trying out movement on attack" />
@@ -364,6 +371,7 @@
     <MESSAGE value="Working range modifier" />
     <MESSAGE value="Fixed some stuffs for spawn" />
     <MESSAGE value="Fixed spawn amount" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed spawn amount" />
+    <MESSAGE value="Spawn fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spawn fixing" />
   </component>
 </project>

@@ -14,6 +14,7 @@ public class EntityBoxSpawn : MonoBehaviour
     
     [SerializeField] private float spawnRate = 1f;
     [SerializeField] private int maxSpawnedEntities = 10;
+    [SerializeField] private int maxTotalSpawned = 30;
     [SerializeField] private List<SpawnData> spawnData = new List<SpawnData>();
     private HashSet<GameObject> _aliveObjects = new HashSet<GameObject>();
     
@@ -83,8 +84,13 @@ public class EntityBoxSpawn : MonoBehaviour
             GameObject entity = Instantiate(spawnObject.spawnObject, randomPos, Quaternion.identity);
             SubscribeToDeathEvent(entity);
             _aliveObjects.Add(entity);
+            maxTotalSpawned--;
         }
-        
+
+        if (maxTotalSpawned <= 0)
+        {
+            enabled = false;
+        }
     }
 
     
@@ -116,12 +122,12 @@ public class EntityBoxSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _spawnTimer += Time.deltaTime;
+        
         if (activateOnPlayerProximity)
         {
             _active = CheckIfPlayerInRange();
         }
-       
+        _spawnTimer += Time.deltaTime;
         if (_spawnTimer >= spawnRate && _active)
         {
             _spawnTimer = 0;
