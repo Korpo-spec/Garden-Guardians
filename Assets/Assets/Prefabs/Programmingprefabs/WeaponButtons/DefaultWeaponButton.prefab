@@ -87,18 +87,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef6127f85764094bac483644ba8b1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponModul:
-    _item: {fileID: 0}
-    numberOfItemsInStack: 1
-    maxStackSize: 8
   Button: {fileID: 8143433181432550149}
-  PlayerWeaponSlot: {fileID: 11400000, guid: 3977ccd0eeeebf34fa3c3f76c4a0ff8a, type: 2}
-  PlayerInventory: {fileID: 11400000, guid: 17bf045369c8ed0458855753c8358783, type: 2}
-  parents: []
-  ItemRequierments: []
-  upgradeCost:
-    UMCost: 0
-    SUMCost: 0
+  _weaponButtonSo: {fileID: 11400000, guid: af445eba6fb324041a3f49b19be85b04, type: 2}
 --- !u!1 &8143433181432550155
 GameObject:
   m_ObjectHideFlags: 0

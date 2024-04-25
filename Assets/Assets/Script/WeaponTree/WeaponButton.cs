@@ -10,25 +10,21 @@ using UnityEngine.UI;
 
 public class WeaponButton : MonoBehaviour
 {
-    public ItemStack weaponModul;
-
     private bool canGet;
-    public static event EventHandler weaponBought;
     public Button Button;
-    public InventorySO PlayerWeaponSlot;
-    public InventorySO PlayerInventory;
-    public List<WeaponButton> parents;
+    public static event EventHandler weaponBought;
 
-    [Header("Requierments")]
-    public List<ItemStack> ItemRequierments;
-    public UpgradeCost upgradeCost;
+
+
+    public WeaponButtonSO _weaponButtonSo;
 
     private void Start()
     {
-        PlayerWeaponSlot.UniversalMaterial.UpdatedMaterialValue += OnUpdateMaterial;
+        Button = GetComponentInChildren<Button>();
+        _weaponButtonSo.PlayerWeaponSlot.UniversalMaterial.UpdatedMaterialValue += OnUpdateMaterial;
         InventoryHolder.UpdateWeaponButton += OnUpdateMaterial;
         GameItem.ItemPickUp += OnUpdateMaterial;
-        foreach (var slot in PlayerInventory.itemsSlots)
+        foreach (var slot in _weaponButtonSo.PlayerInventory.itemsSlots)
         {
             slot.ValueChangedinStack += OnUpdateMaterialStack;
             slot.Stack.NumberOfItemsChanged+= OnUpdateMaterial;
@@ -40,10 +36,10 @@ public class WeaponButton : MonoBehaviour
 
     private void OnDestroy()
     {
-        PlayerWeaponSlot.UniversalMaterial.UpdatedMaterialValue -= OnUpdateMaterial;
+        _weaponButtonSo.PlayerWeaponSlot.UniversalMaterial.UpdatedMaterialValue -= OnUpdateMaterial;
         InventoryHolder.UpdateWeaponButton -= OnUpdateMaterial;
         GameItem.ItemPickUp -= OnUpdateMaterial;
-        foreach (var slot in PlayerInventory.itemsSlots)
+        foreach (var slot in _weaponButtonSo.PlayerInventory.itemsSlots)
         {
             slot.ValueChangedinStack -= OnUpdateMaterialStack;
             slot.Stack.NumberOfItemsChanged-= OnUpdateMaterial;
@@ -52,6 +48,11 @@ public class WeaponButton : MonoBehaviour
 
     private void OnEnable()
     {
+        CheckIfCanGet();
+    }
+
+    public void CheckIfCanGet()
+    {
         canGet=CheckIfcanGet();
         HandleIfCanGet(canGet);
     }
@@ -59,14 +60,12 @@ public class WeaponButton : MonoBehaviour
     private void OnUpdateMaterial(object sender,EventArgs e)
     {
         
-        canGet=CheckIfcanGet();
-        HandleIfCanGet(canGet);
+        CheckIfCanGet();
     }
     private void OnUpdateMaterialStack(object sender,InventorySlot.InventoryStackChangeArgs e)
     {
         Debug.Log("Changed");
-        canGet=CheckIfcanGet();
-        HandleIfCanGet(canGet);
+        CheckIfCanGet();
     }
 
     public void GetWeapon()
@@ -74,7 +73,7 @@ public class WeaponButton : MonoBehaviour
         if (canGet)
         {
             BuyUpgrade();
-            PlayerWeaponSlot.itemsSlots[0].Stack = weaponModul;
+            _weaponButtonSo.PlayerWeaponSlot.itemsSlots[0].Stack = _weaponButtonSo.weaponModul;
             weaponBought?.Invoke(this,null);
         }
     }
@@ -82,16 +81,16 @@ public class WeaponButton : MonoBehaviour
     private void BuyUpgrade()
     {
         removeFromUniversalMaterial();
-        foreach (var reqItem in ItemRequierments)
+        foreach (var reqItem in _weaponButtonSo.ItemRequierments)
         {
-            PlayerInventory.RemoveReqItemFromInventory(reqItem);
+            _weaponButtonSo.PlayerInventory.RemoveReqItemFromInventory(reqItem);
         }
         
     }
 
     private void removeFromUniversalMaterial()
     {
-        PlayerWeaponSlot.UniversalMaterial.removeUniversalMaterials(upgradeCost._UMCost,upgradeCost._SUMCost);
+        _weaponButtonSo.PlayerWeaponSlot.UniversalMaterial.removeUniversalMaterials(_weaponButtonSo.upgradeCost._UMCost,_weaponButtonSo.upgradeCost._SUMCost);
         
     }
     
@@ -119,14 +118,14 @@ public class WeaponButton : MonoBehaviour
 
     private bool checkIfHaveRequieredItems()
     {
-        foreach (var reqItem in ItemRequierments)
+        foreach (var reqItem in _weaponButtonSo.ItemRequierments)
         {
-            if (!PlayerInventory.HasItem(reqItem))
+            if (!_weaponButtonSo.PlayerInventory.HasItem(reqItem))
             {
                 return false;
             }
 
-            if (reqItem._numberofItemsInStack>PlayerInventory.TotalNumberOfItemsInInventory(reqItem._item))
+            if (reqItem._numberofItemsInStack>_weaponButtonSo.PlayerInventory.TotalNumberOfItemsInInventory(reqItem._item))
             {
                 return false;
             }
@@ -137,8 +136,8 @@ public class WeaponButton : MonoBehaviour
 
     private bool checkIfEnoughUM()
     {
-        if (PlayerWeaponSlot.UniversalMaterial.UniversalMaterial>=upgradeCost._UMCost&&
-            PlayerWeaponSlot.UniversalMaterial.SpecialUniversalMaterial>=upgradeCost._SUMCost)
+        if (_weaponButtonSo.PlayerWeaponSlot.UniversalMaterial.UniversalMaterial>=_weaponButtonSo.upgradeCost._UMCost&&
+            _weaponButtonSo.PlayerWeaponSlot.UniversalMaterial.SpecialUniversalMaterial>=_weaponButtonSo.upgradeCost._SUMCost)
         {
             return true;
         }
@@ -149,6 +148,11 @@ public class WeaponButton : MonoBehaviour
     private void HandleIfCanGet(bool canGet)
     {
         Button.interactable = canGet;
+    }
+
+    private void OnValidate()
+    {
+        Button.GetComponent<Image>().sprite = _weaponButtonSo.weaponSprite;
     }
 
     [Serializable]

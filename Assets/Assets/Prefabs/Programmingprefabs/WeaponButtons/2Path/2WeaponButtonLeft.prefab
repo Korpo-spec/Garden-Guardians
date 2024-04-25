@@ -11,39 +11,24 @@ PrefabInstance:
         type: 3}
       propertyPath: weaponModul
       value: 
-      objectReference: {fileID: 11400000, guid: 172a09df0254674418a18163f3598505,
+      objectReference: {fileID: 11400000, guid: 5f64ef4666d0221428acb16f81b1e377,
+        type: 2}
+    - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
+        type: 3}
+      propertyPath: _weaponButtonSo
+      value: 
+      objectReference: {fileID: 11400000, guid: 75bb91db73821a84f92f196b00d018d1,
         type: 2}
     - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
         type: 3}
       propertyPath: weaponModul._item
       value: 
-      objectReference: {fileID: 11400000, guid: c6fc9099ef1acae47a8aeea45ef67028,
+      objectReference: {fileID: 11400000, guid: 93a907546dc846948a1639f48b9d13da,
         type: 2}
     - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
         type: 3}
       propertyPath: upgradeCost.UMCost
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
-        type: 3}
-      propertyPath: upgradeCost.SUMCost
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
-        type: 3}
-      propertyPath: ItemRequierments.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
-        type: 3}
-      propertyPath: ItemRequierments.Array.data[0]._item
-      value: 
-      objectReference: {fileID: 11400000, guid: aa6cb613da9fa4d4494d0a3e697d18fd,
-        type: 2}
-    - target: {fileID: 5017281463815678005, guid: fd6e16006e27d184fac62b5f608c9486,
-        type: 3}
-      propertyPath: ItemRequierments.Array.data[0].numberOfItemsInStack
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8143433180810153654, guid: fd6e16006e27d184fac62b5f608c9486,
         type: 3}
@@ -153,13 +138,13 @@ PrefabInstance:
     - target: {fileID: 8143433180810153655, guid: fd6e16006e27d184fac62b5f608c9486,
         type: 3}
       propertyPath: m_Name
-      value: BasicCutlasWeaponButton
+      value: CarrotFlail
       objectReference: {fileID: 0}
     - target: {fileID: 8143433181432550148, guid: fd6e16006e27d184fac62b5f608c9486,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3fad8d3663fa3c849906d07e5997a357,
+      objectReference: {fileID: 21300000, guid: f7f472272b0ef934999392a3d282e5e9,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd6e16006e27d184fac62b5f608c9486, type: 3}
