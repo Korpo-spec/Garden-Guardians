@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Script.PlayerMovement;
@@ -25,6 +26,9 @@ public class CanvasScript : MonoBehaviour
     [SerializeField] private GameObject craftingOverview;
     [SerializeField] private Button inventoryButton;
     
+    // Pause Menu
+    [SerializeField] private GameObject pauseMenu;
+    
     // Crafting Menu
     [SerializeField] private GameObject craftingMenu;
     [SerializeField] private GameObject mainHandObject;
@@ -37,20 +41,16 @@ public class CanvasScript : MonoBehaviour
     {
         gameStarted = true;
         
-        // Sets all UI objects to correct Active or Inactive state
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).gameObject.SetActive(false);
+        }
+        
         hud.SetActive(true);
-        inventoryMenu.SetActive(false);
-        equipmentNMaterials.SetActive(false);
-        craftingOverview.SetActive(false);
         inventoryButton.onClick.Invoke();
-        craftingMenu.SetActive(false);
-        mainHandObject.SetActive(false);
-        offHandObject.SetActive(false);
-        armObject.SetActive(false);
-        legObject.SetActive(false);
+        sPoint2.SetActive(false);
     }
-    
-    
+
 
     void Update()
     {
@@ -82,6 +82,21 @@ public class CanvasScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             craftingMenu.SetActive(true);
+        }
+        
+        // Activate Pause Menu
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (pauseMenu.activeSelf == false)
+            {
+                pauseMenu.SetActive(true);
+                hud.SetActive(false);
+            }
+            else
+            {
+                pauseMenu.SetActive(false);
+                hud.SetActive(true);
+            }
         }
     }
     

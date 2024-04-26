@@ -22,7 +22,7 @@ namespace Script.PlayerMovement
         [SerializeField] public bool staminaPointsChanged;
 
         private int timer;
-        private int resetTime = 210;
+        private int resetTime = 60;
 
         [SerializeField] private GameObject point1;
 
@@ -33,7 +33,7 @@ namespace Script.PlayerMovement
         // Start is called before the first frame update
         void Start()
         {
-            staminaPointMax = 2;
+            staminaPointMax = 1;
             staminaPoints = staminaPointMax;
             timer = resetTime;
         }
