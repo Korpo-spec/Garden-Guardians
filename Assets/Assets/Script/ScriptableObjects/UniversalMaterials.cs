@@ -56,7 +56,7 @@ public class UniversalMaterials : ScriptableObject
 
     private void OnValidate()
     {
-        UpdatedMaterialValue.Invoke(this,null);
+        UpdatedMaterialValue?.Invoke(this,null);
         if (ClearMaterials)
         {
             ClearUniMaterials();
