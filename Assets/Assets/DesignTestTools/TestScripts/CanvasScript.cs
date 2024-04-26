@@ -10,6 +10,7 @@ public class CanvasScript : MonoBehaviour
 {
     // ------ Functionality ------
     private bool gameStarted;
+    private int layerInt;
     
     // Get script for stamina points
     public PlayerInputHandler playerInputHandler;
@@ -40,6 +41,7 @@ public class CanvasScript : MonoBehaviour
     void Start()
     {
         gameStarted = true;
+        layerInt = 0;
         
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -78,10 +80,20 @@ public class CanvasScript : MonoBehaviour
             playerInputHandler.staminaPointsChanged = false;
             UpdateStaminaPoints();
         }
-
+        
+        // Activate Pause Menu
         if (Input.GetKeyDown(KeyCode.C))
         {
-            craftingMenu.SetActive(true);
+            if (craftingMenu.activeSelf == false)
+            {
+                craftingMenu.SetActive(true);
+                hud.SetActive(false);
+            }
+            else
+            {
+                craftingMenu.SetActive(false);
+                hud.SetActive(true);
+            }
         }
         
         // Activate Pause Menu
