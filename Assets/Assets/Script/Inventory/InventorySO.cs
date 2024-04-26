@@ -16,6 +16,8 @@ public class InventorySO : ScriptableObject
 
     public UniversalMaterials UniversalMaterial;
 
+    
+
     public bool TryAddItem(ItemStack itemStack)
     {
         if (itemStack._item.itemType==ItemType.Biomass)
@@ -51,7 +53,8 @@ public class InventorySO : ScriptableObject
             
             if (itemsSlots[i].Stack._item==null)
             {
-                itemsSlots[i].Stack._item = itemStack._item;
+                itemsSlots[i].Stack = itemStack;
+                //itemsSlots[i].Stack._item = itemStack._item;
                 
                 
                 return increaseAmountInstack(i,itemStack._numberofItemsInStack,itemStack);

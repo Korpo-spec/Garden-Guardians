@@ -32,8 +32,9 @@ public class InventoryHolder : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.T))
         {
+            
             ThrowActiveItemInInventory();
-            UpdateWeaponButton.Invoke(this,null);
+            UpdateWeaponButton?.Invoke(this,null);
         }
     }
 

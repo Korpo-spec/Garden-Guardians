@@ -63,21 +63,22 @@ public class GameItem : MonoBehaviour
     {
         transform.Rotate(new Vector3(0,0.5f,0));
     }
-
+    
+    public static event EventHandler ItemPickUp;
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Player"))
         {
             if (other.GetComponent<InventoryHolder>().Inventory.TryAddItem(stack))
             {
-                ItemPickUp.Invoke(this,null);
+                ItemPickUp?.Invoke(this,null);
                 Destroy(gameObject);
             }
             
         }
     }
 
-    public static event EventHandler ItemPickUp;
+    
 
     private void OnValidate()
     {

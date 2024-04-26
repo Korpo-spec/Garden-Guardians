@@ -5,623 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed wepons for new model">
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Material/PlayerMat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Material/PlayerMat/PlayerMat1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Material/PlayerMat/PlayerMat1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/.sample.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Animations/DoorLeft.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Animations/DoorLeft.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Animations/DoorRight.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Animations/DoorRight.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Animations/RotationCenter.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Animations/RotationCenter.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Animations/RotationLight.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Animations/RotationLight.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Animations/Rotator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Animations/Rotator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/RP_Assets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/RP_Assets/ForwardRenderer.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/RP_Assets/ForwardRenderer.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/RP_Assets/UTS2URPPipelineAsset.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/RP_Assets/UTS2URPPipelineAsset.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/ARtexAlpha.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/ARtexAlpha.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/face3_main_spow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/face3_main_spow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/para_height2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/para_height2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/yuko_face3_B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/yuko_face3_B.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/yuko_face3_main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/yuko_face3_main.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/yuko_hair.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/yuko_hair.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/yuko_hairB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/yuko_hairB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/yuko_hairS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Textures/yuko_hairS.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/White.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/White.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Yu_Eyebrow_StencilMask.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Yu_Eyebrow_StencilMask.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Yu_Face.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Yu_Face.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Yu_Face2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/Yu_Face2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/hair_main_StencilOut.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/hair_main_StencilOut.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/hair_main_Zofs.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/hair_main_Zofs.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/hair_noHL.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Materials/hair_noHL.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Prefabs/YukoRig.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/Prefabs/YukoRig.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/yukoN6.FBX" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/AngelRing/yukoN6.FBX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Cube_HardEdge.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Cube_HardEdge.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Cube_HardEdge.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Cube_HardEdge.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Normal_Cube_SoftEdge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Normal_Cube_SoftEdge.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Normal_Cube_Sphere.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Normal_Cube_Sphere.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Normal_Silinder_SoftEdge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Normal_Silinder_SoftEdge.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Silinder_HardEdge.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Silinder_HardEdge.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Silinder_HardEdge.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Baked Normal/Silinder_HardEdge.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection/BoxProjection.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection/BoxProjection.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection/BoxProjection.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection/BoxProjection/BoxProjection Profile.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection/BoxProjection/BoxProjection Profile.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection/BoxProjection/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection/BoxProjection/LightingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection/BoxProjection/ReflectionProbe-0.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection/BoxProjection/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection/Gray.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/BoxProjection/Gray.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Cube_HardEdge.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Cube_HardEdge.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/EmissiveAnimation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/EmissiveAnimation.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/EmissiveAnimation.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/EmissiveAnimation/EmissiveAnimation Profile.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/EmissiveAnimation/EmissiveAnimation Profile.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/EmissiveAnimation/EmissiveAnimation.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/EmissiveAnimation/EmissiveAnimation.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/EmissiveAnimation/EmissiveAnimation.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/EmissiveAnimation/EmissiveAnimation.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/EmissiveAnimation/UnityLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/EmissiveAnimation/UnityLogo.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Grey_Lit(Universal).mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Grey_Lit(Universal).mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Grey_SimleLit(Universal).mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Grey_SimleLit(Universal).mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Grey_UTS2(Universal).mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Grey_UTS2(Universal).mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Grey_UTS2_GI_Intensity(Universal).mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Grey_UTS2_GI_Intensity(Universal).mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/LightingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/PointLights.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/PointLights.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/ReflectionProbe-0.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/ReflectionProbe-1.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/ReflectionProbe-1.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Sky_LightAndShadows.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/Sky_LightAndShadows.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/sphere_Green.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/sphere_Green.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/sphere_Purple.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows/sphere_Purple.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/LightingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-1_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-1_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-1_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-1_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-2_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-2_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-2_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-2_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-3_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-3_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-3_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-3_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-4_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-4_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-4_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/Lightmap-4_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/ReflectionProbe-0.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/LightAndShadows_BakedLight/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/MatCapMask.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/MatCapMask.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/MatCapMask.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/MatCapMask/MatCapMask.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/MatCapMask/MatCapMask.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/MatCapMask/UTS2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/MatCapMask/UTS2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/MatCapMask/mapping_grid_color_512.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/MatCapMask/mapping_grid_color_512.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/Cube.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/Cube.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/FaceOrientation.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/FaceOrientation.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/Ground.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/Ground.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/MatCapMask_Mirror.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/MatCapMask_Mirror.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/Mirror.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/Mirror.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/MirrorFlame.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Materials/MirrorFlame.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Scripts/MirrorReflection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Scripts/MirrorReflection.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Shader/FaceOrientation.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Shader/FaceOrientation.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Shader/Mirror.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Shader/Mirror.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Specification.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Specification.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Textures/ColorMapSampler.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Textures/ColorMapSampler.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Textures/Dark_Silhouette 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Textures/Dark_Silhouette 1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Textures/UVCheckGrid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Mirror/Textures/UVCheckGrid.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/MirrorTest.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/MirrorTest.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/Cameras.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/Cameras.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/DecoPlane_Nromal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/DecoPlane_Nromal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/LightingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/NormalMap.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/NormalMap.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/NromalMap_ST.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/NromalMap_ST.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/NromalMap_UST2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/NromalMap_UST2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/Quad_SPNormal.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/Quad_SPNormal.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/ReflectionProbe-0.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/ReflectionProbe-1.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/NormalMap/ReflectionProbe-1.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest/DoubleShadeWithFeather.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest/DoubleShadeWithFeather.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest/PointLightTest.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest/PointLightTest.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest/Post-process Volume Profile.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest/Post-process Volume Profile.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest/SceneLights Hi-Cut_Filter Test.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest/SceneLights Hi-Cut_Filter Test.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest/ShadingGradeMap.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/PointLightTest/ShadingGradeMap.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Blue_Clipping.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Blue_Clipping.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Flesh_Trans.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Flesh_Trans.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/NormalForMatCap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/NormalForMatCap.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Plane.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Plane.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Quad_TransStencilOut.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Quad_TransStencilOut.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Red.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Red.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Red_Clipping.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Red_Clipping.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/SampleMask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/SampleMask.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/ShadingGradeMap.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/ShadingGradeMap.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/ShadingGradeMap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/ShadingGradeMap.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Sphere.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Sphere.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/TransMask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/TransMask.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Transparent.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/Sample/Transparent.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/SceneLights Hi-Cut_Filter Test.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/SceneLights Hi-Cut_Filter Test.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Emerald.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Emerald.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Emerald_Inside.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Emerald_Inside.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Flesh2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Flesh2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Flesh3.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Flesh3.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/LightingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationFloor(LWRP).mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationFloor(LWRP).mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationFloor.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationFloor.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationGreyscaleDark.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationGreyscaleDark.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationGreyscaleLight.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationGreyscaleLight.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationRGBScale(LWRP).mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationRGBScale(LWRP).mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationRGBScale.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/CalibrationRGBScale.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/IndentA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/IndentA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/Rubber.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/Rubber.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/UTS2_Sample.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/UTS2_Sample.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/checkerA.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/checkerA.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/white.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Materials/white.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Model.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Model/CalibrationScaleRGB.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Model/CalibrationScaleRGB.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Model/shaderBall.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Model/shaderBall.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/CalibrationScales.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/CalibrationScales.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/Cameras.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/Cameras.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/Lights.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/Lights.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/ReflectionProbes.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/ReflectionProbes.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/SceneElements.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/SceneElements.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/shaderBall.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Prefabs/shaderBall.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/ReflectionProbe-0.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/ReflectionProbe-1.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/ReflectionProbe-1.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/ShaderBall.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/ShaderBall/Post-process Volume Profile-shaderball.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/ShaderBall/Post-process Volume Profile-shaderball.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Skyboxes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Skyboxes/DaytimeSkybox.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Skyboxes/DaytimeSkybox.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CailbrationRGBScaleDiffuse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CailbrationRGBScaleDiffuse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CalibrationFloorDiffuse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CalibrationFloorDiffuse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CalibrationFloorNormals.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CalibrationFloorNormals.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CalibrationFloorSpecularGloss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CalibrationFloorSpecularGloss.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CalibrationGreyscaleDarkDiffuse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CalibrationGreyscaleDarkDiffuse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CalibrationGreyscaleLightDiffuse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/CalibrationGreyscaleLightDiffuse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/Chrome_Bright_Blue_Tint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/Chrome_Bright_Blue_Tint.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/DefaultReflection.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/DefaultReflection.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/IndentA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/IndentA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/ReflectorSoftboxDiffuse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/ReflectorSoftboxDiffuse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/RubberDiffuse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/RubberDiffuse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/RubberNormal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/RubberNormal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/RubberOcclusion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/RubberOcclusion.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/RubberSpecular.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/RubberSpecular.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/Sample2MatcapMask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/Sample2MatcapMask.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/checkerA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/checkerA.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ShaderBall/Textures/white.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_CelLook(RTHS).unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_CelLook(RTHS).unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_CelLook.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_CelLook.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_Emissive.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_Emissive.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_Emissive.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_Emissive/Post-process Volume Profile.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_Emissive/Post-process Volume Profile.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_Firefly.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_Firefly.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_Firefly.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_Firefly/Post-process Volume Profile.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_Firefly/Post-process Volume Profile.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_LightCulling.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/Scenes/ToonShader_LightCulling.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Face.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Face.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Face_Firefly.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Face_Firefly.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Face_Firefly_RTHS.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Face_Firefly_RTHS.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Face_RTHS.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Face_RTHS.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Fhair2_StencilOut.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Fhair2_StencilOut.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Fhair2_StencilOut_RTHS.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Fhair2_StencilOut_RTHS.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Fhair_StencilOut.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Fhair_StencilOut.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Fhair_StencilOut_RTHS.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Fhair_StencilOut_RTHS.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Hair_Clipping.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Hair_Clipping.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Hair_Clipping_Firefly.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Hair_Clipping_Firefly.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Hair_Clipping_RTHS.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Hair_Clipping_RTHS.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Head_Clipping.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Head_Clipping.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Head_Clipping_RTHS.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Head_Clipping_RTHS.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Main.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Main.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Main_Firefly.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Main_Firefly.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Main_RTHS.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/CellTouch_ToonShader_Main_RTHS.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/Emissive_Lit.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/Emissive_Lit.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/Emissive_UTS2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/Emissive_UTS2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eye_Clipping_StencilMask.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eye_Clipping_StencilMask.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eye_Clipping_StencilMask_ABN.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eye_Clipping_StencilMask_ABN.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eye_Clipping_StencilMask_Firefly.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eye_Clipping_StencilMask_Firefly.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eye_Clipping_StencilMask_RTHS.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eye_Clipping_StencilMask_RTHS.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eyebrow_StencilMask.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eyebrow_StencilMask.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eyebrow_StencilMask_ABN.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eyebrow_StencilMask_ABN.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eyebrow_StencilMask_RTHS.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Eyebrow_StencilMask_RTHS.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Face.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Face.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Face_ABN.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Face_ABN.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Fhair2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Fhair2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Fhair_StencilOut.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Fhair_StencilOut.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Fhair_StencilOut_ABN.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Fhair_StencilOut_ABN.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Hair_Clipping.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Hair_Clipping.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Hair_Clipping_ABN.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Hair_Clipping_ABN.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Hair_Clipping_ABN_FrontCulling.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Hair_Clipping_ABN_FrontCulling.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Head_Clipping.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Head_Clipping.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Head_Clipping_ABN.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Head_Clipping_ABN.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Head_Clipping_Emissive.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Head_Clipping_Emissive.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Main.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Main.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Main_ABN.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Materials/ToonShader_Main_ABN.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Animations/SD_unitychan_motion_humanoid.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Animations/SD_unitychan_motion_humanoid.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Animations/SD_unitychan_motion_humanoid.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Animations/SD_unitychan_motion_humanoid.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Emissive Blue.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Emissive Blue.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Emissive Orange.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Emissive Orange.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Emissive Red.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Emissive Red.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/angry@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/angry@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/confuse@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/confuse@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/damaged@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/damaged@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/default@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/default@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/eye_close@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/eye_close@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_L@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_L@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_R@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_R@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_a@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_a@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_e@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_e@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_i@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_i@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_o@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_o@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_u@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/mth_u@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/relux@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/relux@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/sad@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/sad@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/scold@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/scold@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/smile2@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/smile2@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/smile@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/smile@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/strain@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/strain@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/surprise@sd_hmd.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/Humanoid/surprise@sd_hmd.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/_faceOnly.mask" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/FaceAnimations/_faceOnly.mask.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Models/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Models/Materials/def_mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Models/Materials/def_mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Models/SD_unitychan_humanoid.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Models/SD_unitychan_humanoid.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/NightSky.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/NightSky.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Prefabs/SD_unitychan_humanoid_ABN.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Prefabs/SD_unitychan_humanoid_ABN.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Prefabs/SD_unitychan_humanoid_CelLook.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Prefabs/SD_unitychan_humanoid_CelLook.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Prefabs/SD_unitychan_humanoid_CelLook_Firefly.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Prefabs/SD_unitychan_humanoid_CelLook_Firefly.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Prefabs/SD_unitychan_humanoid_Emissive.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Prefabs/SD_unitychan_humanoid_Emissive.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Prefabs/SD_unitychan_humanoid_Illust.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/Prefabs/SD_unitychan_humanoid_Illust.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/ProcedualSky.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/ProcedualSky.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/unitychan_tile3(LWRP).mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/unitychan_tile3(LWRP).mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/unitychan_tile3.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/unitychan_tile3.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/unitychan_tile3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/SD/unitychan_tile3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/AutoBlink.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/AutoBlink.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/AutoBlinkforSD.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/AutoBlinkforSD.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/CameraController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/CameraController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/FaceUpdate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/FaceUpdate.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/IdleChanger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/IdleChanger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/RandomWind.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/RandomWind.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/RefleshProbe.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/RefleshProbe.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/SetShadowQuality.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/SetShadowQuality.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/SetShadowResolution.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/SetShadowResolution.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/SpringBone.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/SpringBone.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/SpringCollider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/SpringCollider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/SpringManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/SpringManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/ThirdPersonCamera.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Scripts/ThirdPersonCamera.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/BakedNormal_FHair.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/BakedNormal_FHair.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/BakedNormal_SDunitychan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/BakedNormal_SDunitychan.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/Clipping_Eye.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/Clipping_Eye.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/Clipping_Eyebrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/Clipping_Eyebrow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/Clipping_Head.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/Clipping_Head.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/ENV2.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/ENV2.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/HairNormalMask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/HairNormalMask.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/HiLight_Matcap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/HiLight_Matcap.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/SD_Unitychan_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/SD_Unitychan_normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/SampleMatcapMask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/SampleMatcapMask.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/TestNormal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/TestNormal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/utc_all2_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/utc_all2_dark.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/utc_all2_light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/utc_all2_light.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/utc_all2_offsetdark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/utc_all2_offsetdark.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/utc_all2_outlinesmpler.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/UnityChan/Textures/utc_all2_outlinesmpler.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/XR.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/XR/XRGeneralSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Unity Toon Shader/0.10.0-preview/Universal render pipeline/XR/XRGeneralSettings.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/GameItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/GameItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventoryHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventoryHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/InventorySlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/InventorySlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/PlayerInventory.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/PlayerInventory.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -629,10 +19,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Scenes/Testing_Scenes/LT1Scene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Entity/EnemyCircleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Script/Entity/EntityBoxSpawn.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Script/Entity/EntityBoxSpawn.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/VectorVariable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -645,31 +38,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.36157337",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\b21cassa\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Sebas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Sebas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Sebas\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.24f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\Unity 2021.3.24f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Temp\github\Garden-Guardians -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Temp\github\Garden-Guardians" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -677,7 +71,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.24f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\Unity 2021.3.24f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Temp\github\Garden-Guardians -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Temp\github\Garden-Guardians" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -694,10 +88,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="71956">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="71956" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -747,6 +141,7 @@
       <workItem from="1714037468145" duration="3095000" />
       <workItem from="1714046278098" duration="4649000" />
       <workItem from="1714132907644" duration="1835000" />
+      <workItem from="1714158318298" duration="3157000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>
@@ -995,5 +390,37 @@
     <MESSAGE value="Spawn fixing" />
     <MESSAGE value="Fixed wepons for new model" />
     <option name="LAST_COMMIT_MESSAGE" value="Fixed wepons for new model" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Assets/Script/Inventory/GameItem.cs</url>
+          <line>71</line>
+          <properties documentPath="C:\Users\Sebas\Documents\GitHub\Garden-Guardians\Assets\Assets\Script\Inventory\GameItem.cs" initialLine="71" containingFunctionPresentation="Method 'OnTriggerEnter'">
+            <startOffsets>
+              <option value="2107" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2177" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Assets/Script/Inventory/Items/InventorySlot.cs</url>
+          <line>29</line>
+          <properties documentPath="C:\Users\Sebas\Documents\GitHub\Garden-Guardians\Assets\Assets\Script\Inventory\Items\InventorySlot.cs" initialLine="29" containingFunctionPresentation="Property 'Stack'">
+            <startOffsets>
+              <option value="592" />
+            </startOffsets>
+            <endOffsets>
+              <option value="593" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

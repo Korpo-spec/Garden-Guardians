@@ -9,6 +9,7 @@ namespace Script
     {
         [SerializeField]
         private ItemStack itemStack;
+        
         [SerializeField]
         private bool active;
 
@@ -17,7 +18,7 @@ namespace Script
 
         public void ClearSlot()
         {
-            Stack = null;
+            Stack = new ItemStack();
         }
 
         public ItemStack Stack
@@ -25,6 +26,10 @@ namespace Script
             get => itemStack;
             set
             {
+                if (value==null)
+                {
+                    
+                }
                 itemStack = value;
                 OnValueChangedinStack();
             }
