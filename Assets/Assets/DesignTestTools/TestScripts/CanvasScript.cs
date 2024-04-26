@@ -78,6 +78,11 @@ public class CanvasScript : MonoBehaviour
             playerInputHandler.staminaPointsChanged = false;
             UpdateStaminaPoints();
         }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            craftingMenu.SetActive(true);
+        }
     }
     
     
