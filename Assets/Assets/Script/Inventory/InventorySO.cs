@@ -27,6 +27,10 @@ public class InventorySO : ScriptableObject
         //loop to check if there is an item of that type if there is add amount to the stack if not full
         for (int i = 0; i < itemsSlots.Count; i++)
         {
+            if (itemsSlots[i].Stack==null)
+            {
+                continue;
+            }
             if (itemsSlots[i].Stack.isFull||itemsSlots[i].Stack._item==null||!itemsSlots[i].Stack._item.isStackable)
             {
                 continue;
@@ -138,6 +142,10 @@ public class InventorySO : ScriptableObject
         var totalItemsOfType = 0;
         foreach (var itemsSlot in itemsSlots)
         {
+            if (itemsSlot.Stack==null)
+            {
+                continue;
+            }
             if (itemsSlot.Stack._item==item)
             {
                 totalItemsOfType += itemsSlot.NumberOfItems;

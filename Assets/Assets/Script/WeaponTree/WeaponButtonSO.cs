@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "WeaponButton/WeaponButton")]
 public class WeaponButtonSO : ScriptableObject
 {
     public ItemStack weaponModul;
@@ -12,6 +12,8 @@ public class WeaponButtonSO : ScriptableObject
     public List<WeaponButtonSO> parents;
 
     public Sprite weaponSprite;
+    public WeaponButton.UpgradeType upgradeType;
+    
     
     [Header("Player Inventories")]
     public InventorySO PlayerWeaponSlot;

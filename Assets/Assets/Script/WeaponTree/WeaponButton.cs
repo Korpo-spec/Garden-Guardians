@@ -12,10 +12,14 @@ public class WeaponButton : MonoBehaviour
 {
     private bool canGet;
     public Button Button;
+    [SerializeField] private Image WeaponTypeSprite;
+    
+
+    
     public static event EventHandler weaponBought;
 
 
-
+    public WeaponButtonTypeSO WeaponButtonTypeSo;
     public WeaponButtonSO _weaponButtonSo;
 
     private void Start()
@@ -49,6 +53,7 @@ public class WeaponButton : MonoBehaviour
     private void OnEnable()
     {
         CheckIfCanGet();
+        setWeaponTypeSprite();
     }
 
     public void CheckIfCanGet()
@@ -97,6 +102,19 @@ public class WeaponButton : MonoBehaviour
     private void writeConnections()
     {
         
+    }
+
+    private void setWeaponTypeSprite()
+    {
+        switch (_weaponButtonSo.upgradeType)
+        {
+            case UpgradeType.Physical:
+                WeaponTypeSprite.sprite = WeaponButtonTypeSo.PhysicalSprite;
+                break;
+            case UpgradeType.Elemental:
+                WeaponTypeSprite.sprite = WeaponButtonTypeSo.ElementalSprite;
+                break;
+        }
     }
 
 
@@ -153,6 +171,7 @@ public class WeaponButton : MonoBehaviour
     private void OnValidate()
     {
         Button.GetComponent<Image>().sprite = _weaponButtonSo.weaponSprite;
+        setWeaponTypeSprite();
     }
 
     [Serializable]
@@ -164,5 +183,10 @@ public class WeaponButton : MonoBehaviour
         public int _UMCost => UMCost;
         public int _SUMCost => SUMCost;
 
+    }
+    
+    public enum UpgradeType
+    {
+        Physical,Elemental
     }
 }

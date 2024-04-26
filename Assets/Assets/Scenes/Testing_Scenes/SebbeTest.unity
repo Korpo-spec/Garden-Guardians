@@ -19768,6 +19768,11 @@ PrefabInstance:
       propertyPath: OpenWeaponTree.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UIHandler, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3596185813804916606, guid: 20d913a21488c4b40882488f8187da52,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5884516299139567303, guid: 20d913a21488c4b40882488f8187da52,
         type: 3}
       propertyPath: m_LocalRotation.w
