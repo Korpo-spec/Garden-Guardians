@@ -16,7 +16,7 @@ public class UniversalMaterials : ScriptableObject
         set
         {
             _universalMaterial = value;
-            UpdatedMaterialValue.Invoke(this,null);
+            UpdatedMaterialValue?.Invoke(this,null);
         }
     }
     public int SpecialUniversalMaterial
@@ -25,7 +25,7 @@ public class UniversalMaterials : ScriptableObject
         set
         {
             _specialUniversalMaterial = value;
-            UpdatedMaterialValue.Invoke(this,null);
+            UpdatedMaterialValue?.Invoke(this,null);
         }
     }
 

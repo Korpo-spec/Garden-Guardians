@@ -14,6 +14,11 @@ public class PlayerAudioTrigger : MonoBehaviour
       RuntimeManager.PlayOneShotAttached(playerAudio.playerDamage,gameObject);
    }
 
+   public void PlayFootStep()
+   {
+      RuntimeManager.PlayOneShotAttached(playerAudio.playerStep,gameObject);
+   }
+
    private void Update()
    {
       if (Input.GetKeyDown(KeyCode.C))

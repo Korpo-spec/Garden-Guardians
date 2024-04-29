@@ -46,10 +46,7 @@ public class PlayerController : MonoBehaviour
    {
       
       _movement.Move(_inputHandler.moveDir,movementStats.speed*Time.fixedDeltaTime);
-      if (_inputHandler.moveDir.magnitude != 0)
-      {
-         PlayerAudio.PlayerStepAudio(gameObject);
-      }
+      
       if (_inputHandler.isDashing)
       {
          _inputHandler.isDashing = false;
