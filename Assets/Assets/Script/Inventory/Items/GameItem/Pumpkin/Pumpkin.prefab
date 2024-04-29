@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2858713900979754574}
   - component: {fileID: 4133000448234734652}
   - component: {fileID: 2710871838401932160}
+  - component: {fileID: 7383564626822889128}
   m_Layer: 0
   m_Name: Pumpkin
   m_TagString: Untagged
@@ -47,10 +48,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fe73dc443e69e45b0cc3bb0f596c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stack:
+  stack:
     _item: {fileID: 11400000, guid: aa6cb613da9fa4d4494d0a3e697d18fd, type: 2}
     numberOfItemsInStack: 1
-  _spriteRenderer: {fileID: 2858713900979754574}
+    maxStackSize: 8
+  spriteRenderer: {fileID: 2858713900979754574}
+  timeBeforeTriggerEnable: 1
+  _throwGravity: 0
+  _minXForce: 3
+  _maxXForce: 5
+  _throwYForce: 5
 --- !u!212 &2858713900979754574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -132,3 +139,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &7383564626822889128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3165748147989574631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1374716626
+      Data2: 1250646946
+      Data3: -640095606
+      Data4: 798698361
+    Path: event:/Sounds/Character/PickUp_Temp
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

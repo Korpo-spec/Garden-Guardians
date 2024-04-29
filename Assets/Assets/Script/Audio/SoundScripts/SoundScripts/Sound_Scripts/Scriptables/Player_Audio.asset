@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6656cbdf91c649e418489dbb92249234, type: 3}
+  m_Name: Player_Audio
+  m_EditorClassIdentifier: 
+  playerDamage:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  playerStep:
+    Guid:
+      Data1: 172039681
+      Data2: 1242568524
+      Data3: -854300230
+      Data4: -207803349
+    Path: event:/Sound Design/Player/Footsteps
+  playerJump:
+    Guid:
+      Data1: 139985319
+      Data2: 1101316325
+      Data3: 144111792
+      Data4: 2063078798
+    Path: event:/Sound Design/Player/Jump
+  playerLand:
+    Guid:
+      Data1: 96890437
+      Data2: 1262139586
+      Data3: -1750223972
+      Data4: -27795149
+    Path: event:/Sound Design/Player/Land
+  playerDeath:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  playerRespawn:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ghostMode:
+    Guid:
+      Data1: -1613263708
+      Data2: 1124284811
+      Data3: -279264106
+      Data4: 619773445
+    Path: event:/Sound Design/Player/Ghost Mode
+  Unknown_II:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_III:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_IV:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_V:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_VI:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_VII:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_VIII:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_IX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_X:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 

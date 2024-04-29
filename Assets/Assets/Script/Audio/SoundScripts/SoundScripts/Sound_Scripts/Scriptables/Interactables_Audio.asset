@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e081b5d94510d4c4dac550fecc43e936, type: 3}
+  m_Name: Interactables_Audio
+  m_EditorClassIdentifier: 
+  Apple_Drop:
+    Guid:
+      Data1: -1830021716
+      Data2: 1115215244
+      Data3: -1149271893
+      Data4: 1223795852
+    Path: event:/Sound Design/Interactables/Apple Drop
+  Button:
+    Guid:
+      Data1: 640894816
+      Data2: 1307615623
+      Data3: -1635581260
+      Data4: 1816907547
+    Path: event:/Sound Design/Interactables/Button
+  Lever:
+    Guid:
+      Data1: -977578569
+      Data2: 1082346960
+      Data3: 757584262
+      Data4: 1896549299
+    Path: event:/Sound Design/Interactables/Lever
+  Page_Collect:
+    Guid:
+      Data1: -1798930093
+      Data2: 1328309683
+      Data3: -1942576995
+      Data4: 81842292
+    Path: event:/Sound Design/Interactables/Page Collect
+  Pressure_Plate:
+    Guid:
+      Data1: 2034044531
+      Data2: 1232722725
+      Data3: -1456349023
+      Data4: 1612275787
+    Path: event:/Sound Design/Interactables/Pressure Plate
+  Shovel_Drop:
+    Guid:
+      Data1: -890898629
+      Data2: 1120595415
+      Data3: 1490112931
+      Data4: -1729573831
+    Path: event:/Sound Design/Interactables/Shovel Drop
+  Alt_Button_Lever:
+    Guid:
+      Data1: 1599284639
+      Data2: 1230760712
+      Data3: 1800447626
+      Data4: -1730423767
+    Path: event:/Sound Design/Interactables/Alt Button - Lever
+  GoopShort:
+    Guid:
+      Data1: -1842482430
+      Data2: 1098716065
+      Data3: 504562100
+      Data4: 550568777
+    Path: event:/Sound Design/Environmentals/Goop Fall Short
+  GoopDrop:
+    Guid:
+      Data1: 70417601
+      Data2: 1191738304
+      Data3: 231343529
+      Data4: -377263571
+    Path: event:/Sound Design/Environmentals/Goop Drop
+  RespawnAnchor:
+    Guid:
+      Data1: -963632206
+      Data2: 1209078947
+      Data3: 533833643
+      Data4: -815908926
+    Path: event:/Sound Design/Interactables/Respawn Anchor
+  WarpBlock:
+    Guid:
+      Data1: -2054046993
+      Data2: 1327281657
+      Data3: 1123666877
+      Data4: 1886441666
+    Path: event:/Sound Design/Interactables/Warp Block
+  Box1:
+    Guid:
+      Data1: -1301763217
+      Data2: 1202520125
+      Data3: -798913137
+      Data4: 304008525
+    Path: event:/Sound Design/Interactables/Box Pickup 1
+  Box2:
+    Guid:
+      Data1: 1375598076
+      Data2: 1184875585
+      Data3: -144954745
+      Data4: -493003984
+    Path: event:/Sound Design/Interactables/Box Pickup 2

@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f1a3fef06505f4a8bd751618c3ada0, type: 3}
+  m_Name: Ambient_Audio
+  m_EditorClassIdentifier: 
+  Goop_Loop:
+    Guid:
+      Data1: 1515123792
+      Data2: 1171221859
+      Data3: -536502887
+      Data4: 539082917
+    Path: event:/Sound Design/Environmentals/Goop Loop
+  Goop_Fall:
+    Guid:
+      Data1: 644014517
+      Data2: 1186715084
+      Data3: -554529888
+      Data4: 1431467449
+    Path: event:/Sound Design/Deaths/Goop Fall
+  Conveyor:
+    Guid:
+      Data1: 813776912
+      Data2: 1168212993
+      Data3: -1188918142
+      Data4: 1448833540
+    Path: event:/Sound Design/Environmentals/Conveyor
+  Final_Gate:
+    Guid:
+      Data1: 1716383296
+      Data2: 1164725167
+      Data3: 1361128104
+      Data4: 85165923
+    Path: event:/Sound Design/Environmentals/Open Final Gate
+  Unknown_V:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_VI:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_VII:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_VIII:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_IX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Unknown_X:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
