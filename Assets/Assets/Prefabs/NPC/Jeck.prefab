@@ -550,6 +550,40 @@ GameObject:
   - component: {fileID: 7528960412280219250}
   - component: {fileID: 6094092748054007151}
   - component: {fileID: 977967873119208495}
+  - component: {fileID: 3895086659352120142}
+  - component: {fileID: 2098714284153590884}
+  - component: {fileID: 8503570667658103781}
+  - component: {fileID: 2462602694467269829}
+  - component: {fileID: 6368441059354349453}
+  - component: {fileID: 2849821876661340276}
+  - component: {fileID: 1721764744148761259}
+  - component: {fileID: 9060471569397677373}
+  - component: {fileID: 6612391303753768081}
+  - component: {fileID: 1275014414080775558}
+  - component: {fileID: 1004194014464703771}
+  - component: {fileID: 2127166556820673928}
+  - component: {fileID: 8627822625925461474}
+  - component: {fileID: 7116833529666492881}
+  - component: {fileID: 7515814809951402586}
+  - component: {fileID: 1297959864541480740}
+  - component: {fileID: 6625373142319907717}
+  - component: {fileID: 3045238001254027861}
+  - component: {fileID: 5802175558608098325}
+  - component: {fileID: 5822621567573015886}
+  - component: {fileID: 1526653781628033182}
+  - component: {fileID: 6119774762591792054}
+  - component: {fileID: 4213879743429236245}
+  - component: {fileID: 231564421106237053}
+  - component: {fileID: 183248506362999392}
+  - component: {fileID: 7454051230042480032}
+  - component: {fileID: 2540687229675376057}
+  - component: {fileID: 917665827861859543}
+  - component: {fileID: 4076683345484423828}
+  - component: {fileID: 5211481762143390882}
+  - component: {fileID: 1001309683121473092}
+  - component: {fileID: 2432545270364805679}
+  - component: {fileID: 6397579556274202837}
+  - component: {fileID: 4870830556645518861}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -585,18 +619,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 533.4653, y: -159.24812}
+  scrollPos: {x: 846.937, y: 389.3795}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 280
-  zoom: 0.5799999
+  zoom: 0.66999984
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 7150632325379611239}
   selectedCommands: []
   variables:
   - {fileID: 1079403995327047975}
@@ -639,7 +674,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 446
     y: 194
-    width: 75.862076
+    width: 78.358215
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -648,6 +683,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1595270992863449511}
   commandList:
+  - {fileID: 3895086659352120142}
   - {fileID: 2297808231424531864}
   - {fileID: 2355789039491043474}
   - {fileID: 3987231689837774504}
@@ -1170,7 +1206,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 438.92844
     y: -77.81656
-    width: 89.65518
+    width: 91.79105
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1200,7 +1236,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 631.4595
     y: -21.668243
-    width: 91.37932
+    width: 93.28359
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1230,7 +1266,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 697.3372
     y: 120.68251
-    width: 93.103455
+    width: 93.28359
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1260,7 +1296,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 708.67584
     y: 270.82715
-    width: 93.103455
+    width: 93.28359
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1290,7 +1326,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 715.58276
     y: 412.36377
-    width: 91.37932
+    width: 93.28359
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1320,7 +1356,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 604.1543
     y: 485.98056
-    width: 91.37932
+    width: 93.28359
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1350,7 +1386,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 449.70654
     y: 510.08563
-    width: 91.37932
+    width: 93.28359
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1381,7 +1417,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 267.78998
     y: 494.3533
-    width: 91.37932
+    width: 93.28359
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1411,7 +1447,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 111.74957
     y: 418.25998
-    width: 91.37932
+    width: 93.28359
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1441,7 +1477,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 21.713562
     y: 310.24893
-    width: 96.55173
+    width: 99.25374
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1471,7 +1507,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 14.57074
     y: 192.07507
-    width: 94.82759
+    width: 97.7612
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1498,9 +1534,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 19.633633
+    x: 27.096321
     y: 46.433426
-    width: 96.55173
+    width: 99.25374
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1511,6 +1547,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 5140470624779248438}
   - {fileID: 4543425592764325766}
+  - {fileID: 2432545270364805679}
   suppressAllAutoSelections: 0
 --- !u!114 &3510093390661305035
 MonoBehaviour:
@@ -1528,7 +1565,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 69.451904
     y: -68.571014
-    width: 98.27586
+    width: 99.25374
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4740,7 +4777,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 343.5036
     y: 37.73517
-    width: 96.55173
+    width: 99.25374
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6707,7 +6744,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 333.97714
     y: -207.39474
-    width: 139.65518
+    width: 145.5224
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6735,7 +6772,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 496.47693
     y: -205.12193
-    width: 77.58621
+    width: 78.358215
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6790,7 +6827,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 429.43118
     y: -301.71207
-    width: 81.034485
+    width: 82.83583
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6937,7 +6974,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 341.93143
     y: -396.0302
-    width: 115.51725
+    width: 118.65673
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6947,6 +6984,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1108757524612710940}
+  - {fileID: 1004194014464703771}
   suppressAllAutoSelections: 0
 --- !u!114 &5263181041853849958
 MonoBehaviour:
@@ -6964,7 +7002,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 468.0676
     y: -397.16678
-    width: 153.44829
+    width: 157.4627
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6972,7 +7010,9 @@ MonoBehaviour:
   blockName: 1b Yes, it's difficult
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 9060471569397677373}
+  - {fileID: 1275014414080775558}
   suppressAllAutoSelections: 0
 --- !u!114 &1108757524612710940
 MonoBehaviour:
@@ -7044,7 +7084,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 644.27356
     y: -130.73177
-    width: 168.96553
+    width: 172.38809
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7072,7 +7112,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 833.44885
     y: -70.93793
-    width: 120.68967
+    width: 121.64181
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7101,7 +7141,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 946.3589
     y: -241.4391
-    width: 118.96552
+    width: 120.14927
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7129,7 +7169,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1016.0885
     y: -147.47232
-    width: 165.51726
+    width: 169.40302
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7157,7 +7197,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1159.3159
     y: -252.57979
-    width: 110.34483
+    width: 114.17912
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7167,6 +7207,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 794143053340923381}
+  - {fileID: 1721764744148761259}
   suppressAllAutoSelections: 0
 --- !u!114 &6319067437590713429
 MonoBehaviour:
@@ -7588,7 +7629,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 839.8441
     y: 71.93623
-    width: 105.172424
+    width: 106.71643
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7616,7 +7657,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 850.15356
     y: 146.16304
-    width: 110.34483
+    width: 112.686584
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7692,7 +7733,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1028.8981
     y: 112.48337
-    width: 118.96552
+    width: 120.14927
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7702,6 +7743,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 6961574959893837296}
+  - {fileID: 2849821876661340276}
   suppressAllAutoSelections: 0
 --- !u!114 &3297642922143874671
 MonoBehaviour:
@@ -7794,7 +7836,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 841.7587
     y: 234.7024
-    width: 172.41382
+    width: 176.86569
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7870,7 +7912,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 825.47217
     y: 316.376
-    width: 201.72415
+    width: 206.71646
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7946,7 +7988,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1107.4083
     y: 298.6539
-    width: 132.75864
+    width: 136.56718
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7956,6 +7998,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 5228521541705815403}
+  - {fileID: 6368441059354349453}
   suppressAllAutoSelections: 0
 --- !u!114 &5228521541705815403
 MonoBehaviour:
@@ -8077,7 +8120,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 851.362
     y: 446.03198
-    width: 144.8276
+    width: 150.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8106,7 +8149,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1057.4606
     y: 427.73923
-    width: 155.17242
+    width: 163.43286
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8116,6 +8159,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 7337872135320953557}
+  - {fileID: 2462602694467269829}
   suppressAllAutoSelections: 0
 --- !u!114 &5157132303948957448
 MonoBehaviour:
@@ -8133,7 +8177,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1052.942
     y: 504.763
-    width: 155.17242
+    width: 161.94032
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8143,6 +8187,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 7002566673718076877}
+  - {fileID: 8503570667658103781}
   suppressAllAutoSelections: 0
 --- !u!114 &5823939350696377106
 MonoBehaviour:
@@ -8396,7 +8441,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 716.5391
     y: 513.69855
-    width: 110.34483
+    width: 114.17912
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8425,7 +8470,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 608.1143
     y: 575.6193
-    width: 110.34483
+    width: 114.17912
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8453,7 +8498,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 810.80426
     y: 625.7374
-    width: 86.2069
+    width: 85.82091
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8655,7 +8700,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 945.7027
     y: 630.49005
-    width: 165.51726
+    width: 176.86569
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8683,7 +8728,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 882.5055
     y: 691.016
-    width: 120.68967
+    width: 124.626884
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8711,7 +8756,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 794.0725
     y: 749.8735
-    width: 110.34483
+    width: 114.17912
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8897,7 +8942,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1143.2748
     y: 770.5622
-    width: 117.24139
+    width: 120.14927
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8907,6 +8952,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 576350920198905356}
+  - {fileID: 2098714284153590884}
   suppressAllAutoSelections: 0
 --- !u!114 &2464928369398354198
 MonoBehaviour:
@@ -9116,7 +9162,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 333.15387
     y: 713.4263
-    width: 118.96552
+    width: 124.626884
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9144,7 +9190,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 451.32074
     y: 644.583
-    width: 93.103455
+    width: 94.77613
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9172,7 +9218,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 533.13055
     y: 682.4328
-    width: 124.13794
+    width: 129.10449
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9201,7 +9247,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 505.00555
     y: 787.12024
-    width: 103.44829
+    width: 105.22389
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9229,7 +9275,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 617.50555
     y: 787.12024
-    width: 82.75862
+    width: 84.32837
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9240,6 +9286,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 6557416841936977677}
   - {fileID: 5371362838163293033}
+  - {fileID: 7515814809951402586}
   suppressAllAutoSelections: 0
 --- !u!114 &8912047327039374139
 MonoBehaviour:
@@ -9334,7 +9381,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 390.9431
     y: 871.4952
-    width: 100.00001
+    width: 102.238815
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10341,7 +10388,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 300.31818
     y: 962.1201
-    width: 136.20691
+    width: 141.0448
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10351,6 +10398,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 8162881010063116816}
+  - {fileID: 6625373142319907717}
   suppressAllAutoSelections: 0
 --- !u!114 &2362402104285318688
 MonoBehaviour:
@@ -10368,7 +10416,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 453.4431
     y: 962.1201
-    width: 115.51725
+    width: 117.16419
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10378,6 +10426,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 4879148618158972745}
+  - {fileID: 1297959864541480740}
   suppressAllAutoSelections: 0
 --- !u!114 &8162881010063116816
 MonoBehaviour:
@@ -10449,7 +10498,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 123.84447
     y: 580.1121
-    width: 105.172424
+    width: 108.20897
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10478,7 +10527,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.90408
     y: 636.8285
-    width: 106.89656
+    width: 111.194046
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10507,7 +10556,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -163.04245
     y: 694.1206
-    width: 120.68967
+    width: 124.626884
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10518,6 +10567,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 3009682518945088531}
   - {fileID: 8017246797091289203}
+  - {fileID: 1526653781628033182}
   suppressAllAutoSelections: 0
 --- !u!114 &2178122663001057340
 MonoBehaviour:
@@ -10535,7 +10585,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -111.912445
     y: 757.25555
-    width: 155.17242
+    width: 161.94032
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10545,6 +10595,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1466159104071750955}
+  - {fileID: 5822621567573015886}
   suppressAllAutoSelections: 0
 --- !u!114 &420533848362707292
 MonoBehaviour:
@@ -10562,7 +10613,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 32.117317
     y: 829.8773
-    width: 110.34483
+    width: 109.70151
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10572,6 +10623,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2199809958705625091}
+  - {fileID: 5802175558608098325}
   suppressAllAutoSelections: 0
 --- !u!114 &6386718606321650587
 MonoBehaviour:
@@ -10589,7 +10641,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 175.93396
     y: 849.1957
-    width: 112.06897
+    width: 117.16419
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10599,6 +10651,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 5239554450186172595}
+  - {fileID: 3045238001254027861}
   suppressAllAutoSelections: 0
 --- !u!114 &5154353182864442444
 MonoBehaviour:
@@ -10982,7 +11035,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -141.62221
     y: 446.43082
-    width: 96.55173
+    width: 99.25374
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10992,6 +11045,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1821358285392837659}
+  - {fileID: 231564421106237053}
   suppressAllAutoSelections: 0
 --- !u!114 &4918860559345535429
 MonoBehaviour:
@@ -11009,7 +11063,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -60.56599
     y: 517.339
-    width: 87.93104
+    width: 88.805984
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11038,7 +11092,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -244.7767
     y: 537.0759
-    width: 139.65518
+    width: 145.5224
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11048,6 +11102,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1282584044398888337}
+  - {fileID: 4213879743429236245}
   suppressAllAutoSelections: 0
 --- !u!114 &8743975579029577721
 MonoBehaviour:
@@ -11065,7 +11120,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -206.61874
     y: 617.33923
-    width: 105.172424
+    width: 106.71643
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11075,6 +11130,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 4003390350879472030}
+  - {fileID: 6119774762591792054}
   suppressAllAutoSelections: 0
 --- !u!114 &7107150592780845818
 MonoBehaviour:
@@ -11327,7 +11383,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -180.96939
     y: 304.86633
-    width: 112.06897
+    width: 117.16419
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11356,7 +11412,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -159.05159
     y: 377.46906
-    width: 93.103455
+    width: 94.77613
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11385,7 +11441,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -389.18896
     y: 332.26376
-    width: 129.31036
+    width: 133.5821
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11395,6 +11451,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 6436153934707641493}
+  - {fileID: 2540687229675376057}
   suppressAllAutoSelections: 0
 --- !u!114 &204937259050713691
 MonoBehaviour:
@@ -11412,7 +11469,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -397.4081
     y: 271.98975
-    width: 127.58622
+    width: 130.59703
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11422,6 +11479,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 8570669763724726356}
+  - {fileID: 917665827861859543}
   suppressAllAutoSelections: 0
 --- !u!114 &1095845843755564066
 MonoBehaviour:
@@ -11439,7 +11497,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -361.79144
     y: 387.05826
-    width: 136.20691
+    width: 141.0448
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11449,6 +11507,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 4242507800570229157}
+  - {fileID: 7454051230042480032}
   suppressAllAutoSelections: 0
 --- !u!114 &7463545480450156193
 MonoBehaviour:
@@ -11466,7 +11525,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -348.09283
     y: 447.3323
-    width: 129.31036
+    width: 133.5821
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11476,6 +11535,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 4482829357210290491}
+  - {fileID: 183248506362999392}
   suppressAllAutoSelections: 0
 --- !u!114 &137370144867624728
 MonoBehaviour:
@@ -11833,7 +11893,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -112.12836
     y: 135.11028
-    width: 100.00001
+    width: 103.73135
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11861,7 +11921,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -124.62836
     y: 214.79778
-    width: 108.6207
+    width: 112.686584
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11889,7 +11949,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -252.75339
     y: 171.04778
-    width: 89.65518
+    width: 90.298515
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11917,7 +11977,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -405.87842
     y: 122.610275
-    width: 124.13794
+    width: 129.10449
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11946,7 +12006,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -401.19092
     y: 202.29778
-    width: 113.79311
+    width: 118.65673
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11956,6 +12016,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1248058051292593323}
+  - {fileID: 4076683345484423828}
   suppressAllAutoSelections: 0
 --- !u!114 &6437964826020849503
 MonoBehaviour:
@@ -11973,7 +12034,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -557.4409
     y: 77.29776
-    width: 105.172424
+    width: 109.70151
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11985,6 +12046,7 @@ MonoBehaviour:
   - {fileID: 358107282998446898}
   - {fileID: 5062220780110300539}
   - {fileID: 8002441900482661258}
+  - {fileID: 1001309683121473092}
   suppressAllAutoSelections: 0
 --- !u!114 &8813496582353707724
 MonoBehaviour:
@@ -12002,7 +12064,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -574.6284
     y: 149.17278
-    width: 131.03448
+    width: 136.56718
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12012,6 +12074,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 6681047246389598329}
+  - {fileID: 5211481762143390882}
   suppressAllAutoSelections: 0
 --- !u!114 &358107282998446898
 MonoBehaviour:
@@ -12695,7 +12758,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -68.37839
     y: -122.702255
-    width: 127.58622
+    width: 130.59703
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12724,7 +12787,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -123.06587
     y: -13.327251
-    width: 106.89656
+    width: 109.70151
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12752,7 +12815,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -249.62842
     y: -186.76477
-    width: 150.00002
+    width: 152.9851
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12780,7 +12843,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -244.94086
     y: -102.38974
-    width: 151.72415
+    width: 155.97018
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12790,6 +12853,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 425443608994117520}
+  - {fileID: 6397579556274202837}
   suppressAllAutoSelections: 0
 --- !u!114 &7150632325379611239
 MonoBehaviour:
@@ -12807,7 +12871,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -474.62845
     y: -108.63974
-    width: 131.03448
+    width: 135.07465
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12820,6 +12884,7 @@ MonoBehaviour:
   - {fileID: 7528960412280219250}
   - {fileID: 6094092748054007151}
   - {fileID: 977967873119208495}
+  - {fileID: 4870830556645518861}
   suppressAllAutoSelections: 0
 --- !u!114 &4018393254091683800
 MonoBehaviour:
@@ -13132,6 +13197,943 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &3895086659352120142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 288
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &2098714284153590884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 289
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &8503570667658103781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 290
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &2462602694467269829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 291
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &6368441059354349453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 292
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &2849821876661340276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 293
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1721764744148761259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 294
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &9060471569397677373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 295
+  indentLevel: 0
+  storyText: "Ha, good joke. Come on, you don\u2019t recognize me"
+  description: 
+  character: {fileID: 4478403835259419216}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &6612391303753768081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 415.7504
+    y: -478.93155
+    width: 114.17912
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 296
+  blockName: 1 Struggles
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2127166556820673928}
+  - {fileID: 8627822625925461474}
+  - {fileID: 7116833529666492881}
+  suppressAllAutoSelections: 0
+--- !u!114 &1275014414080775558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 297
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 6612391303753768081}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1004194014464703771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 298
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 6612391303753768081}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &2127166556820673928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 299
+  indentLevel: 0
+  storyText: 'I guess that your mind struggles away from the place you were made
+    to protect. '
+  description: 
+  character: {fileID: 4478403835259419216}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &8627822625925461474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 300
+  indentLevel: 0
+  storyText: '{i}The place you abandoned and destroyed!{/i}'
+  description: 
+  character: {fileID: 4478403835259419216}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &7116833529666492881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 301
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &7515814809951402586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 302
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1297959864541480740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 303
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &6625373142319907717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 304
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &3045238001254027861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 305
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &5802175558608098325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 306
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &5822621567573015886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 307
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1526653781628033182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 308
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &6119774762591792054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 309
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &4213879743429236245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 310
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &231564421106237053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 311
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &183248506362999392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 312
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &7454051230042480032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 313
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &2540687229675376057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 314
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &917665827861859543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 315
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &4076683345484423828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 316
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &5211481762143390882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 317
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1001309683121473092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 318
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &2432545270364805679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 319
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &6397579556274202837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 320
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &4870830556645518861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 321
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 2038102516912943841}
+  targetComponentAssemblyName: CharacterTriggerScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterTriggerScript
+  targetMethod: ChangeTrigger
+  targetMethodText: 'ChangeTrigger (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &6620404723309118164
 GameObject:
   m_ObjectHideFlags: 0
