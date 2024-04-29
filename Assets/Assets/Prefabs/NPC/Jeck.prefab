@@ -584,6 +584,8 @@ GameObject:
   - component: {fileID: 2432545270364805679}
   - component: {fileID: 6397579556274202837}
   - component: {fileID: 4870830556645518861}
+  - component: {fileID: 9198628159101896599}
+  - component: {fileID: 3905985081688374969}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -619,7 +621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 846.937, y: 389.3795}
+  scrollPos: {x: 882.75854, y: 187.88731}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 280
@@ -631,8 +633,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 7150632325379611239}
-  selectedCommands: []
+  - {fileID: 7463545480450156193}
+  selectedCommands:
+  - {fileID: 4482829357210290491}
   variables:
   - {fileID: 1079403995327047975}
   - {fileID: 4199466278390821504}
@@ -6836,6 +6839,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 9198628159101896599}
   - {fileID: 9055241271854633835}
   - {fileID: 4341897500725414106}
   suppressAllAutoSelections: 0
@@ -7398,7 +7402,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 0
-  storyText: I try my best. {i}You don't deserve welcoming{/i}
+  storyText: I try my best. {i}You don't deserve welcoming!{/i} Shut up, shut up,
+    shut up!
   description: 
   character: {fileID: 4478403835259419216}
   portrait: {fileID: 0}
@@ -7627,7 +7632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 839.8441
+    x: 838.35156
     y: 71.93623
     width: 106.71643
     height: 40
@@ -7683,7 +7688,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 96
   indentLevel: 0
-  storyText: "Haha, I\u2019m glad you\u2019re enjoying it.{i} I hope you die.{/i}"
+  storyText: "Haha, I\u2019m glad you\u2019re enjoying it.{i} I hope you die.{/i}
+    No, no, I don\u2019t!"
   description: 
   character: {fileID: 4478403835259419216}
   portrait: {fileID: 0}
@@ -8358,7 +8364,7 @@ MonoBehaviour:
   itemId: 125
   indentLevel: 0
   storyText: "That\u2019s nice! Perhaps soon we can return to normal. {i}There is
-    no normal!{/i}"
+    no normal!{/i} Liar!"
   description: 
   character: {fileID: 4478403835259419216}
   portrait: {fileID: 0}
@@ -8440,7 +8446,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 716.5391
-    y: 513.69855
+    y: 515.1911
     width: 114.17912
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -8525,7 +8531,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 132
   indentLevel: 0
-  storyText: "It\u2019s okay I guess. A bit lonely out here. {i}We\u2019re not alone!{/i}"
+  storyText: "It\u2019s okay I guess. A bit lonely out here. {i}We\u2019re not alone!{/i}
+    I am alone!"
   description: 
   character: {fileID: 4478403835259419216}
   portrait: {fileID: 0}
@@ -8858,7 +8865,7 @@ MonoBehaviour:
   itemId: 145
   indentLevel: 0
   storyText: "I don\u2019t think so, at least they don\u2019t listen to no sense.
-    {i}We are\u2026{/i}"
+    {i}We are\u2026{/i} Shut up!"
   description: 
   character: {fileID: 4478403835259419216}
   portrait: {fileID: 0}
@@ -11810,7 +11817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 240
   indentLevel: 0
-  storyText: Of course not! {i}They are dead!{/i}
+  storyText: Of course not! {i}They are dead!{/i} Lies! You liar!
   description: 
   character: {fileID: 4478403835259419216}
   portrait: {fileID: 0}
@@ -11837,7 +11844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 241
   indentLevel: 0
-  storyText: "Get out of here! {i}They look dead\u2026{/i}"
+  storyText: "Get out of here! {i}They look dead\u2026{/i} Lies! You liar!"
   description: 
   character: {fileID: 4478403835259419216}
   portrait: {fileID: 0}
@@ -11864,7 +11871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 242
   indentLevel: 0
-  storyText: "Get out of here! {i}They are dead\u2026{/i}"
+  storyText: "Get out of here! {i}They are dead\u2026{/i} Lies! You liar!"
   description: 
   character: {fileID: 4478403835259419216}
   portrait: {fileID: 0}
@@ -13434,8 +13441,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 415.7504
-    y: -478.93155
+    x: 411.27283
+    y: -475.9465
     width: 114.17912
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -13447,6 +13454,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 2127166556820673928}
   - {fileID: 8627822625925461474}
+  - {fileID: 3905985081688374969}
   - {fileID: 7116833529666492881}
   suppressAllAutoSelections: 0
 --- !u!114 &1275014414080775558
@@ -13533,7 +13541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 300
   indentLevel: 0
-  storyText: '{i}The place you abandoned and destroyed!{/i}'
+  storyText: '{i}The place you abandoned and destroyed!{/i} '
   description: 
   character: {fileID: 4478403835259419216}
   portrait: {fileID: 0}
@@ -14134,6 +14142,60 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &9198628159101896599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 322
+  indentLevel: 0
+  storyText: "Don\u2019t listen to him."
+  description: 
+  character: {fileID: 4478403835259419216}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &3905985081688374969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220153408607217723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 323
+  indentLevel: 0
+  storyText: Shut up!
+  description: 
+  character: {fileID: 4478403835259419216}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &6620404723309118164
 GameObject:
   m_ObjectHideFlags: 0
