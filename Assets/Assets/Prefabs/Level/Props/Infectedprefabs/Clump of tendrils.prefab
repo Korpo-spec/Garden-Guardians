@@ -1176,6 +1176,7 @@ GameObject:
   - component: {fileID: 7008613568532713495}
   - component: {fileID: 2306942944356524535}
   - component: {fileID: 3164579018169535335}
+  - component: {fileID: 175095467456334761}
   m_Layer: 0
   m_Name: Clump of tendrils
   m_TagString: Untagged
@@ -1334,6 +1335,20 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   spawnOnDestroy: {fileID: 0}
+  effectManager: {fileID: 0}
+--- !u!114 &175095467456334761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7018444265298232386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77233ccb59c29eb4dbb4412bfe9e11db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeEffects: []
 --- !u!1 &8817027936358269477
 GameObject:
   m_ObjectHideFlags: 0
