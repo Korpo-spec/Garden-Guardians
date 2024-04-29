@@ -10,7 +10,7 @@ public class EntityMovement : MonoBehaviour
    private CharacterController _controller;
    private Rigidbody _thisRb;
    private Vector3 _prevDirVector;
-   
+
    public bool canMove=true;
 
    private NavMeshAgent _agent;

@@ -5108,6 +5108,7 @@ GameObject:
   - component: {fileID: 5124299565582006369}
   - component: {fileID: 7724473823018123276}
   - component: {fileID: 1232172892076376952}
+  - component: {fileID: 4706997009166466143}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -5227,6 +5228,7 @@ MonoBehaviour:
     comboTimeOutTime: 1.5
     comboState: 0
     timeSinceLastAttack: 0
+  PlayerAudio: {fileID: 11400000, guid: 1d402cb47b9fa3f4e814b0307a4a71d7, type: 2}
   animator: {fileID: 7127825265443040992}
 --- !u!114 &6315513151003094338
 MonoBehaviour:
@@ -5247,7 +5249,19 @@ MonoBehaviour:
   entityHealthEvents:
     takeDamage:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 4706997009166466143}
+          m_TargetAssemblyTypeName: PlayerAudioTrigger, Assembly-CSharp
+          m_MethodName: PlayTakeDamage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     heal:
       m_PersistentCalls:
         m_Calls: []
@@ -5374,6 +5388,19 @@ MonoBehaviour:
   spawnRate: 0.5
   enemyPrefab: {fileID: 545682315351394890, guid: 59a51997eb082e449b7eff675857e1ff,
     type: 3}
+--- !u!114 &4706997009166466143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938287593342238401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1e7230ffc4390469129a6fbebd6cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAudio: {fileID: 11400000, guid: 1d402cb47b9fa3f4e814b0307a4a71d7, type: 2}
 --- !u!1 &8027674897723295907
 GameObject:
   m_ObjectHideFlags: 0

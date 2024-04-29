@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
    public PlayerMovementStats movementStats;
    [SerializeField]public AttackModule attackModule;
+   public PlayerAudio PlayerAudio;
    
    private PlayerInputHandler _inputHandler;
    private CharacterController _controller;
@@ -45,6 +46,10 @@ public class PlayerController : MonoBehaviour
    {
       
       _movement.Move(_inputHandler.moveDir,movementStats.speed*Time.fixedDeltaTime);
+      if (_inputHandler.moveDir.magnitude != 0)
+      {
+         PlayerAudio.PlayerStepAudio(gameObject);
+      }
       if (_inputHandler.isDashing)
       {
          _inputHandler.isDashing = false;
