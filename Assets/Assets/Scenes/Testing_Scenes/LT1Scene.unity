@@ -2374,13 +2374,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 628604204669265699, guid: bfe03260ef6262e4290539448e181343,
         type: 3}
+      propertyPath: _weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f64ef4666d0221428acb16f81b1e377,
+        type: 2}
+    - target: {fileID: 628604204669265699, guid: bfe03260ef6262e4290539448e181343,
+        type: 3}
       propertyPath: comboIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 628604204669265699, guid: bfe03260ef6262e4290539448e181343,
         type: 3}
       propertyPath: activateDebug
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1006171837855907774, guid: bfe03260ef6262e4290539448e181343,
         type: 3}

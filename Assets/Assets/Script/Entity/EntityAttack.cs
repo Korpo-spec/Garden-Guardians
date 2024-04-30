@@ -97,7 +97,12 @@ public class EntityAttack : MonoBehaviour
         
         // Handle effects and damage
         //weapon.comboDamage[comboIndex];
-        Collider[] colliders = Physics.OverlapBox(_weapon.attackInfos[comboIndex].colliderInfo.center + transform.position, _weapon.attackInfos[comboIndex].colliderInfo.halfsize, Quaternion.identity);
+        Matrix4x4 rotColliderMatrix = transform.localToWorldMatrix;
+        Vector3 correctionVec = new Vector3(1, 1, 1);
+        Debug.Log(Vector3.Scale(rotColliderMatrix.MultiplyPoint(_weapon.attackInfos[comboIndex].colliderInfo.center), correctionVec));
+        Collider[] colliders = Physics.OverlapBox(Vector3.Scale(rotColliderMatrix.MultiplyPoint(_weapon.attackInfos[comboIndex].colliderInfo.center), correctionVec), _weapon.attackInfos[comboIndex].colliderInfo.halfsize, rotColliderMatrix.rotation);
+        Debug.Log(rotColliderMatrix.rotation.eulerAngles);
+        Debug.Log(colliders.Length);
         foreach (var collider in colliders)
         {
             if (collider.transform == transform)
@@ -153,6 +158,8 @@ public class EntityAttack : MonoBehaviour
         {
             return;
         }
-        Gizmos.DrawCube(transform.position + _weapon.attackInfos[comboIndex].colliderInfo.center, _weapon.attackInfos[comboIndex].colliderInfo.halfsize);
+        Gizmos.matrix = transform.localToWorldMatrix;
+        Vector3 correctionVec = new Vector3(-1, 1, -1);
+        Gizmos.DrawCube(Vector3.Scale(_weapon.attackInfos[comboIndex].colliderInfo.center,correctionVec), _weapon.attackInfos[comboIndex].colliderInfo.halfsize);
     }
 }
