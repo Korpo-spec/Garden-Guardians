@@ -37,11 +37,13 @@ namespace Script.Entity
         private bool _isDead = false;
 
         [HideInInspector] public EffectManager effectManager;
+        [HideInInspector] public EntityFaction faction;
 
 
         private void Awake()
         {
             effectManager = GetComponent<EffectManager>();
+            faction = GetComponent<EntityFaction>();
         }
 
         void Start()

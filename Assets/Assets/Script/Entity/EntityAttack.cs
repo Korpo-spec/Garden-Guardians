@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Script;
+using Script.Entity;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -15,6 +16,7 @@ public class EntityAttack : MonoBehaviour
     [SerializeField] private Transform mainHand;
 
     private GameObject _currentWeapon;
+    private EntityHealth _health;
 
     public AttackComboSO weapon
     {
@@ -62,7 +64,7 @@ public class EntityAttack : MonoBehaviour
 
     private void Awake()
     {
-        
+        _health = GetComponent<EntityHealth>();
         animator = GetComponent<Animator>();
         _originalController = animator.runtimeAnimatorController;
         weapon = _weapon;
@@ -99,10 +101,10 @@ public class EntityAttack : MonoBehaviour
         //weapon.comboDamage[comboIndex];
         Matrix4x4 rotColliderMatrix = transform.localToWorldMatrix;
         Vector3 correctionVec = new Vector3(1, 1, 1);
-        Debug.Log(Vector3.Scale(rotColliderMatrix.MultiplyPoint(_weapon.attackInfos[comboIndex].colliderInfo.center), correctionVec));
+        //Debug.Log(Vector3.Scale(rotColliderMatrix.MultiplyPoint(_weapon.attackInfos[comboIndex].colliderInfo.center), correctionVec));
         Collider[] colliders = Physics.OverlapBox(Vector3.Scale(rotColliderMatrix.MultiplyPoint(_weapon.attackInfos[comboIndex].colliderInfo.center), correctionVec), _weapon.attackInfos[comboIndex].colliderInfo.halfsize, rotColliderMatrix.rotation);
-        Debug.Log(rotColliderMatrix.rotation.eulerAngles);
-        Debug.Log(colliders.Length);
+        //Debug.Log(rotColliderMatrix.rotation.eulerAngles);
+        //Debug.Log(colliders.Length);
         foreach (var collider in colliders)
         {
             if (collider.transform == transform)
@@ -112,6 +114,10 @@ public class EntityAttack : MonoBehaviour
 
             if (targetDictionary.TryGetHealth(collider.transform, out var health))
             {
+                if (health.faction.faction == _health.faction.faction)
+                {
+                    continue;
+                }
                 health.DamageUnit(_weapon.attackInfos[comboIndex].damage);
                 if (_weapon.attackInfos[comboIndex].hitEffect != null)
                 {
