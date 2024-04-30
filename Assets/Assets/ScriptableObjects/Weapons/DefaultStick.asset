@@ -16,10 +16,10 @@ MonoBehaviour:
   newAnims: {fileID: 0}
   comboLength: 2
   attackInfos:
-  - damage: 5
+  - damage: 1
     colliderInfo:
-      center: {x: 0, y: 0.8057604, z: -0.7807358}
-      halfsize: {x: 1.5056758, y: 0.72962403, z: 2}
+      center: {x: 0, y: 0.8057604, z: -0.9469452}
+      halfsize: {x: 1.5056758, y: 0.72962403, z: 1.8372297}
       isTrigger: 0
     slashEffect: {fileID: 8991263633043074940, guid: b30c61307f93fb848afcdf97b9178ad6,
       type: 3}
@@ -53,7 +53,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - damage: 5
+  - damage: 1
     colliderInfo:
       center: {x: 0, y: 0.96961045, z: -0.68042135}
       halfsize: {x: 1.2869751, y: 0.443927, z: 1.2869751}
