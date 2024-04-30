@@ -13,7 +13,7 @@ public class PlayerAudio : ScriptableObject
 
     public EventReference playerDamage;
     public EventReference playerStep;
-    public EventReference playerJump;
+    public EventReference playerDash;
     public EventReference playerLand;
     public EventReference playerDeath;
     public EventReference playerRespawn;
@@ -37,9 +37,9 @@ public class PlayerAudio : ScriptableObject
     {
         RuntimeManager.PlayOneShotAttached(playerLand, landObj);
     }
-    public void PlayerJumpAudio(GameObject jumpObj)
+    public void PlayerDashAudio(GameObject jumpObj)
     {
-        RuntimeManager.PlayOneShotAttached(playerJump, jumpObj);
+        RuntimeManager.PlayOneShotAttached(playerDash, jumpObj);
     }
     
     public void PlayerGhostModeAudio(GameObject ghostObj)

@@ -11,19 +11,20 @@ public class PlayerAudioTrigger : MonoBehaviour
 
    public void PlayTakeDamage()
    {
+      
       RuntimeManager.PlayOneShotAttached(playerAudio.playerDamage,gameObject);
+   }
+
+   public void PlayDashSound()
+   {
+      RuntimeManager.PlayOneShotAttached(playerAudio.playerDash,gameObject);
    }
 
    public void PlayFootStep()
    {
-      RuntimeManager.PlayOneShotAttached(playerAudio.playerStep,gameObject);
-   }
-
-   private void Update()
-   {
-      if (Input.GetKeyDown(KeyCode.C))
-      {
-         PlayTakeDamage();
-      }
+      
+      var instance = FMODUnity.RuntimeManager.CreateInstance(playerAudio.playerStep);
+      instance.setParameterByNameWithLabel("Step_type", "Gravel");
+      instance.start();
    }
 }

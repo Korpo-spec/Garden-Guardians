@@ -26,13 +26,13 @@ MonoBehaviour:
       Data3: 463117716
       Data4: -904265420
     Path: event:/Sounds/Character/Footsteps
-  playerJump:
+  playerDash:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -656629280
+      Data2: 1093370334
+      Data3: 1869271199
+      Data4: 1857284517
+    Path: event:/Sounds/Character/PlayerDash
   playerLand:
     Guid:
       Data1: 0
