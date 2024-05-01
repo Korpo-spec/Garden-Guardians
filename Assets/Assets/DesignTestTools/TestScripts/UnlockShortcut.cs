@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class UnlockShortcut : MonoBehaviour
 {
-    
-    
-    // Start is called before the first frame update
     void Start()
     {
         Collider collider = GetComponent<Collider>();
@@ -17,7 +14,6 @@ public class UnlockShortcut : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            //gameObject.SetActive(false);
             Destroy(gameObject);
         }
     }
