@@ -19,6 +19,11 @@ public class PlayerAudioTrigger : MonoBehaviour
    {
       RuntimeManager.PlayOneShotAttached(playerAudio.playerDash,gameObject);
    }
+   public void PlayAttackSound()
+   {
+      RuntimeManager.PlayOneShotAttached(playerAudio.playerAttack,gameObject);
+   }
+   
 
    public void PlayFootStep()
    {

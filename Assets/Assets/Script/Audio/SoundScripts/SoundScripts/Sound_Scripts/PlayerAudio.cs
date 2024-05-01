@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMOD.Studio;
 using FMODUnity;
+using UnityEngine.Serialization;
 
 
 [CreateAssetMenu(menuName = "Audio/Player_Audio", order = 1)]
@@ -14,7 +15,7 @@ public class PlayerAudio : ScriptableObject
     public EventReference playerDamage;
     public EventReference playerStep;
     public EventReference playerDash;
-    public EventReference playerLand;
+    public EventReference playerAttack;
     public EventReference playerDeath;
     public EventReference playerRespawn;
     public EventReference ghostMode;
@@ -35,7 +36,7 @@ public class PlayerAudio : ScriptableObject
     
     public void PlayerLandAudio(GameObject landObj)
     {
-        RuntimeManager.PlayOneShotAttached(playerLand, landObj);
+        RuntimeManager.PlayOneShotAttached(playerAttack, landObj);
     }
     public void PlayerDashAudio(GameObject jumpObj)
     {

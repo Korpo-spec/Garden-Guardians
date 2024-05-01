@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Basic SwordCombo
   m_EditorClassIdentifier: 
   weapon: {fileID: 919132149155446097, guid: f21500d797d582b46b42d5aa80f6cc5b, type: 3}
-  newAnims: {fileID: 0}
+  newAnims: {fileID: 22100000, guid: 9d3707a952449d84b8f85388f8e341ed, type: 2}
   comboLength: 3
   attackInfos:
   - damage: 1
