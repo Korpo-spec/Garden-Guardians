@@ -23,11 +23,12 @@ public class PlayerAudioTrigger : MonoBehaviour
    {
       RuntimeManager.PlayOneShotAttached(playerAudio.playerAttack,gameObject);
    }
-   
 
+
+   
    public void PlayFootStep()
    {
-      
+
       var instance = FMODUnity.RuntimeManager.CreateInstance(playerAudio.playerStep);
       instance.setParameterByNameWithLabel("Step_type", "Gravel");
       instance.start();
