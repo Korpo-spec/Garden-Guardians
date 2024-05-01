@@ -78,7 +78,7 @@ public class CanvasScript : MonoBehaviour
         if (playerInputHandler.staminaPointsChanged == true)
         {
             playerInputHandler.staminaPointsChanged = false;
-            UpdateStaminaPoints();
+            //UpdateStaminaPoints();
         }
         
         // Activate Pause Menu
@@ -178,24 +178,24 @@ public class CanvasScript : MonoBehaviour
     
     
     // Updates the UI to match amount of stamina the player has
-    private void UpdateStaminaPoints()
-    {
-        switch (playerInputHandler.staminaPoints)
-        {
-            case 2:
-                sPoint2.SetActive(true);
-                sPoint1.SetActive(true);
-                break;
-            
-            case 1:
-                sPoint2.SetActive(false);
-                sPoint1.SetActive(true);
-                break;
-        
-            default:
-                sPoint2.SetActive(false);
-                sPoint1.SetActive(false);
-                break;
-        }
-    }
+    // private void UpdateStaminaPoints()
+    // {
+    //     switch (playerInputHandler.staminaPoints)
+    //     {
+    //         case 2:
+    //             sPoint2.SetActive(true);
+    //             sPoint1.SetActive(true);
+    //             break;
+    //         
+    //         case 1:
+    //             sPoint2.SetActive(false);
+    //             sPoint1.SetActive(true);
+    //             break;
+    //     
+    //         default:
+    //             sPoint2.SetActive(false);
+    //             sPoint1.SetActive(false);
+    //             break;
+    //     }
+    // }
 }
