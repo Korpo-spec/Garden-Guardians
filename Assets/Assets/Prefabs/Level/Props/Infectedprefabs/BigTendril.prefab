@@ -2670,6 +2670,7 @@ GameObject:
   - component: {fileID: 2472931452348656689}
   - component: {fileID: 3901618079991813881}
   - component: {fileID: 4821999977212216752}
+  - component: {fileID: -3426581932580047114}
   m_Layer: 0
   m_Name: BigTendril
   m_TagString: Untagged
@@ -2850,6 +2851,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeEffects: []
+--- !u!114 &-3426581932580047114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8440356997934613553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c3bf6018c66c2149b2040ceb74c16ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faction: 1
 --- !u!1 &8489619610052081663
 GameObject:
   m_ObjectHideFlags: 0
