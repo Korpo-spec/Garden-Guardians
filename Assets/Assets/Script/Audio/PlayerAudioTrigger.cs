@@ -28,9 +28,18 @@ public class PlayerAudioTrigger : MonoBehaviour
    
    public void PlayFootStep()
    {
-
+      
       var instance = FMODUnity.RuntimeManager.CreateInstance(playerAudio.playerStep);
-      instance.setParameterByNameWithLabel("Step_type", "Gravel");
+      if (!Physics.Raycast(transform.position,Vector3.down,2,LayerMask.NameToLayer("Infected")))
+      {
+         instance.setParameterByNameWithLabel("Footsteps_Type", "Gravel");
+         Debug.Log("Infected Ground");
+      }
+      else
+      {
+         instance.setParameterByNameWithLabel("Footsteps_Type", "Grass");
+      }
+      
       instance.start();
    }
 }
