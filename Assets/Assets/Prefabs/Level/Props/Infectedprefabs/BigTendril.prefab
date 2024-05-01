@@ -2671,6 +2671,7 @@ GameObject:
   - component: {fileID: 3901618079991813881}
   - component: {fileID: 4821999977212216752}
   - component: {fileID: -3426581932580047114}
+  - component: {fileID: 322842699219184515}
   m_Layer: 0
   m_Name: BigTendril
   m_TagString: Untagged
@@ -2748,7 +2749,19 @@ MonoBehaviour:
   entityHealthEvents:
     takeDamage:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 322842699219184515}
+          m_TargetAssemblyTypeName: TendrilSound, Assembly-CSharp
+          m_MethodName: PlayDamageSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     heal:
       m_PersistentCalls:
         m_Calls: []
@@ -2864,6 +2877,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faction: 1
+--- !u!114 &322842699219184515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8440356997934613553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb221c9d11c19a84491391395e49c733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageSound:
+    Guid:
+      Data1: -1911813610
+      Data2: 1159751402
+      Data3: -1805583227
+      Data4: -658281207
+    Path: event:/Sounds/Enemies/Blight
 --- !u!1 &8489619610052081663
 GameObject:
   m_ObjectHideFlags: 0

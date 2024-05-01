@@ -29,11 +29,14 @@ public class PlayerAudioTrigger : MonoBehaviour
    public void PlayFootStep()
    {
       
-      var instance = FMODUnity.RuntimeManager.CreateInstance(playerAudio.playerStep);
-      if (!Physics.Raycast(transform.position,Vector3.down,2,LayerMask.NameToLayer("Infected")))
+      var instance = RuntimeManager.CreateInstance(playerAudio.playerStep);
+      int mask = 1 << 3;
+      RaycastHit hit;
+      if (Physics.Raycast(transform.position, Vector3.down, out hit, 2, mask))
       {
+         //instance.setParameterByNameWithLabel("Footsteps_Type", "Blight");
          instance.setParameterByNameWithLabel("Footsteps_Type", "Gravel");
-         Debug.Log("Infected Ground");
+         
       }
       else
       {

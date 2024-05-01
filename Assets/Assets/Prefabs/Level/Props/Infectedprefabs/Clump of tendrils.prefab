@@ -1178,6 +1178,7 @@ GameObject:
   - component: {fileID: 3164579018169535335}
   - component: {fileID: 175095467456334761}
   - component: {fileID: 8536890222544846571}
+  - component: {fileID: 8977885165620845976}
   m_Layer: 0
   m_Name: Clump of tendrils
   m_TagString: Untagged
@@ -1316,7 +1317,19 @@ MonoBehaviour:
   entityHealthEvents:
     takeDamage:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 8977885165620845976}
+          m_TargetAssemblyTypeName: TendrilSound, Assembly-CSharp
+          m_MethodName: PlayDamageSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     heal:
       m_PersistentCalls:
         m_Calls: []
@@ -1364,6 +1377,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faction: 1
+--- !u!114 &8977885165620845976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7018444265298232386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb221c9d11c19a84491391395e49c733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageSound:
+    Guid:
+      Data1: -1911813610
+      Data2: 1159751402
+      Data3: -1805583227
+      Data4: -658281207
+    Path: event:/Sounds/Enemies/Blight
 --- !u!1 &8817027936358269477
 GameObject:
   m_ObjectHideFlags: 0
