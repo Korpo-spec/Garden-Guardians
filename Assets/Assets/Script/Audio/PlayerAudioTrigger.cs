@@ -11,19 +11,38 @@ public class PlayerAudioTrigger : MonoBehaviour
 
    public void PlayTakeDamage()
    {
+      
       RuntimeManager.PlayOneShotAttached(playerAudio.playerDamage,gameObject);
    }
 
-   public void PlayFootStep()
+   public void PlayDashSound()
    {
-      RuntimeManager.PlayOneShotAttached(playerAudio.playerStep,gameObject);
+      RuntimeManager.PlayOneShotAttached(playerAudio.playerDash,gameObject);
+   }
+   public void PlayAttackSound()
+   {
+      RuntimeManager.PlayOneShotAttached(playerAudio.playerAttack,gameObject);
    }
 
-   private void Update()
+
+   
+   public void PlayFootStep()
    {
-      if (Input.GetKeyDown(KeyCode.C))
+      
+      var instance = RuntimeManager.CreateInstance(playerAudio.playerStep);
+      int mask = 1 << 3;
+      RaycastHit hit;
+      if (Physics.Raycast(transform.position, Vector3.down, out hit, 2, mask))
       {
-         PlayTakeDamage();
+         //instance.setParameterByNameWithLabel("Footsteps_Type", "Blight");
+         instance.setParameterByNameWithLabel("Footsteps_Type", "Gravel");
+         
       }
+      else
+      {
+         instance.setParameterByNameWithLabel("Footsteps_Type", "Grass");
+      }
+      
+      instance.start();
    }
 }

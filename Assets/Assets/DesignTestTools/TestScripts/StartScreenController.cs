@@ -88,12 +88,13 @@ public class StartScreenController : MonoBehaviour
 
     public void NewGamePressed()
     {
-        //SceneManager.LoadScene("");
+        SceneManager.LoadScene("SpelTest");
     }
 
     public void ShowErrorMessage()
     {
         errorMessage.SetActive(true);
+        NewGamePressed();
     }
 
     public void QuitGamePressed()

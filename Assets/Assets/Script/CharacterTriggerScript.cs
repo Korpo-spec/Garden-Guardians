@@ -8,12 +8,18 @@ public class CharacterTriggerScript : MonoBehaviour
 {
     private Character character;
     [SerializeField] private KeyCode interactKey;
+    
     private bool canTrigger;
+
+    [SerializeField] private BoxCollider collider;
+
+    private PlayerController player;
     
     private void Start()
     {
         character = gameObject.GetComponent<Character>();
         canTrigger = true;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     private void OnTriggerStay(Collider other)
@@ -26,6 +32,15 @@ public class CharacterTriggerScript : MonoBehaviour
 
     public void ChangeTrigger()
     {
+        if (player.inDialogue)
+        {
+            player.inDialogue = false;
+        }
+        else if (!player.inDialogue)
+        {
+            player.inDialogue = true;
+        }
+        
         if (canTrigger)
         {
             canTrigger = false;
@@ -37,6 +52,19 @@ public class CharacterTriggerScript : MonoBehaviour
         else
         {
             return;
+        }
+        
+    }
+
+    public void ChangeCharacterAvailability()
+    {
+        if (collider.enabled)
+        {
+            collider.enabled = false;
+        }
+        else if(!collider.enabled)
+        {
+            collider.enabled = true;
         }
     }
 }

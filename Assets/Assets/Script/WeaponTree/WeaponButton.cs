@@ -104,7 +104,7 @@ public class WeaponButton : MonoBehaviour
         
     }
 
-    private void setWeaponTypeSprite()
+    public void setWeaponTypeSprite()
     {
         switch (_weaponButtonSo.upgradeType)
         {
@@ -113,6 +113,9 @@ public class WeaponButton : MonoBehaviour
                 break;
             case UpgradeType.Elemental:
                 WeaponTypeSprite.sprite = WeaponButtonTypeSo.ElementalSprite;
+                break;
+            case UpgradeType.Basic:
+                WeaponTypeSprite.sprite = WeaponButtonTypeSo.BasicSprite;
                 break;
         }
     }
@@ -187,6 +190,6 @@ public class WeaponButton : MonoBehaviour
     
     public enum UpgradeType
     {
-        Physical,Elemental
+        Physical,Elemental,Basic
     }
 }

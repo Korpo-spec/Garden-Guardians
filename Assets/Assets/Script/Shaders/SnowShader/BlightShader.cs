@@ -44,12 +44,17 @@ public class BlightShader : MonoBehaviour
     IEnumerator DecreaseBligt(Material material)
     {
         var AmountValue = material.GetFloat(SnowAmount);
+        
         while (AmountValue>0)
         {
             AmountValue -= 1 / (6 / 0.1f);
             material.SetFloat(SnowAmount,AmountValue);
 
             yield return new WaitForSeconds(0.1f);
+        }
+        if (gameObject.layer==3)
+        {
+            gameObject.layer = 0;
         }
        
         yield return new WaitForEndOfFrame();
