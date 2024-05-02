@@ -7,14 +7,15 @@ using UnityEngine;
 public class CharacterTriggerScript : MonoBehaviour
 {
     private Character character;
-    [SerializeField] private KeyCode interactKey;
+    private PlayerController player;
     
     private bool canTrigger;
 
     [SerializeField] private BoxCollider collider;
-
-    private PlayerController player;
+    [SerializeField] private GameObject interactText;
     
+    [SerializeField] private KeyCode interactKey;
+
     private void Start()
     {
         character = gameObject.GetComponent<Character>();
@@ -30,8 +31,19 @@ public class CharacterTriggerScript : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        interactText.SetActive(true);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        interactText.SetActive(false);
+    }
+
     public void ChangeTrigger()
     {
+        interactText.SetActive(false);
         if (player.inDialogue)
         {
             player.inDialogue = false;
