@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Fixed combo connect time">
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/MaterialSlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/MaterialSlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_Android.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_WebGL.json" afterDir="false" />
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Updated canvas">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestPrefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestPrefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/WIP_Scenes/SpelTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/WIP_Scenes/SpelTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86_64/fmodstudio.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86_64/fmodstudio.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86_64/fmodstudioL.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86_64/fmodstudioL.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +22,7 @@
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Scenes/WIP_Scenes/SpelTest.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Audio/SoundScripts/SoundScripts/MScripts/AudioZoneSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Entity/EnemyCircleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Script/Entity/EntityAttack.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/VectorVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/ScriptableObjects/Weapons/Basic SwordCombo.asset" root0="SKIP_HIGHLIGHTING" />
@@ -394,7 +387,13 @@
       <option name="presentableId" value="LOCAL−00037" />
       <updated>1714655053020</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL−00038" summary="Updated canvas">
+      <created>1714657245653</created>
+      <option name="number" value="LOCAL−00038" />
+      <option name="presentableId" value="LOCAL−00038" />
+      <updated>1714657245653</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +428,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Reduced dash distance" />
     <MESSAGE value="Trying enemy movement" />
     <MESSAGE value="Adding meshes for enemy" />
     <MESSAGE value="I'm going for lunch state machine on its way" />
@@ -454,7 +452,8 @@
     <MESSAGE value="Added weapon Tree prefab" />
     <MESSAGE value="Show items in crafting menu" />
     <MESSAGE value="Fixed combo connect time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed combo connect time" />
+    <MESSAGE value="Updated canvas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated canvas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

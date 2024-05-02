@@ -87,13 +87,14 @@ public class EntityAttack : MonoBehaviour
             {
                 Transform child = mainHand.GetChild(i);
                 if (!child.CompareTag("Weapon")) continue;
-                //Debug.Log("Slash effect");
+                if (!child.gameObject.activeSelf) continue;
+                
+                Debug.Log("Slash effect");
                 
                 GameObject g = Instantiate(_weapon.attackInfos[comboIndex].slashEffect, child.position, Quaternion.Euler(0,0,0), child);
                 g.transform.localRotation = Quaternion.Euler(_weapon.attackInfos[comboIndex].useCustomRot ? _weapon.attackInfos[comboIndex].customRot :new Vector3(-313.194489f,181.419785f,83.6417999f));
-                g.transform.localScale = new Vector3(0.01453377f, 0.01453377f, 0.01453377f);
-                child.DetachChildren();
                 g.transform.parent = transform;
+                g.transform.localScale = new Vector3(1,1,1);
             }
         }
         
