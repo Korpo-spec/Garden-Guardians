@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Fungus;
 using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Break = Unity.VisualScripting.Break;
@@ -100,7 +99,7 @@ public class StartScreenController : MonoBehaviour
     public void QuitGamePressed()
     {
         Application.Quit();
-        EditorApplication.isPlaying = false;
+        //EditorApplication.isPlaying = false;
     }
     
     
