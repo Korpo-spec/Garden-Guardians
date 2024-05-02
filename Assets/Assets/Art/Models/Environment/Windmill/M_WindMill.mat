@@ -236,7 +236,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _1st2nd_Shades_Feather: 0.0001
-    - _1st_ShadeColor_Feather: 0.048
+    - _1st_ShadeColor_Feather: 0.0001
     - _1st_ShadeColor_Step: 0.246
     - _2nd_ShadeColor_Feather: 0.0001
     - _2nd_ShadeColor_Step: 0
@@ -269,7 +269,7 @@ Material:
     - _BaseColorOverridden: 0
     - _BaseColorVisible: 1
     - _BaseColor_Step: 0.246
-    - _BaseShade_Feather: 0.048
+    - _BaseShade_Feather: 0.0001
     - _Base_Speed: 0
     - _Blend: 0
     - _BlendMode: 0
@@ -344,7 +344,7 @@ Material:
     - _HeightPoMAmplitude: 2
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
-    - _HighColor_Power: 0.802
+    - _HighColor_Power: 0
     - _HighlightOverridden: 0
     - _HighlightVisible: 1
     - _InvTilingScale: 1
@@ -453,7 +453,7 @@ Material:
     - _StencilWriteMaskDistortionVec: 64
     - _StencilWriteMaskGBuffer: 3
     - _StencilWriteMaskMV: 128
-    - _StepOffset: -0.5
+    - _StepOffset: -0.268
     - _SubsurfaceMask: 1
     - _SupportDecals: 1
     - _Surface: 0
