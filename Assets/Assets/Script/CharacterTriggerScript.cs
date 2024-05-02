@@ -8,7 +8,10 @@ public class CharacterTriggerScript : MonoBehaviour
 {
     private Character character;
     [SerializeField] private KeyCode interactKey;
+    
     private bool canTrigger;
+
+    [SerializeField] private BoxCollider collider;
     
     private void Start()
     {
@@ -37,6 +40,18 @@ public class CharacterTriggerScript : MonoBehaviour
         else
         {
             return;
+        }
+    }
+
+    public void ChangeCharacterAvailability()
+    {
+        if (collider.enabled)
+        {
+            collider.enabled = false;
+        }
+        else if(!collider.enabled)
+        {
+            collider.enabled = true;
         }
     }
 }

@@ -27,7 +27,24 @@ public class JeckPosition : MonoBehaviour
         startPosX = transform.position.x;
         startPosZ = transform.position.z;
     }
-    
+
+    public void ChangePositionJeck()
+    {
+        int pos = Random.Range(1, 3);
+
+        if (pos == 1)
+        {
+            transform.SetLocalPositionAndRotation(new Vector3(safePos1X, transform.position.y, safePos1Z), transform.localRotation);
+        }
+        else if (pos == 2)
+        {
+            transform.SetLocalPositionAndRotation(new Vector3(safePos2X, transform.position.y, safePos2Z), transform.localRotation);
+        }
+        else
+        {
+            transform.SetLocalPositionAndRotation(new Vector3(safePos3X, transform.position.y, safePos3Z), transform.localRotation);
+        }
+    }
 
     // On Reload
     // gameObject.transform.position.x = 306.41f;
