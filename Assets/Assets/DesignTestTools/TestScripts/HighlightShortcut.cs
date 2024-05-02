@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class HighlightShortcut : MonoBehaviour
@@ -18,7 +19,7 @@ public class HighlightShortcut : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (shortcut.activeInHierarchy == false)
+        if (shortcut.IsDestroyed())
         {
             fence1.SetActive(true);
             fence2.SetActive(true);
