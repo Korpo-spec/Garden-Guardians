@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Better connection time">
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Added weapon Tree prefab">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/DownSlash.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/DownSlash.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestScripts/StartScreenController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestScripts/StartScreenController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestPrefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestPrefabs/Canvas.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +14,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Scenes/WIP_Scenes/SpelTest.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Scenes/WIP_Scenes/SpelTest.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Scenes/WIP_Scenes/SpelTest.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Audio/SoundScripts/SoundScripts/MScripts/AudioZoneSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Entity/EnemyCircleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/VectorVariable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/UI/CraftingMaterialsUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/ScriptableObjects/Weapons/Basic SwordCombo.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/RuntimeUtils.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -63,6 +63,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../Temp/Build Garden Guardians/Garden Guardians.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Temp\Build Garden Guardians" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.24f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Temp\github\Garden-Guardians -debugCodeOptimization" />
@@ -347,7 +355,19 @@
       <option name="presentableId" value="LOCAL−00032" />
       <updated>1714649257558</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL−00033" summary="Scene work">
+      <created>1714650767218</created>
+      <option name="number" value="LOCAL−00033" />
+      <option name="presentableId" value="LOCAL−00033" />
+      <updated>1714650767218</updated>
+    </task>
+    <task id="LOCAL−00034" summary="Added weapon Tree prefab">
+      <created>1714650874306</created>
+      <option name="number" value="LOCAL−00034" />
+      <option name="presentableId" value="LOCAL−00034" />
+      <updated>1714650874306</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,8 +402,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Trying movement on sword slash" />
-    <MESSAGE value="Fixed holding down button for attack" />
     <MESSAGE value="Fixed LOD group for PumpkinVariant1.prefab" />
     <MESSAGE value="Fixed slash animations" />
     <MESSAGE value="Reduced dash distance" />
@@ -407,7 +425,9 @@
     <MESSAGE value="Fixed wepons for new model" />
     <MESSAGE value="idk what this is" />
     <MESSAGE value="Better connection time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better connection time" />
+    <MESSAGE value="Scene work" />
+    <MESSAGE value="Added weapon Tree prefab" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added weapon Tree prefab" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
