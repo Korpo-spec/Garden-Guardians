@@ -17,9 +17,9 @@ MonoBehaviour:
     numberOfItemsInStack: 1
     maxStackSize: 8
   parents:
-  - {fileID: 11400000}
-  - {fileID: 11400000}
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 57c377d858169e34bbd1649f0f20646c, type: 2}
+  - {fileID: 11400000, guid: f0d1b93f39e954841b7157053aa04499, type: 2}
+  - {fileID: 11400000, guid: 345d5e593ba8841488aba86a1ff18a4d, type: 2}
   weaponSprite: {fileID: 21300000, guid: 75bf76ef029c56e45b18e4c07ed6c5b4, type: 3}
   upgradeType: 0
   PlayerWeaponSlot: {fileID: 11400000, guid: 3977ccd0eeeebf34fa3c3f76c4a0ff8a, type: 2}
