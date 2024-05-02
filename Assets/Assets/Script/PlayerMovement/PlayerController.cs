@@ -42,8 +42,10 @@ public class PlayerController : MonoBehaviour
       _inputHandler.GetPlayerInput();
    }
 
+   public bool inDialogue;
    private void FixedUpdate()
    {
+      if (inDialogue) { return; }
       
       _movement.Move(_inputHandler.moveDir,movementStats.speed*Time.fixedDeltaTime);
       
