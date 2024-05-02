@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a3c2ee09f020474495af58b8b3f2370, type: 3}
-  m_Name: Stick
+  m_Name: T2_Phy_Carrot_Flail
   m_EditorClassIdentifier: 
   weaponModul:
-    _item: {fileID: 11400000, guid: 678757e2225786041bdbc65d36ea461a, type: 2}
+    _item: {fileID: 11400000, guid: 93a907546dc846948a1639f48b9d13da, type: 2}
     numberOfItemsInStack: 1
     maxStackSize: 8
   parents:
-  - {fileID: 11400000, guid: 9705189b146e74642a91a22deb38186f, type: 2}
-  - {fileID: 11400000, guid: 8f40125d2595b8f4e84b56d56cf52c72, type: 2}
-  - {fileID: 11400000, guid: 75bb91db73821a84f92f196b00d018d1, type: 2}
-  weaponSprite: {fileID: 21300000, guid: ba92202cbda9c37458357333fbe58f9f, type: 3}
-  upgradeType: 2
+  - {fileID: 11400000}
+  - {fileID: 11400000}
+  - {fileID: 11400000}
+  weaponSprite: {fileID: 21300000, guid: afa86ef8081576d4fbb610e731526cb0, type: 3}
+  upgradeType: 0
   PlayerWeaponSlot: {fileID: 11400000, guid: 3977ccd0eeeebf34fa3c3f76c4a0ff8a, type: 2}
   PlayerInventory: {fileID: 11400000, guid: 17bf045369c8ed0458855753c8358783, type: 2}
   ItemRequierments: []
   upgradeCost:
-    UMCost: 0
+    UMCost: 50
     SUMCost: 0

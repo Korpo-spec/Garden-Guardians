@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class WeaponTreeController : MonoBehaviour
 {
+   public List<WeaponButton> ThreePathButtonUpgrades;
+   public List<WeaponButton> TwoPathButtonUpgrades;
    public List<WeaponButton> ButtonUpgrades;
 
 
@@ -22,6 +24,8 @@ public class WeaponTreeController : MonoBehaviour
       //TreePaths.Add(FivePath);
       TreePaths.Add(ThreePath);
       TreePaths.Add(TwoPath);
+      ButtonUpgrades = ThreePathButtonUpgrades;
+      UpdateWeaponTree();
       WeaponButton.weaponBought += SetNewActiveWeapon;
    }
 
@@ -34,8 +38,6 @@ public class WeaponTreeController : MonoBehaviour
    {
       WeaponButton weaponButton = (WeaponButton) sender;
       ActiveWeaponButton = weaponButton._weaponButtonSo;
-      setCorrectTreePath();
-      
    }
 
    private void setCorrectTreePath()
@@ -47,10 +49,12 @@ public class WeaponTreeController : MonoBehaviour
       if (ActiveWeaponButton.parents.Count==3)
       {
          ThreePath.SetActive(true);
+         ButtonUpgrades = ThreePathButtonUpgrades;
       }
       if (ActiveWeaponButton.parents.Count == 2)
       {
          TwoPath.SetActive(true);
+         ButtonUpgrades = TwoPathButtonUpgrades;
       }
       
       // }if (ActiveWeaponButton.parents.Count==5)
@@ -64,6 +68,7 @@ public class WeaponTreeController : MonoBehaviour
       set
       {
          _activeWeaponButtonSo = value;
+         
          UpdateWeaponTree();
       }
       
@@ -75,10 +80,13 @@ public class WeaponTreeController : MonoBehaviour
 
    private void UpdateWeaponTree()
    {
+      setCorrectTreePath();
+      
       for (int i = 0; i < ActiveWeaponButton.parents.Count; i++)
       {
          ButtonUpgrades[i]._weaponButtonSo = ActiveWeaponButton.parents[i];
          ButtonUpgrades[i].Button.image.sprite = ActiveWeaponButton.parents[i].weaponSprite;
+         ButtonUpgrades[i].setWeaponTypeSprite();
          ButtonUpgrades[i].CheckIfCanGet();
       }
       activeWeaponSprite.texture = ActiveWeaponButton.weaponSprite.texture;
@@ -88,6 +96,13 @@ public class WeaponTreeController : MonoBehaviour
    private void OnValidate()
    {
       activeWeaponSprite.texture = ActiveWeaponButton.weaponSprite.texture;
+      if (TwoPath)
+      {
+         ButtonUpgrades = TwoPathButtonUpgrades;
+      }if (ThreePath)
+      {
+         ButtonUpgrades = ThreePathButtonUpgrades;
+      }
       UpdateWeaponTree();
    }
    

@@ -7,4 +7,5 @@ public class WeaponButtonTypeSO : ScriptableObject
 {
    public Sprite PhysicalSprite;
    public Sprite ElementalSprite;
+   public Sprite BasicSprite;
 }
