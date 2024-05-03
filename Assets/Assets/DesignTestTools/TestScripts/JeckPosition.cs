@@ -30,19 +30,25 @@ public class JeckPosition : MonoBehaviour
 
     public void ChangePositionJeck()
     {
-        int pos = Random.Range(1, 3);
+        
+        
+        int pos = Random.Range(0, 4);
 
-        if (pos == 1)
+        if (pos == 1 && safePos1X != transform.position.x)
         {
             transform.SetLocalPositionAndRotation(new Vector3(safePos1X, transform.position.y, safePos1Z), transform.localRotation);
         }
-        else if (pos == 2)
+        else if (pos == 2 && safePos2X != transform.position.x)
         {
             transform.SetLocalPositionAndRotation(new Vector3(safePos2X, transform.position.y, safePos2Z), transform.localRotation);
         }
-        else
+        else if(pos == 3 && safePos3X != transform.position.x)
         {
             transform.SetLocalPositionAndRotation(new Vector3(safePos3X, transform.position.y, safePos3Z), transform.localRotation);
+        }
+        else
+        {
+            ChangePositionJeck();
         }
     }
 
