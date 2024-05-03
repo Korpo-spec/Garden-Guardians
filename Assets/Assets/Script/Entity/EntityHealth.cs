@@ -14,6 +14,8 @@ namespace Script.Entity
         [Tooltip("Health if no int variable was used")] [SerializeField]
         public float health;
 
+        [HideInInspector] public float maxHealth;
+
         
 
         [Tooltip("The Scriptable object that contains transforms as keys and health as value. ")] [SerializeField]
@@ -44,6 +46,7 @@ namespace Script.Entity
         {
             effectManager = GetComponent<EffectManager>();
             faction = GetComponent<EntityFaction>();
+            maxHealth = health;
         }
 
         void Start()
