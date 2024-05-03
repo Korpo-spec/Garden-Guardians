@@ -10,7 +10,7 @@ public class CraftingBench : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        prompt.SetActive(false);
+        prompt.SetActive(true);
     }
     
     private void OnTriggerExit(Collider other)
