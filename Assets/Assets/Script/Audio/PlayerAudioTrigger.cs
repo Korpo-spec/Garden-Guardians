@@ -34,8 +34,8 @@ public class PlayerAudioTrigger : MonoBehaviour
       RaycastHit hit;
       if (Physics.Raycast(transform.position, Vector3.down, out hit, 2, mask))
       {
-         //instance.setParameterByNameWithLabel("Footsteps_Type", "Blight");
-         instance.setParameterByNameWithLabel("Footsteps_Type", "Gravel");
+         instance.setParameterByNameWithLabel("Footsteps_Type", "Blight");
+         //instance.setParameterByNameWithLabel("Footsteps_Type", "Gravel");
          
       }
       else
