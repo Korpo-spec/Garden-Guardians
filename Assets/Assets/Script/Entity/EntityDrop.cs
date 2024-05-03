@@ -17,7 +17,7 @@ public class EntityDrop : MonoBehaviour
          var random = Random.Range(0, 100);
          if (random<=item.dropChance)
          {
-            Vector3 randomVec = new Vector3().RandomVector3(-2, 2, 0, 0, -2, 2);
+            Vector3 randomVec = new Vector3().RandomVector3(-2, 2, 1, 2, -2, 2);
             Instantiate(item.GameObject, transform.position+randomVec, quaternion.identity);
          }
       }

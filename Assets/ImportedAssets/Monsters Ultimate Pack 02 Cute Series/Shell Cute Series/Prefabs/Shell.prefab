@@ -848,6 +848,7 @@ GameObject:
   - component: {fileID: 7546304874296760914}
   - component: {fileID: 7103959323214045947}
   - component: {fileID: 1165451953649785648}
+  - component: {fileID: 2993407259103509398}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -997,9 +998,22 @@ MonoBehaviour:
         m_Calls: []
     die:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 2993407259103509398}
+          m_TargetAssemblyTypeName: EntityDrop, Assembly-CSharp
+          m_MethodName: Drop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   spawnOnDestroy: {fileID: 0}
   effectManager: {fileID: 0}
+  faction: {fileID: 0}
 --- !u!114 &4205534073432884127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1073,6 +1087,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeEffects: []
+--- !u!114 &2993407259103509398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545682315351394890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d59a344f0262a84eadd1466ec156706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DropList:
+  - GameObject: {fileID: 3165748147989574631, guid: 0619488df09c81644a7b94b0d075d5e0,
+      type: 3}
+    dropChance: 50
+  - GameObject: {fileID: 3165748147989574631, guid: 0619488df09c81644a7b94b0d075d5e0,
+      type: 3}
+    dropChance: 50
 --- !u!1 &545682315351394892
 GameObject:
   m_ObjectHideFlags: 0
