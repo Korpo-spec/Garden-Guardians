@@ -82,19 +82,19 @@ public class CanvasScript : MonoBehaviour
         }
         
         // Activate Pause Menu
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            if (craftingMenu.activeSelf == false)
-            {
-                craftingMenu.SetActive(true);
-                hud.SetActive(false);
-            }
-            else
-            {
-                craftingMenu.SetActive(false);
-                hud.SetActive(true);
-            }
-        }
+        // if (Input.GetKeyDown(KeyCode.C))
+        // {
+        //     if (craftingMenu.activeSelf == false)
+        //     {
+        //         craftingMenu.SetActive(true);
+        //         hud.SetActive(false);
+        //     }
+        //     else
+        //     {
+        //         craftingMenu.SetActive(false);
+        //         hud.SetActive(true);
+        //     }
+        // }
         
         // Activate Pause Menu
         if (Input.GetKeyDown(KeyCode.Escape))
