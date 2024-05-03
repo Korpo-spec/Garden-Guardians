@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using Script;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -13,6 +14,8 @@ public class WeaponButton : MonoBehaviour
     private bool canGet;
     public Button Button;
     [SerializeField] private Image WeaponTypeSprite;
+    [SerializeField] private TextMeshProUGUI CostText;
+    [SerializeField] private TextMeshProUGUI CostText2;
     
 
     
@@ -56,10 +59,17 @@ public class WeaponButton : MonoBehaviour
         setWeaponTypeSprite();
     }
 
+    private void UpdateCostText()
+    {
+        CostText.text = "Cost:"+_weaponButtonSo.upgradeCost._UMCost;
+        CostText2.text = "Cost:"+_weaponButtonSo.upgradeCost._UMCost;
+    }
+
     public void CheckIfCanGet()
     {
         canGet=CheckIfcanGet();
         HandleIfCanGet(canGet);
+        UpdateCostText();
     }
 
     private void OnUpdateMaterial(object sender,EventArgs e)
@@ -80,6 +90,7 @@ public class WeaponButton : MonoBehaviour
             BuyUpgrade();
             _weaponButtonSo.PlayerWeaponSlot.itemsSlots[0].Stack = _weaponButtonSo.weaponModul;
             weaponBought?.Invoke(this,null);
+            
         }
     }
 
