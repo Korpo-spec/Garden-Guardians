@@ -11,10 +11,7 @@ public class GrowShader : MonoBehaviour
     public List<MeshRenderer> GrowMeshes;
     public float timeToGrow = 5;
     public float refreshrate = 0.05f;
-
-    [Range(0, 1)] public float minGrow = 0.2f;
-    [Range(0, 1)] public float maxGrow = 0.97f;
-
+    
     public List<Material> GrowMaterials = new List<Material>();
     private bool fullyGrown;
     private static readonly int GrowID = Shader.PropertyToID("_Grow");
@@ -22,10 +19,7 @@ public class GrowShader : MonoBehaviour
     
     private void Start()
     {
-        float RandomGrowStart = Random.Range(0f, 0.9f);
-        
-        
-        //GrowMeshes.Add(gameObject.GetComponent<MeshRenderer>());
+
         for (int i = 0; i < gameObject.transform.childCount; i++)
         {
             GrowMeshes.Add(gameObject.transform.GetChild(i).GetComponent<MeshRenderer>());
@@ -37,105 +31,16 @@ public class GrowShader : MonoBehaviour
             {
                 if (GrowMeshes[i].materials[j].HasProperty(GrowID))
                 {
-                 GrowMeshes[i].materials[j].SetFloat(GrowID,RandomGrowStart);   
+                   
                  GrowMaterials.Add(GrowMeshes[i].materials[j]);
                 }
                 
             } 
         }
-        
-        for (int i = 0; i < GrowMaterials.Count; i++)
-        {
-            StartCoroutine(GrowMesh(GrowMaterials[i]));
-        }
-    }
-
-    private void Update()
-    {
-        LerpYScale();
-        
-    }
-
-    private float lerpTimer = 0;
-    private float lerpTimerMax = 3;
-    private bool increaselerpTimer;
-    private void LerpYScale()
-    {
-
-        if (increaselerpTimer)
-        {
-            lerpTimer += Time.deltaTime;
-        }
-        else
-        {
-            lerpTimer -= Time.deltaTime;
-        }
-
-        increaselerpTimer = lerpTimer switch
-        {
-            < 0 => true,
-            > 3 => false,
-            _ => increaselerpTimer
-        };
-
-        var t = lerpTimer / lerpTimerMax;
-        transform.localScale = new Vector3(transform.localScale.x,Mathf.Lerp(1f, 1.5f, t),transform.localScale.z);
-    }
-
-    private bool repeat=true;
-    IEnumerator GrowMesh(Material material)
-    {
-        float growValue = material.GetFloat(GrowID);
-
-        while (repeat)
-        {
-            if (!fullyGrown)
-            {
-                if (!repeat)
-                {
-                    yield break;
-                }
-                while (growValue<maxGrow)
-                {
-                    growValue += 1 / (timeToGrow / refreshrate);
-                    material.SetFloat(GrowID,growValue);
-
-                    yield return new WaitForSeconds(refreshrate);
-                }
-            }
-            else
-            {
-                if (!repeat)
-                {
-                    
-                }
-                while (growValue>minGrow)
-                {
-                    growValue -= 1 / (timeToGrow / refreshrate);
-                    material.SetFloat(GrowID,growValue);
-
-                    yield return new WaitForSeconds(refreshrate);
-                }
-            }
-
-
-            if (repeat)
-            {
-                if (growValue>=maxGrow)
-                {
-                    fullyGrown = true;
-                }
-                else
-                {
-                    fullyGrown = false;
-                }  
-            }
-           
-        }
-        
     }
     
 
+   
     IEnumerator DeGrow(Material material)
     {
         var growValue = material.GetFloat(GrowID);
