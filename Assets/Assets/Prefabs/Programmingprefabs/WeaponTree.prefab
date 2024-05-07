@@ -996,7 +996,7 @@ PrefabInstance:
     - target: {fileID: 2010442420865279322, guid: 50d0da402642d0147841cd0e7ee2ed7e,
         type: 3}
       propertyPath: m_text
-      value: Cost:70
+      value: Cost:0
       objectReference: {fileID: 0}
     - target: {fileID: 4820777488475794200, guid: 50d0da402642d0147841cd0e7ee2ed7e,
         type: 3}
@@ -1122,7 +1122,7 @@ PrefabInstance:
     - target: {fileID: 6103770237316510163, guid: 50d0da402642d0147841cd0e7ee2ed7e,
         type: 3}
       propertyPath: m_text
-      value: Cost:70
+      value: Cost:0
       objectReference: {fileID: 0}
     - target: {fileID: 6334482375516248038, guid: 50d0da402642d0147841cd0e7ee2ed7e,
         type: 3}
@@ -1464,7 +1464,7 @@ PrefabInstance:
     - target: {fileID: 2010442420865279322, guid: b0785f7f55459a843b18a15865e888e4,
         type: 3}
       propertyPath: m_text
-      value: Cost:30
+      value: Cost:0
       objectReference: {fileID: 0}
     - target: {fileID: 4820777488475794200, guid: b0785f7f55459a843b18a15865e888e4,
         type: 3}
@@ -1475,7 +1475,7 @@ PrefabInstance:
     - target: {fileID: 4820777488475794201, guid: b0785f7f55459a843b18a15865e888e4,
         type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4820777488931600042, guid: b0785f7f55459a843b18a15865e888e4,
         type: 3}
@@ -1590,7 +1590,7 @@ PrefabInstance:
     - target: {fileID: 6103770237316510163, guid: b0785f7f55459a843b18a15865e888e4,
         type: 3}
       propertyPath: m_text
-      value: Cost:30
+      value: Cost:0
       objectReference: {fileID: 0}
     - target: {fileID: 6334482375516248038, guid: b0785f7f55459a843b18a15865e888e4,
         type: 3}
@@ -1634,7 +1634,7 @@ PrefabInstance:
     - target: {fileID: 2010442420865279322, guid: 6df7a621201bc3841b3e390316e664a7,
         type: 3}
       propertyPath: m_text
-      value: Cost:50
+      value: Cost:0
       objectReference: {fileID: 0}
     - target: {fileID: 4820777488475794200, guid: 6df7a621201bc3841b3e390316e664a7,
         type: 3}
@@ -1645,7 +1645,7 @@ PrefabInstance:
     - target: {fileID: 4820777488475794201, guid: 6df7a621201bc3841b3e390316e664a7,
         type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4820777488931600042, guid: 6df7a621201bc3841b3e390316e664a7,
         type: 3}
@@ -1760,7 +1760,7 @@ PrefabInstance:
     - target: {fileID: 6103770237316510163, guid: 6df7a621201bc3841b3e390316e664a7,
         type: 3}
       propertyPath: m_text
-      value: Cost:50
+      value: Cost:0
       objectReference: {fileID: 0}
     - target: {fileID: 6334482375516248038, guid: 6df7a621201bc3841b3e390316e664a7,
         type: 3}
