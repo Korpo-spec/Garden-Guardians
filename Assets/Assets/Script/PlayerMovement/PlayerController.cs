@@ -46,11 +46,13 @@ public class PlayerController : MonoBehaviour
    private void FixedUpdate()
    {
       if (inDialogue) { return; }
-      
+
+      CalculateMoveDirFromMouse();
       _movement.Move(_inputHandler.moveDir,movementStats.speed*Time.fixedDeltaTime);
       
       if (_inputHandler.isDashing)
       {
+         
          _inputHandler.isDashing = false;
          _movement.Dash();
       }
@@ -69,5 +71,23 @@ public class PlayerController : MonoBehaviour
       {
          _inputHandler.moveDir = Vector2.zero;
       }
+   }
+
+   private void CalculateMoveDirFromMouse()
+   {
+
+      var cam = Camera.main;
+      Vector3 point = new Vector3();
+      Vector2 mousePos = new Vector2(Input.mousePosition.x,Input.mousePosition.y);
+      
+
+      point = cam.ScreenToWorldPoint(new Vector3(mousePos.x,mousePos.y, cam.nearClipPlane));
+
+      
+      var moveDir = transform.position-point ;
+      Debug.Log(moveDir.normalized);
+      Debug.DrawLine(transform.position,moveDir);
+      //moveDir = moveDir.normalized;
+      //_inputHandler.moveDir = moveDir;
    }
 }
