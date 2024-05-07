@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,11 +10,25 @@ public class AttackComboSO : ScriptableObject
     [SerializeField] private AnimatorOverrideController newAnims;
     [SerializeField] public int comboLength;
     [SerializeField] public AttackInfo[] attackInfos;
+    
     [SerializeField] public Effect weaponEffect;
 
     public GameObject Weapon => weapon;
     public AnimatorOverrideController NewAnims => newAnims;
     public int ComboLength => comboLength;
+    
+    
+    private AttackInfo[] OrigionalAttackInfos;
+
+    private void Awake()
+    {
+        OrigionalAttackInfos = attackInfos;
+    }
+
+    private void OnDisable()
+    {
+        attackInfos = OrigionalAttackInfos;
+    }
 }
 
 [System.Serializable]

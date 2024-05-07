@@ -16,6 +16,10 @@ MonoBehaviour:
     _item: {fileID: 11400000, guid: 839607ddc64ac614e8e91b021e8ddfba, type: 2}
     numberOfItemsInStack: 1
     maxStackSize: 8
+  weaponUpgrade:
+    DamageIncrease: 0
+    DashLengthIncrease: 0
+    WeaponEffect: {fileID: 0}
   parents:
   - {fileID: 11400000, guid: d443a9d1e04d61f4499ba70d41ea191a, type: 2}
   - {fileID: 11400000, guid: 5e9c6f0f8efd3d84391ddba1d1d409d1, type: 2}
@@ -28,5 +32,5 @@ MonoBehaviour:
     numberOfItemsInStack: 5
     maxStackSize: 0
   upgradeCost:
-    UMCost: 70
+    UMCost: 0
     SUMCost: 0

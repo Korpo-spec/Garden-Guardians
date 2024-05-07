@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class WeaponButtonSO : ScriptableObject
 {
     public ItemStack weaponModul;
+    public WeaponUpgrade weaponUpgrade;
+    
     
     public List<WeaponButtonSO> parents;
 

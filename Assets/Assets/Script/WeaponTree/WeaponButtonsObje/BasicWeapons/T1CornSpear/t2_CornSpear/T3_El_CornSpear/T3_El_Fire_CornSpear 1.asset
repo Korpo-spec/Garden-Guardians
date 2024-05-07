@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: T3_El_Fire_CornSpear 1
   m_EditorClassIdentifier: 
   weaponModul:
-    _item: {fileID: 11400000, guid: c6fc9099ef1acae47a8aeea45ef67028, type: 2}
+    _item: {fileID: 0}
     numberOfItemsInStack: 1
     maxStackSize: 8
+  weaponUpgrade:
+    DamageIncrease: 0
+    DashLengthIncrease: 0
+    WeaponEffect: {fileID: 0}
   parents:
   - {fileID: 11400000}
   - {fileID: 11400000}
@@ -24,10 +28,7 @@ MonoBehaviour:
   upgradeType: 1
   PlayerWeaponSlot: {fileID: 11400000, guid: 3977ccd0eeeebf34fa3c3f76c4a0ff8a, type: 2}
   PlayerInventory: {fileID: 11400000, guid: 17bf045369c8ed0458855753c8358783, type: 2}
-  ItemRequierments:
-  - _item: {fileID: 11400000, guid: 7a28ae7bb02f00643870481e78c5d7b0, type: 2}
-    numberOfItemsInStack: 5
-    maxStackSize: 0
+  ItemRequierments: []
   upgradeCost:
-    UMCost: 50
+    UMCost: 0
     SUMCost: 0
