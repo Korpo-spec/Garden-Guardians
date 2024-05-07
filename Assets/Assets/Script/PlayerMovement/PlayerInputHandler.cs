@@ -84,5 +84,7 @@ namespace Script.PlayerMovement
             var worldSpaceMoveDir = new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical"));
             moveDir = worldSpaceMoveDir.Vector3WorldSpaceToIsometricSpace(rotation.eulerAngles);
         }
+        
+        
     }
 }
