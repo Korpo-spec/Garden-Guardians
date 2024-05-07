@@ -20,15 +20,8 @@ public class AttackComboSO : ScriptableObject
     
     private AttackInfo[] OrigionalAttackInfos;
 
-    private void Awake()
-    {
-        OrigionalAttackInfos = attackInfos;
-    }
-
-    private void OnDisable()
-    {
-        attackInfos = OrigionalAttackInfos;
-    }
+    
+    
 }
 
 [System.Serializable]

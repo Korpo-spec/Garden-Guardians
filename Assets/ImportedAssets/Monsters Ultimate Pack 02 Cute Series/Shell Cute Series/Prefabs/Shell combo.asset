@@ -16,27 +16,25 @@ MonoBehaviour:
   newAnims: {fileID: 0}
   comboLength: 1
   attackInfos:
-  - damage: 1
+  - damage: 4
     colliderInfo:
-      center: {x: 0, y: 0.33879876, z: 0.6238537}
-      halfsize: {x: 1.7612422, y: 0.5875794, z: 1.3690112}
+      center: {x: 0, y: 0, z: 0}
+      halfsize: {x: 1, y: 1, z: 1}
       isTrigger: 0
-    slashEffect: {fileID: 8991263633043074940, guid: b30c61307f93fb848afcdf97b9178ad6,
-      type: 3}
+    slashEffect: {fileID: 0}
     useCustomRot: 0
     customRot: {x: 0, y: 0, z: 0}
-    hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
-      type: 3}
-    dashLenght: 1.5
-    dashTime: 0.5
+    hitEffect: {fileID: 0}
+    dashLenght: 2
+    dashTime: 1
     dashCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: 2
-        outSlope: 2
+        inSlope: 0
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -44,8 +42,8 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 1
         value: 1
-        inSlope: 0
-        outSlope: 0
+        inSlope: 2
+        outSlope: 2
         tangentMode: 0
         weightedMode: 0
         inWeight: 0

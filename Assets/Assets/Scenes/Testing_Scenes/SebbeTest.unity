@@ -7864,7 +7864,7 @@ GameObject:
   - component: {fileID: 938620728}
   - component: {fileID: 938620727}
   - component: {fileID: 938620726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17023,6 +17023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  maxHealth: 0
   transformHealthDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325,
     type: 2}
   destroyOnKill: 1

@@ -46,23 +46,21 @@ public class PlayerController : MonoBehaviour
    private void FixedUpdate()
    {
       if (inDialogue) { return; }
-
-      CalculateMoveDirFromMouse();
-      _movement.Move(_inputHandler.moveDir,movementStats.speed*Time.fixedDeltaTime);
       
       if (_inputHandler.isDashing)
       {
-         
+         CalculateMoveDirFromMouse();
          _inputHandler.isDashing = false;
-         _movement.Dash();
+         _movement.Dash(_inputHandler.moveDir);
       }
       else if (_inputHandler.attackButtonPressed)
       {
+         CalculateMoveDirFromMouse();
          _inputHandler.attackButtonPressed = false;
          attackModule.Attack(animator);
          
       }
-      
+      _movement.Move(_inputHandler.moveDir,movementStats.speed*Time.fixedDeltaTime);
 
    }
    private void OnEnable()
@@ -73,21 +71,26 @@ public class PlayerController : MonoBehaviour
       }
    }
 
+   public LayerMask Mask;
    private void CalculateMoveDirFromMouse()
    {
 
       var cam = Camera.main;
-      Vector3 point = new Vector3();
-      Vector2 mousePos = new Vector2(Input.mousePosition.x,Input.mousePosition.y);
-      
+      Vector3 point = Input.mousePosition;
+      point.z = 100;
+      //Vector2 mousePos = new Vector2(Input.mousePosition.x,Input.mousePosition.y);
 
-      point = cam.ScreenToWorldPoint(new Vector3(mousePos.x,mousePos.y, cam.nearClipPlane));
 
-      
-      var moveDir = transform.position-point ;
-      Debug.Log(moveDir.normalized);
-      Debug.DrawLine(transform.position,moveDir);
-      //moveDir = moveDir.normalized;
-      //_inputHandler.moveDir = moveDir;
+      Ray ray = cam.ScreenPointToRay(point);
+      RaycastHit hit;
+      if (Physics.Raycast(ray,out hit,100,Mask))
+      {
+         
+         var direction = hit.point-transform.position;
+         direction = direction.normalized;
+         direction = new Vector3(direction.x, 0, direction.z);
+         _inputHandler.moveDir = direction.normalized;
+         Debug.DrawLine(transform.position,_inputHandler.moveDir,Color.black,5);
+      }
    }
 }

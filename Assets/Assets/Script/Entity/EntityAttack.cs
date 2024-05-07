@@ -81,8 +81,6 @@ public class EntityAttack : MonoBehaviour
         //Debug.Log("Attack");
         if (_weapon.attackInfos[comboIndex].slashEffect != null)
         {
-           
-            
             for (int i = 0; i < mainHand.childCount; i++)
             {
                 Transform child = mainHand.GetChild(i);

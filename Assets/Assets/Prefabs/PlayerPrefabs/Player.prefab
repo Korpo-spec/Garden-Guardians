@@ -5231,6 +5231,9 @@ MonoBehaviour:
   PlayerAudio: {fileID: 11400000, guid: 1d402cb47b9fa3f4e814b0307a4a71d7, type: 2}
   animator: {fileID: 7127825265443040992}
   inDialogue: 0
+  Mask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &6315513151003094338
 MonoBehaviour:
   m_ObjectHideFlags: 0

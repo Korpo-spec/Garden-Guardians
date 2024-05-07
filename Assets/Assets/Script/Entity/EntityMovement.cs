@@ -114,21 +114,22 @@ public class EntityMovement : MonoBehaviour
  
     }
 
-    public void Dash()
+    public void Dash(Vector3 dashVector)
     {
        if (!canMove) return;
-       StartCoroutine(InternalDash());
+       StartCoroutine(InternalDash(dashVector));
     }
  
-    private IEnumerator InternalDash()
+    private IEnumerator InternalDash(Vector3 dashVector3)
     {
        float startTime = Time.time;
-       Vector3 dashvector = _prevDirVector;
+       Vector3 dashvector = dashVector3;
        canMove = false;
        animator.SetBool("Dash",true);
        while (Time.time<startTime+movementStats.dashTime)
        {
           _controller.Move(dashvector.normalized* (movementStats.dashSpeed * Time.deltaTime));
+          RotatePlayer(dashVector3);
           yield return null;
        }
        animator.SetBool("Dash",false);
