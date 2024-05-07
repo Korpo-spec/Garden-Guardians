@@ -120,18 +120,43 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 2e33a3f531b6adc4f9d8a99c83e2ba2d,
         type: 3}
+    - target: {fileID: 2061518624227189912, guid: 94db5128bfa82144981dd4d15d1dc356,
+        type: 3}
+      propertyPath: m_text
+      value: Cost:0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3455369099404232419, guid: 94db5128bfa82144981dd4d15d1dc356,
+        type: 3}
+      propertyPath: m_text
+      value: Cost:0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015793286190230235, guid: 94db5128bfa82144981dd4d15d1dc356,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5806794506363377188, guid: 94db5128bfa82144981dd4d15d1dc356,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 2e33a3f531b6adc4f9d8a99c83e2ba2d,
         type: 3}
+    - target: {fileID: 6037506652079321105, guid: 94db5128bfa82144981dd4d15d1dc356,
+        type: 3}
+      propertyPath: m_text
+      value: Cost:0
+      objectReference: {fileID: 0}
     - target: {fileID: 6832029187780826021, guid: 94db5128bfa82144981dd4d15d1dc356,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 2e33a3f531b6adc4f9d8a99c83e2ba2d,
         type: 3}
+    - target: {fileID: 6963017921925665386, guid: 94db5128bfa82144981dd4d15d1dc356,
+        type: 3}
+      propertyPath: m_text
+      value: Cost:0
+      objectReference: {fileID: 0}
     - target: {fileID: 7205182646262608991, guid: 94db5128bfa82144981dd4d15d1dc356,
         type: 3}
       propertyPath: m_Sprite

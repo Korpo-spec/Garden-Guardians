@@ -16,6 +16,10 @@ MonoBehaviour:
     _item: {fileID: 11400000, guid: 93a907546dc846948a1639f48b9d13da, type: 2}
     numberOfItemsInStack: 1
     maxStackSize: 8
+  weaponUpgrade:
+    DamageIncrease: 0
+    DashLengthIncrease: 0
+    WeaponEffect: {fileID: 0}
   parents:
   - {fileID: 11400000, guid: 2f0eefc0eb76f9d48b2024671d26cd5d, type: 2}
   - {fileID: 11400000, guid: c91a11bea1ff85740a0dc3f1489287a9, type: 2}
@@ -23,10 +27,7 @@ MonoBehaviour:
   upgradeType: 2
   PlayerWeaponSlot: {fileID: 11400000, guid: 3977ccd0eeeebf34fa3c3f76c4a0ff8a, type: 2}
   PlayerInventory: {fileID: 11400000, guid: 17bf045369c8ed0458855753c8358783, type: 2}
-  ItemRequierments:
-  - _item: {fileID: 11400000, guid: e047244c7ad882b4c8636c0b0d56d99f, type: 2}
-    numberOfItemsInStack: 5
-    maxStackSize: 0
+  ItemRequierments: []
   upgradeCost:
-    UMCost: 50
+    UMCost: 0
     SUMCost: 0

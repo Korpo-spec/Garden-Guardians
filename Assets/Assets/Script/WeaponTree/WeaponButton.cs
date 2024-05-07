@@ -23,6 +23,7 @@ public class WeaponButton : MonoBehaviour
 
 
     public WeaponButtonTypeSO WeaponButtonTypeSo;
+    
     public WeaponButtonSO _weaponButtonSo;
 
     private void Start()
@@ -88,7 +89,8 @@ public class WeaponButton : MonoBehaviour
         if (canGet)
         {
             BuyUpgrade();
-            _weaponButtonSo.PlayerWeaponSlot.itemsSlots[0].Stack = _weaponButtonSo.weaponModul;
+           
+            
             weaponBought?.Invoke(this,null);
             
         }
@@ -100,6 +102,15 @@ public class WeaponButton : MonoBehaviour
         foreach (var reqItem in _weaponButtonSo.ItemRequierments)
         {
             _weaponButtonSo.PlayerInventory.RemoveReqItemFromInventory(reqItem);
+        }
+        
+        if (_weaponButtonSo.weaponModul._item)
+        {
+            _weaponButtonSo.PlayerWeaponSlot.itemsSlots[0].Stack = _weaponButtonSo.weaponModul;
+        }
+        else
+        {
+            _weaponButtonSo.weaponUpgrade.AddUpgradeOnExistingweapon(_weaponButtonSo.PlayerWeaponSlot.itemsSlots[0].Stack._item.equipment);
         }
         
     }
