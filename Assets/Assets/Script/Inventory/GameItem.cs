@@ -31,6 +31,7 @@ public class GameItem : MonoBehaviour
         _trigger = GetComponent<Collider>();
         _thisrb = GetComponent<Rigidbody>();
         _trigger.enabled = false;
+        Cam = Camera.main;
     }
 
     private void Start()
@@ -61,7 +62,14 @@ public class GameItem : MonoBehaviour
     }
     private void Update()
     {
-        transform.Rotate(new Vector3(0,0.5f,0));
+        RotateTowardCamera();
+    }
+
+    private Camera Cam;
+    private void RotateTowardCamera()
+    {
+        var RotDirection = transform.position - Cam.transform.position;
+        transform.forward = RotDirection.normalized;
     }
     
     public static event EventHandler ItemPickUp;
