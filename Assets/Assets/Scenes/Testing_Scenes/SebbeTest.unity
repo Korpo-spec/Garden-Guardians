@@ -3232,6 +3232,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3cbbce4d3959814a874531520e9a4a8, type: 3}
+--- !u!1 &395326083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6047841962277131936, guid: 20d913a21488c4b40882488f8187da52,
+    type: 3}
+  m_PrefabInstance: {fileID: 620830858974497080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &397363663 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7535135778264701822, guid: 4bdc717cd105b8146a5a50620e1ba17c,
@@ -19472,6 +19478,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 620830857375276154, guid: 20d913a21488c4b40882488f8187da52,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 620830857375276154, guid: 20d913a21488c4b40882488f8187da52,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 620830857375276154, guid: 20d913a21488c4b40882488f8187da52,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 620830857375276154, guid: 20d913a21488c4b40882488f8187da52,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 620830857421168130, guid: 20d913a21488c4b40882488f8187da52,
         type: 3}
       propertyPath: m_Name
@@ -19617,6 +19643,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 620830857421168135, guid: 20d913a21488c4b40882488f8187da52,
+        type: 3}
+      propertyPath: WeaponTreeUi
+      value: 
+      objectReference: {fileID: 395326083}
     - target: {fileID: 620830857421168135, guid: 20d913a21488c4b40882488f8187da52,
         type: 3}
       propertyPath: OpenWeaponTree.m_PersistentCalls.m_Calls.Array.size

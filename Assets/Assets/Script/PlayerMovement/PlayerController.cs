@@ -49,9 +49,8 @@ public class PlayerController : MonoBehaviour
       
       if (_inputHandler.isDashing)
       {
-         CalculateMoveDirFromMouse();
          _inputHandler.isDashing = false;
-         _movement.Dash(_inputHandler.moveDir);
+         _movement.Dash();
       }
       else if (_inputHandler.attackButtonPressed)
       {
