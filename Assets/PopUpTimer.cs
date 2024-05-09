@@ -23,7 +23,7 @@ public class PopUpTimer : MonoBehaviour
 
     private IEnumerator DestroyAfter()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(2f);
         Destroy(gameObject);
     }
     

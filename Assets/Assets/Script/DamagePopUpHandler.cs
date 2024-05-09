@@ -9,12 +9,8 @@ public class DamagePopUpHandler : MonoBehaviour
 {
    [SerializeField] private GameObject spawnText;
    private const int maxScaleDamage = 8;
- 
    
 
-
-   
-  
 
    public void SpawnText(int Damage)
    {

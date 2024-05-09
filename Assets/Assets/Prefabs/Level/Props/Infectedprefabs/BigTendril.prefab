@@ -2672,6 +2672,7 @@ GameObject:
   - component: {fileID: 4821999977212216752}
   - component: {fileID: -3426581932580047114}
   - component: {fileID: 322842699219184515}
+  - component: {fileID: 1175398147284648310}
   m_Layer: 0
   m_Name: BigTendril
   m_TagString: Untagged
@@ -2755,6 +2756,18 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: TendrilSound, Assembly-CSharp
           m_MethodName: PlayDamageSound
           m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1175398147284648310}
+          m_TargetAssemblyTypeName: DamagePopUpHandler, Assembly-CSharp
+          m_MethodName: SpawnText
+          m_Mode: 0
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2895,6 +2908,20 @@ MonoBehaviour:
       Data3: -1805583227
       Data4: -658281207
     Path: event:/Sounds/Enemies/Blight
+--- !u!114 &1175398147284648310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8440356997934613553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee81d1747258c214cb8d42a605cbd301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnText: {fileID: 4412156086504408344, guid: 295e0677c2057714c8d29c359af95f14,
+    type: 3}
 --- !u!1 &8489619610052081663
 GameObject:
   m_ObjectHideFlags: 0
