@@ -83,7 +83,7 @@ namespace Script.Entity
             if (health - amount <= 0)
                 KillItself();
             else
-                entityHealthEvents.takeDamage.Invoke();
+                entityHealthEvents.takeDamage.Invoke((int)amount);
 
             // if (intVariable)
             //     intVariable.Value -= amount;
@@ -133,7 +133,7 @@ namespace Script.Entity
     public class EntityHealthEvents
     {
         [Header("Events")]
-        [SerializeField] public UnityEvent takeDamage;
+        [SerializeField] public UnityEvent <int>takeDamage;
         [SerializeField] public UnityEvent heal;
         [SerializeField] public UnityEvent die;
     }

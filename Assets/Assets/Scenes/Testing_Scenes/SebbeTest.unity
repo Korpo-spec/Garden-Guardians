@@ -12410,6 +12410,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -58.443134
       objectReference: {fileID: 0}
+    - target: {fileID: 6532057112193488866, guid: 59a51997eb082e449b7eff675857e1ff,
+        type: 3}
+      propertyPath: health
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6532057112193488866, guid: 59a51997eb082e449b7eff675857e1ff,
+        type: 3}
+      propertyPath: entityHealthEvents.takeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59a51997eb082e449b7eff675857e1ff, type: 3}
 --- !u!1001 &1438386635

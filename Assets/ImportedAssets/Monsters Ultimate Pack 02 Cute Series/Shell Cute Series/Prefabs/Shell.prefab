@@ -849,6 +849,7 @@ GameObject:
   - component: {fileID: 7103959323214045947}
   - component: {fileID: 1165451953649785648}
   - component: {fileID: 2993407259103509398}
+  - component: {fileID: 7034667676536422237}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -993,7 +994,19 @@ MonoBehaviour:
   entityHealthEvents:
     takeDamage:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 7034667676536422237}
+          m_TargetAssemblyTypeName: DamagePopUpHandler, Assembly-CSharp
+          m_MethodName: SpawnText
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     heal:
       m_PersistentCalls:
         m_Calls: []
@@ -1116,6 +1129,20 @@ MonoBehaviour:
   - GameObject: {fileID: 3165748147989574631, guid: 9a34e2aceb96a0d4ea91b3a57e5fcbd0,
       type: 3}
     dropChance: 10
+--- !u!114 &7034667676536422237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545682315351394890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee81d1747258c214cb8d42a605cbd301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnText: {fileID: 4412156086504408344, guid: 295e0677c2057714c8d29c359af95f14,
+    type: 3}
 --- !u!1 &545682315351394892
 GameObject:
   m_ObjectHideFlags: 0
