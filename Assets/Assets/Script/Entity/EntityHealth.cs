@@ -80,10 +80,11 @@ namespace Script.Entity
         /// <param name="amount"> The amount of health to lose</param>
         public virtual void DamageUnit(float amount)
         {
+            entityHealthEvents.takeDamage.Invoke((int)amount);
             if (health - amount <= 0)
                 KillItself();
             else
-                entityHealthEvents.takeDamage.Invoke((int)amount);
+                //entityHealthEvents.takeDamage.Invoke((int)amount);
 
             // if (intVariable)
             //     intVariable.Value -= amount;
