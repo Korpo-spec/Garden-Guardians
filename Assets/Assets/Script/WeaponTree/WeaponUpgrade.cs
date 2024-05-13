@@ -20,9 +20,9 @@ public struct WeaponUpgrade
          //activeWeaponInfo.attackInfos[i].dashLenght += DashLengthIncrease;
       }
 
-      if (activeWeaponInfo.weaponEffect==null&&WeaponEffect)
+      if (WeaponEffect)
       {
-         activeWeaponInfo.weaponEffect = WeaponEffect;
+         activeWeaponInfo.weaponEffect.effectsApplied.Add(WeaponEffect);
       }
       else
       {
