@@ -56,8 +56,9 @@ public class PlayerController : MonoBehaviour
       {
          CalculateMoveDirFromMouse();
          _inputHandler.attackButtonPressed = false;
-         attackModule.Attack(animator);
-         
+         attackModule.Attack(animator, _inputHandler.moveDir);
+         _movement.prevDirVector3 = _inputHandler.moveDir;
+         return;
       }
       _movement.Move(_inputHandler.moveDir,movementStats.speed*Time.fixedDeltaTime);
 
@@ -78,14 +79,16 @@ public class PlayerController : MonoBehaviour
       Vector3 point = Input.mousePosition;
       point.z = 100;
       //Vector2 mousePos = new Vector2(Input.mousePosition.x,Input.mousePosition.y);
+      Plane plane = new Plane(new Vector3(0, 1, 0), transform.position);
+      
+
 
 
       Ray ray = cam.ScreenPointToRay(point);
-      RaycastHit hit;
-      if (Physics.Raycast(ray,out hit,100,Mask))
+      if (plane.Raycast(ray, out float enter))
       {
          
-         var direction = hit.point-transform.position;
+         var direction = ray.GetPoint(enter)-transform.position;
          direction = direction.normalized;
          direction = new Vector3(direction.x, 0, direction.z);
          _inputHandler.moveDir = direction.normalized;

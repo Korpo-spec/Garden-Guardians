@@ -15,7 +15,18 @@ public class EntityMovement : MonoBehaviour
 
    private NavMeshAgent _agent;
    private int _currentCorner = 1;
-   public Vector3 prevDirVector3 => _prevDirVector;
+
+   public Vector3 prevDirVector3
+   {
+      get
+      {
+         return _prevDirVector;
+      }
+      set
+      {
+         _prevDirVector = value;
+      }
+   }
    public CharacterController controller => _controller;
    public Animator animator;
     // Start is called before the first frame update

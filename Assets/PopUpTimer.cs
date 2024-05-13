@@ -6,6 +6,8 @@ using UnityEngine;
 public class PopUpTimer : MonoBehaviour
 {
     private Camera cam;
+
+    [SerializeField] private float DestroyafterSec=0.4f;
     
     private void Awake()
     {
@@ -23,7 +25,7 @@ public class PopUpTimer : MonoBehaviour
 
     private IEnumerator DestroyAfter()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(DestroyafterSec);
         Destroy(gameObject);
     }
     
