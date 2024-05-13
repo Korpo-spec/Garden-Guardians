@@ -4,15 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Correction to attack rotation">
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Lower knockback">
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/ActivePlayerComboEffects.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/ActivePlayerComboEffects.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T1PlayerWeaponPoison 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T1PlayerWeaponPoison 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T2PlayerWeaponPoison.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T2PlayerWeaponPoison.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T3PlayerWeaponPoison.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T3PlayerWeaponPoison.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T1Slow.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T1Slow.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T2Slow.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T2Slow.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T3Slow.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T3Slow.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/AttackComboSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/AttackComboSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/PlayerWeaponPoison.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/PlayerWeaponPoison.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponUpgrade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/AxeAirFinisher.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/AxeAirFinisher.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic SwordCombo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic SwordCombo.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic hitCombo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic hitCombo.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/DefaultStick.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/DefaultStick.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Prefabs/Shell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Prefabs/Shell.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/Map track markers VFX/Demo scene/Standard material.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +45,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/DesignTestTools/TestPrefabs/Canvas.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/DesignTestTools/TestPrefabs/Canvas.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Scenes/WIP_Scenes/SpelTest.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Audio/SoundScripts/SoundScripts/MScripts/AudioZoneSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Entity/EnemyCircleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" root0="FORCE_HIGHLIGHTING" />
@@ -28,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/UMAmountUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1Pumpkinhammer/T2PumpkinHammer/T3_Phys_Pump_Hammer/T3_Phys_Power_Pumpkin_Hammer 1.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/ScriptableObjects/Weapons/DefaultStick.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/HealthUpdate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/RuntimeUtils.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -406,7 +435,19 @@
       <option name="presentableId" value="LOCAL−00039" />
       <updated>1715592183671</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL−00040" summary="KnockBack">
+      <created>1715595872648</created>
+      <option name="number" value="LOCAL−00040" />
+      <option name="presentableId" value="LOCAL−00040" />
+      <updated>1715595872648</updated>
+    </task>
+    <task id="LOCAL−00041" summary="Lower knockback">
+      <created>1715596191570</created>
+      <option name="number" value="LOCAL−00041" />
+      <option name="presentableId" value="LOCAL−00041" />
+      <updated>1715596191570</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,8 +482,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Adding meshes for enemy" />
-    <MESSAGE value="I'm going for lunch state machine on its way" />
     <MESSAGE value="extra things" />
     <MESSAGE value="Enemy walking towards you" />
     <MESSAGE value="First iteration enemy" />
@@ -466,7 +505,9 @@
     <MESSAGE value="Fixed combo connect time" />
     <MESSAGE value="Updated canvas" />
     <MESSAGE value="Correction to attack rotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction to attack rotation" />
+    <MESSAGE value="KnockBack" />
+    <MESSAGE value="Lower knockback" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lower knockback" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
