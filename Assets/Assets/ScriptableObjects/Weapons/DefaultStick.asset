@@ -17,7 +17,7 @@ MonoBehaviour:
   comboLength: 2
   attackInfos:
   - damage: 1
-    knockBack: 5
+    knockBack: 1
     colliderInfo:
       center: {x: 0, y: 0.8057604, z: -0.7807358}
       halfsize: {x: 1.5056758, y: 0.72962403, z: 2}
@@ -55,7 +55,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   - damage: 1
-    knockBack: 5
+    knockBack: 1
     colliderInfo:
       center: {x: 0, y: 0.96961045, z: -0.68042135}
       halfsize: {x: 1.2869751, y: 0.443927, z: 1.2869751}
