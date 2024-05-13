@@ -79,6 +79,7 @@ public class EntityAttack : MonoBehaviour
     {
         //Handle slash effect
         //Debug.Log("Attack");
+        _movement.canMove = true;
         if (_weapon.attackInfos[comboIndex].slashEffect != null)
         {
             for (int i = 0; i < mainHand.childCount; i++)
