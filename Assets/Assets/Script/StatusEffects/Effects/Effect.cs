@@ -2,14 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [System.Serializable]
 public class Effect : ScriptableObject
 {
     public new string name;
+    public EffectType effectType;
     protected float time;
     public float duration;
     public GameObject ParticleSystem;
+    public Effect UpgradedVersion;
 
     
     
@@ -55,5 +58,30 @@ public class Effect : ScriptableObject
     }
 
 
+    
 
+}
+
+public enum EffectType
+{
+    KockBack,
+    Power,
+    Bleed,
+    Speed,
+    Crit,
+    Thorns,
+    Defense,
+    Stun,
+    Burn,
+    Fire,
+    Explosion,
+    LChain,
+    Lightning,
+    Paralysis,
+    Slow,
+    Ice,
+    ColdZone,
+    
+    
+    
 }

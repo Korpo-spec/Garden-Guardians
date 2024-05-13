@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: ActivePlayerComboEffects
   m_EditorClassIdentifier: 
   name: 
+  effectType: 0
   duration: 0
   ParticleSystem: {fileID: 0}
-  effectsApplied: []
+  UpgradedVersion: {fileID: 0}
+  effectsApplied:
+  - {fileID: 11400000, guid: 6effb13a0ecfb5b44b64c852435317f0, type: 2}
+  - {fileID: 0}

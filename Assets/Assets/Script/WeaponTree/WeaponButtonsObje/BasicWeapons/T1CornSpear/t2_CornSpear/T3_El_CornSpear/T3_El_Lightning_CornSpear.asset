@@ -19,7 +19,7 @@ MonoBehaviour:
   weaponUpgrade:
     DamageIncrease: 0
     DashLengthIncrease: 0
-    WeaponEffect: {fileID: 0}
+    WeaponEffect: {fileID: 11400000, guid: 01b0012a2ff71be49ab4e5e1ed995fa3, type: 2}
   parents:
   - {fileID: 11400000}
   - {fileID: 11400000}

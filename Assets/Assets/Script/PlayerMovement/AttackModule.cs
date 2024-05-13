@@ -16,9 +16,11 @@ namespace Script.PlayerMovement
         public void Attack(Animator animator)
         {
             //Debug.Log(timeSinceLastAttack + comboTimeOutTime + " " + Time.time);
+            animator.SetInteger("MaxCombo", weapon.comboLength);
             if (timeSinceLastAttack + comboTimeOutTime < Time.time)
             {
-                ResetTriggers(animator);
+                
+                ResetBlend(animator);
                 comboState = 0;
             }
             if (timeSinceLastAttack + comboConnectTime > Time.time)
@@ -26,13 +28,12 @@ namespace Script.PlayerMovement
                
                 return;
             }
-            if (comboState != 0&&!animator.GetCurrentAnimatorStateInfo(1).IsName("Combo"+(comboState-1)))
-            {
-                
-                return;
-            }
             
+            //animator.SetFloat("Blend", comboState * 0.5f);
+            animator.SetTrigger("Combat");
+            Debug.Log("Combat Set");
             animator.SetTrigger("Combo"+comboState);
+            
             timeSinceLastAttack = Time.time;
             weapon = animator.GetComponent<EntityAttack>().weapon;
             
@@ -51,34 +52,7 @@ namespace Script.PlayerMovement
         {
             RotatePlayer(animator.transform, attackrot);
             //Debug.Log(timeSinceLastAttack + comboTimeOutTime + " " + Time.time);
-            if (timeSinceLastAttack + comboTimeOutTime < Time.time)
-            {
-                ResetTriggers(animator);
-                comboState = 0;
-            }
-            if (timeSinceLastAttack + comboConnectTime > Time.time)
-            {
-               
-                return;
-            }
-            if (comboState != 0&&!animator.GetCurrentAnimatorStateInfo(1).IsName("Combo"+(comboState-1)))
-            {
-                
-                return;
-            }
-            
-            animator.SetTrigger("Combo"+comboState);
-            timeSinceLastAttack = Time.time;
-            weapon = animator.GetComponent<EntityAttack>().weapon;
-            
-            if (comboState < weapon.ComboLength-1)
-            {
-                comboState++;
-            }
-            else
-            {
-                comboState = 0;
-            }
+            Attack(animator);
             
         }
         
@@ -98,11 +72,11 @@ namespace Script.PlayerMovement
         
         
         
-        private void ResetTriggers(Animator animator)
+        private void ResetBlend(Animator animator)
         {
             for (int i = 0; i < 3; i++)
             {
-                animator.ResetTrigger("Combo"+i);
+                animator.SetFloat("Blend", -0.5f);
             }
         }
     }
