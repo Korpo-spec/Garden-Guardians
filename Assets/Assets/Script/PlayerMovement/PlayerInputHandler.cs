@@ -8,6 +8,8 @@ namespace Script.PlayerMovement
     {
 
         [HideInInspector] public Vector3 moveDir;
+        
+        [HideInInspector] public Vector3 attackDir;
 
         [SerializeField] private KeyCode dashKey;
 
