@@ -19,10 +19,15 @@ public class AttackComboSO : ScriptableObject
 
 
     [Header("Reset Settings Be careful before clicking here :)")]
+    
     [SerializeField]
-    private bool ResetAttackInfo;
-    [SerializeField]
+    [Tooltip("Save the current attackinfo as default")]
     private bool SaveAttackInfo;
+    
+    [SerializeField]
+    [Tooltip("Resets attackinfo to default")]
+    private bool ResetAttackInfo;
+    
     
     
     [SerializeField] 
