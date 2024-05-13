@@ -9,7 +9,7 @@ public struct WeaponUpgrade
    [SerializeField] private float DamageIncrease;
    [SerializeField] private float DashLengthIncrease;
    [SerializeField] private Effect WeaponEffect;
-   [SerializeField] private effectUpgrades WeaponEffectIncreases;
+   
 
    public void AddUpgradeOnExistingweapon(AttackComboSO activeWeaponInfo)
    {
@@ -22,17 +22,8 @@ public struct WeaponUpgrade
 
       if (WeaponEffect)
       {
-         activeWeaponInfo.weaponEffect.effectsApplied.Add(WeaponEffect);
+         activeWeaponInfo.weaponEffect.TryAddEffect(WeaponEffect);
       }
-      else
-      {
-         //Upgrade effectstats
-      }
+      
    }
-}
-
-[Serializable]
-public struct effectUpgrades
-{
-   
 }

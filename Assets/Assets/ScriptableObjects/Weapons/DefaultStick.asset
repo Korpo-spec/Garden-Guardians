@@ -16,7 +16,7 @@ MonoBehaviour:
   newAnims: {fileID: 22100000, guid: 9d3707a952449d84b8f85388f8e341ed, type: 2}
   comboLength: 2
   attackInfos:
-  - damage: 1
+  - damage: 5
     knockBack: 1
     colliderInfo:
       center: {x: 0, y: 0.8057604, z: -0.7807358}
@@ -54,7 +54,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - damage: 1
+  - damage: 5
     knockBack: 1
     colliderInfo:
       center: {x: 0, y: 0.96961045, z: -0.68042135}
@@ -92,9 +92,9 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  weaponEffect: {fileID: 0}
-  ResetAttackInfo: 0
+  weaponEffect: {fileID: 11400000, guid: d87284aedce494547bee37ec1600f377, type: 2}
   SaveAttackInfo: 0
+  ResetAttackInfo: 0
   DefaultlAttackInfos:
   - damage: 1
     knockBack: 1
@@ -172,4 +172,5 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  DefaultweaponEffect: {fileID: 0}
+  DefaultweaponEffect: {fileID: 11400000, guid: d87284aedce494547bee37ec1600f377,
+    type: 2}

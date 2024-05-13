@@ -14,6 +14,20 @@ public class ComboEffects : Effect
             obj.AddEffect(Instantiate(effect));
         }
     }
+
+    public void TryAddEffect(Effect effect)
+    {
+        for (int i = 0; i < effectsApplied.Count; i++)
+        {
+            if (effectsApplied[i].effectType==effect.effectType)
+            {
+                effectsApplied[i] = effectsApplied[i].UpgradedVersion;
+                return;
+            }
+            
+        }
+        effectsApplied.Add(effect);
+    }
     
     public override void Exit()
     {

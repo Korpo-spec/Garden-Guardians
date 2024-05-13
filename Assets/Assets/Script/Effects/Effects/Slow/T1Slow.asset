@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: T1Slow
   m_EditorClassIdentifier: 
   name: Slow
+  effectType: 14
   duration: 5
-  ParticleSystem: {fileID: 0}
+  ParticleSystem: {fileID: 1050029562203636, guid: b4069a656bda4d940bf63c71279f5c95,
+    type: 3}
+  UpgradedVersion: {fileID: 11400000, guid: defb452623087c64da9e6ecbdc476f73, type: 2}
   slowAmount: 47
