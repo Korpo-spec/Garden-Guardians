@@ -6,6 +6,7 @@ using Script;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 
@@ -15,7 +16,7 @@ public class WeaponButton : MonoBehaviour
     public Button Button;
     [SerializeField] private Image WeaponTypeSprite;
     [SerializeField] private TextMeshProUGUI CostText;
-    [SerializeField] private TextMeshProUGUI CostText2;
+    [SerializeField] private TextMeshProUGUI WeaponInfoText;
     
 
     
@@ -63,7 +64,7 @@ public class WeaponButton : MonoBehaviour
     private void UpdateCostText()
     {
         CostText.text = "Cost:"+_weaponButtonSo.upgradeCost._UMCost;
-        CostText2.text = "Cost:"+_weaponButtonSo.upgradeCost._UMCost;
+        WeaponInfoText.text = _weaponButtonSo.WeaponText;
     }
 
     public void CheckIfCanGet()
