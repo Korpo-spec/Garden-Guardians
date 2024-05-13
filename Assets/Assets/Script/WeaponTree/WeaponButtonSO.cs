@@ -13,8 +13,11 @@ public class WeaponButtonSO : ScriptableObject
     
     public List<WeaponButtonSO> parents;
 
+    [Header("WeaponInforamtion")]
     public Sprite weaponSprite;
     public WeaponButton.UpgradeType upgradeType;
+    public String WeaponText;
+    
     
     
     [Header("Player Inventories")]
