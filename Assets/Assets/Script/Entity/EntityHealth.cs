@@ -38,6 +38,7 @@ namespace Script.Entity
         /// </summary>
         private bool _isDead = false;
 
+        [HideInInspector] public EntityMovement movement;
         [HideInInspector] public EffectManager effectManager;
         [HideInInspector] public EntityFaction faction;
 
@@ -46,6 +47,7 @@ namespace Script.Entity
         {
             effectManager = GetComponent<EffectManager>();
             faction = GetComponent<EntityFaction>();
+            movement = GetComponent<EntityMovement>();
             maxHealth = health;
         }
 
@@ -90,6 +92,25 @@ namespace Script.Entity
             //     intVariable.Value -= amount;
 
             health -= amount;
+            //_animator.SetTrigger(Hurt);
+        }
+        public virtual void DamageUnit(float amount, Vector3 knockback)
+        {
+            if (movement)
+            {
+                movement.KnockBack(knockback);
+            }
+            
+            entityHealthEvents.takeDamage.Invoke((int)amount);
+            if (health - amount <= 0)
+                KillItself();
+            else
+                //entityHealthEvents.takeDamage.Invoke((int)amount);
+
+                // if (intVariable)
+                //     intVariable.Value -= amount;
+
+                health -= amount;
             //_animator.SetTrigger(Hurt);
         }
 

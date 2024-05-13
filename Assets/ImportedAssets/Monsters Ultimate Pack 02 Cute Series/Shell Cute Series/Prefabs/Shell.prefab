@@ -1026,6 +1026,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   spawnOnDestroy: {fileID: 0}
+  movement: {fileID: 0}
   effectManager: {fileID: 0}
   faction: {fileID: 0}
 --- !u!114 &4205534073432884127
@@ -1043,6 +1044,7 @@ MonoBehaviour:
   movementStats: {fileID: 11400000, guid: e08c31aa309a5f944929b2e953dcf77c, type: 2}
   canMove: 1
   animator: {fileID: 545682315341920650}
+  knockBackDuration: 0.25
 --- !u!114 &5525573922375719498
 MonoBehaviour:
   m_ObjectHideFlags: 0

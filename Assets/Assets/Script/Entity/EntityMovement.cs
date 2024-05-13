@@ -125,10 +125,35 @@ public class EntityMovement : MonoBehaviour
  
     }
 
+    public void KnockBack(Vector3 knockBack)
+    {
+       if (!canMove) return;
+       StopAllCoroutines();
+       StartCoroutine(InternalKnockBack(knockBack));
+       
+    }
     public void Dash()
     {
        if (!canMove) return;
        StartCoroutine(InternalDash());
+    }
+
+    [SerializeField] private float knockBackDuration = 1f;
+    private IEnumerator InternalKnockBack(Vector3 dir)
+    {
+       float startTime = 0;
+       float timeMult = 1f / knockBackDuration;
+       Vector3 knockVector = dir;
+       canMove = false;
+       while (startTime < 1)
+       {
+          _controller.Move(knockVector * (Time.deltaTime * timeMult));
+          RotatePlayer(_prevDirVector);
+          startTime += Time.deltaTime * timeMult;
+          yield return new WaitForEndOfFrame();
+       }
+       canMove = true;
+ 
     }
  
     private IEnumerator InternalDash()

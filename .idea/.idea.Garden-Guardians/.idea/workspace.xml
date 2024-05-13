@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Updated canvas">
+    <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Correction to attack rotation">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/AttackModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/AttackModule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerInputHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/AttackComboSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/AttackComboSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/DefaultStick.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/DefaultStick.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Prefabs/Shell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/Prefabs/Shell.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Audio/SoundScripts/SoundScripts/MScripts/AudioZoneSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Entity/EnemyCircleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Script/PlayerMovement/AttackModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/VectorVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/UMAmountUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/b21cassa/RiderProjects/Garden-Guardians/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1Pumpkinhammer/T2PumpkinHammer/T3_Phys_Pump_Hammer/T3_Phys_Power_Pumpkin_Hammer 1.asset" root0="SKIP_HIGHLIGHTING" />
@@ -395,7 +400,13 @@
       <option name="presentableId" value="LOCAL−00038" />
       <updated>1714657245653</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL−00039" summary="Correction to attack rotation">
+      <created>1715592183671</created>
+      <option name="number" value="LOCAL−00039" />
+      <option name="presentableId" value="LOCAL−00039" />
+      <updated>1715592183671</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +441,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Trying enemy movement" />
     <MESSAGE value="Adding meshes for enemy" />
     <MESSAGE value="I'm going for lunch state machine on its way" />
     <MESSAGE value="extra things" />
@@ -455,7 +465,8 @@
     <MESSAGE value="Show items in crafting menu" />
     <MESSAGE value="Fixed combo connect time" />
     <MESSAGE value="Updated canvas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated canvas" />
+    <MESSAGE value="Correction to attack rotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction to attack rotation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

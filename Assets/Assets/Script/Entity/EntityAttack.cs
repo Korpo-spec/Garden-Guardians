@@ -117,7 +117,10 @@ public class EntityAttack : MonoBehaviour
                 {
                     continue;
                 }
-                health.DamageUnit(_weapon.attackInfos[comboIndex].damage);
+
+                Vector3 knockBackVec = collider.transform.position - transform.position;
+                knockBackVec = knockBackVec.RemoveY();
+                health.DamageUnit(_weapon.attackInfos[comboIndex].damage, _weapon.attackInfos[comboIndex].knockBack* knockBackVec);
                 if (_weapon.attackInfos[comboIndex].hitEffect != null)
                 {
                     Instantiate(_weapon.attackInfos[comboIndex].hitEffect, collider.transform.position, Quaternion.identity);

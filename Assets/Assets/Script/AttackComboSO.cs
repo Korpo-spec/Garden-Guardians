@@ -35,6 +35,7 @@ public struct ColliderInfo
 public struct AttackInfo
 {
     public float damage;
+    public float knockBack;
     public ColliderInfo colliderInfo;
     public GameObject slashEffect;
     public bool useCustomRot;
