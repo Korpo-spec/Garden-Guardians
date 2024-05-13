@@ -11,17 +11,47 @@ public class AttackComboSO : ScriptableObject
     [SerializeField] public int comboLength;
     [SerializeField] public AttackInfo[] attackInfos;
     
-    [SerializeField] public Effect weaponEffect;
+    [SerializeField] public ComboEffects weaponEffect;
 
     public GameObject Weapon => weapon;
     public AnimatorOverrideController NewAnims => newAnims;
     public int ComboLength => comboLength;
-    
-    
-    private AttackInfo[] OrigionalAttackInfos;
 
+
+    [Header("Reset Settings Be careful before clicking here :)")]
+    [SerializeField]
+    private bool ResetAttackInfo;
+    [SerializeField]
+    private bool SaveAttackInfo;
     
     
+    [SerializeField] 
+    private AttackInfo[] DefaultlAttackInfos;
+    [SerializeField]
+    public ComboEffects DefaultweaponEffect;
+
+    private void OnValidate()
+    {
+        if (ResetAttackInfo)
+        {
+            ResetAttackInfo = false;
+            ResettAttackInfo();
+        } if (SaveAttackInfo)
+        {
+            SaveAttackInfo = false;
+            SaveDefaultAttackInfo();
+        }
+    }
+
+    private void SaveDefaultAttackInfo()
+    {
+        DefaultlAttackInfos = attackInfos;
+        DefaultweaponEffect = weaponEffect;
+    } private void ResettAttackInfo()
+    {
+        attackInfos = DefaultlAttackInfos;
+        weaponEffect = DefaultweaponEffect;
+    }
 }
 
 [System.Serializable]
