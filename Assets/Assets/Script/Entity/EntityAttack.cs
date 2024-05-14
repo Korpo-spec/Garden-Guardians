@@ -171,4 +171,9 @@ public class EntityAttack : MonoBehaviour
         Vector3 correctionVec = new Vector3(-1, 1, -1);
         Gizmos.DrawCube(Vector3.Scale(_weapon.attackInfos[comboIndex].colliderInfo.center,correctionVec), _weapon.attackInfos[comboIndex].colliderInfo.halfsize);
     }
+
+    public void StartBlendCoroutine(IEnumerator routine)
+    {
+        StartCoroutine(routine);
+    }
 }
