@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class UpdateBlendValue : StateMachineBehaviour
 {
+    
+    EntityAttack entityAttack;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        entityAttack = animator.GetComponent<EntityAttack>();
         Debug.Log("Blend updated");
         float blend = animator.GetFloat("Blend");
         int maxCombo = animator.GetInteger("MaxCombo"); 
@@ -15,7 +18,21 @@ public class UpdateBlendValue : StateMachineBehaviour
         {
             blend = 0;
         }
-        animator.SetFloat("Blend", blend);
+        
+        entityAttack.StartCoroutine(Transition(animator, animator.GetAnimatorTransitionInfo(layerIndex).duration/2, animator.GetFloat("Blend"), blend));
+    }
+
+    private IEnumerator Transition(Animator animator,float duration,float currentBlendValue ,float nextBlendValue)
+    {
+        float time = 0;
+        float scaledDuration = 1f / duration;
+        
+        while (time < 1)
+        {
+            time += Time.deltaTime * scaledDuration;
+            animator.SetFloat("Blend",Mathf.Lerp(currentBlendValue, nextBlendValue, time));
+            yield return null;
+        }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
