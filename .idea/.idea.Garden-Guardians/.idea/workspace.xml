@@ -5,39 +5,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Lower knockback">
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/ActivePlayerComboEffects.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/ActivePlayerComboEffects.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T1PlayerWeaponPoison 1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T1PlayerWeaponPoison 1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T2PlayerWeaponPoison.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T2PlayerWeaponPoison.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T3PlayerWeaponPoison.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T3PlayerWeaponPoison.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T1Slow.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T1Slow.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T2Slow.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T2Slow.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T3Slow.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Slow/T3Slow.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/ChainSource.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/ChainSource.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Chain.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Chain/LightningChain.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Chain/LightningChain/T1LightChain.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Chain/LightningChain/T1LightChain.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Bleed.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Bleed/T1Bleed.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Bleed/T1Bleed.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Bleed/T2Bleed.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Bleed/T2Bleed.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Bleed/T3Bleed.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Bleed/T3Bleed.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Burn.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Burn/T1PlayerWeaponPoison 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Burn/T1PlayerWeaponPoison 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Burn/T2PlayerWeaponPoison.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Burn/T2PlayerWeaponPoison.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Burn/T3PlayerWeaponPoison.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/Burn/T3PlayerWeaponPoison.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Paralysis.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Paralysis/T1Para.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Paralysis/T1Para.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Paralysis/T2Para.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Paralysis/T2Para.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Paralysis/T3Para.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Paralysis/T3Para.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Stun.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Stun/T1Stun.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Stun/T1Stun.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Stun/T2Stun.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Stun/T2Stun.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Stun/T3Stun.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Stun/Stun/T3Stun.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/SelfDestroy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/SelfDestroy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/Effects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/Effects/LightChainEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/Effects/LightChainEffect.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/AttackComboSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/AttackComboSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/PlayerWeaponPoison.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/PlayerWeaponPoison.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponUpgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/AxeAirFinisher.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/AxeAirFinisher.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic SwordCombo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic SwordCombo.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic hitCombo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic hitCombo.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/DefaultStick.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/DefaultStick.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/Map track markers VFX/Demo scene/Standard material.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/ActivePlayerComboEffects.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/ActivePlayerComboEffects.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T1PlayerWeaponPoison 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T1PlayerWeaponPoison 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T2PlayerWeaponPoison.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T2PlayerWeaponPoison.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T3PlayerWeaponPoison.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Dot/T3PlayerWeaponPoison.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/ExplosionEffect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/ExplosionEffect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/PoisonEffect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/PoisonEffect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/SlowEffect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/SlowEffect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/TurretBuff.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/TurretBuff.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1CornSpear/t2_CornSpear/T2_Phy_CornSpear.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1CornSpear/t2_CornSpear/T2_Phy_CornSpear.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1CornSpear/t2_CornSpear/T3_El_CornSpear/T3_El_Fire_CornSpear 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1CornSpear/t2_CornSpear/T3_El_CornSpear/T3_El_Fire_CornSpear 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1CornSpear/t2_CornSpear/T3_El_CornSpear/T3_El_Ice_CornSpear.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1CornSpear/t2_CornSpear/T3_El_CornSpear/T3_El_Ice_CornSpear.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1CornSpear/t2_CornSpear/T3_El_CornSpear/T3_El_Lightning_CornSpear.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1CornSpear/t2_CornSpear/T3_El_CornSpear/T3_El_Lightning_CornSpear.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Flash 5 red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Flash 5 red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Hit 16 fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Hit 16 fire.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Hit 5 red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Hit 5 red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Projectiles(Particle collision)/Projectile 3 black fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Projectiles(Particle collision)/Projectile 3 black fire.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Projectiles(Particle collision)/Projectile 5 red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Projectiles(Particle collision)/Projectile 5 red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Projectiles(Particle collision)/Projectile 9 water.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Projectiles(Particle collision)/Projectile 9 water.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Projectiles(transform)/Projectile 5 red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Projectiles(transform)/Projectile 5 red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Explosion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/kawetofe_assets/RandomPrefabPlacerV2/ExampleRPPBrushes/Big Tendril.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/kawetofe_assets/RandomPrefabPlacerV2/ExampleRPPBrushes/Big Tendril.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

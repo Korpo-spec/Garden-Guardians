@@ -73,11 +73,16 @@ public class EntityAttack : MonoBehaviour
     private void Start()
     {
         _movement = GetComponent<EntityMovement>();
+        canAttack = true;
     }
+
+    public bool canAttack=true;
 
     public void Attack(int comboIndex)
     {
-        //Handle slash effect
+        if (!canAttack)return;
+        
+            //Handle slash effect
         //Debug.Log("Attack");
         if (_weapon.attackInfos[comboIndex].slashEffect != null)
         {

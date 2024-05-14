@@ -9,14 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a465208ec6477da479b6419f911b3133, type: 3}
-  m_Name: T3PlayerWeaponPoison
+  m_Script: {fileID: 11500000, guid: 1151b00fe981a634c85530cad7ce64de, type: 3}
+  m_Name: T3Para
   m_EditorClassIdentifier: 
-  name: PlayerWeaponPoison
-  effectType: 8
-  duration: 4
-  ParticleSystem: {fileID: 4535006216103734310, guid: 98c4704d0fd7211449bcf5c451095a60,
+  name: para
+  effectType: 13
+  duration: 3
+  ParticleSystem: {fileID: 2965222256817593503, guid: a164e676dbbd6e54587237e619372c98,
     type: 3}
   UpgradedVersion: {fileID: 0}
-  damageOverTime: 20
-  tickTime: 0.5

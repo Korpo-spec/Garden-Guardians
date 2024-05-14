@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a465208ec6477da479b6419f911b3133, type: 3}
-  m_Name: T2PlayerWeaponPoison
+  m_Name: T3PlayerWeaponPoison
   m_EditorClassIdentifier: 
-  name: PlayerWeaponPoison
+  name: Burn
   effectType: 8
   duration: 4
-  ParticleSystem: {fileID: 4535006216103734310, guid: 98c4704d0fd7211449bcf5c451095a60,
+  ParticleSystem: {fileID: 1373873258365392, guid: cd5def2bb4f6b4e4ab15ba0b6f35b29d,
     type: 3}
-  UpgradedVersion: {fileID: 11400000, guid: b31f4df636b619145ae0df17920dcbd7, type: 2}
-  damageOverTime: 15
+  UpgradedVersion: {fileID: 0}
+  damageOverTime: 20
   tickTime: 0.5

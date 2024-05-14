@@ -9,13 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16e42e5f8a5c2a84fa0f426fd18f2459, type: 3}
-  m_Name: ActivePlayerComboEffects
+  m_Script: {fileID: 11500000, guid: 1151b00fe981a634c85530cad7ce64de, type: 3}
+  m_Name: T3Stun
   m_EditorClassIdentifier: 
-  name: 
-  effectType: 0
-  duration: 0
-  ParticleSystem: {fileID: 0}
+  name: Stun
+  effectType: 7
+  duration: 3
+  ParticleSystem: {fileID: 358637981425055526, guid: 8eb503696b886e04faff8fc0f480d473,
+    type: 3}
   UpgradedVersion: {fileID: 0}
-  effectsApplied:
-  - {fileID: 11400000, guid: 4ab69edbebb34e64bbc6c9e22000e0d9, type: 2}
