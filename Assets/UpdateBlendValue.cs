@@ -9,10 +9,7 @@ public class UpdateBlendValue : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (!entityAttack)
-        {
-            entityAttack = animator.GetComponent<EntityAttack>();
-        }
+        entityAttack = animator.GetComponent<EntityAttack>();
         Debug.Log("Blend updated");
         float blend = animator.GetFloat("Blend");
         int maxCombo = animator.GetInteger("MaxCombo"); 

@@ -66,7 +66,6 @@ public class EntityMovement : MonoBehaviour
         
        Vector3 movDir = _agent.path.corners[_currentCorner] - transform.position;
        movDir.y = 0;
-
        Move(movDir, movementStats.speed * Time.deltaTime);
     }
     
