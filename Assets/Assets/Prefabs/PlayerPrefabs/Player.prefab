@@ -5226,7 +5226,7 @@ MonoBehaviour:
   movementStats: {fileID: 11400000, guid: eedbab068ca39a744aad51146ca98740, type: 2}
   attackModule:
     weapon: {fileID: 11400000, guid: 21ba586f2fb26cb4e996ab530f1a7f79, type: 2}
-    comboConnectTime: 0.15
+    comboConnectTime: 0.25
     comboTimeOutTime: 1.5
     comboState: 0
     timeSinceLastAttack: 0
@@ -5335,6 +5335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementStats: {fileID: 11400000, guid: eedbab068ca39a744aad51146ca98740, type: 2}
   canMove: 1
+  canDashCancel: 0
   animator: {fileID: 7127825265443040992}
   knockBackDuration: 0
 --- !u!114 &5683531515325901090
