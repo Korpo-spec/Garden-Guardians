@@ -79,7 +79,6 @@ public class EntityAttack : MonoBehaviour
     {
         //Handle slash effect
         //Debug.Log("Attack");
-        _movement.canMove = true;
         if (_weapon.attackInfos[comboIndex].slashEffect != null)
         {
             for (int i = 0; i < mainHand.childCount; i++)
@@ -137,6 +136,7 @@ public class EntityAttack : MonoBehaviour
                 }
             }
         }
+        _movement.canDashCancel = true;
         
     }
 
@@ -161,8 +161,14 @@ public class EntityAttack : MonoBehaviour
             _movement.controller.Move(dashvector.normalized* (dashSpeed * Time.deltaTime *_weapon.attackInfos[comboIndex].dashCurve.Evaluate(startTime)));
             yield return new WaitForEndOfFrame();
         }
-        _movement.canMove = true;
+        //_movement.canMove = true;
 
+    }
+    
+    public void ResumeMovement()
+    {
+        _movement.canMove = true;
+        _movement.canDashCancel = false;
     }
 
     private void OnDrawGizmosSelected()

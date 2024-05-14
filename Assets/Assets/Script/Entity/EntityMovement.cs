@@ -12,6 +12,7 @@ public class EntityMovement : MonoBehaviour
    private Vector3 _prevDirVector;
 
    public bool canMove=true;
+   public bool canDashCancel = false;
 
    private NavMeshAgent _agent;
    private int _currentCorner = 1;
@@ -133,7 +134,7 @@ public class EntityMovement : MonoBehaviour
     }
     public void Dash()
     {
-       if (!canMove) return;
+       if (!canMove && !canDashCancel) return;
        StartCoroutine(InternalDash());
     }
 
