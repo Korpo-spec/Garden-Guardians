@@ -72,6 +72,10 @@ public class EntityMovement : MonoBehaviour
     
     public void Move(Vector3 moveDir, float speed)
     {
+       if (canDashCancel)
+       {
+          _prevDirVector = moveDir.magnitude > 0 ? moveDir : _prevDirVector;
+       }
        if (!canMove) return;
        RotatePlayer(moveDir);
        Vector3 moveVector3 = new Vector3(moveDir.x, 0, moveDir.z).normalized;
@@ -135,6 +139,11 @@ public class EntityMovement : MonoBehaviour
     public void Dash()
     {
        if (!canMove && !canDashCancel) return;
+       if (canDashCancel)
+       {
+          animator.ResetTrigger("Combat");
+          canDashCancel = false;
+       }
        StartCoroutine(InternalDash());
     }
 
