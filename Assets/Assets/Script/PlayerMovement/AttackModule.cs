@@ -13,7 +13,7 @@ namespace Script.PlayerMovement
         [SerializeField]public int comboState = 0;
         public float timeSinceLastAttack = 0;
 
-        public void Attack(Animator animator)
+        public bool Attack(Animator animator)
         {
             //Debug.Log(timeSinceLastAttack + comboTimeOutTime + " " + Time.time);
             animator.SetInteger("MaxCombo", weapon.comboLength);
@@ -26,7 +26,7 @@ namespace Script.PlayerMovement
             if (timeSinceLastAttack + comboConnectTime > Time.time)
             {
                
-                return;
+                return false;
             }
             
             //animator.SetFloat("Blend", comboState * 0.5f);
@@ -45,14 +45,16 @@ namespace Script.PlayerMovement
             {
                 comboState = 0;
             }
-            
+            return true;
+
         }
         
         public void Attack(Animator animator, Vector3 attackrot)
         {
-            RotatePlayer(animator.transform, attackrot);
+            
             //Debug.Log(timeSinceLastAttack + comboTimeOutTime + " " + Time.time);
-            Attack(animator);
+            if (!Attack(animator)) return;
+            RotatePlayer(animator.transform, attackrot);
             
         }
         
