@@ -33,6 +33,7 @@ public class EntityMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       //Time.timeScale = 0.25f;
        animator = GetComponent<Animator>();
        _controller = GetComponent<CharacterController>();
        TryGetComponent<NavMeshAgent>(out _agent);

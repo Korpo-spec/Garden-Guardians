@@ -10,6 +10,7 @@ public class UpdateBlendValue : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         entityAttack = animator.GetComponent<EntityAttack>();
+        //entityAttack.ResumeMovement();
         Debug.Log("Blend updated");
         float blend = animator.GetFloat("Blend");
         int maxCombo = animator.GetInteger("MaxCombo"); 

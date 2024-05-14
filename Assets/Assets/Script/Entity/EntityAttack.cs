@@ -136,7 +136,7 @@ public class EntityAttack : MonoBehaviour
                 }
             }
         }
-        _movement.canDashCancel = true;
+        
         
     }
 
@@ -155,6 +155,7 @@ public class EntityAttack : MonoBehaviour
         Vector3 dashvector = _movement.prevDirVector3;
         float dashSpeed =  _weapon.attackInfos[comboIndex].dashLenght /_weapon.attackInfos[comboIndex].dashTime;
         _movement.canMove = false;
+        _movement.canDashCancel = false;
         while (startTime < 1)
         {
             startTime += Time.deltaTime * timecoeficient;
@@ -169,6 +170,11 @@ public class EntityAttack : MonoBehaviour
     {
         _movement.canMove = true;
         _movement.canDashCancel = false;
+    }
+    
+    public void ActivateDashCancel()
+    {
+        _movement.canDashCancel = true;
     }
 
     private void OnDrawGizmosSelected()
