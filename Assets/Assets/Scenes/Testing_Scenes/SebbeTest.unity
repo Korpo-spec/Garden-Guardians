@@ -10164,6 +10164,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -58.443134
       objectReference: {fileID: 0}
+    - target: {fileID: 2022251507154776719, guid: 59a51997eb082e449b7eff675857e1ff,
+        type: 3}
+      propertyPath: m_Speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022251507154776719, guid: 59a51997eb082e449b7eff675857e1ff,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6532057112193488866, guid: 59a51997eb082e449b7eff675857e1ff,
         type: 3}
       propertyPath: health
@@ -12968,6 +12978,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -58.443134
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022251507154776719, guid: 59a51997eb082e449b7eff675857e1ff,
+        type: 3}
+      propertyPath: m_Speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022251507154776719, guid: 59a51997eb082e449b7eff675857e1ff,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6532057112193488866, guid: 59a51997eb082e449b7eff675857e1ff,
         type: 3}
@@ -17782,6 +17802,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -58.443134
       objectReference: {fileID: 0}
+    - target: {fileID: 2022251507154776719, guid: 59a51997eb082e449b7eff675857e1ff,
+        type: 3}
+      propertyPath: m_Speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022251507154776719, guid: 59a51997eb082e449b7eff675857e1ff,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6532057112193488866, guid: 59a51997eb082e449b7eff675857e1ff,
         type: 3}
       propertyPath: health
@@ -18302,6 +18332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementStats: {fileID: 11400000, guid: eedbab068ca39a744aad51146ca98740, type: 2}
   canMove: 1
+  canDashCancel: 0
   animator: {fileID: 0}
   knockBackDuration: 1
 --- !u!143 &1836586944

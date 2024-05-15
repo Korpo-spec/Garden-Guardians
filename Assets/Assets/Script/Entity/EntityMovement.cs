@@ -38,8 +38,8 @@ public class EntityMovement : MonoBehaviour
        _controller = GetComponent<CharacterController>();
        TryGetComponent<NavMeshAgent>(out _agent);
        _prevDirVector = transform.forward;
-       
-       
+       movementStats=Instantiate(movementStats);
+
     }
 
     // Update is called once per frame
