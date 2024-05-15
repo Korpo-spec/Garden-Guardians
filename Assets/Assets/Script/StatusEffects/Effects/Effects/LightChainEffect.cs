@@ -10,7 +10,6 @@ public class LightChainEffect : Effect
 {
    [SerializeField]
    private float EffectRadius;
-   private float originalSpeed;
    private EntityMovement _entityMovement;
    private EntityHealth _entityHealth;
 
@@ -35,15 +34,17 @@ public class LightChainEffect : Effect
          neighbour.GetComponent<EntityHealth>().DamageUnit(Damage);
       }
 
-      Instantiate(ChainSource);
       _lineRenderer = ChainSource.GetComponent<LineRenderer>();
-      _lineRenderer.positionCount = neighbours.Count+1;
-      _lineRenderer.SetPosition(0,_entityMovement.transform.position);
-      for (int i = 0; i < neighbours.Count; i++)
+      var neighpos = new List<Vector3>();
+      foreach (var neigh in neighbours)
       {
-         _lineRenderer.SetPosition(i+1,neighbours[i].position);
+         neighpos.Add(neigh.position);
       }
-     
+
+      _lineRenderer.positionCount = neighpos.Count;
+      _lineRenderer.SetPositions(neighpos.ToArray());
+      
+      Instantiate(ChainSource,_entityMovement.transform);
    }
 
    private void findNeighbours()
@@ -73,7 +74,6 @@ public class LightChainEffect : Effect
    {
       base.Exit();
       neighbours.Clear();
-      
-      
+
    }
 }
