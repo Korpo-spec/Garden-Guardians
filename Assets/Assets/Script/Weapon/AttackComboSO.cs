@@ -16,6 +16,8 @@ public class AttackComboSO : ScriptableObject
     [SerializeField] public SpecialAttack specialAttack;
 
     public GameObject Weapon => weapon;
+    public GameObject particleSystem;
+    
     public AnimatorOverrideController NewAnims => newAnims;
     public int ComboLength => comboLength;
 

@@ -9,13 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16e42e5f8a5c2a84fa0f426fd18f2459, type: 3}
-  m_Name: ActivePlayerComboEffects
+  m_Script: {fileID: 11500000, guid: 036a1d8c5cdaf8f4e81cadcec26810a1, type: 3}
+  m_Name: T3KnockBack
   m_EditorClassIdentifier: 
-  name: 
+  name: Knoc
   effectType: 0
-  duration: 0
-  ParticleSystem: {fileID: 0}
+  duration: 1
+  ParticleSystem: {fileID: 2944396702758532163, guid: e190bf97c041e58448af6b043116cba0,
+    type: 3}
   UpgradedVersion: {fileID: 0}
-  effectsApplied:
-  - {fileID: 11400000, guid: bccbfd7d67bca6346a8b00fd060b7c36, type: 2}

@@ -5,40 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Lower knockback">
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/Spin.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimClips/Spin.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/Spiin.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/Spiin.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/VFX/SpinSlash.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/VFX/SpinSlash.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/VFX/SpinSlash.vfx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/VFX/SpinSlash.vfx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Weapon.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Weapon/AttackComboSO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Weapon/AttackComboSO.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Weapon/SpecialAttack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Weapon/SpecialAttack.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Weapon/SpinAttack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Weapon/SpinAttack.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/SpecialAttacks.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/SpecialAttacks/Spinny attack.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/SpecialAttacks/Spinny attack.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Knockback.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Knockback/T1KnockBack.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Knockback/T1KnockBack.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Knockback/T3KnockBack.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Knockback/T3KnockBack.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Knockback/t2KnockBack.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/Effects/Knockback/t2KnockBack.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/Effects/KnockBackeffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/Effects/KnockBackeffect.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestPrefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestPrefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/PlayerPrefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/AttackComboSO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/AttackComboSO.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/AttackModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/AttackModule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/PlayerMovement/PlayerInputHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/AxeAirFinisher.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/AxeAirFinisher.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/Fungus/EditorResources/FungusEditorResources.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Fungus/EditorResources/FungusEditorResources.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/Fungus/EditorResources/FungusEditorResources.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Fungus/EditorResources/FungusEditorResources.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Effects/ActivePlayerComboEffects.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/ActivePlayerComboEffects.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Weapon/AttackComboSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Weapon/AttackComboSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1CornSpear/CornSpear.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButtonsObje/BasicWeapons/T1CornSpear/CornSpear.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponUpgrade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Hit 14 blue rapid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Hit 14 blue rapid.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Projectiles(transform)/Projectile 3 black fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/AAA Projectiles Vol 1/Prefabs/Projectiles(transform)/Projectile 3 black fire.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Entity/EnemyCircleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/VectorVariable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/StatusEffects/Effects/Effects/KnockBackeffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Weapon/SpinAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/UMAmountUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
@@ -85,9 +70,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\b21cassa\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\b21cassa\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\a21seber\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\a21seber\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\a21seber\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -196,6 +181,7 @@
       <workItem from="1715071061757" duration="4598000" />
       <workItem from="1715086796701" duration="267000" />
       <workItem from="1715765617508" duration="3808000" />
+      <workItem from="1715772772279" duration="4123000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>

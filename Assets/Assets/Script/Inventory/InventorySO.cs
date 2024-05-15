@@ -11,6 +11,7 @@ using UnityEngine.Serialization;
 [CreateAssetMenu(menuName = "Inventory/Inventory")]
 public class InventorySO : ScriptableObject
 {
+    
     [SerializeField] private int maxInventorySize;
     public List<InventorySlot> itemsSlots;
 

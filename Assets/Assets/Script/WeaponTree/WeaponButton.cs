@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using Script;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
@@ -108,10 +109,17 @@ public class WeaponButton : MonoBehaviour
         if (_weaponButtonSo.weaponModul._item)
         {
             _weaponButtonSo.PlayerWeaponSlot.itemsSlots[0].Stack = _weaponButtonSo.weaponModul;
+            
         }
         else
         {
             _weaponButtonSo.weaponUpgrade.AddUpgradeOnExistingweapon(_weaponButtonSo.PlayerWeaponSlot.itemsSlots[0].Stack._item.equipment);
+            if (_weaponButtonSo.weaponUpgrade._particleSystem)
+            { 
+                Instantiate(_weaponButtonSo.PlayerWeaponSlot.itemsSlots[0].Stack._item.equipment.particleSystem,FindObjectOfType<PlayerController>().transform);
+                
+            }
+
         }
         
     }
