@@ -5206,6 +5206,7 @@ MonoBehaviour:
   dashKey: 32
   isDashing: 0
   attackButtonPressed: 0
+  specialButtonPressed: 0
   staminaPoints: 0
   staminaPointMax: 0
   staminaPointsChanged: 0
@@ -5321,6 +5322,7 @@ MonoBehaviour:
   mainHand: {fileID: 5331164803434424502}
   activateDebug: 0
   comboIndex: 2
+  canAttack: 1
 --- !u!114 &927689100175718382
 MonoBehaviour:
   m_ObjectHideFlags: 0

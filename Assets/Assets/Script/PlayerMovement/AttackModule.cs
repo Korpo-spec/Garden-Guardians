@@ -58,6 +58,32 @@ namespace Script.PlayerMovement
             RotatePlayer(animator.transform, attackrot);
             
         }
+
+        private bool _specialHeld;
+        private float _timeSinceLastPress = 0;
+        public void SpecialAttack(Animator animator, bool pressed)
+        {
+            if (!pressed)
+            {
+                if (_specialHeld)
+                {
+                    _specialHeld = false;
+                    weapon.specialAttack.OnRelease();
+                    
+                }
+                return;
+            }
+            weapon = animator.GetComponent<EntityAttack>().weapon;
+            if (!_specialHeld)
+            {
+                weapon.specialAttack.OnPressed(animator);
+                _specialHeld = true;
+            }
+            else
+            {
+                weapon.specialAttack.OnHeld();
+            }
+        }
         
         private void RotatePlayer(Transform transform, Vector3 moveDir)
         {

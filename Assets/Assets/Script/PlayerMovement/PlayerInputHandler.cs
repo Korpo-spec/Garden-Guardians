@@ -16,6 +16,7 @@ namespace Script.PlayerMovement
         [HideInInspector]public bool isDashing;
 
         [HideInInspector] public bool attackButtonPressed;
+        [HideInInspector] public bool specialButtonPressed;
 
         [SerializeField] public int staminaPoints;
 
@@ -70,14 +71,8 @@ namespace Script.PlayerMovement
                 staminaPointsChanged = true;
                 timer = resetTime;
             }
-            if (Input.GetMouseButton(0))
-            {
-                attackButtonPressed = true;
-            }
-            else
-            {
-                attackButtonPressed = false;
-            }
+            attackButtonPressed = Input.GetMouseButton(0);
+            specialButtonPressed = Input.GetMouseButton(1);
             
         }
 
