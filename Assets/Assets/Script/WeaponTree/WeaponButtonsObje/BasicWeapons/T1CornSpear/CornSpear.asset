@@ -20,8 +20,7 @@ MonoBehaviour:
     DamageIncrease: 0
     KnockBackIncrease: 0
     WeaponEffect: {fileID: 0}
-    _particleSystem: {fileID: 1231636063597364, guid: 3aa0fab185f378240b831342bde74b26,
-      type: 3}
+    _particleSystem: {fileID: 0}
   parents:
   - {fileID: 11400000, guid: c596f2729a6151947b54033392071bd4, type: 2}
   - {fileID: 11400000, guid: 29f8b38a1df2e324aa30bce8fcbe03da, type: 2}

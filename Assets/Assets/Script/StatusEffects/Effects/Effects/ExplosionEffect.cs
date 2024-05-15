@@ -18,7 +18,7 @@ public class ExplosionEffect : Effect
 
         foreach (var col in cols)
         {
-            if (col.TryGetComponent<EntityHealth>(out EntityHealth entityHealth))
+            if (col.TryGetComponent<EntityHealth>(out EntityHealth entityHealth)&&!col.CompareTag("Player"))
             {
                 entityHealth.DamageUnit(explosionDmg);
                 foreach (var effect in effectsApplied)
@@ -35,6 +35,6 @@ public class ExplosionEffect : Effect
 
     public override void Exit()
     {
-        
+        base.Exit();
     }
 }

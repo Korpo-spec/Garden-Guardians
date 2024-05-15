@@ -18,8 +18,10 @@ MonoBehaviour:
     maxStackSize: 8
   weaponUpgrade:
     DamageIncrease: 0
-    DashLengthIncrease: 0
+    KnockBackIncrease: 0
     WeaponEffect: {fileID: 11400000, guid: 27685029198d51e4d968681c9bb44939, type: 2}
+    _particleSystem: {fileID: 1373873258365392, guid: cd5def2bb4f6b4e4ab15ba0b6f35b29d,
+      type: 3}
   parents:
   - {fileID: 11400000}
   - {fileID: 11400000}
