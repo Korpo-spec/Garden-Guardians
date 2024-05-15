@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f702ee73d20dab45a7b345ee6b7c67a, type: 3}
   m_Name: Spinny attack
   m_EditorClassIdentifier: 
-  colliderInfo:
-    damage: 0
+  attackInfo:
+    damage: 5
     knockBack: 0
     colliderInfo:
       center: {x: 0, y: 0, z: 0}
       halfsize: {x: 0, y: 0, z: 0}
       isTrigger: 0
-    slashEffect: {fileID: 0}
+    slashEffect: {fileID: 5477199624502288127, guid: 7a21a76eb5ea3ae43b3825bbca5d9e3c,
+      type: 3}
     useCustomRot: 0
     customRot: {x: 0, y: 0, z: 0}
     hitEffect: {fileID: 0}
@@ -31,3 +32,10 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  transformHealthDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325,
+    type: 2}
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
+  radius: 3
+  attackSpeed: 0.1

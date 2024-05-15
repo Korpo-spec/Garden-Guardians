@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Script;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class SpecialAttack : ScriptableObject
 {
-    public AttackInfo AttackInfo;
+    public AttackInfo attackInfo;
+    [SerializeField] protected TransformHealthDictionary transformHealthDictionary;
+    [SerializeField] protected LayerMask mask;
 
     public virtual void OnPressed(Animator animator)
     {
