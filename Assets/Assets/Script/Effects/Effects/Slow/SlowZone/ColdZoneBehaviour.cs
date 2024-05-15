@@ -29,7 +29,12 @@ public class ColdZoneBehaviour : MonoBehaviour
          other.GetComponent<EffectManager>().AddEffect(_slowEffect);
       }
    }
-   
+
+   private void OnTriggerStay(Collider other)
+   {
+      throw new NotImplementedException();
+   }
+
    private IEnumerator DestroyObject(float time)
    {
       yield return new WaitForSeconds(time);
