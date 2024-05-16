@@ -4,11 +4,14 @@ using System.Collections.Generic;
 using Script;
 using Script.Entity;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ColdZoneBehaviour : MonoBehaviour
 {
 
-   [SerializeField] private SlowEffect _slowEffect;
+   [SerializeField] private Effect _effect;
+   [SerializeField] private bool ShouldBedestroyed;
+   [SerializeField] private bool isBlightGround;
    
    [SerializeField]
    private TransformHealthDictionary _healthDictionary;
@@ -19,21 +22,27 @@ public class ColdZoneBehaviour : MonoBehaviour
 
    private void Start()
    {
-      StartCoroutine(DestroyObject(destroyTime));
+      if (ShouldBedestroyed)
+      {
+         StartCoroutine(DestroyObject(destroyTime));
+      }
+      
    }
 
    private void OnTriggerEnter(Collider other)
    {
-      if (_healthDictionary.Contains(other.transform)&&!other.gameObject.CompareTag("Player"))
+      if (_healthDictionary.Contains(other.transform)&&!other.gameObject.CompareTag("Player")&&!isBlightGround)
       {
-         other.GetComponent<EffectManager>().AddEffect(_slowEffect);
+         other.GetComponent<EffectManager>().AddEffect(_effect);
+      } 
+      if (_healthDictionary.Contains(other.transform)&&other.gameObject.CompareTag("Player")&&isBlightGround)
+      {
+         other.GetComponent<EffectManager>().AddEffect(_effect);
       }
+      
+      
    }
-
-   private void OnTriggerStay(Collider other)
-   {
-      throw new NotImplementedException();
-   }
+   
 
    private IEnumerator DestroyObject(float time)
    {
