@@ -49,7 +49,7 @@ public class SpinAttack : SpecialAttack
 
                 Vector3 knockBackVec = collider.transform.position - _animator.transform.position;
                 knockBackVec = knockBackVec.RemoveY();
-                health.DamageUnit(attackInfo.damage, attackInfo.knockBack* knockBackVec);
+                health.DamageUnit(attackInfo.damage, attackInfo.knockBack* knockBackVec,false,null);
                 if (attackInfo.hitEffect != null)
                 {
                     Instantiate(attackInfo.hitEffect, collider.transform.position, Quaternion.identity);

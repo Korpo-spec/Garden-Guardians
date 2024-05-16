@@ -54,6 +54,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    CritChance: 10
   - damage: 5
     knockBack: 1
     colliderInfo:
@@ -92,7 +93,10 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    CritChance: 10
   weaponEffect: {fileID: 11400000, guid: d87284aedce494547bee37ec1600f377, type: 2}
+  specialAttack: {fileID: 0}
+  particleSystem: {fileID: 0}
   SaveAttackInfo: 0
   ResetAttackInfo: 0
   DefaultlAttackInfos:
@@ -134,6 +138,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    CritChance: 0
   - damage: 1
     knockBack: 1
     colliderInfo:
@@ -172,5 +177,6 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    CritChance: 0
   DefaultweaponEffect: {fileID: 11400000, guid: d87284aedce494547bee37ec1600f377,
     type: 2}

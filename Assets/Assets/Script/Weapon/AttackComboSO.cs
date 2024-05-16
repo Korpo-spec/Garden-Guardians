@@ -7,6 +7,7 @@ using UnityEngine;
 public class AttackComboSO : ScriptableObject
 {
     [SerializeField] private GameObject weapon;
+    [SerializeField] public GameObject player;
     [SerializeField] private AnimatorOverrideController newAnims;
     [SerializeField] public int comboLength;
     [SerializeField] public AttackInfo[] attackInfos;
@@ -83,4 +84,5 @@ public struct AttackInfo
     public float dashLenght;
     public float dashTime;
     public AnimationCurve dashCurve;
+    public int CritChance;
 }

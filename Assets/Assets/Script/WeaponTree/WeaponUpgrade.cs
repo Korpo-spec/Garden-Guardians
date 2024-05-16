@@ -1,6 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Script;
+using Script.Entity;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [Serializable]
@@ -8,9 +11,14 @@ public struct WeaponUpgrade
 {
    [SerializeField] private float DamageIncrease;
    [SerializeField] private float KnockBackIncrease;
-   [SerializeField] private Effect WeaponEffect;
+   [SerializeField] private int CritChanceIncrease;
+   [SerializeField] public int DefenseIncrease;
+   [SerializeField] public float AnimationSpeedIncrease;
+   [SerializeField] public Effect WeaponEffect;
    [SerializeField] public GameObject _particleSystem;
-   
+   [SerializeField] private bool IsThorn;
+   public static event EventHandler SetPlayervalues;
+
 
    public void AddUpgradeOnExistingweapon(AttackComboSO activeWeaponInfo)
    {
@@ -19,9 +27,11 @@ public struct WeaponUpgrade
       {
          activeWeaponInfo.attackInfos[i].damage += DamageIncrease;
          activeWeaponInfo.attackInfos[i].knockBack += KnockBackIncrease;
+         activeWeaponInfo.attackInfos[i].CritChance += CritChanceIncrease;
+         SetPlayervalues?.Invoke(this,null);
       }
 
-      if (WeaponEffect)
+      if (WeaponEffect&&!IsThorn)
       {
          activeWeaponInfo.weaponEffect.TryAddEffect(WeaponEffect);
       }

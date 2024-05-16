@@ -12,14 +12,14 @@ public class DamagePopUpHandler : MonoBehaviour
    
 
 
-   public void SpawnText(int Damage)
+   public void SpawnText(DamageEventArg damageEventArg)
    {
-      SpawnPopUpText(Damage);
+      SpawnPopUpText(damageEventArg);
    }
    
-   private void SpawnPopUpText(int DamageTaken)
+   private void SpawnPopUpText(DamageEventArg damageEventArg)
    {
-      var scaleFromDamage = (float)DamageTaken / maxScaleDamage;
+      var scaleFromDamage = (float)damageEventArg.damage / maxScaleDamage;
       if (scaleFromDamage>0.5f) { scaleFromDamage = 0.5f; }
       
       
@@ -29,10 +29,19 @@ public class DamagePopUpHandler : MonoBehaviour
 
       foreach (var VARIABLE in  text.GetComponentsInChildren<TextMesh>())
       {
-         VARIABLE.text = DamageTaken.ToString();
+         VARIABLE.text = damageEventArg.damage.ToString();
          
          var newScale = VARIABLE.transform.localScale;
-         newScale = new Vector3(newScale.x, newScale.y, newScale.z);
+         if (damageEventArg.isCrit)
+         {
+            newScale = new Vector3(newScale.x, newScale.y, newScale.z)*2;
+            VARIABLE.text += "!";
+         }
+         else
+         {
+            newScale = new Vector3(newScale.x, newScale.y, newScale.z);
+         }
+         
       
          VARIABLE.transform.localScale = newScale*(1+scaleFromDamage);
       }

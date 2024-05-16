@@ -34,7 +34,7 @@ public class PoisonEffect : Effect
             {
                 int intDamage = (int) damageSum;
                 damageSum -= intDamage;
-                baloonRef.DamageUnit(intDamage);
+                baloonRef.DamageUnit(intDamage,false,null);
             }
 
             lastTime = time;

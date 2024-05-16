@@ -9629,6 +9629,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shell (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 545682315351394890, guid: 59a51997eb082e449b7eff675857e1ff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 545682315351430696, guid: 59a51997eb082e449b7eff675857e1ff,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17266,6 +17271,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shell (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 545682315351394890, guid: 59a51997eb082e449b7eff675857e1ff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 545682315351430696, guid: 59a51997eb082e449b7eff675857e1ff,
         type: 3}

@@ -18,8 +18,13 @@ MonoBehaviour:
     maxStackSize: 8
   weaponUpgrade:
     DamageIncrease: 1
-    DashLengthIncrease: 1
+    KnockBackIncrease: 0
+    CritChanceIncrease: 0
+    DefenseIncrease: 1
+    AnimationSpeedIncrease: 1
     WeaponEffect: {fileID: 11400000, guid: 2510dd12464be8d4cb19f2169e1ca843, type: 2}
+    _particleSystem: {fileID: 0}
+    IsThorn: 1
   parents:
   - {fileID: 11400000, guid: b2b973ef2dc519e41be2312c017d06b6, type: 2}
   - {fileID: 11400000, guid: 841b87478960efd47853a1c61eb64988, type: 2}

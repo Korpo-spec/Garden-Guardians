@@ -20,7 +20,7 @@ public class ExplosionEffect : Effect
         {
             if (col.TryGetComponent<EntityHealth>(out EntityHealth entityHealth)&&!col.CompareTag("Player"))
             {
-                entityHealth.DamageUnit(explosionDmg);
+                entityHealth.DamageUnit(explosionDmg,false,null);
                 foreach (var effect in effectsApplied)
                 {
                     entityHealth.GetComponent<EffectManager>().AddEffect(Instantiate(effect));

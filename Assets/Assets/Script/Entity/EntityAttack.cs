@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Script;
 using Script.Entity;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class EntityAttack : MonoBehaviour
 {
@@ -17,6 +19,9 @@ public class EntityAttack : MonoBehaviour
 
     private GameObject _currentWeapon;
     private EntityHealth _health;
+
+    public Animator Animator => animator;
+    
 
     public AttackComboSO weapon
     {
@@ -68,6 +73,23 @@ public class EntityAttack : MonoBehaviour
         animator = GetComponent<Animator>();
         _originalController = animator.runtimeAnimatorController;
         weapon = _weapon;
+        WeaponUpgrade.SetPlayervalues += increaseStatsFromWeaponUpgrade;
+    }
+
+    private void OnDestroy()
+    {
+        WeaponUpgrade.SetPlayervalues -= increaseStatsFromWeaponUpgrade;
+    }
+
+    public void increaseStatsFromWeaponUpgrade(object sender, EventArgs eventArgs)
+    {
+        if (sender is WeaponUpgrade upgrade&&gameObject.CompareTag("Player"))
+        {
+            animator.SetFloat("AttackSpeed",animator.GetFloat("AttackSpeed")+upgrade.AnimationSpeedIncrease);
+            _health.Defense += upgrade.DefenseIncrease;
+            _health.Thorn = upgrade.WeaponEffect;
+        }
+       
     }
 
     private void Start()
@@ -129,7 +151,7 @@ public class EntityAttack : MonoBehaviour
 
                 Vector3 knockBackVec = collider.transform.position - transform.position;
                 knockBackVec = knockBackVec.RemoveY();
-                health.DamageUnit(_weapon.attackInfos[comboIndex].damage, _weapon.attackInfos[comboIndex].knockBack* knockBackVec);
+                health.DamageUnit(_weapon.attackInfos[comboIndex].damage, _weapon.attackInfos[comboIndex].knockBack* knockBackVec,CalcIfCrit(comboIndex),this);
                 if (_weapon.attackInfos[comboIndex].hitEffect != null)
                 {
                     Instantiate(_weapon.attackInfos[comboIndex].hitEffect, collider.transform.position, Quaternion.identity);
@@ -143,6 +165,12 @@ public class EntityAttack : MonoBehaviour
         }
         
         
+    }
+
+    private bool CalcIfCrit(int index)
+    {
+        var random = Random.Range(0, 100);
+        return (random <= _weapon.attackInfos[index].CritChance);
     }
 
     public void AttackDash()

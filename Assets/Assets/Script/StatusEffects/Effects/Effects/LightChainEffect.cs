@@ -31,7 +31,7 @@ public class LightChainEffect : Effect
       
       foreach (var neighbour in neighbours)
       {
-         neighbour.GetComponent<EntityHealth>().DamageUnit(Damage);
+         neighbour.GetComponent<EntityHealth>().DamageUnit(Damage,false,null);
       }
 
       _lineRenderer = ChainSource.GetComponent<LineRenderer>();

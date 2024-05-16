@@ -13,7 +13,8 @@ namespace Script.Entity
 
         [Tooltip("Health if no int variable was used")] [SerializeField]
         public float health;
-
+        [Tooltip("Flat damage negate, appies after crit calc")]
+        public float Defense;
         [HideInInspector] public float maxHealth;
 
         
@@ -80,9 +81,10 @@ namespace Script.Entity
         /// Decreases the the health by the input amount. This will also decrease the health of the attached intVariable if present.
         /// </summary>
         /// <param name="amount"> The amount of health to lose</param>
-        public virtual void DamageUnit(float amount)
+        public virtual void DamageUnit(float amount,bool isCrit,EntityAttack attacker)
         {
-            entityHealthEvents.takeDamage.Invoke((int)amount);
+            if (isCrit){ amount *= 2;}
+            entityHealthEvents.takeDamage.Invoke(new DamageEventArg((int)amount,isCrit,attacker));
             if (health - amount <= 0)
                 KillItself();
             else
@@ -94,14 +96,27 @@ namespace Script.Entity
             health -= amount;
             //_animator.SetTrigger(Hurt);
         }
-        public virtual void DamageUnit(float amount, Vector3 knockback)
+
+
+        public Effect Thorn;
+        public virtual void DamageUnit(float amount, Vector3 knockback,bool isCrit,EntityAttack attacker)
         {
+            if (isCrit){ amount *= 2;}
+            amount -= Defense;
+            if (amount<0) { amount = 0;}
+
+            if (Thorn)
+            {
+                attacker.GetComponent<EffectManager>().AddEffect(Thorn);
+            }
+            
+            
             if (movement)
             {
                 movement.KnockBack(knockback);
             }
             
-            entityHealthEvents.takeDamage.Invoke((int)amount);
+            entityHealthEvents.takeDamage.Invoke(new DamageEventArg((int)amount,isCrit,attacker));
             if (health - amount <= 0)
                 KillItself();
             else
@@ -155,8 +170,23 @@ namespace Script.Entity
     public class EntityHealthEvents
     {
         [Header("Events")]
-        [SerializeField] public UnityEvent <int>takeDamage;
+        [SerializeField] public UnityEvent <DamageEventArg>takeDamage;
         [SerializeField] public UnityEvent heal;
         [SerializeField] public UnityEvent die;
+    }
+
+    [Serializable]
+    public struct DamageEventArg
+    {
+        public int damage;
+        public bool isCrit;
+        public EntityAttack Attacker;
+
+        public DamageEventArg(int damage, bool crit, EntityAttack attacker)
+        {
+            this.damage = damage;
+            isCrit = crit;
+            Attacker = attacker;
+        }
     }
 }
