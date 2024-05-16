@@ -162,8 +162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b713b5591b36dec46958f24e322a2157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactKey: 101
   collider: {fileID: 5019987124554421597}
+  interactText: {fileID: 0}
+  interactKey: 101
 --- !u!1 &5988507470158855341
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,10 +636,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 5573228007207195928}
-  selectedCommands:
-  - {fileID: 2297808231424531864}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 1079403995327047975}
   - {fileID: 4199466278390821504}
