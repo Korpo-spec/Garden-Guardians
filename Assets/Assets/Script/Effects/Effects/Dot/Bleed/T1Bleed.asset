@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Bleed
   effectType: 2
-  duration: 10
+  duration: 2
   ParticleSystem: {fileID: 1120835270511274, guid: 33cfc2755a55b7e4c86c9d7018efbaaa,
     type: 3}
   UpgradedVersion: {fileID: 11400000, guid: b7625a160a7637b499912d681b2420e6, type: 2}
-  damageOverTime: 50
-  tickTime: 0.5
+  damageOverTime: 10
+  tickTime: 0.25

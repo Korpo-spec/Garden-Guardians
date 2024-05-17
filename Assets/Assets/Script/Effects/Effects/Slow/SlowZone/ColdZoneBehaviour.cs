@@ -40,9 +40,9 @@ public class ColdZoneBehaviour : MonoBehaviour
          other.GetComponent<EffectManager>().AddEffect(_effect);
       }
       
-      
    }
    
+
 
    private IEnumerator DestroyObject(float time)
    {

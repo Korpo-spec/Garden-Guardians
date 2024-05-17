@@ -38,7 +38,12 @@ public class EntityMovement : MonoBehaviour
        _controller = GetComponent<CharacterController>();
        TryGetComponent<NavMeshAgent>(out _agent);
        _prevDirVector = transform.forward;
-       movementStats=Instantiate(movementStats);
+
+       if (!gameObject.CompareTag("Player"))
+       {
+          movementStats=Instantiate(movementStats);
+       }
+       
 
     }
 

@@ -59,8 +59,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2040ee001eeaf484781d9abeba6614ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slowEffect: {fileID: 11400000, guid: 01b0012a2ff71be49ab4e5e1ed995fa3, type: 2}
+  _effect: {fileID: 11400000, guid: 01b0012a2ff71be49ab4e5e1ed995fa3, type: 2}
+  ShouldBedestroyed: 1
+  isBlightGround: 0
   _healthDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325, type: 2}
+  destroyTime: 3
 --- !u!1001 &1912477362988805930
 PrefabInstance:
   m_ObjectHideFlags: 0

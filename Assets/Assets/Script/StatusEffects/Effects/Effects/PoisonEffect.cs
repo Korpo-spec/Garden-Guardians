@@ -17,12 +17,13 @@ public class PoisonEffect : Effect
         base.Enter(obj);
         baloonRef = obj.GetComponent<EntityHealth>();
         damagePerTick = damageOverTime / (duration / tickTime);
+        lastTime = duration-tickTime-Time.deltaTime;
     }
 
     public override void OnReapply()
     {
         time = duration;
-        lastTime = duration;
+        lastTime = duration-tickTime-Time.deltaTime;
     }
 
     public override void UpdateEffect()
