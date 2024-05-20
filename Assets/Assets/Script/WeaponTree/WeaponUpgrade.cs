@@ -17,20 +17,21 @@ public struct WeaponUpgrade
    [SerializeField] public Effect WeaponEffect;
    [SerializeField] public GameObject _particleSystem;
    [SerializeField] private bool IsThorn;
+   public Effect ThornParentEffect;
    public static event EventHandler SetPlayervalues;
 
 
    public void AddUpgradeOnExistingweapon(AttackComboSO activeWeaponInfo)
    {
-
+      
       for (int i = 0; i < activeWeaponInfo.attackInfos.Length; i++)
       {
          activeWeaponInfo.attackInfos[i].damage += DamageIncrease;
          activeWeaponInfo.attackInfos[i].knockBack += KnockBackIncrease;
          activeWeaponInfo.attackInfos[i].CritChance += CritChanceIncrease;
-         SetPlayervalues?.Invoke(this,null);
+         
       }
-
+      SetPlayervalues?.Invoke(this,null);
       if (WeaponEffect&&!IsThorn)
       {
          activeWeaponInfo.weaponEffect.TryAddEffect(WeaponEffect);

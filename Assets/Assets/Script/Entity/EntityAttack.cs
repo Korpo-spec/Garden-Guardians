@@ -87,7 +87,16 @@ public class EntityAttack : MonoBehaviour
         {
             animator.SetFloat("AttackSpeed",animator.GetFloat("AttackSpeed")+upgrade.AnimationSpeedIncrease);
             _health.Defense += upgrade.DefenseIncrease;
-            _health.Thorn = upgrade.WeaponEffect;
+            
+            if (_health.Thorn==null)
+            {
+                _health.Thorn = upgrade.WeaponEffect;
+            }
+            else
+            {
+                _health.Thorn = _health.Thorn.UpgradedVersion;
+            }
+            
         }
        
     }
