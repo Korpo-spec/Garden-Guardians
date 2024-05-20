@@ -8,17 +8,20 @@ public class SlamAttack : SpecialAttack
 {
     private Animator _animator;
     private float time;
+    private EntityMovement _entityMovement;
     [SerializeField] private float radius = 1.4f;
     public override void OnPressed(Animator animator)
     {
         _animator = animator;
         animator.SetBool("SpecialAttack", true);
+        _entityMovement = animator.GetComponent<EntityMovement>();
+        _entityMovement.canMove = false;
     }
 
     public override void OnHeld()
     {
         
-        
+        _animator.SetBool("SpecialAttack", true);
     }
 
     public override void OnSpecialAttack()
@@ -58,6 +61,7 @@ public class SlamAttack : SpecialAttack
                 */
             }
         }
+        _animator.SetBool("SpecialAttack", false);
     }
 
     public override void OnRelease()

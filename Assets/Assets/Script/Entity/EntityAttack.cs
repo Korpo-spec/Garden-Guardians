@@ -215,6 +215,7 @@ public class EntityAttack : MonoBehaviour
     
     public void ResumeMovement()
     {
+        Debug.Log("ResumeMovement");
         _movement.canMove = true;
         _movement.canDashCancel = false;
     }
