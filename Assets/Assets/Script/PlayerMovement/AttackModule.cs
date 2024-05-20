@@ -74,6 +74,7 @@ namespace Script.PlayerMovement
                 return;
             }
             weapon = animator.GetComponent<EntityAttack>().weapon;
+            weapon.specialAttack.OnSpecialSwitch(animator);
             if (!_specialHeld)
             {
                 weapon.specialAttack.OnPressed(animator);

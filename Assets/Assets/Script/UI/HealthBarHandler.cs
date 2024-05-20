@@ -36,7 +36,7 @@ public class HealthBarHandler : MonoBehaviour
 
     public void UpdateSliderValue()
     {
-        Debug.Break();
+        //Debug.Break();
         healthEaseSlider.value = healthSlider.value;
         healthSlider.value = EntityHealth.health / EntityHealth.maxHealth;
         
