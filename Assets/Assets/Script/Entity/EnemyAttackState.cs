@@ -20,6 +20,7 @@ public class EnemyAttackState : State
     [SerializeField] private State _stateToTransistion;
     [SerializeField] private AttackModule _attackModule;
     [SerializeField] private Transform _target;
+    [SerializeField] private bool recover = true;
     
 
     public override void OnEnter(StateController controller)
@@ -61,7 +62,11 @@ public class EnemyAttackState : State
         if (_attackRange >= Vector3.Distance(_controller.transform.position.RemoveY(), _target.position.RemoveY()))
         {
             _attackModule.Attack(_animator);
-            _animator.SetTrigger("Recover");
+            if (recover)
+            {
+                _animator.SetTrigger("Recover");
+            }
+            
             _time = 0;
         }
         else

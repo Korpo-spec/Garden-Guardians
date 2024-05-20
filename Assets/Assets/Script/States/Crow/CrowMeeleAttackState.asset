@@ -10,22 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 459b3b76d28af13458f454344c7dfa44, type: 3}
-  m_Name: AttackState
+  m_Name: CrowMeeleAttackState
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   priority: 0
   _mask:
     serializedVersion: 2
     m_Bits: 64
-  _radius: 4
-  _attackRange: 2
-  _attackSpeed: 2
+  _radius: 5
+  _attackRange: 3
+  _attackSpeed: 0
   _factionToAttack: 0
   _stateToTransistion: {fileID: 0}
   _attackModule:
-    weapon: {fileID: 11400000, guid: 87bcece14bac64c489464004e1da9377, type: 2}
-    comboConnectTime: 0.1
-    comboTimeOutTime: 1.5
+    weapon: {fileID: 11400000, guid: ac6040671d274ac468e769e263104f16, type: 2}
+    comboConnectTime: 0
+    comboTimeOutTime: 0
     comboState: 0
     timeSinceLastAttack: 0
   _target: {fileID: 0}
+  recover: 0
