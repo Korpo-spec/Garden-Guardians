@@ -1310,6 +1310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  Defense: 0
   maxHealth: 0
   transformHealthDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325,
     type: 2}
@@ -1364,6 +1365,7 @@ MonoBehaviour:
   movement: {fileID: 0}
   effectManager: {fileID: 0}
   faction: {fileID: 0}
+  Thorn: {fileID: 0}
 --- !u!114 &175095467456334761
 MonoBehaviour:
   m_ObjectHideFlags: 0
