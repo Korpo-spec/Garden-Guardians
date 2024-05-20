@@ -30,13 +30,16 @@ public class HealthBarHandler : MonoBehaviour
         
         healthEaseSlider.value = Mathf.Lerp(healthEaseSlider.value, healthSlider.value, lerpSpeed);
         transform.LookAt(transform.position+mainCamera.transform.forward);
+        
     }
 
 
     public void UpdateSliderValue()
     {
-        //Debug.Break();
+        Debug.Break();
+        healthEaseSlider.value = healthSlider.value;
         healthSlider.value = EntityHealth.health / EntityHealth.maxHealth;
+        
     }
 
     
