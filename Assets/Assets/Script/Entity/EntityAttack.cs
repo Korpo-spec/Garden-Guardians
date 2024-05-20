@@ -176,6 +176,11 @@ public class EntityAttack : MonoBehaviour
         
     }
 
+    public void SpecialAttack()
+    {
+        _weapon.specialAttack.OnSpecialAttack();
+    }
+
     private bool CalcIfCrit(int index)
     {
         var random = Random.Range(0, 100);
@@ -210,6 +215,7 @@ public class EntityAttack : MonoBehaviour
     
     public void ResumeMovement()
     {
+        Debug.Log("ResumeMovement");
         _movement.canMove = true;
         _movement.canDashCancel = false;
     }
@@ -225,6 +231,11 @@ public class EntityAttack : MonoBehaviour
         {
             return;
         }
+        Gizmos.color = Color.red;
+        weapon.specialAttack.OnGizmos(gameObject);
+        
+        Gizmos.color = Color.green;
+        
         Gizmos.matrix = transform.localToWorldMatrix;
         Vector3 correctionVec = new Vector3(-1, 1, -1);
         Gizmos.DrawCube(Vector3.Scale(_weapon.attackInfos[comboIndex].colliderInfo.center,correctionVec), _weapon.attackInfos[comboIndex].colliderInfo.halfsize);
