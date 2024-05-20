@@ -116,16 +116,16 @@ namespace Script.Entity
                 movement.KnockBack(knockback);
             }
             
-            entityHealthEvents.takeDamage.Invoke(new DamageEventArg((int)amount,isCrit,attacker));
+            
             if (health - amount <= 0)
                 KillItself();
-            else
+            else health -= amount;
                 //entityHealthEvents.takeDamage.Invoke((int)amount);
 
                 // if (intVariable)
                 //     intVariable.Value -= amount;
-
-                health -= amount;
+                
+            entityHealthEvents.takeDamage.Invoke(new DamageEventArg((int)amount,isCrit,attacker));
             //_animator.SetTrigger(Hurt);
         }
 
