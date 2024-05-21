@@ -59,6 +59,9 @@ public class EnemyAttackState : State
             return;
         }
         
+        //turn enemy in direction of player
+        
+        _movement.RotatePlayer((_target.position-_movement.transform.position));
         if (_attackRange >= Vector3.Distance(_controller.transform.position.RemoveY(), _target.position.RemoveY()))
         {
             _attackModule.Attack(_animator);
@@ -76,4 +79,6 @@ public class EnemyAttackState : State
         }
         
     }
+    
+    
 }

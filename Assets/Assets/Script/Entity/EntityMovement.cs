@@ -107,7 +107,7 @@ public class EntityMovement : MonoBehaviour
 
     }
  
-    private void RotatePlayer( Vector3 moveDir)
+    public void RotatePlayer( Vector3 moveDir)
     {
        if (moveDir.magnitude==0)
        {

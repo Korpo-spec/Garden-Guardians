@@ -5341,7 +5341,7 @@ MonoBehaviour:
   canMove: 1
   canDashCancel: 0
   animator: {fileID: 7127825265443040992}
-  knockBackDuration: 0
+  knockBackDuration: 0.1
 --- !u!114 &5683531515325901090
 MonoBehaviour:
   m_ObjectHideFlags: 0

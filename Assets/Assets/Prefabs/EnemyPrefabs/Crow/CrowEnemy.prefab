@@ -2817,7 +2817,7 @@ MonoBehaviour:
   _weapon: {fileID: 11400000, guid: ac6040671d274ac468e769e263104f16, type: 2}
   targetDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325, type: 2}
   mainHand: {fileID: 8821503117234200969}
-  activateDebug: 0
+  activateDebug: 1
   comboIndex: 0
   canAttack: 1
 --- !u!114 &4859277180194550550
@@ -2915,7 +2915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad5ffffb52a4eb41a8c56685c0a1165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementStats: {fileID: 11400000, guid: e08c31aa309a5f944929b2e953dcf77c, type: 2}
+  movementStats: {fileID: 11400000, guid: 8a059cf21f25f504f82cda176743de05, type: 2}
   canMove: 1
   canDashCancel: 0
   animator: {fileID: 5620315367722716929}
@@ -3022,7 +3022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackWindup: 0.2
-  meshParent: {fileID: 7202078841241332589}
+  meshParent: {fileID: 258459690522991441}
 --- !u!1 &7790291549551785346
 GameObject:
   m_ObjectHideFlags: 0
