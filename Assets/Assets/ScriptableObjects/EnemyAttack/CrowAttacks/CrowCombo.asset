@@ -20,14 +20,15 @@ MonoBehaviour:
   - damage: 5
     knockBack: 2
     colliderInfo:
-      center: {x: 0, y: 0, z: 0}
-      halfsize: {x: 0, y: 0, z: 0}
+      center: {x: 0, y: 0, z: 0.5}
+      halfsize: {x: 2, y: 1, z: 3}
       isTrigger: 0
-    slashEffect: {fileID: 0}
+    slashEffect: {fileID: 8991263633043074940, guid: b30c61307f93fb848afcdf97b9178ad6,
+      type: 3}
     useCustomRot: 0
     customRot: {x: 0, y: 0, z: 0}
     hitEffect: {fileID: 0}
-    dashLenght: 5
+    dashLenght: 4
     dashTime: 1
     dashCurve:
       serializedVersion: 2

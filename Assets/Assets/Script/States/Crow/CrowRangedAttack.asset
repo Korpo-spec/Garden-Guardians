@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d43275d2fa546b04188c5fd85839ea46, type: 3}
-  m_Name: CrowMovementStats
+  m_Script: {fileID: 11500000, guid: 9d8149bc34da2af48a756b72967187ba, type: 3}
+  m_Name: CrowRangedAttack
   m_EditorClassIdentifier: 
-  speed: 2
-  sprintSpeed: 0
-  dashSpeed: 15
-  dashTime: 0.5
+  controller: {fileID: 0}
+  priority: 0
+  Projectile: {fileID: 0}
