@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Script.Entity;
 
 public class HS_ParticleCollisionInstance : MonoBehaviour
 {
@@ -17,32 +18,64 @@ public class HS_ParticleCollisionInstance : MonoBehaviour
     private List<ParticleCollisionEvent> collisionEvents = new List<ParticleCollisionEvent>();
     private ParticleSystem ps;
 
+    [SerializeField] private AttackComboSO attackModule;
+
     void Start()
     {
         part = GetComponent<ParticleSystem>();
     }
     void OnParticleCollision(GameObject other)
-    {      
+    {
         int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);     
         for (int i = 0; i < numCollisionEvents; i++)
         {
             foreach (var effect in EffectsOnCollision)
             {
+                EntityFaction faction;
+                
                 var instance = Instantiate(effect, collisionEvents[i].intersection + collisionEvents[i].normal * Offset, new Quaternion()) as GameObject;
-                if (!UseWorldSpacePosition) instance.transform.parent = transform;
-                if (UseFirePointRotation) { instance.transform.LookAt(transform.position); }
-                else if (rotationOffset != Vector3.zero && useOnlyRotationOffset) { instance.transform.rotation = Quaternion.Euler(rotationOffset); }
-                else
+                
+                if (other.TryGetComponent(out faction))
                 {
-                    instance.transform.LookAt(collisionEvents[i].intersection + collisionEvents[i].normal);
-                    instance.transform.rotation *= Quaternion.Euler(rotationOffset);
+                    if (faction.faction==Faction.Enemy)
+                    {
+                        Destroy(gameObject);
+                        return;
+                    }
+                    if (faction.faction != Faction.Enemy)
+                    {
+                        if (!UseWorldSpacePosition) instance.transform.parent = transform;
+                        if (UseFirePointRotation) { instance.transform.LookAt(transform.position); }
+                        else if (rotationOffset != Vector3.zero && useOnlyRotationOffset) { instance.transform.rotation = Quaternion.Euler(rotationOffset); }
+                        else
+                        {
+                            instance.transform.LookAt(collisionEvents[i].intersection + collisionEvents[i].normal);
+                            instance.transform.rotation *= Quaternion.Euler(rotationOffset);
+                        }
+                        
+                        var entityAttack = other.gameObject.GetComponent<EntityAttack>();
+                        if (entityAttack)
+                        {
+                            Vector3 knockBackVec = other.GetComponent<Collider>().transform.position - entityAttack.transform.position;
+                            knockBackVec = knockBackVec.RemoveY();
+                            entityAttack._health.DamageUnit(attackModule.attackInfos[0].damage,knockBackVec*attackModule.attackInfos[0].knockBack,false,entityAttack);
+                        }
+                    }
                 }
+               
                 Destroy(instance, DestroyTimeDelay);
             }
         }
-        if (DestoyMainEffect == true)
+
+        if (DestoyMainEffect != true) return;
         {
-            Destroy(gameObject, DestroyTimeDelay + 0.5f);
+            EntityFaction faction;
+            if (!other.TryGetComponent(out faction)) return;
+            if (faction.faction != Faction.Enemy)
+            {
+                Destroy(gameObject);
+            }
         }
     }
+    
 }

@@ -18,7 +18,8 @@ public class EntityAttack : MonoBehaviour
     [SerializeField] private Transform mainHand;
 
     private GameObject _currentWeapon;
-    private EntityHealth _health;
+    [HideInInspector]
+    public EntityHealth _health;
 
     public Animator Animator => animator;
     

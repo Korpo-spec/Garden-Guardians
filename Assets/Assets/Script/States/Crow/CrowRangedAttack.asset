@@ -14,17 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   priority: 0
-  Projectile: {fileID: 0}
+  Projectile: {fileID: 7624146811702526392, guid: 9fe8ee8aea6a1404d8feac0104d889e4,
+    type: 3}
+  NumberOfProjectiles: 3
   _mask:
     serializedVersion: 2
     m_Bits: 64
-  _radius: 10
-  _attackRange: 6
+  _radius: 20
+  _attackRange: 15
   _attackSpeed: 1.5
   _factionToAttack: 0
   _stateToTransistion: {fileID: 0}
   _attackModule:
-    weapon: {fileID: 0}
+    weapon: {fileID: 11400000, guid: f2387ac2089b7b84eb186288f02b9c8e, type: 2}
     comboConnectTime: 0
     comboTimeOutTime: 0
     comboState: 0

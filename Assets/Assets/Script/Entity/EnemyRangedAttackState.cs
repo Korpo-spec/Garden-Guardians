@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using Script.PlayerMovement;
+using Unity.Mathematics;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "States/EnemyRangedAttackState")]
 public class EnemyRangedAttackState : State
 {
     public GameObject Projectile;
+    [SerializeField]
+    private int NumberOfProjectiles=3;
     
     private StateController _controller;
     private EntityMovement _movement;
@@ -49,5 +52,47 @@ public class EnemyRangedAttackState : State
             }
         }
     }
-    
+    public override void UpdateState()
+    {
+        if (_attackSpeed > _time)
+        {
+            _time += Time.deltaTime;
+            
+            return;
+        }
+        
+        //turn enemy in direction of player
+        _movement.RotatePlayer((_target.position-_movement.transform.position));
+        
+        if (_attackRange >= Vector3.Distance(_controller.transform.position.RemoveY(), _target.position.RemoveY()))
+        {
+            //_attackModule.Attack(_animator);
+            Instansiateprojectile();
+            
+            if (recover)
+            {
+                _animator.SetTrigger("Recover");
+            }
+            
+            _time = 0;
+        }
+        else
+        {
+            _movement.SetDestinationTo(_target.position.RemoveY());
+            _movement.UpdateMoveTo();
+        }
+        
+    }
+
+    private void Instansiateprojectile()
+    {
+        for (int i = -1; i < NumberOfProjectiles-1; i++)
+        {
+
+            Vector3 projDirVector = new Vector3(0,_movement.transform.rotation.eulerAngles.y+i*20,0);
+            
+            Instantiate(Projectile, _movement.transform.position+new Vector3(0,1f,0)+_movement.transform.forward, Quaternion.Euler(projDirVector)); 
+        }
+        
+    }
 }

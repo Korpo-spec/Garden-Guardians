@@ -51,7 +51,7 @@ ParticleSystem:
   cullingMode: 3
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  emitterVelocityMode: 1
+  emitterVelocityMode: 0
   looping: 0
   prewarm: 0
   playOnAwake: 1
@@ -3798,7 +3798,7 @@ ParticleSystem:
     m_EnergyLossOnCollision:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4834,7 +4834,8 @@ MonoBehaviour:
   rotationOffset: {x: 0, y: 0, z: 0}
   useOnlyRotationOffset: 1
   UseFirePointRotation: 0
-  DestoyMainEffect: 0
+  DestoyMainEffect: 1
+  attackModule: {fileID: 11400000, guid: f2387ac2089b7b84eb186288f02b9c8e, type: 2}
 --- !u!199 &199337154022612766
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4857,7 +4858,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: ed60593b91fad7941812dc8476fa8d7a, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9773,7 +9773,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 1b5f613319e0f324c9637cfac64149e4, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
