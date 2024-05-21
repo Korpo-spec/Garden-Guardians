@@ -15,3 +15,19 @@ MonoBehaviour:
   controller: {fileID: 0}
   priority: 0
   Projectile: {fileID: 0}
+  _mask:
+    serializedVersion: 2
+    m_Bits: 64
+  _radius: 10
+  _attackRange: 6
+  _attackSpeed: 1.5
+  _factionToAttack: 0
+  _stateToTransistion: {fileID: 0}
+  _attackModule:
+    weapon: {fileID: 0}
+    comboConnectTime: 0
+    comboTimeOutTime: 0
+    comboState: 0
+    timeSinceLastAttack: 0
+  _target: {fileID: 0}
+  recover: 0
