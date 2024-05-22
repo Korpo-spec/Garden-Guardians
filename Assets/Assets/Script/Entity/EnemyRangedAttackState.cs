@@ -105,7 +105,7 @@ public class EnemyRangedAttackState : State
 
     public void Instansiateprojectile()
     {
-        for (int i = -1uw; i < NumberOfProjectiles-1; i++)
+        for (int i = -1; i < NumberOfProjectiles-1; i++)
         {
 
             Vector3 projDirVector = new Vector3(0,_movement.transform.rotation.eulerAngles.y+i*AngleBetweenProj,0);
