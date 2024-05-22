@@ -47,17 +47,22 @@ public class PrepareAttack : MonoBehaviour
         
         _material.SetTexture("_EmissionMap", Texture2D.whiteTexture);
         _material.SetColor("_EmissionColor", Color.black);
+        _material.SetColor("_Emissive_Color", Color.black);
+
         while (1 > _time)
         {
             _time += Time.deltaTime * (1/_attackWindup);
             Color color = Color.Lerp(Color.black, Color.white, _time);
             _material.SetColor("_EmissionColor", color);
+            _material.SetColor("_Emissive_Color", color);
             _material.EnableKeyword("_EMISSION");
             yield return new WaitForEndOfFrame();
         }
         _animator.speed = 1;
          _material.SetTexture("_EmissionMap", emissionTexture);
         _material.SetColor("_EmissionColor", Color.black);
+        _material.SetColor("_Emissive_Color", Color.black);
+
     }
     
     public void StartHurtFlash()
