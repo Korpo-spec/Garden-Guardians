@@ -23,6 +23,7 @@ public class EnemyRangedAttackState : State
     [SerializeField] private float _attackSpeed;
     [SerializeField] private Faction _factionToAttack;
     [SerializeField] private State _stateToTransistion;
+    [SerializeField] private float TransistionToMeleeRadius;
     [SerializeField] private AttackModule _attackModule;
     [SerializeField] private Transform _target;
     [SerializeField] private bool recover = true;
@@ -33,6 +34,7 @@ public class EnemyRangedAttackState : State
         _movement = controller.GetComponent<EntityMovement>();
         _animator = controller.GetComponent<Animator>();
         _time = _attackSpeed + 1;
+        _controller.RangedAttackState = this;
         int amount = Physics.OverlapSphereNonAlloc(_controller.transform.position, _radius, _colliders, _mask);
 
         for (int i = 0; i < amount; i++)
@@ -54,6 +56,12 @@ public class EnemyRangedAttackState : State
     }
     public override void UpdateState()
     {
+        if (TransistionToMeleeRadius>=Vector3.Distance(_controller.transform.position.RemoveY(),_target.position.RemoveY()))
+        {
+            _controller.Transistion(_stateToTransistion);
+            return;
+        }
+        
         if (_attackSpeed > _time)
         {
             _time += Time.deltaTime;
@@ -63,12 +71,15 @@ public class EnemyRangedAttackState : State
         
         //turn enemy in direction of player
         _movement.RotatePlayer((_target.position-_movement.transform.position));
+
         
+
         if (_attackRange >= Vector3.Distance(_controller.transform.position.RemoveY(), _target.position.RemoveY()))
         {
-            //_attackModule.Attack(_animator);
-            Instansiateprojectile();
-            
+            // _attackModule.Attack(_animator);
+            //Instansiateprojectile();
+            playRangedAnim();
+
             if (recover)
             {
                 _animator.SetTrigger("Recover");
@@ -84,7 +95,12 @@ public class EnemyRangedAttackState : State
         
     }
 
-    private void Instansiateprojectile()
+    private void playRangedAnim()
+    {
+        _animator.SetBool("RangedAttack",true);
+    }
+
+    public void Instansiateprojectile()
     {
         for (int i = -1; i < NumberOfProjectiles-1; i++)
         {
@@ -93,6 +109,6 @@ public class EnemyRangedAttackState : State
             
             Instantiate(Projectile, _movement.transform.position+new Vector3(0,1f,0)+_movement.transform.forward, Quaternion.Euler(projDirVector)); 
         }
-        
+        _animator.SetBool("RangedAttack",false);
     }
 }

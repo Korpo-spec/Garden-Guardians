@@ -52,6 +52,13 @@ public class EnemyAttackState : State
 
     public override void UpdateState()
     {
+        
+        if (_radius<=Vector3.Distance(_controller.transform.position.RemoveY(),_target.position.RemoveY()))
+        {
+            _controller.Transistion(_stateToTransistion);
+            return;
+        }
+        
         if (_attackSpeed > _time)
         {
             _time += Time.deltaTime;

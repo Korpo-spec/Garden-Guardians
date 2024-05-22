@@ -2817,6 +2817,7 @@ MonoBehaviour:
   _weapon: {fileID: 11400000, guid: ac6040671d274ac468e769e263104f16, type: 2}
   targetDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325, type: 2}
   mainHand: {fileID: 8821503117234200969}
+  _health: {fileID: 0}
   activateDebug: 1
   comboIndex: 0
   canAttack: 1
@@ -2972,6 +2973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515a132a4ef1a104099ee2bdb04dfaac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RangedAttackState: {fileID: 0}
   defaultState: {fileID: 11400000, guid: 492fa10f9db5c0045b9b3e1e1c8d077e, type: 2}
   currentState: []
 --- !u!114 &4832122380145178823

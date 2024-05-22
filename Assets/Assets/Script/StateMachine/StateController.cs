@@ -8,6 +8,7 @@ using Object = System.Object;
 
 public class StateController : MonoBehaviour
 {
+
     [SerializeField] private State defaultState;
 
     [SerializeField]private List<State> currentState;
@@ -159,5 +160,11 @@ public class StateController : MonoBehaviour
         }
         
         
+    }
+    [HideInInspector]
+    public EnemyRangedAttackState RangedAttackState;
+    public void RangeAttack()
+    {
+        RangedAttackState.Instansiateprojectile();
     }
 }

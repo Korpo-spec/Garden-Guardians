@@ -18,7 +18,7 @@ MonoBehaviour:
   comboLength: 1
   attackInfos:
   - damage: 5
-    knockBack: 2
+    knockBack: 1
     colliderInfo:
       center: {x: 0, y: 0, z: 0.5}
       halfsize: {x: 2, y: 1, z: 3}
