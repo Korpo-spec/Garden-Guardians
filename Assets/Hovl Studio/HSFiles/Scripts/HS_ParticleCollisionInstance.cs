@@ -56,9 +56,8 @@ public class HS_ParticleCollisionInstance : MonoBehaviour
                         var entityAttack = other.gameObject.GetComponent<EntityAttack>();
                         if (entityAttack)
                         {
-                            Vector3 knockBackVec = other.GetComponent<Collider>().transform.position - entityAttack.transform.position;
-                            knockBackVec = knockBackVec.RemoveY();
-                            entityAttack._health.DamageUnit(attackModule.attackInfos[0].damage,knockBackVec*attackModule.attackInfos[0].knockBack,false,entityAttack);
+                            
+                            entityAttack._health.DamageUnit(attackModule.attackInfos[0].damage,gameObject.transform.forward*attackModule.attackInfos[0].knockBack,false,entityAttack);
                         }
                     }
                 }

@@ -10,6 +10,8 @@ public class EnemyRangedAttackState : State
     public GameObject Projectile;
     [SerializeField]
     private int NumberOfProjectiles=3;
+    [SerializeField]
+    private int AngleBetweenProj=15;
     
     private StateController _controller;
     private EntityMovement _movement;
@@ -86,6 +88,7 @@ public class EnemyRangedAttackState : State
             }
             
             _time = 0;
+            _animator.SetBool("AmRunning",false);
         }
         else
         {
@@ -102,10 +105,10 @@ public class EnemyRangedAttackState : State
 
     public void Instansiateprojectile()
     {
-        for (int i = -1; i < NumberOfProjectiles-1; i++)
+        for (int i = -1uw; i < NumberOfProjectiles-1; i++)
         {
 
-            Vector3 projDirVector = new Vector3(0,_movement.transform.rotation.eulerAngles.y+i*20,0);
+            Vector3 projDirVector = new Vector3(0,_movement.transform.rotation.eulerAngles.y+i*AngleBetweenProj,0);
             
             Instantiate(Projectile, _movement.transform.position+new Vector3(0,1f,0)+_movement.transform.forward, Quaternion.Euler(projDirVector)); 
         }
