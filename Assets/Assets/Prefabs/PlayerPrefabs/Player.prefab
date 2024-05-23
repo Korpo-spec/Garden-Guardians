@@ -5110,6 +5110,7 @@ GameObject:
   - component: {fileID: 1232172892076376952}
   - component: {fileID: 4706997009166466143}
   - component: {fileID: 3102077356240436061}
+  - component: {fileID: 8975563084890487194}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -5322,6 +5323,7 @@ MonoBehaviour:
   _weapon: {fileID: 11400000, guid: 21ba586f2fb26cb4e996ab530f1a7f79, type: 2}
   targetDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325, type: 2}
   mainHand: {fileID: 5331164803434424502}
+  _health: {fileID: 0}
   activateDebug: 0
   comboIndex: 2
   canAttack: 1
@@ -5454,6 +5456,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnText: {fileID: 4412156086504408344, guid: 295e0677c2057714c8d29c359af95f14,
     type: 3}
+--- !u!114 &8975563084890487194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938287593342238401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54da213a8a2f9d409f1bac3c3f36dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 7086357682079536472}
+  playerAttack: {fileID: 628604204669265699}
 --- !u!1 &8027674897723295907
 GameObject:
   m_ObjectHideFlags: 0

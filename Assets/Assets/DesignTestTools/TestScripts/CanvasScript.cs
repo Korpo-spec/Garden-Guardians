@@ -20,6 +20,7 @@ public class CanvasScript : MonoBehaviour
     [SerializeField] private GameObject hud;
     [SerializeField] private GameObject sPoint1;
     [SerializeField] private GameObject sPoint2;
+    [SerializeField] private GameObject FadeController;
     
     // Inventory
     [SerializeField] private GameObject inventoryMenu;
@@ -48,6 +49,7 @@ public class CanvasScript : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(false);
         }
         
+        FadeController.SetActive(true);
         hud.SetActive(true);
         inventoryButton.onClick.Invoke();
         sPoint2.SetActive(false);

@@ -2973,9 +2973,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515a132a4ef1a104099ee2bdb04dfaac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RangedAttackState: {fileID: 0}
   defaultState: {fileID: 11400000, guid: 492fa10f9db5c0045b9b3e1e1c8d077e, type: 2}
   currentState: []
+  RangedAttackState: {fileID: 0}
 --- !u!114 &4832122380145178823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3023,7 +3023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299e39cde4500dd409fd5d6eda70da3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _attackWindup: 0.2
+  _attackWindup: 0.3
   meshParent: {fileID: 258459690522991441}
 --- !u!1 &7790291549551785346
 GameObject:
