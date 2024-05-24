@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stack:
     _item: {fileID: 11400000, guid: aa6cb613da9fa4d4494d0a3e697d18fd, type: 2}
-    numberOfItemsInStack: 1
+    numberOfItemsInStack: 5
     maxStackSize: 8
   spriteRenderer: {fileID: 2858713900979754574}
   timeBeforeTriggerEnable: 1

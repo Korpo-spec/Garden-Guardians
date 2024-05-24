@@ -24,6 +24,7 @@ MonoBehaviour:
     AnimationSpeedIncrease: 0
     WeaponEffect: {fileID: 0}
     _particleSystem: {fileID: 0}
+    IsThorn: 0
   parents:
   - {fileID: 11400000, guid: c596f2729a6151947b54033392071bd4, type: 2}
   - {fileID: 11400000, guid: 29f8b38a1df2e324aa30bce8fcbe03da, type: 2}
@@ -34,5 +35,5 @@ MonoBehaviour:
   PlayerInventory: {fileID: 11400000, guid: 17bf045369c8ed0458855753c8358783, type: 2}
   ItemRequierments: []
   upgradeCost:
-    UMCost: 0
+    UMCost: 50
     SUMCost: 0

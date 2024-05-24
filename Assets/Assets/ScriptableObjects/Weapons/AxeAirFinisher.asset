@@ -17,7 +17,7 @@ MonoBehaviour:
   newAnims: {fileID: 22100000, guid: 9d3707a952449d84b8f85388f8e341ed, type: 2}
   comboLength: 3
   attackInfos:
-  - damage: 50
+  - damage: 2
     knockBack: 0
     colliderInfo:
       center: {x: 0, y: 0.8057604, z: -0.7807358}
@@ -56,7 +56,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     CritChance: 0
-  - damage: 5
+  - damage: 2
     knockBack: 0
     colliderInfo:
       center: {x: 0, y: 0.96961045, z: -0.68042135}
@@ -134,7 +134,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     CritChance: 0
-  weaponEffect: {fileID: 0}
+  weaponEffect: {fileID: 11400000, guid: d87284aedce494547bee37ec1600f377, type: 2}
   specialAttack: {fileID: 11400000, guid: 80523361bab7f7f40bca627a96122a1d, type: 2}
   particleSystem: {fileID: 0}
   SaveAttackInfo: 0

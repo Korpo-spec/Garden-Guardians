@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116414a1bbd926f48ad7a048e0bd194f, type: 3}
+  m_Name: Idle
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  priority: 0
+  _mask:
+    serializedVersion: 2
+    m_Bits: 64
+  _radius: 4
+  _factionToAttack: 0
+  _stateToTransistion: {fileID: 11400000, guid: e250ec0fe55f014489921ff096c7d8cf,
+    type: 2}

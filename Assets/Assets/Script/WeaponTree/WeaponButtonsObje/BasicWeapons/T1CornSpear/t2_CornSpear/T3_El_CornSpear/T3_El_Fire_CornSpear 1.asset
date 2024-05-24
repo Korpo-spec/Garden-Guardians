@@ -19,16 +19,21 @@ MonoBehaviour:
   weaponUpgrade:
     DamageIncrease: 0
     KnockBackIncrease: 0
+    CritChanceIncrease: 0
+    DefenseIncrease: 0
+    AnimationSpeedIncrease: 0
     WeaponEffect: {fileID: 11400000, guid: 27685029198d51e4d968681c9bb44939, type: 2}
     _particleSystem: {fileID: 1373873258365392, guid: cd5def2bb4f6b4e4ab15ba0b6f35b29d,
       type: 3}
+    IsThorn: 0
+    ThornParentEffect: {fileID: 0}
   parents:
-  - {fileID: 11400000}
-  - {fileID: 11400000}
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: fd626770e31176a4492fd29d6206ed5b, type: 2}
+  - {fileID: 11400000, guid: da71a095c4a046f4aa8a5e6aa3d02537, type: 2}
+  - {fileID: 11400000, guid: eb2c743237c5deb45b715c67e0267790, type: 2}
   weaponSprite: {fileID: 21300000, guid: 15e019cdb537e914a961a25bc9c68537, type: 3}
   upgradeType: 1
-  WeaponText: 
+  WeaponText: Fire
   PlayerWeaponSlot: {fileID: 11400000, guid: 3977ccd0eeeebf34fa3c3f76c4a0ff8a, type: 2}
   PlayerInventory: {fileID: 11400000, guid: 17bf045369c8ed0458855753c8358783, type: 2}
   ItemRequierments: []

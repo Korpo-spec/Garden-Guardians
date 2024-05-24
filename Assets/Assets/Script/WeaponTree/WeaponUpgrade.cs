@@ -17,7 +17,6 @@ public struct WeaponUpgrade
    [SerializeField] public Effect WeaponEffect;
    [SerializeField] public GameObject _particleSystem;
    [SerializeField] private bool IsThorn;
-   public Effect ThornParentEffect;
    public static event EventHandler SetPlayervalues;
 
 

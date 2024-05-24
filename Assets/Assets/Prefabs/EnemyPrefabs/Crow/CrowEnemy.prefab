@@ -2776,6 +2776,7 @@ GameObject:
   - component: {fileID: 4832122380145178823}
   - component: {fileID: 5620315367722716929}
   - component: {fileID: 8618161806249053360}
+  - component: {fileID: 1754437884851940947}
   m_Layer: 6
   m_Name: CrowEnemy
   m_TagString: Untagged
@@ -3025,6 +3026,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackWindup: 0.3
   meshParent: {fileID: 258459690522991441}
+--- !u!114 &1754437884851940947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7202078841241332589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d59a344f0262a84eadd1466ec156706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DropList:
+  - GameObject: {fileID: 3165748147989574631, guid: 0619488df09c81644a7b94b0d075d5e0,
+      type: 3}
+    dropChance: 50
+  - GameObject: {fileID: 3165748147989574631, guid: 9a34e2aceb96a0d4ea91b3a57e5fcbd0,
+      type: 3}
+    dropChance: 50
+  - GameObject: {fileID: 3165748147989574631, guid: 7fef5af57c3274447a88c6b7f19e7fe7,
+      type: 3}
+    dropChance: 50
+  - GameObject: {fileID: 3165748147989574631, guid: 9fc2686e642196543868a8c6bd85c7c5,
+      type: 3}
+    dropChance: 50
 --- !u!1 &7790291549551785346
 GameObject:
   m_ObjectHideFlags: 0

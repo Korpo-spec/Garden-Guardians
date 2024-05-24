@@ -18,8 +18,13 @@ MonoBehaviour:
     maxStackSize: 8
   weaponUpgrade:
     DamageIncrease: 0
-    DashLengthIncrease: 0
+    KnockBackIncrease: 0
+    CritChanceIncrease: 0
+    DefenseIncrease: 0
+    AnimationSpeedIncrease: 0
     WeaponEffect: {fileID: 0}
+    _particleSystem: {fileID: 0}
+    IsThorn: 0
   parents:
   - {fileID: 11400000, guid: d443a9d1e04d61f4499ba70d41ea191a, type: 2}
   - {fileID: 11400000, guid: 5e9c6f0f8efd3d84391ddba1d1d409d1, type: 2}
@@ -30,5 +35,5 @@ MonoBehaviour:
   PlayerInventory: {fileID: 11400000, guid: 17bf045369c8ed0458855753c8358783, type: 2}
   ItemRequierments: []
   upgradeCost:
-    UMCost: 0
+    UMCost: 50
     SUMCost: 0

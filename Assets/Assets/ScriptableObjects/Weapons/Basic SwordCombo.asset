@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Basic SwordCombo
   m_EditorClassIdentifier: 
   weapon: {fileID: 919132149155446097, guid: f21500d797d582b46b42d5aa80f6cc5b, type: 3}
+  player: {fileID: 0}
   newAnims: {fileID: 22100000, guid: 9d3707a952449d84b8f85388f8e341ed, type: 2}
   comboLength: 3
   attackInfos:
-  - damage: 5
+  - damage: 2
     knockBack: 0
     colliderInfo:
       center: {x: 0, y: 0.8057604, z: -0.7807358}
@@ -54,44 +55,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - damage: 5
-    knockBack: 0
-    colliderInfo:
-      center: {x: 0, y: 0.96961045, z: -0.68042135}
-      halfsize: {x: 1.2869751, y: 0.443927, z: 1.2869751}
-      isTrigger: 0
-    slashEffect: {fileID: 8991263633043074940, guid: b30c61307f93fb848afcdf97b9178ad6,
-      type: 3}
-    useCustomRot: 1
-    customRot: {x: 310.0831, y: 45.506184, z: 305.94098}
-    hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
-      type: 3}
-    dashLenght: 1.5
-    dashTime: 0.3
-    dashCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 2
-        outSlope: 2
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
+    CritChance: 0
   - damage: 2
     knockBack: 0
     colliderInfo:
@@ -130,7 +94,49 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    CritChance: 0
+  - damage: 3
+    knockBack: 0
+    colliderInfo:
+      center: {x: 0, y: 0.96961045, z: -0.68042135}
+      halfsize: {x: 1.2869751, y: 0.443927, z: 1.2869751}
+      isTrigger: 0
+    slashEffect: {fileID: 8991263633043074940, guid: b30c61307f93fb848afcdf97b9178ad6,
+      type: 3}
+    useCustomRot: 1
+    customRot: {x: 310.0831, y: 45.506184, z: 305.94098}
+    hitEffect: {fileID: 3629116673139129341, guid: 2086b8566b245554b83526a78ef3a752,
+      type: 3}
+    dashLenght: 1.5
+    dashTime: 0.3
+    dashCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    CritChance: 0
   weaponEffect: {fileID: 11400000, guid: d87284aedce494547bee37ec1600f377, type: 2}
+  specialAttack: {fileID: 0}
+  particleSystem: {fileID: 0}
   SaveAttackInfo: 0
   ResetAttackInfo: 0
   DefaultlAttackInfos:
@@ -172,6 +178,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    CritChance: 0
   - damage: 1
     knockBack: 0
     colliderInfo:
@@ -210,6 +217,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    CritChance: 0
   - damage: 1
     knockBack: 0
     colliderInfo:
@@ -248,5 +256,6 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    CritChance: 0
   DefaultweaponEffect: {fileID: 11400000, guid: d87284aedce494547bee37ec1600f377,
     type: 2}

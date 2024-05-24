@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3c2ee09f020474495af58b8b3f2370, type: 3}
+  m_Name: T4_Phy_Bleed_CornSpear 4
+  m_EditorClassIdentifier: 
+  weaponModul:
+    _item: {fileID: 0}
+    numberOfItemsInStack: 1
+    maxStackSize: 8
+  weaponUpgrade:
+    DamageIncrease: 0
+    KnockBackIncrease: 0
+    CritChanceIncrease: 0
+    DefenseIncrease: 0
+    AnimationSpeedIncrease: 0
+    WeaponEffect: {fileID: 11400000, guid: 2510dd12464be8d4cb19f2169e1ca843, type: 2}
+    _particleSystem: {fileID: 0}
+    IsThorn: 0
+  parents:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 0a06bbb875f8f36469ee120046b1678f, type: 2}
+  - {fileID: 11400000, guid: bb30a4ceee80736428aa551472693f25, type: 2}
+  weaponSprite: {fileID: 21300000, guid: 15e019cdb537e914a961a25bc9c68537, type: 3}
+  upgradeType: 0
+  WeaponText: Bleed
+  PlayerWeaponSlot: {fileID: 11400000, guid: 3977ccd0eeeebf34fa3c3f76c4a0ff8a, type: 2}
+  PlayerInventory: {fileID: 11400000, guid: 17bf045369c8ed0458855753c8358783, type: 2}
+  ItemRequierments: []
+  upgradeCost:
+    UMCost: 50
+    SUMCost: 0

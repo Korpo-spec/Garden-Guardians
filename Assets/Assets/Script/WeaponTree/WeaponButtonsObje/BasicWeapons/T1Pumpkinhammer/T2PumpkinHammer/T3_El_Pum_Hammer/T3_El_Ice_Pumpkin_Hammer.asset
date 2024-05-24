@@ -18,14 +18,20 @@ MonoBehaviour:
     maxStackSize: 8
   weaponUpgrade:
     DamageIncrease: 0
-    DashLengthIncrease: 1
+    KnockBackIncrease: 0
+    CritChanceIncrease: 0
+    DefenseIncrease: 0
+    AnimationSpeedIncrease: 0
     WeaponEffect: {fileID: 0}
+    _particleSystem: {fileID: 0}
+    IsThorn: 0
   parents:
-  - {fileID: 11400000, guid: 8888b976fd56cf441912256f92ddb053, type: 2}
-  - {fileID: 11400000}
-  - {fileID: 11400000, guid: ab378fe8e4864c24f8171c4064088758, type: 2}
+  - {fileID: 11400000, guid: 5eea85a92b2e8cf4ba3687bcec7e5981, type: 2}
+  - {fileID: 11400000, guid: 31057443230c06a46a160c04a9bc4ff4, type: 2}
+  - {fileID: 11400000, guid: a2b6ceba36fa75b45b90d2daeaba6d64, type: 2}
   weaponSprite: {fileID: 21300000, guid: bbe10e111e97579458a5a380dcc5712b, type: 3}
   upgradeType: 1
+  WeaponText: Ice
   PlayerWeaponSlot: {fileID: 11400000, guid: 3977ccd0eeeebf34fa3c3f76c4a0ff8a, type: 2}
   PlayerInventory: {fileID: 11400000, guid: 17bf045369c8ed0458855753c8358783, type: 2}
   ItemRequierments: []

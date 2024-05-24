@@ -40,18 +40,7 @@ public class AttackComboSO : ScriptableObject
     [SerializeField]
     public ComboEffects DefaultweaponEffect;
 
-    private void OnValidate()
-    {
-        if (ResetAttackInfo)
-        {
-            ResetAttackInfo = false;
-            ResettAttackInfo();
-        } if (SaveAttackInfo)
-        {
-            SaveAttackInfo = false;
-            SaveDefaultAttackInfo();
-        }
-    }
+    
 
     private void SaveDefaultAttackInfo()
     {
