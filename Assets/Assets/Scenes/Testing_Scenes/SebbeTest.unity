@@ -21957,6 +21957,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: PumpkinEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6579016592484210769, guid: 78c8a8271f0eff14fb3670288e51a529,
+        type: 3}
+      propertyPath: defaultState
+      value: 
+      objectReference: {fileID: 11400000, guid: a5f9418eff956bb439cfb1d43c44333d,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78c8a8271f0eff14fb3670288e51a529, type: 3}
 --- !u!1001 &1514419142

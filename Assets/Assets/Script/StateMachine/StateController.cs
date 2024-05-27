@@ -167,4 +167,10 @@ public class StateController : MonoBehaviour
     {
         RangedAttackState.Instansiateprojectile();
     }
+
+    [HideInInspector] public EnemyAttackState EnemyAttackState;
+    public void TransitionToAttack()
+    {
+        Transistion(EnemyAttackState);
+    }
 }

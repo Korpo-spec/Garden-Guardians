@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Shell combo
   m_EditorClassIdentifier: 
   weapon: {fileID: 0}
+  player: {fileID: 0}
   newAnims: {fileID: 0}
   comboLength: 1
   attackInfos:
   - damage: 1
+    knockBack: 0
     colliderInfo:
       center: {x: 0, y: 0, z: 0}
       halfsize: {x: 1, y: 1, z: 1}
@@ -25,8 +27,8 @@ MonoBehaviour:
     useCustomRot: 0
     customRot: {x: 0, y: 0, z: 0}
     hitEffect: {fileID: 0}
-    dashLenght: 2
-    dashTime: 1
+    dashLenght: 3
+    dashTime: 0.5
     dashCurve:
       serializedVersion: 2
       m_Curve:
@@ -51,4 +53,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
+    CritChance: 0
   weaponEffect: {fileID: 0}
+  specialAttack: {fileID: 0}
+  particleSystem: {fileID: 0}
+  SaveAttackInfo: 0
+  ResetAttackInfo: 0
+  DefaultlAttackInfos: []
+  DefaultweaponEffect: {fileID: 0}

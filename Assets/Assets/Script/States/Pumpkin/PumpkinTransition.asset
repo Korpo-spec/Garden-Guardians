@@ -9,15 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 116414a1bbd926f48ad7a048e0bd194f, type: 3}
-  m_Name: PunpkinIdle
+  m_Script: {fileID: 11500000, guid: 529cb5299aa1ff24383811aa4f9a7fd3, type: 3}
+  m_Name: PumpkinTransition
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   priority: 0
-  _mask:
-    serializedVersion: 2
-    m_Bits: 64
-  _radius: 7
-  _factionToAttack: 0
-  _stateToTransistion: {fileID: 11400000, guid: f89d035a6b905f84d824affd5ee3f3f9,
+  _stateToTransistion: {fileID: 11400000, guid: e8ffba580b1ef3c4cbab49f067aa73fb,
     type: 2}
