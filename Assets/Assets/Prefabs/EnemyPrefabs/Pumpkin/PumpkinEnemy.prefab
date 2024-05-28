@@ -202,6 +202,8 @@ MonoBehaviour:
   canMove: 1
   canDashCancel: 0
   animator: {fileID: 3007280060107541030}
+  moveToPos: {x: 0, y: 0, z: 0}
+  afterAttack: 0
   knockBackDuration: 1
 --- !u!114 &8210119429239147033
 MonoBehaviour:
@@ -233,7 +235,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1.37, z: 0}
 --- !u!195 &3434256726371542270
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -401,12 +403,12 @@ PrefabInstance:
     - target: {fileID: 4297251417327682383, guid: 765f6f0681af49946a786be255c5a0c0,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4297251417327682383, guid: 765f6f0681af49946a786be255c5a0c0,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4297251417327682383, guid: 765f6f0681af49946a786be255c5a0c0,
         type: 3}
@@ -446,12 +448,12 @@ PrefabInstance:
     - target: {fileID: 4297251417327682383, guid: 765f6f0681af49946a786be255c5a0c0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 113
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4297251417327682383, guid: 765f6f0681af49946a786be255c5a0c0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 305
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 4297251417327682383, guid: 765f6f0681af49946a786be255c5a0c0,
         type: 3}

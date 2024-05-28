@@ -58,23 +58,36 @@ public class EnemyAttackState : State
             _controller.Transistion(_stateToTransistion);
             return;
         }
+        if (_movement.afterAttack)
+        {
+            _movement.SetDestinationTo(_target.position.RemoveY());
+            _movement.UpdateMoveTo();
+            
+        }
         
         if (_attackSpeed > _time)
         {
-            _time += Time.deltaTime;
             
+            
+            _time += Time.deltaTime;
+            _movement.moveToPos = _target.position.RemoveY();
             return;
         }
+
+       
+        
         
         //turn enemy in direction of player
         
         _movement.RotatePlayer((_target.position-_movement.transform.position));
         if (_attackRange >= Vector3.Distance(_controller.transform.position.RemoveY(), _target.position.RemoveY()))
         {
+            _movement.afterAttack = false;
             _attackModule.Attack(_animator);
             if (recover)
             {
                 _animator.SetTrigger("Recover");
+                
             }
             
             _time = 0;
@@ -84,7 +97,6 @@ public class EnemyAttackState : State
             _movement.SetDestinationTo(_target.position.RemoveY());
             _movement.UpdateMoveTo();
         }
-        
     }
     
     

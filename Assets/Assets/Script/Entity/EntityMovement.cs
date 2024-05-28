@@ -75,6 +75,17 @@ public class EntityMovement : MonoBehaviour
        movDir.y = 0;
        Move(movDir, movementStats.speed * Time.deltaTime);
     }
+
+    [HideInInspector]
+    public Vector3 moveToPos;
+
+    public bool afterAttack;
+    public void UpdateMove()
+    {
+       afterAttack = true;
+       
+       Debug.LogWarning("YEs");
+    }
     
     public void Move(Vector3 moveDir, float speed)
     {

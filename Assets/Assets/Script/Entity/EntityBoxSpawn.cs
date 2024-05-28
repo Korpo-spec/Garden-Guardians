@@ -80,7 +80,7 @@ public class EntityBoxSpawn : MonoBehaviour
             Vector3 randomPos = new Vector3(Random.Range(-size.x/2, size.x/2), transform.position.y, Random.Range(-size.z/2, size.z/2)) + transform.position;
             NavMesh.SamplePosition(randomPos, out var hit, 1000, NavMesh.AllAreas);
             randomPos = hit.position;
-            randomPos.y -= 0.5f;
+            //randomPos.y -= 0.5f;
             GameObject entity = Instantiate(spawnObject.spawnObject, randomPos, Quaternion.identity);
             SubscribeToDeathEvent(entity);
             _aliveObjects.Add(entity);
