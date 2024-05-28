@@ -22,6 +22,9 @@ public class StartScreenController : MonoBehaviour
     [SerializeField] private GameObject keyBindingsOption;
     [SerializeField] private GameObject displayOptions;
     
+    // Controls Sub-Menu
+    [SerializeField] private GameObject controlsDisplay;
+    
     [SerializeField] private GameObject errorMessage;
 
     [SerializeField] private int menuLayer;
@@ -114,6 +117,19 @@ public class StartScreenController : MonoBehaviour
             ShowMenu();
         }
     }
+    
+    
+    
+    
+    // ------ Scroll display for Controls in Options ------
+    // private void OnGUI()
+    // {
+    //     Vector3 pos = controlsDisplay.transform.position;
+    //     
+    //     pos.y += Input.mouseScrollDelta.y;
+    //
+    //     controlsDisplay.transform.position = pos;
+    // }
     
     
     
