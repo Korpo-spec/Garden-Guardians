@@ -2921,6 +2921,8 @@ MonoBehaviour:
   canMove: 1
   canDashCancel: 0
   animator: {fileID: 5620315367722716929}
+  moveToPos: {x: 0, y: 0, z: 0}
+  afterAttack: 0
   knockBackDuration: 1
 --- !u!143 &964848275470532411
 CharacterController:
@@ -2939,7 +2941,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.6, z: 0}
+  m_Center: {x: 0, y: 1.47, z: 0}
 --- !u!195 &7000980803718924499
 NavMeshAgent:
   m_ObjectHideFlags: 0
