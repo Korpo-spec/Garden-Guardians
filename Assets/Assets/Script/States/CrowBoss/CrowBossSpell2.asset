@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72406571fc5980d40892201c9196edcb, type: 3}
+  m_Name: CrowBossSpell2
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  priority: 0
+  _stateToTransistion: {fileID: 11400000, guid: 95a3186a775ebbf488dc98a987fa14a7,
+    type: 2}
+  Spell2Projectiles: {fileID: 7624146811702526392, guid: 9fe8ee8aea6a1404d8feac0104d889e4,
+    type: 3}
+  newProjectiles: {fileID: 8297245437544637559, guid: 0e4457ed1fedb424eb0c7ac6cb8d53d9,
+    type: 3}
+  spawnPos: []
+  _target: {fileID: 0}

@@ -152,11 +152,9 @@ public class StateController : MonoBehaviour
 
     public void AnimationEvent(string eventName)
     {
-       
-        
         foreach (var state in currentState) 
         {
-                state.OnAnimatorEvent(eventName);
+            state.OnAnimatorEvent(eventName);
         }
         
         
@@ -172,5 +170,29 @@ public class StateController : MonoBehaviour
     public void TransitionToAttack()
     {
         Transistion(EnemyAttackState);
+    }
+
+    [HideInInspector] public CrowBossSpell1 CrowBossSpell1 ;
+
+    public void _CrowBossSpell1()
+    {
+        StartCoroutine(CrowBossSpell1.SpawnProjectiles());
+        
+    }[HideInInspector] public CrowBossSpell2 CrowBossSpell2 ;
+
+    public void _CrowBossSpell2()
+    {
+        StartCoroutine(CrowBossSpell2.SpawnProjectiles());
+    }
+    public void slowDownAnimation()
+    {
+        var animator = GetComponent<Animator>();
+        animator.speed = 0.2f;
+    }
+
+    public void NormalAnimationSpeed()
+    {
+        var animator = GetComponent<Animator>();
+        animator.speed = 1f;
     }
 }

@@ -82,7 +82,6 @@ public class WeaponButton : MonoBehaviour
     }
     private void OnUpdateMaterialStack(object sender,InventorySlot.InventoryStackChangeArgs e)
     {
-        Debug.Log("Changed");
         CheckIfCanGet();
     }
 
