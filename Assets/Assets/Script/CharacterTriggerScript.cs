@@ -74,9 +74,5 @@ public class CharacterTriggerScript : MonoBehaviour
         {
             collider.enabled = false;
         }
-        else if(!collider.enabled)
-        {
-            collider.enabled = true;
-        }
     }
 }
