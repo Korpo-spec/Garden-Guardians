@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Exit game
+  m_text: 'Quit to desktop
 
 '
   m_isRightToLeft: 0
@@ -4101,7 +4101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4810281084357473236
 Transform:
   m_ObjectHideFlags: 0
@@ -4975,6 +4975,7 @@ MonoBehaviour:
   craftingOverview: {fileID: 4810281086232870084}
   inventoryButton: {fileID: 4810281084653187150}
   pauseMenu: {fileID: 4810281084357473235}
+  pauseSubMenu: {fileID: 1427049518695274913}
   craftingMenu: {fileID: 4810281086128508193}
   mainHandObject: {fileID: 4810281085169314146}
   offHandObject: {fileID: 4810281085167882551}
@@ -6931,7 +6932,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4810281084858941332
 RectTransform:
   m_ObjectHideFlags: 0

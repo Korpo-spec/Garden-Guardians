@@ -31,6 +31,7 @@ public class CanvasScript : MonoBehaviour
     
     // Pause Menu
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject pauseSubMenu;
     
     // Crafting Menu
     [SerializeField] private GameObject craftingMenu;
@@ -137,13 +138,13 @@ public class CanvasScript : MonoBehaviour
     public void BackToPause(GameObject gameObjectToClose)
     {
         gameObjectToClose.SetActive(false);
-        pauseMenu.SetActive(true);
+        pauseSubMenu.SetActive(true);
     }
     
     //Opens the Sub Menu that's selected when setting it in a button action
     public void OpenSubMenu(GameObject subMenu)
     {
-        pauseMenu.SetActive(false);
+        pauseSubMenu.SetActive(false);
         subMenu.SetActive(true);
     }
 
