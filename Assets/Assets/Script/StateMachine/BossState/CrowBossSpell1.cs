@@ -56,6 +56,11 @@ public class CrowBossSpell1 : State
 
     }
 
+    public override void OnAnimatorEvent(string eventName)
+    {
+        _controller.StartCoroutine(SpawnProjectiles());
+    }
+
     public override void OnExit()
     {
         //_animator.SetTrigger("Recover");

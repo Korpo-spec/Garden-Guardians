@@ -13847,6 +13847,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 628604204669265699, guid: bfe03260ef6262e4290539448e181343,
+        type: 3}
+      propertyPath: _weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f64ef4666d0221428acb16f81b1e377,
+        type: 2}
+    - target: {fileID: 628604204669265699, guid: bfe03260ef6262e4290539448e181343,
+        type: 3}
+      propertyPath: comboIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 628604204669265699, guid: bfe03260ef6262e4290539448e181343,
+        type: 3}
+      propertyPath: activateDebug
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 927689100175718382, guid: bfe03260ef6262e4290539448e181343,
         type: 3}
       propertyPath: m_Enabled

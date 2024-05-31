@@ -135,7 +135,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     CritChance: 0
   weaponEffect: {fileID: 11400000, guid: d87284aedce494547bee37ec1600f377, type: 2}
-  specialAttack: {fileID: 0}
+  specialAttack: {fileID: 11400000, guid: 47c8a4da89b1f064cb62f35d5776ecbc, type: 2}
   particleSystem: {fileID: 0}
   SaveAttackInfo: 0
   ResetAttackInfo: 0

@@ -52,7 +52,13 @@ public class PlayerController : MonoBehaviour
          _inputHandler.isDashing = false;
          _movement.Dash();
       }
-      attackModule.SpecialAttack(animator, _inputHandler.specialButtonPressed);
+
+      if (! attackModule.SpecialAttack(animator, _inputHandler.specialButtonPressed,CalculateMoveDirFromMouseVector3()))
+      {
+         return;
+      }
+
+     
       if (_inputHandler.attackButtonPressed && !_inputHandler.specialButtonPressed)
       {
          CalculateMoveDirFromMouse();
@@ -95,5 +101,29 @@ public class PlayerController : MonoBehaviour
          _inputHandler.moveDir = direction.normalized;
          Debug.DrawLine(transform.position,_inputHandler.moveDir,Color.black,5);
       }
+   }
+   private Vector3 CalculateMoveDirFromMouseVector3()
+   {
+
+      var cam = Camera.main;
+      Vector3 point = Input.mousePosition;
+      point.z = 100;
+      //Vector2 mousePos = new Vector2(Input.mousePosition.x,Input.mousePosition.y);
+      Plane plane = new Plane(new Vector3(0, 1, 0), transform.position);
+      
+
+
+
+      Ray ray = cam.ScreenPointToRay(point);
+      if (plane.Raycast(ray, out float enter))
+      {
+         
+         var direction = ray.GetPoint(enter)-transform.position;
+         direction = direction.normalized;
+         direction = new Vector3(direction.x, 0, direction.z);
+         return direction.normalized;
+         Debug.DrawLine(transform.position,_inputHandler.moveDir,Color.black,5);
+      }
+      return Vector3.zero;
    }
 }

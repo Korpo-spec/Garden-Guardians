@@ -10,6 +10,7 @@ public class SpecialAttack : ScriptableObject
     [SerializeField] protected TransformHealthDictionary transformHealthDictionary;
     [SerializeField] protected LayerMask mask;
     [SerializeField] protected AnimationClip animationClip;
+    [SerializeField] public bool canMove = true;
 
     public virtual void OnPressed(Animator animator)
     {
