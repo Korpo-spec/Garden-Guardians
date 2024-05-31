@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d099a5c2d6ad8254287811f908be4a92, type: 3}
+  m_Name: CrowBossMeele 1
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  priority: 0
+  _attackRange: 10
+  _attackSpeed: 2
+  _stateToTransistion1: {fileID: 11400000, guid: a4dcf952cdf4ff745a6b1abf611826ce,
+    type: 2}
+  _stateToTransistion2: {fileID: 11400000, guid: 3573b78ef2c5eaf4a90e5b70fbd26d30,
+    type: 2}
+  _attackModule:
+    weapon: {fileID: 11400000, guid: 86b86ed9c351ee948a7ed90a0d4fc5d3, type: 2}
+    comboConnectTime: 0.1
+    comboTimeOutTime: 1.5
+    comboState: 0
+    timeSinceLastAttack: 0
+  _target: {fileID: 0}
+  recover: 0

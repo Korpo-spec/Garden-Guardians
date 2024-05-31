@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 118098a697490a04697b3596a481a7c9, type: 3}
-  m_Name: PlayerUM
+  m_Script: {fileID: 11500000, guid: d43275d2fa546b04188c5fd85839ea46, type: 3}
+  m_Name: CrowBossMovement
   m_EditorClassIdentifier: 
-  _universalMaterial: 465
-  _specialUniversalMaterial: 0
-  ClearMaterials: 0
+  speed: 2
+  sprintSpeed: 0
+  dashSpeed: 10
+  dashTime: 0.2

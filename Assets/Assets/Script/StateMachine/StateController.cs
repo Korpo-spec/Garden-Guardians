@@ -36,7 +36,10 @@ public class StateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+         Debug.Log(currentState[0]);   
+        }
         if (ignoreFirstUpdate)
         {
             ignoreFirstUpdate = false;
@@ -195,4 +198,7 @@ public class StateController : MonoBehaviour
         var animator = GetComponent<Animator>();
         animator.speed = 1f;
     }
+
+    [HideInInspector]
+    public int Count;
 }

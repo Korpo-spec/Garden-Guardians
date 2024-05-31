@@ -3160,7 +3160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatorLayer: 1
-  _weapon: {fileID: 11400000, guid: ac6040671d274ac468e769e263104f16, type: 2}
+  _weapon: {fileID: 11400000, guid: 86b86ed9c351ee948a7ed90a0d4fc5d3, type: 2}
   targetDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325, type: 2}
   mainHand: {fileID: 8821503117234200969}
   _health: {fileID: 0}
@@ -3374,7 +3374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299e39cde4500dd409fd5d6eda70da3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _attackWindup: 0.3
+  _attackWindup: 0.5
   meshParent: {fileID: 258459690522991441}
 --- !u!114 &1754437884851940947
 MonoBehaviour:

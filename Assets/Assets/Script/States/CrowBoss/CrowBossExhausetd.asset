@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c7d2260c33ed9a4789aec72fd5624ad, type: 3}
-  m_Name: CrowBossSpell1
+  m_Script: {fileID: 11500000, guid: 9df81b1b821a8b3459855b17fcf72ca6, type: 3}
+  m_Name: CrowBossExhausetd
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   priority: 0
   _stateToTransistion: {fileID: 11400000, guid: 95a3186a775ebbf488dc98a987fa14a7,
     type: 2}
-  Spell1Projectiles: {fileID: 7624146811702526392, guid: 9fe8ee8aea6a1404d8feac0104d889e4,
-    type: 3}
-  _target: {fileID: 0}

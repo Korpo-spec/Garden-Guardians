@@ -27,14 +27,7 @@ public class CrowBossSpell1 : State
         _animator.Play("CrowBossSpell1");
     }
 
-    public override void UpdateState()
-    {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            _controller.Transistion(_stateToTransistion);
-            Debug.Log("Transition");
-        }
-    }
+    
     [SerializeField] private Transform _target;
     private EntityMovement _movement;
     public IEnumerator SpawnProjectiles()
@@ -51,9 +44,14 @@ public class CrowBossSpell1 : State
             Instantiate(Spell1Projectiles,spawnPos[i].position , spawnPos[i].transform.rotation);
             yield return new WaitForSeconds(0.1f);
         }
-
+        
+        
+        _controller.Transistion(_stateToTransistion);
+        
         yield return new WaitForEndOfFrame();
 
+        
+        
     }
 
     public override void OnAnimatorEvent(string eventName)

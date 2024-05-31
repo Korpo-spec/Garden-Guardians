@@ -33,10 +33,7 @@ public class CrowBossSpell2 : State
 
     public override void UpdateState()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            _controller.Transistion(_stateToTransistion);
-        }
+       base.UpdateState();
     }
     
     [SerializeField] private Transform _target;
@@ -57,7 +54,7 @@ public class CrowBossSpell2 : State
             yield return new WaitForSeconds(0.3f);
         }
         
-
+        _controller.Transistion(_stateToTransistion);
 
     }
 
@@ -69,7 +66,7 @@ public class CrowBossSpell2 : State
 
     public override void OnExit()
     {
-        _animator.SetTrigger("Recover");
+        //u_animator.SetTrigger("Recover");
         base.OnExit(); 
     }
 }

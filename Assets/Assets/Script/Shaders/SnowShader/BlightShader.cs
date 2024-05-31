@@ -74,7 +74,6 @@ public class BlightShader : MonoBehaviour
         {
             AmountValue += 1 / (6 / 0.1f);
             material.SetFloat(SnowAmount,AmountValue+material.GetFloat(SnowAmount));
-            Debug.Log(material.GetFloat(SnowAmount));
             yield return new WaitForSeconds(0.1f);
         }
         if (gameObject.layer==3)

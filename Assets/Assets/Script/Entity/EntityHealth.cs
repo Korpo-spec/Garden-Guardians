@@ -104,7 +104,7 @@ namespace Script.Entity
             if (isCrit){ amount *= 2;}
             amount -= Defense;
             if (amount<0) { amount = 0;}
-
+            entityHealthEvents.takeDamage.Invoke(new DamageEventArg((int)amount,isCrit,attacker));
             if (Thorn)
             {
                 attacker.GetComponent<EffectManager>().AddEffect(Thorn);
@@ -125,7 +125,7 @@ namespace Script.Entity
                 // if (intVariable)
                 //     intVariable.Value -= amount;
                 
-            entityHealthEvents.takeDamage.Invoke(new DamageEventArg((int)amount,isCrit,attacker));
+            
             //_animator.SetTrigger(Hurt);
         }
 

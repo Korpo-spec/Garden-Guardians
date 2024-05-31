@@ -19,5 +19,12 @@ MonoBehaviour:
     m_Bits: 0
   _radius: 0
   _factionToAttack: 0
-  _stateToTransistion: {fileID: 11400000, guid: a4dcf952cdf4ff745a6b1abf611826ce,
-    type: 2}
+  Exhausted: {fileID: 11400000, guid: a992206cb56e9c34b8ca51bb699a62df, type: 2}
+  Spell1: {fileID: 11400000, guid: a4dcf952cdf4ff745a6b1abf611826ce, type: 2}
+  Spell2: {fileID: 11400000, guid: 3573b78ef2c5eaf4a90e5b70fbd26d30, type: 2}
+  Meele: {fileID: 11400000, guid: ba00aa8266d4b964ea86cc2ad118251c, type: 2}
+  _attackRange: 10
+  _attackSpeed: 0
+  _stateToTransistion1: {fileID: 0}
+  _stateToTransistion2: {fileID: 0}
+  _target: {fileID: 0}

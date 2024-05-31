@@ -5,76 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Lower knockback">
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/CrowBossAnimator.overrideController" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/CrowBossAnimator.overrideController.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/CrowBossMeleeAttackChain.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/CrowBossMeleeAttackChain.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossChargeMagic.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossChargeMagic.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossInfectGround.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossInfectGround.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossSpell2Projectile.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossSpell2Projectile.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossStaffSlam.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossStaffSlam.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossMeleeAttackChain.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossMeleeAttackChain.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSpell1.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSpell1.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSpell2.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSpell2.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSweep.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSweep.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowwBossSpell3.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowwBossSpell3.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/Standing 1H Magic Attack 02.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/Standing 1H Magic Attack 02.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/Standing 1H Magic Attack 03.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/Standing 1H Magic Attack 03.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/Sword And Shield Slash.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/Sword And Shield Slash.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/CrowBoss.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/CrowBoss.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossExhausted.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossExhausted.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossIdle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossIdle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell1.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell3.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossIdle.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossIdle.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossSpell1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossSpell1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/GetStaffPosition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/GetStaffPosition.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossExhausted.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossExhausted.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/Kneeling Inspecting.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/Kneeling Inspecting.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/CrowBossEffects.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/CrowBossEffects.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossExhausetd.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossExhausetd.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossMeele 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossMeele 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/EnemyAttack/CrowAttacks/CrowBossMeele.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/EnemyAttack/CrowAttacks/CrowBossMeele.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/stats/Shell/CrowBossMovement.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/stats/Shell/CrowBossMovement.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/CrowBossAnimator.overrideController" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/CrowBossAnimator.overrideController" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/BossChargeMagic.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/BossChargeMagic.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/CrowBossMeleeAttackChain.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/Import/CrowBossMeleeAttackChain.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Material/InfectedMaterials/InfectedGrass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Material/InfectedMaterials/InfectedGrass.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/Crow/CrowEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/Crow/CrowEnemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/Crow/CrowProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/Crow/CrowProjectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/Infectedprefabs/InfectedGround(Dangerous).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/Infectedprefabs/InfectedGround(Dangerous).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/Infectedprefabs/InfectedGround(Decorative).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Level/Props/Infectedprefabs/InfectedGround(Decorative).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerOverrideController.overrideController" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerOverrideController.overrideController" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossChargeMagic.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossChargeMagic.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSpell1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSpell1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSweep.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSweep.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/CrowBoss.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/CrowBoss.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityHealth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Shaders/SnowShader/BlightShader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Shaders/SnowShader/BlightShader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossExhausted.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossExhausted.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossIdle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossIdle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell3.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/StateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/StateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/HSFiles/Materials/Crater40bcg.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/HSFiles/Materials/Crater40bcg.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/HSFiles/Materials/Noise43cg.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/HSFiles/Materials/Noise43cg.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/HSFiles/Materials/Trail13cg.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/HSFiles/Materials/Trail13cg.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/HSFiles/Materials/Trail36bcg.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/HSFiles/Materials/Trail36bcg.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/Magic effects pack/Materials/Flash2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/Magic effects pack/Materials/Flash2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/Magic effects pack/Materials/Mask1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/Magic effects pack/Materials/Mask1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossIdle.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossIdle.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossSpell1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossSpell1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/UMs/PlayerUM.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/UMs/PlayerUM.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic hitCombo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic hitCombo.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,10 +144,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="66920">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="66920" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -242,6 +210,7 @@
       <workItem from="1716380280730" duration="1532000" />
       <workItem from="1716821722270" duration="1493000" />
       <workItem from="1717058530575" duration="14950000" />
+      <workItem from="1717147068516" duration="9863000" />
     </task>
     <task id="LOCAL−00001" summary="Combat animations done, polish needed">
       <created>1712236394823</created>
