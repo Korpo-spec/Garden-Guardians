@@ -90,7 +90,7 @@ public class StartScreenController : MonoBehaviour
 
     public void NewGamePressed()
     {
-        SceneManager.LoadScene("SpelTest");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void ShowErrorMessage()
