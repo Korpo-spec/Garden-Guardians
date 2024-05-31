@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Script.PlayerMovement;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CanvasScript : MonoBehaviour
@@ -30,6 +31,7 @@ public class CanvasScript : MonoBehaviour
     
     // Pause Menu
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject pauseSubMenu;
     
     // Crafting Menu
     [SerializeField] private GameObject craftingMenu;
@@ -103,13 +105,11 @@ public class CanvasScript : MonoBehaviour
         {
             if (pauseMenu.activeSelf == false)
             {
-                pauseMenu.SetActive(true);
-                hud.SetActive(false);
+                OpenPauseMenu();
             }
             else
             {
-                pauseMenu.SetActive(false);
-                hud.SetActive(true);
+                CloseMenu();
             }
         }
     }
@@ -119,12 +119,43 @@ public class CanvasScript : MonoBehaviour
     // Closes active menu and reactivates HUD on Button Press
     public void CloseMenu()
     {
-        for (int i = 0; i < transform.childCount; i++)
+        /*for (int i = 0; i < transform.childCount; i++)
         {
             transform.GetChild(i).gameObject.SetActive(false);
-        }
-        
+        }*/
+        pauseMenu.SetActive(false);
         hud.SetActive(true);
+    }
+    
+    //Opens the pause menu and disables the HUD
+    public void OpenPauseMenu()
+    {
+        pauseMenu.SetActive(true);
+        hud.SetActive(false);
+    }
+    
+    //Goes back to Pause Menu from the Sub Menu selected when setting it in a button action
+    public void BackToPause(GameObject gameObjectToClose)
+    {
+        gameObjectToClose.SetActive(false);
+        pauseSubMenu.SetActive(true);
+    }
+    
+    //Opens the Sub Menu that's selected when setting it in a button action
+    public void OpenSubMenu(GameObject subMenu)
+    {
+        pauseSubMenu.SetActive(false);
+        subMenu.SetActive(true);
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 
     
