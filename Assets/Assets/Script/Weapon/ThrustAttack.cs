@@ -20,7 +20,7 @@ public class ThrustAttack : SpecialAttack
         _entityMovement = animator.GetComponent<EntityMovement>();
         _entityMovement.canMove = false;
         startpoint = animator.transform;
-        //_activeParticle = Instantiate(attackInfo.slashEffect, animator.rootPosition + new Vector3(0,1.5f,0),Quaternion.identity, animator.transform);
+        
     }
 
     public override void OnHeld()
@@ -35,7 +35,9 @@ public class ThrustAttack : SpecialAttack
 
     public override void OnSpecialAttack()
     {
+       
         Matrix4x4 rotColliderMatrix = startpoint.localToWorldMatrix;
+        _activeParticle = Instantiate(attackInfo.slashEffect, _animator.rootPosition ,rotColliderMatrix.rotation);
         Vector3 correctionVec = new Vector3(1, 1, 1);
         //Debug.Log(Vector3.Scale(rotColliderMatrix.MultiplyPoint(_weapon.attackInfos[comboIndex].colliderInfo.center), correctionVec));
         Collider[] colliders = Physics.OverlapBox(
