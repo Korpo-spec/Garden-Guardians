@@ -92,6 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1664914816466708167}
+  - component: {fileID: 3379163811203441575}
   m_Layer: 0
   m_Name: Prefab_well1
   m_TagString: Untagged
@@ -118,6 +119,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!136 &3379163811203441575
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040455643226717309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 100
+  m_Height: 300
+  m_Direction: 1
+  m_Center: {x: 0, y: 92.42, z: 0}
 --- !u!1 &3384597486357433924
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +227,7 @@ GameObject:
   - component: {fileID: 8404514869335447058}
   - component: {fileID: 4368129983386404846}
   - component: {fileID: 6688050260784351217}
+  - component: {fileID: 1731220506132632935}
   m_Layer: 0
   m_Name: Support
   m_TagString: Untagged
@@ -284,6 +300,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1731220506132632935
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7719713668902334445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 34.6
+  m_Height: 217.26448
+  m_Direction: 1
+  m_Center: {x: 0, y: 108.63224, z: 87.8}
 --- !u!1 &8575101693732756851
 GameObject:
   m_ObjectHideFlags: 0
