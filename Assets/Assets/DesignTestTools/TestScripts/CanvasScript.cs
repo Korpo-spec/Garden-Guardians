@@ -125,6 +125,7 @@ public class CanvasScript : MonoBehaviour
         }*/
         pauseMenu.SetActive(false);
         hud.SetActive(true);
+        Time.timeScale = 1f;
     }
     
     //Opens the pause menu and disables the HUD
@@ -132,6 +133,7 @@ public class CanvasScript : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         hud.SetActive(false);
+        Time.timeScale = 0f;
     }
     
     //Goes back to Pause Menu from the Sub Menu selected when setting it in a button action

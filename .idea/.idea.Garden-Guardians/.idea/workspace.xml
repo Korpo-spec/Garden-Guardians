@@ -5,44 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Lower knockback">
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossExhausted.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossExhausted.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/Kneeling Inspecting.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/Kneeling Inspecting.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/CrowBossEffects.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Effects/CrowBossEffects.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossExhausetd.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossExhausetd.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossMeele 1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossMeele 1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/EnemyAttack/CrowAttacks/CrowBossMeele.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/EnemyAttack/CrowAttacks/CrowBossMeele.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/stats/Shell/CrowBossMovement.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/stats/Shell/CrowBossMovement.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/CrowBossAnimator.overrideController" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/CrowBossAnimator.overrideController" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerAnimController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerOverrideController.overrideController" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Art/Anim/AnimationControllers/PlayerOverrideController.overrideController" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossChargeMagic.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/BossChargeMagic.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSpell1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSpell1.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSweep.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/BossAnim/CrowBossSweep.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/CrowBoss.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/CrowBoss.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/Testing_Scenes/SebbeTest/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Entity/EntityHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/Shaders/SnowShader/BlightShader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/Shaders/SnowShader/BlightShader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossExhausted.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossExhausted.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossIdle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossIdle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/BossState/CrowBossSpell3.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/StateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/StateMachine/StateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossIdle.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossIdle.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossSpell1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/States/CrowBoss/CrowBossSpell1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/UMs/PlayerUM.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Objects/Inventory/UMs/PlayerUM.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic hitCombo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/ScriptableObjects/Weapons/Basic hitCombo.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fungus/Integrations/Playmaker/Fungus-PlayMaker.unitypackage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fungus/Integrations/Spine/Fungus-Spine.unitypackage.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestScripts/JeckPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestScripts/JeckPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
