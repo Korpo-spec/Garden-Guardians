@@ -14388,14 +14388,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771a420da4a64aa4db418bfe7b134034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosX: 0
-  startPosZ: 0
-  safePos1X: 292
-  safePos1Z: 232
-  safePos2X: 439.95
-  safePos2Z: 545.46
-  safePos3X: 90.65
-  safePos3Z: 107.71
+  PosX: 0
+  PosZ: 0
+  timeToWait: 30
 --- !u!1 &8660195584590309533
 GameObject:
   m_ObjectHideFlags: 0
