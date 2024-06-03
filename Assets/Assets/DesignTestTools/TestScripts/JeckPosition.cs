@@ -8,6 +8,10 @@ public class JeckPosition : MonoBehaviour
     [SerializeField] private float PosX;
     [SerializeField] private float PosZ;
 
+    [SerializeField] private float rotationX;
+    [SerializeField] private float rotationY;
+    [SerializeField] private float rotationZ;
+
     [SerializeField] private int timeToWait;
     public void ChangePositionJeck()
     {
@@ -18,6 +22,6 @@ public class JeckPosition : MonoBehaviour
     {
         yield return new WaitForSeconds(timeToWait);
         
-        gameObject.transform.SetLocalPositionAndRotation(new Vector3(PosX, transform.position.y, PosZ), new Quaternion(0f,0f,0f,0f));
+        gameObject.transform.SetLocalPositionAndRotation(new Vector3(PosX, transform.position.y, PosZ), new Quaternion(rotationX,rotationY,rotationZ,0f));
     }
 }
