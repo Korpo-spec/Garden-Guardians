@@ -134,7 +134,7 @@ MonoBehaviour:
   maxHealth: 0
   transformHealthDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325,
     type: 2}
-  destroyOnKill: 0
+  destroyOnKill: 1
   entityHealthEvents:
     takeDamage:
       m_PersistentCalls:
@@ -274,6 +274,9 @@ MonoBehaviour:
   currentState: []
   RangedAttackState: {fileID: 0}
   EnemyAttackState: {fileID: 0}
+  CrowBossSpell1: {fileID: 0}
+  CrowBossSpell2: {fileID: 0}
+  Count: 0
 --- !u!114 &9077210781616879553
 MonoBehaviour:
   m_ObjectHideFlags: 0
