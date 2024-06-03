@@ -13876,7 +13876,7 @@ PrefabInstance:
     - target: {fileID: 7305302783928673403, guid: bfe03260ef6262e4290539448e181343,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.64
+      value: 14.24
       objectReference: {fileID: 0}
     - target: {fileID: 7305302783928673403, guid: bfe03260ef6262e4290539448e181343,
         type: 3}
@@ -13886,7 +13886,7 @@ PrefabInstance:
     - target: {fileID: 7305302783928673403, guid: bfe03260ef6262e4290539448e181343,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.05
+      value: 45.08
       objectReference: {fileID: 0}
     - target: {fileID: 7305302783928673403, guid: bfe03260ef6262e4290539448e181343,
         type: 3}
@@ -23747,6 +23747,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2828670231418684956, guid: 78c8a8271f0eff14fb3670288e51a529,
+        type: 3}
+      propertyPath: health
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828670231418684956, guid: 78c8a8271f0eff14fb3670288e51a529,
+        type: 3}
+      propertyPath: destroyOnKill
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3007280060107541030, guid: 78c8a8271f0eff14fb3670288e51a529,
         type: 3}
       propertyPath: m_Controller
@@ -23761,22 +23771,22 @@ PrefabInstance:
     - target: {fileID: 4499251889451630318, guid: 78c8a8271f0eff14fb3670288e51a529,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.754
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4499251889451630318, guid: 78c8a8271f0eff14fb3670288e51a529,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4499251889797296814, guid: 78c8a8271f0eff14fb3670288e51a529,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.893
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4499251889797296814, guid: 78c8a8271f0eff14fb3670288e51a529,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6515043740919870930, guid: 78c8a8271f0eff14fb3670288e51a529,
         type: 3}
@@ -23786,7 +23796,7 @@ PrefabInstance:
     - target: {fileID: 6515043740919870930, guid: 78c8a8271f0eff14fb3670288e51a529,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6579016592484210769, guid: 78c8a8271f0eff14fb3670288e51a529,
         type: 3}
@@ -34452,6 +34462,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 327943996235107039, guid: 0e3509e98f43f7e41825c978768f0377,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5620315367722716929, guid: 0e3509e98f43f7e41825c978768f0377,
         type: 3}
       propertyPath: m_Enabled
@@ -34487,6 +34502,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrowBoss
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202078841241332589, guid: 0e3509e98f43f7e41825c978768f0377,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7546128762433941975, guid: 0e3509e98f43f7e41825c978768f0377,
         type: 3}
