@@ -11,6 +11,7 @@ public class FadeController : MonoBehaviour
     private void Start()
     {
         TeleportController.PlayerTeleport += PlayFade;
+        Animator.SetBool("Fade",true);
     }
     
     
