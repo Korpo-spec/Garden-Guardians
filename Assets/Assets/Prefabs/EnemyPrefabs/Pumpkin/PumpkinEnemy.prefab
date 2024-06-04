@@ -82,13 +82,13 @@ MonoBehaviour:
   DropList:
   - GameObject: {fileID: 3165748147989574631, guid: 9a34e2aceb96a0d4ea91b3a57e5fcbd0,
       type: 3}
-    dropChance: 15
+    dropChance: 10
   - GameObject: {fileID: 3165748147989574631, guid: 7fef5af57c3274447a88c6b7f19e7fe7,
       type: 3}
-    dropChance: 50
+    dropChance: 15
   - GameObject: {fileID: 3165748147989574631, guid: 9fc2686e642196543868a8c6bd85c7c5,
       type: 3}
-    dropChance: 50
+    dropChance: 15
 --- !u!114 &7467037761502590795
 MonoBehaviour:
   m_ObjectHideFlags: 0
