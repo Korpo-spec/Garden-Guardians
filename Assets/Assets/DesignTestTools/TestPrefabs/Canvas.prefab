@@ -15399,7 +15399,7 @@ PrefabInstance:
     - target: {fileID: 1857676336014073544, guid: 94db5128bfa82144981dd4d15d1dc356,
         type: 3}
       propertyPath: m_Interactable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1857676336014073545, guid: 94db5128bfa82144981dd4d15d1dc356,
         type: 3}
@@ -15428,6 +15428,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: bbe10e111e97579458a5a380dcc5712b,
         type: 3}
+    - target: {fileID: 5015793286190230235, guid: 94db5128bfa82144981dd4d15d1dc356,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6037506652079321105, guid: 94db5128bfa82144981dd4d15d1dc356,
         type: 3}
       propertyPath: m_text
@@ -15562,7 +15567,7 @@ PrefabInstance:
     - target: {fileID: 8571404299552704672, guid: 94db5128bfa82144981dd4d15d1dc356,
         type: 3}
       propertyPath: m_Interactable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94db5128bfa82144981dd4d15d1dc356, type: 3}
@@ -15712,7 +15717,7 @@ PrefabInstance:
     - target: {fileID: 1857676336014073544, guid: 94db5128bfa82144981dd4d15d1dc356,
         type: 3}
       propertyPath: m_Interactable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1857676336014073545, guid: 94db5128bfa82144981dd4d15d1dc356,
         type: 3}
@@ -15741,6 +15746,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: bbe10e111e97579458a5a380dcc5712b,
         type: 3}
+    - target: {fileID: 5015793286190230235, guid: 94db5128bfa82144981dd4d15d1dc356,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6037506652079321105, guid: 94db5128bfa82144981dd4d15d1dc356,
         type: 3}
       propertyPath: m_text
@@ -15875,7 +15885,7 @@ PrefabInstance:
     - target: {fileID: 8571404299552704672, guid: 94db5128bfa82144981dd4d15d1dc356,
         type: 3}
       propertyPath: m_Interactable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94db5128bfa82144981dd4d15d1dc356, type: 3}

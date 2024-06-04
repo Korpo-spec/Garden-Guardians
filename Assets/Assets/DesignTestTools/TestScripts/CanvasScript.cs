@@ -103,7 +103,7 @@ public class CanvasScript : MonoBehaviour
         // Activate Pause Menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (pauseMenu.activeSelf == false)
+            if (pauseMenu.activeSelf == false && craftingMenu.activeSelf == false)
             {
                 OpenPauseMenu();
             }
@@ -123,9 +123,16 @@ public class CanvasScript : MonoBehaviour
         {
             transform.GetChild(i).gameObject.SetActive(false);
         }*/
-        pauseMenu.SetActive(false);
+        if (pauseMenu.activeSelf && !craftingMenu.activeSelf)
+        {
+            pauseMenu.SetActive(false);
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            craftingMenu.SetActive(false);
+        }
         hud.SetActive(true);
-        Time.timeScale = 1f;
     }
     
     //Opens the pause menu and disables the HUD
