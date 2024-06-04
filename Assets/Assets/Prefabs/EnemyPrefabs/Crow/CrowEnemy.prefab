@@ -3048,7 +3048,7 @@ MonoBehaviour:
   DropList:
   - GameObject: {fileID: 3165748147989574631, guid: 0619488df09c81644a7b94b0d075d5e0,
       type: 3}
-    dropChance: 50
+    dropChance: 0
   - GameObject: {fileID: 3165748147989574631, guid: 9a34e2aceb96a0d4ea91b3a57e5fcbd0,
       type: 3}
     dropChance: 50
@@ -3084,6 +3084,13 @@ MonoBehaviour:
       Data3: -2085507145
       Data4: -936202425
     Path: event:/Sounds/Enemies/Boss/Crow_Misisle
+  CrowGrunt:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &7790291549551785346
 GameObject:
   m_ObjectHideFlags: 0

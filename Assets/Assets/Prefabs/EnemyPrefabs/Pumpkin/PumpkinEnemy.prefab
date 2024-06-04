@@ -82,7 +82,7 @@ MonoBehaviour:
   DropList:
   - GameObject: {fileID: 3165748147989574631, guid: 0619488df09c81644a7b94b0d075d5e0,
       type: 3}
-    dropChance: 50
+    dropChance: 0
   - GameObject: {fileID: 3165748147989574631, guid: 9a34e2aceb96a0d4ea91b3a57e5fcbd0,
       type: 3}
     dropChance: 50
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b136a30f020853947b3fe093bc9b38f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 20
   Defense: 0
   maxHealth: 0
   transformHealthDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325,
