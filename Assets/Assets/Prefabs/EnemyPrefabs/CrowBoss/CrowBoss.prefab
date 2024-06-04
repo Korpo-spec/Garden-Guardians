@@ -6317,6 +6317,7 @@ GameObject:
   - component: {fileID: 5620315367722716929}
   - component: {fileID: 8618161806249053360}
   - component: {fileID: 1754437884851940947}
+  - component: {fileID: 8366314752841569609}
   m_Layer: 6
   m_Name: CrowBoss
   m_TagString: Untagged
@@ -6601,6 +6602,32 @@ MonoBehaviour:
   - GameObject: {fileID: 3165748147989574631, guid: 9fc2686e642196543868a8c6bd85c7c5,
       type: 3}
     dropChance: 50
+--- !u!114 &8366314752841569609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7202078841241332589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08db2229a7c24d40b210a2c50e3a899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CrowSlash:
+    Guid:
+      Data1: -466605589
+      Data2: 1219099637
+      Data3: 1653958062
+      Data4: -982828871
+    Path: event:/Sounds/Enemies/Boss/Crow_Swing
+  CrowShoot:
+    Guid:
+      Data1: -1031185686
+      Data2: 1272303605
+      Data3: -2085507145
+      Data4: -936202425
+    Path: event:/Sounds/Enemies/Boss/Crow_Misisle
 --- !u!1 &7306350521949824797
 GameObject:
   m_ObjectHideFlags: 0
