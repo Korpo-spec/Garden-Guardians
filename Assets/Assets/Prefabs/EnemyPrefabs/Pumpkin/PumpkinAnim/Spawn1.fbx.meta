@@ -93,7 +93,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: polySurface1
       parentName: PumpkinEnemy(Clone)
-      position: {x: -0.0033249313, y: 1.4443535, z: -0.13447092}
+      position: {x: -0.33249313, y: 144.43535, z: -13.447092}
       rotation: {x: -7.086205e-18, y: -0.7625986, z: 7.086205e-18, w: 0.64687204}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
@@ -103,12 +103,12 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.01
-    rootMotionBoneName: 
+    globalScale: 1
+    rootMotionBoneName: Root_jnt
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c6c8ba75810387b408210cbc7fce0e88,
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e3e666e63e3c91a41966772e3b8ef326,
     type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
