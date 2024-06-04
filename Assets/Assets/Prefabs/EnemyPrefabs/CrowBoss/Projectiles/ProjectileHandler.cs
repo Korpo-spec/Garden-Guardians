@@ -10,7 +10,7 @@ public class ProjectileHandler : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Untagged"))
+        if (other.gameObject.layer==7)
         {
             var ground=Instantiate(ToSpawn, other.ClosestPoint(transform.position)+new Vector3(0,0.2f,0), quaternion.identity);
             ground.GetComponentInChildren<BlightShader>().SpawnBlightAmount();

@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0e33731-dd13-44ff-ba27-c6ddae507ece" name="Changes" comment="Lower knockback">
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Bosstrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Bosstrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Bosstrigger_.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Script/Bosstrigger_.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Garden-Guardians/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestPrefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/DesignTestTools/TestPrefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/DefaultWeaponButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponButtons/DefaultWeaponButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/Programmingprefabs/WeaponTree.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/WIP_Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/WIP_Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponTreeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Script/WeaponTree/WeaponTreeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/Projectiles/ProjectileHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/Projectiles/ProjectileHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/WIP_Scenes/GameLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/WIP_Scenes/GameLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/FBX/Bite Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/Monsters Ultimate Pack 02 Cute Series/Shell Cute Series/FBX/Bite Attack.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,9 +22,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f712b1dc50b4468388b9c5f95d0d0eaf159e00/f5/f055e6a5/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Prefabs/EnemyPrefabs/CrowBoss/Projectiles/ProjectileHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Audio/SoundScripts/SoundScripts/MScripts/AudioZoneSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Bosstrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Bosstrigger_.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Entity/EnemyCircleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/Inventory/InventorySO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Script/ScriptableObjects/VectorVariable.cs" root0="FORCE_HIGHLIGHTING" />
