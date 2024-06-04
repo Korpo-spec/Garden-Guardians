@@ -84,15 +84,16 @@ namespace Script.Entity
         public virtual void DamageUnit(float amount,bool isCrit,EntityAttack attacker)
         {
             if (isCrit){ amount *= 2;}
-            entityHealthEvents.takeDamage.Invoke(new DamageEventArg((int)amount,isCrit,attacker));
+            
             if (health - amount <= 0)
                 KillItself();
+            
             else
                 //entityHealthEvents.takeDamage.Invoke((int)amount);
 
             // if (intVariable)
             //     intVariable.Value -= amount;
-
+            entityHealthEvents.takeDamage.Invoke(new DamageEventArg((int)amount,isCrit,attacker));
             health -= amount;
             //_animator.SetTrigger(Hurt);
         }
@@ -120,6 +121,7 @@ namespace Script.Entity
             if (health - amount <= 0)
                 KillItself();
             else health -= amount;
+            entityHealthEvents.takeDamage.Invoke(new DamageEventArg((int)amount,isCrit,attacker));
                 //entityHealthEvents.takeDamage.Invoke((int)amount);
 
                 // if (intVariable)
