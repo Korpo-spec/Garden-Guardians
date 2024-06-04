@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,8 @@ public class WeaponTreeController : MonoBehaviour
    public List<WeaponButton> ThreePathButtonUpgrades;
    public List<WeaponButton> TwoPathButtonUpgrades;
    public List<WeaponButton> ButtonUpgrades;
+
+   public EventReference CraftedWeapon;
 
 
    [SerializeField] private WeaponButtonSO _activeWeaponButtonSo;
@@ -36,6 +39,9 @@ public class WeaponTreeController : MonoBehaviour
 
    private void SetNewActiveWeapon(object sender,EventArgs e)
    {
+      var instance = RuntimeManager.CreateInstance(CraftedWeapon);
+      instance.setParameterByNameWithLabel("Parameter 2", "CraftingDone");
+      instance.start();
       WeaponButton weaponButton = (WeaponButton) sender;
       ActiveWeaponButton = weaponButton._weaponButtonSo;
    }

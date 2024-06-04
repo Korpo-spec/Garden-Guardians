@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 7323099972723683562}
   - component: {fileID: 6689381677351728111}
   - component: {fileID: -6092913282706292874}
+  - component: {fileID: 4506083445104012560}
   m_Layer: 5
   m_Name: WeaponTree
   m_TagString: Untagged
@@ -484,6 +485,13 @@ MonoBehaviour:
   - {fileID: 4778320792277513104}
   - {fileID: 8158291439367770603}
   - {fileID: 3270868373412292088}
+  CraftedWeapon:
+    Guid:
+      Data1: 771102924
+      Data2: 1245702191
+      Data3: -2075453010
+      Data4: -2077969117
+    Path: event:/Sounds/Character/Crafting
   _activeWeaponButtonSo: {fileID: 11400000, guid: af445eba6fb324041a3f49b19be85b04,
     type: 2}
   ThreePath: {fileID: 8206887545774845850}
@@ -503,6 +511,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerInventory: {fileID: 11400000, guid: 17bf045369c8ed0458855753c8358783, type: 2}
   AmountText: {fileID: 387476274098556086}
+--- !u!114 &4506083445104012560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7323099972723683560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 771102924
+      Data2: 1245702191
+      Data3: -2075453010
+      Data4: -2077969117
+    Path: event:/Sounds/Character/Crafting
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &7323099972932329582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,6 +1297,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef6127f85764094bac483644ba8b1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8571404299552704686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4820777488475794199, guid: b0785f7f55459a843b18a15865e888e4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3753021698020271033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6528781271334732606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8571404299552704686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1075599317
+      Data2: 1269926196
+      Data3: -1587342176
+      Data4: -1439711960
+    Path: event:/UI/MenuHover
+  Event: 
+  PlayEvent: 17
+  StopEvent: 18
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!224 &8571404300006413587 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4820777488931600042, guid: b0785f7f55459a843b18a15865e888e4,

@@ -2569,6 +2569,7 @@ GameObject:
   - component: {fileID: 1075092961102778490}
   - component: {fileID: 4084020568534855145}
   - component: {fileID: 9163706218283501534}
+  - component: {fileID: 6964789312494908534}
   m_Layer: 5
   m_Name: OptionsButton
   m_TagString: Untagged
@@ -2657,8 +2658,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.5294118, g: 0.52156866, b: 0.52156866, a: 1}
+    m_PressedColor: {r: 0.24705882, g: 0.23921569, b: 0.23921569, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2691,6 +2692,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6964789312494908534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3351592136402168116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1075599317
+      Data2: 1269926196
+      Data3: -1587342176
+      Data4: -1439711960
+    Path: event:/UI/MenuHover
+  Event: 
+  PlayEvent: 17
+  StopEvent: 18
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &3477042673617775109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3632,6 +3664,7 @@ GameObject:
   - component: {fileID: 4797679852834233022}
   - component: {fileID: 6715625806304515513}
   - component: {fileID: 6992202351571751435}
+  - component: {fileID: 7656373550454818221}
   m_Layer: 5
   m_Name: ControlsButton
   m_TagString: Untagged
@@ -3720,8 +3753,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.5294118, g: 0.52156866, b: 0.52156866, a: 1}
+    m_PressedColor: {r: 0.24705882, g: 0.23921569, b: 0.23921569, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -3754,6 +3787,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7656373550454818221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4699545730082894109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1075599317
+      Data2: 1269926196
+      Data3: -1587342176
+      Data4: -1439711960
+    Path: event:/UI/MenuHover
+  Event: 
+  PlayEvent: 17
+  StopEvent: 18
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &4810281084262682667
 GameObject:
   m_ObjectHideFlags: 0
@@ -12478,6 +12542,7 @@ GameObject:
   - component: {fileID: 331881602676913919}
   - component: {fileID: 2991821661087721340}
   - component: {fileID: 5769310207832001890}
+  - component: {fileID: 1189774041885511030}
   m_Layer: 5
   m_Name: ExitGameButton
   m_TagString: Untagged
@@ -12566,8 +12631,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.5294118, g: 0.52156866, b: 0.52156866, a: 1}
+    m_PressedColor: {r: 0.24705882, g: 0.23921569, b: 0.23921569, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -12600,6 +12665,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1189774041885511030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872808121133841838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1075599317
+      Data2: 1269926196
+      Data3: -1587342176
+      Data4: -1439711960
+    Path: event:/UI/MenuHover
+  Event: 
+  PlayEvent: 17
+  StopEvent: 18
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &4889795346903966324
 GameObject:
   m_ObjectHideFlags: 0
@@ -12958,6 +13054,7 @@ GameObject:
   - component: {fileID: 8087600139749146432}
   - component: {fileID: 2576417062808622569}
   - component: {fileID: 1925005235695361465}
+  - component: {fileID: 7246651260820384868}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -13046,8 +13143,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.5283019, g: 0.5208259, b: 0.5208259, a: 1}
+    m_PressedColor: {r: 0.24528301, g: 0.23949803, b: 0.23949803, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -13080,6 +13177,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7246651260820384868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5395581077011790527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1075599317
+      Data2: 1269926196
+      Data3: -1587342176
+      Data4: -1439711960
+    Path: event:/UI/MenuHover
+  Event: 
+  PlayEvent: 17
+  StopEvent: 18
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &5788264979136782413
 GameObject:
   m_ObjectHideFlags: 0
@@ -13958,6 +14086,7 @@ GameObject:
   - component: {fileID: 1168014260734791048}
   - component: {fileID: 2654259385922751409}
   - component: {fileID: 275583046563959021}
+  - component: {fileID: 7128388528132360283}
   m_Layer: 5
   m_Name: QuitToMenuButton
   m_TagString: Untagged
@@ -14046,8 +14175,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.5294118, g: 0.52156866, b: 0.52156866, a: 1}
+    m_PressedColor: {r: 0.24705882, g: 0.23921569, b: 0.23921569, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -14080,6 +14209,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7128388528132360283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6751478911291421533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1075599317
+      Data2: 1269926196
+      Data3: -1587342176
+      Data4: -1439711960
+    Path: event:/UI/MenuHover
+  Event: 
+  PlayEvent: 17
+  StopEvent: 18
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6923061975466395147
 GameObject:
   m_ObjectHideFlags: 0

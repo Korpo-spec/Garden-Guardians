@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 9077210781616879553}
   - component: {fileID: 3767907410754190050}
   - component: {fileID: 3007280060107541030}
+  - component: {fileID: 1162618461095555404}
   m_Layer: 0
   m_Name: PumpkinEnemy
   m_TagString: Untagged
@@ -326,6 +327,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1162618461095555404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515043740919870930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a6c7732a56f8484bb9a84a10215057a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PumpkinUnborrow:
+    Guid:
+      Data1: 226627101
+      Data2: 1219008210
+      Data3: -912462173
+      Data4: -1660551279
+    Path: event:/Sounds/Enemies/Pumpkin_Enemy_Unburrow
+  PumpkinAttack:
+    Guid:
+      Data1: -895546613
+      Data2: 1268243196
+      Data3: -287836746
+      Data4: 1917149810
+    Path: event:/Sounds/Enemies/Pumpkin_Damage_Player
 --- !u!1001 &914342963550650957
 PrefabInstance:
   m_ObjectHideFlags: 0
