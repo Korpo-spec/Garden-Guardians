@@ -11830,6 +11830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorLayer: 1
   _weapon: {fileID: 11400000, guid: 5f64ef4666d0221428acb16f81b1e377, type: 2}
+  _defaultWeapon: {fileID: 11400000, guid: 21ba586f2fb26cb4e996ab530f1a7f79, type: 2}
   targetDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325, type: 2}
   mainHand: {fileID: 1934726099402102974}
   _health: {fileID: 0}
