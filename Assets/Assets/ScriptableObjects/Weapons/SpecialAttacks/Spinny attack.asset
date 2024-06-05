@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Spinny attack
   m_EditorClassIdentifier: 
   attackInfo:
-    damage: 5
+    damage: 2
     knockBack: 0
     colliderInfo:
       center: {x: 0, y: 0, z: 0}
@@ -32,10 +32,13 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    CritChance: 0
   transformHealthDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325,
     type: 2}
   mask:
     serializedVersion: 2
     m_Bits: 64
+  animationClip: {fileID: 0}
+  canMove: 1
   radius: 3
-  attackSpeed: 0.1
+  attackSpeed: 0.2
