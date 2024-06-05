@@ -7,7 +7,7 @@ public class AudioTriggerToggle : ScriptableObject
     protected bool toggle;
 
     public void Toggle(string emitter)
-    {
-        AudioManagerEvents.TriggerAudio(emitter, toggle);
+    {AudioManagerEvents.TriggerAudio(emitter, toggle);
+        
     }
 }
