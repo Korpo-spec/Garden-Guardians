@@ -1512,6 +1512,7 @@ GameObject:
   - component: {fileID: 3767907410754190050}
   - component: {fileID: 3007280060107541030}
   - component: {fileID: 1162618461095555404}
+  - component: {fileID: 6740630755239648172}
   m_Layer: 6
   m_Name: PumpkinEnemy
   m_TagString: Untagged
@@ -1844,6 +1845,19 @@ MonoBehaviour:
       Data3: -287836746
       Data4: 1917149810
     Path: event:/Sounds/Enemies/Pumpkin_Damage_Player
+--- !u!114 &6740630755239648172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515043740919870930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6980d498dc6c0f8478823c3f5410501a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthbar: {fileID: 8362783722578709711}
 --- !u!1 &6530929458755478297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,22 +2639,22 @@ PrefabInstance:
     - target: {fileID: 3657182200959332579, guid: 765f6f0681af49946a786be255c5a0c0,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.893
       objectReference: {fileID: 0}
     - target: {fileID: 3657182200959332579, guid: 765f6f0681af49946a786be255c5a0c0,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3657182201119014051, guid: 765f6f0681af49946a786be255c5a0c0,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.754
       objectReference: {fileID: 0}
     - target: {fileID: 3657182201119014051, guid: 765f6f0681af49946a786be255c5a0c0,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4297251417327682383, guid: 765f6f0681af49946a786be255c5a0c0,
         type: 3}
@@ -2762,6 +2776,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthBarCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8700661358844808834, guid: 765f6f0681af49946a786be255c5a0c0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 765f6f0681af49946a786be255c5a0c0, type: 3}
 --- !u!224 &3968376547371172098 stripped
@@ -2782,6 +2801,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0447ea90a46dbc746bce097078aa7542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8362783722578709711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8700661358844808834, guid: 765f6f0681af49946a786be255c5a0c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 914342963550650957}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2181554047236183439
 PrefabInstance:
   m_ObjectHideFlags: 0

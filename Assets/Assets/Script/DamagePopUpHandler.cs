@@ -48,4 +48,9 @@ public class DamagePopUpHandler : MonoBehaviour
 
      
    }
+
+   public void SetHealthBarActive()
+   {
+      
+   }
 }
