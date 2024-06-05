@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Custom/AttackComboSO")]
@@ -27,11 +28,11 @@ public class AttackComboSO : ScriptableObject
     
     [SerializeField]
     [Tooltip("Save the current attackinfo as default")]
-    private bool SaveAttackInfo;
+    private bool SaveAttackInfo = false;
     
     [SerializeField]
     [Tooltip("Resets attackinfo to default")]
-    private bool ResetAttackInfo;
+    private bool ResetAttackInfo = false;
     
     
     
@@ -40,16 +41,30 @@ public class AttackComboSO : ScriptableObject
     [SerializeField]
     public ComboEffects DefaultweaponEffect;
 
-    
+    private void OnValidate()
+    {
+        if (SaveAttackInfo)
+        {
+            SaveDefaultAttackInfo();
+            SaveAttackInfo = false;
+        }
+
+        if (ResetAttackInfo)
+        {
+            ResettAttackInfo();
+            ResetAttackInfo = false;
+        }
+    }
 
     private void SaveDefaultAttackInfo()
     {
-        DefaultlAttackInfos = attackInfos;
+        DefaultlAttackInfos = (AttackInfo[])attackInfos.Clone();
         DefaultweaponEffect = weaponEffect;
-    } private void ResettAttackInfo()
+    } 
+    public void ResettAttackInfo()
     {
-        attackInfos = DefaultlAttackInfos;
-        weaponEffect = DefaultweaponEffect;
+        attackInfos = (AttackInfo[])DefaultlAttackInfos.Clone();
+        weaponEffect = Instantiate(DefaultweaponEffect);
     }
 }
 
