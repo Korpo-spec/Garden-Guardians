@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7535135778264702081}
   - component: {fileID: 7535135778264702082}
   - component: {fileID: 419520691236060651}
+  - component: {fileID: 1437117724772379420}
   m_Layer: 0
   m_Name: InfectedCorn
   m_TagString: Untagged
@@ -143,3 +144,30 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!205 &1437117724772379420
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535135778264702083}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7535135778264702080}
+  - screenRelativeHeight: 0.2538076
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7535135778264702080}
+  - screenRelativeHeight: 0.04535883
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7535135778264702080}
+  m_Enabled: 1
