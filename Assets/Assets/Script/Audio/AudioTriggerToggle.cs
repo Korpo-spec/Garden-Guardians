@@ -9,5 +9,6 @@ public class AudioTriggerToggle : ScriptableObject
     public void Toggle(string emitter)
     {
         AudioManagerEvents.TriggerAudio(emitter, toggle);
+        
     }
 }

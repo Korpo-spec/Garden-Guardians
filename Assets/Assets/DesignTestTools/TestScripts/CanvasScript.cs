@@ -159,6 +159,7 @@ public class CanvasScript : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        
         SceneManager.LoadScene("MainMenu");
     }
 

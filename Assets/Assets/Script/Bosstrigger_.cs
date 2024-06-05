@@ -8,7 +8,7 @@ public class Bosstrigger_ : MonoBehaviour
     public static event EventHandler TriggerBoss;
     public GameObject Boss;
 
-    
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,6 +16,7 @@ public class Bosstrigger_ : MonoBehaviour
         {
             TriggerBoss?.Invoke(this,null);
             Boss.gameObject.SetActive(true);
+            AudioManagerEvents.TriggerAudio("Map1", false);
         }
     }
 }

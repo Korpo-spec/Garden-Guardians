@@ -6668,11 +6668,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 892877347
-      Data2: 1207214797
-      Data3: -1360725882
-      Data4: -1296986171
-    Path: event:/Music/Menu_Music
+      Data1: 460150079
+      Data2: 1087853120
+      Data3: 861257609
+      Data4: 1952720017
+    Path: event:/Music/Menu
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -14155,6 +14155,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AudioManFinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463796060130183863, guid: 85a54c683b7927f48be5632220925256,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5463796060130183865, guid: 85a54c683b7927f48be5632220925256,
         type: 3}
