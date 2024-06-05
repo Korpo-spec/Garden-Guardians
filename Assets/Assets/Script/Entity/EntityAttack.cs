@@ -245,6 +245,7 @@ public class EntityAttack : MonoBehaviour
 
     public void ResetWeapon()
     {
+        weapon.weaponEffect.effectsApplied.Clear();
         weapon.ResettAttackInfo();
         weapon = _defaultWeapon;
     }
