@@ -23,11 +23,12 @@ public class CrowBossIdle : State
 
     private void Awake()
     {
-        _target = FindFirstObjectByType<PlayerController>().transform;
+       
     }
 
     public override void OnEnter(StateController controller)
-    {
+    { 
+        _target = FindFirstObjectByType<PlayerController>().transform;
         _controller = controller;
         
         if (_controller.Count==CountToExhasuted)

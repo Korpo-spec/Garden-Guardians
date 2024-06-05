@@ -23,7 +23,8 @@ MonoBehaviour:
     DefenseIncrease: 0
     AnimationSpeedIncrease: 0
     WeaponEffect: {fileID: 0}
-    _particleSystem: {fileID: 0}
+    _particleSystem: {fileID: 1065618375357958, guid: 6f8068e2c99ffb04b932ec74e5773db5,
+      type: 3}
     IsThorn: 0
   parents:
   - {fileID: 11400000, guid: 4b6c51521aff70f44a7c67554f7e8def, type: 2}

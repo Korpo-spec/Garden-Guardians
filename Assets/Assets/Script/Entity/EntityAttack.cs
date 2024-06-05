@@ -14,6 +14,7 @@ public class EntityAttack : MonoBehaviour
     private RuntimeAnimatorController _originalController;
     [SerializeField] private int animatorLayer = 1;
     [SerializeField] private AttackComboSO _weapon;
+    [SerializeField] private AttackComboSO _defaultWeapon;
     [SerializeField] private TransformHealthDictionary targetDictionary;
     [SerializeField] private Transform mainHand;
 
@@ -240,6 +241,13 @@ public class EntityAttack : MonoBehaviour
         Gizmos.matrix = transform.localToWorldMatrix;
         Vector3 correctionVec = new Vector3(-1, 1, -1);
         Gizmos.DrawCube(Vector3.Scale(_weapon.attackInfos[comboIndex].colliderInfo.center,correctionVec), _weapon.attackInfos[comboIndex].colliderInfo.halfsize);
+    }
+
+    public void ResetWeapon()
+    {
+        weapon.weaponEffect.effectsApplied.Clear();
+        weapon.ResettAttackInfo();
+        weapon = _defaultWeapon;
     }
 
     public void StartBlendCoroutine(IEnumerator routine)

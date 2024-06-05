@@ -22,9 +22,8 @@ MonoBehaviour:
     CritChanceIncrease: 0
     DefenseIncrease: 0
     AnimationSpeedIncrease: 0
-    WeaponEffect: {fileID: 11400000, guid: 820d1e8f633262c4296e9f6c2e6c0d3d, type: 2}
-    _particleSystem: {fileID: 1231636063597364, guid: 3aa0fab185f378240b831342bde74b26,
-      type: 3}
+    WeaponEffect: {fileID: 0}
+    _particleSystem: {fileID: 0}
     IsThorn: 0
   parents:
   - {fileID: 11400000, guid: 99735b55932cbbd4fb25b708216e2ed5, type: 2}
