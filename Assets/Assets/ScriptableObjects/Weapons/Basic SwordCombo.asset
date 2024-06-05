@@ -140,7 +140,7 @@ MonoBehaviour:
   SaveAttackInfo: 0
   ResetAttackInfo: 0
   DefaultlAttackInfos:
-  - damage: 1
+  - damage: 2
     knockBack: 0
     colliderInfo:
       center: {x: 0, y: 0.8057604, z: -0.7807358}
@@ -179,7 +179,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     CritChance: 0
-  - damage: 1
+  - damage: 2
     knockBack: 0
     colliderInfo:
       center: {x: 0, y: 0.96961045, z: -0.68042135}
@@ -218,7 +218,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     CritChance: 0
-  - damage: 1
+  - damage: 3
     knockBack: 0
     colliderInfo:
       center: {x: 0, y: 0.96961045, z: -0.68042135}
