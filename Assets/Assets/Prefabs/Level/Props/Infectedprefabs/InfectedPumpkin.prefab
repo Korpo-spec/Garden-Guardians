@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7336309745120479940}
   - component: {fileID: 8218606947977084373}
   - component: {fileID: 2737544227187871172}
+  - component: {fileID: -5887517926801531025}
   m_Layer: 0
   m_Name: InfectedPumpkin
   m_TagString: Untagged
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf240d4bfaa6d2545ad5e9b7e60cd6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 0}
 --- !u!65 &2737544227187871172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -110,3 +112,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.8095, y: 1.5942, z: 4.9702}
   m_Center: {x: 0.5520321, y: 0.6729709, z: -1.219204}
+--- !u!205 &-5887517926801531025
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9137577867009010449}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7336309745120479940}
+  - screenRelativeHeight: 0.24587826
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7336309745120479940}
+  - screenRelativeHeight: 0.050782375
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7336309745120479940}
+  m_Enabled: 1
