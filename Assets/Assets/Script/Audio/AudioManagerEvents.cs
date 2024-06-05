@@ -69,7 +69,7 @@ public class AudioManagerEvents : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         triggerAudio += OnTriggerAudio;
         triggerAudioGlobal += OnTriggerAudioGlobal;
         changeAudio += OnChangeAudio;
@@ -126,5 +126,10 @@ public class AudioManagerEvents : MonoBehaviour
                 emitter.Stop();
             }
         }
+    }
+
+    public void StopBackgrounMusic()
+    {
+        
     }
 }
