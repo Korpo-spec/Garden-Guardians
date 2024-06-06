@@ -40,6 +40,7 @@ public class PlayerAudio : ScriptableObject
     }
     public void PlayerDashAudio(GameObject jumpObj)
     {
+        Debug.Log("ass");
         RuntimeManager.PlayOneShotAttached(playerDash, jumpObj);
     }
     
