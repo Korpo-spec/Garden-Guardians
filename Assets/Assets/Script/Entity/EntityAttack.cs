@@ -244,6 +244,7 @@ public class EntityAttack : MonoBehaviour
         weapon.weaponEffect.effectsApplied.Clear();
         weapon.ResettAttackInfo();
         weapon = _defaultWeapon;
+        weapon.weaponEffect?.effectsApplied.Clear();
     }
 
     public void StartBlendCoroutine(IEnumerator routine)
