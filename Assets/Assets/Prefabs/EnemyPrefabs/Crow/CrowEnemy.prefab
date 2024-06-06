@@ -1630,7 +1630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4532240940293957736
 Transform:
   m_ObjectHideFlags: 0
@@ -2120,7 +2120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1865510019130083599
 Transform:
   m_ObjectHideFlags: 0
@@ -2239,7 +2239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1656915649815083181
 Transform:
   m_ObjectHideFlags: 0
@@ -2817,6 +2817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorLayer: 1
   _weapon: {fileID: 11400000, guid: ac6040671d274ac468e769e263104f16, type: 2}
+  _defaultWeapon: {fileID: 0}
   targetDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325, type: 2}
   mainHand: {fileID: 8821503117234200969}
   _health: {fileID: 0}
