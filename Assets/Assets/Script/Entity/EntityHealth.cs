@@ -163,6 +163,10 @@ namespace Script.Entity
             // if (intVariable)
             //     intVariable.Value += amount;
             health += amount;
+            if (health>maxHealth)
+            {
+                health = maxHealth;
+            }
         }
         
         
