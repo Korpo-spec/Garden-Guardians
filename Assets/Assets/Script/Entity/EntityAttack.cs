@@ -229,7 +229,7 @@ public class EntityAttack : MonoBehaviour
             return;
         }
         Gizmos.color = Color.red;
-        weapon.specialAttack.OnGizmos(gameObject);
+        weapon.specialAttack?.OnGizmos(gameObject);
         
         Gizmos.color = Color.green;
         
