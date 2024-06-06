@@ -63,6 +63,10 @@ namespace Script.PlayerMovement
         private float _timeSinceLastPress = 0;
         public bool SpecialAttack(Animator animator, bool pressed, Vector3 attackrot)
         {
+            if (!weapon.specialAttack)
+            {
+                return true;
+            }
             if (!pressed)
             {
                 if (_specialHeld)
