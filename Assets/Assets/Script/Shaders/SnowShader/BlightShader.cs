@@ -55,7 +55,10 @@ public class BlightShader : MonoBehaviour
         {
             AmountValue -= 1 / (6 / 0.1f);
             material.SetFloat(SnowAmount,AmountValue);
-
+            if (AmountValue<0.4f)
+            {
+                Destroy(gameObject);
+            }
             yield return new WaitForSeconds(0.1f);
         }
         if (gameObject.layer==3)
@@ -87,5 +90,10 @@ public class BlightShader : MonoBehaviour
     public void SpawnBlightAmount()
     {
         StartCoroutine(IncreaseBligt(meshRenderer.material));
+    }
+
+    public void despawnBlight()
+    {
+        StartCoroutine(DecreaseBligt(meshRenderer.material));
     }
 }

@@ -16,7 +16,7 @@ public struct WeaponUpgrade
    [SerializeField] public float AnimationSpeedIncrease;
    [SerializeField] public Effect WeaponEffect;
    [SerializeField] public GameObject _particleSystem;
-   [SerializeField] private bool IsThorn;
+   [SerializeField] public bool IsThorn;
    public static event EventHandler SetPlayervalues;
 
 
