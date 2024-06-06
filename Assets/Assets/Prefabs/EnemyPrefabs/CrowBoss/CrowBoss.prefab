@@ -5211,7 +5211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5806979704880709577
 Transform:
   m_ObjectHideFlags: 0
@@ -6361,6 +6361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorLayer: 1
   _weapon: {fileID: 11400000, guid: 86b86ed9c351ee948a7ed90a0d4fc5d3, type: 2}
+  _defaultWeapon: {fileID: 0}
   targetDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325, type: 2}
   mainHand: {fileID: 1520678782468779554}
   _health: {fileID: 0}
@@ -8036,7 +8037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1771591626554900235
 Transform:
   m_ObjectHideFlags: 0
