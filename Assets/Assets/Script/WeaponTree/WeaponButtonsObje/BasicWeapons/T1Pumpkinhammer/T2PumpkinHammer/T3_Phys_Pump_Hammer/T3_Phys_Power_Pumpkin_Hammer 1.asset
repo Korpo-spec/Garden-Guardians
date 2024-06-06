@@ -17,8 +17,8 @@ MonoBehaviour:
     numberOfItemsInStack: 1
     maxStackSize: 8
   weaponUpgrade:
-    DamageIncrease: 0
-    KnockBackIncrease: 0
+    DamageIncrease: 2
+    KnockBackIncrease: 0.5
     CritChanceIncrease: 0
     DefenseIncrease: 0
     AnimationSpeedIncrease: 0

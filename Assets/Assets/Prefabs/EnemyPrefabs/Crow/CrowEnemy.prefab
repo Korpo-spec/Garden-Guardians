@@ -2862,7 +2862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b136a30f020853947b3fe093bc9b38f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 50
   Defense: 0
   maxHealth: 0
   transformHealthDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325,
@@ -3034,6 +3034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackWindup: 0.3
   meshParent: {fileID: 258459690522991441}
+  useEmission: 1
 --- !u!114 &1754437884851940947
 MonoBehaviour:
   m_ObjectHideFlags: 0

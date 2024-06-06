@@ -18,9 +18,9 @@ MonoBehaviour:
     maxStackSize: 8
   weaponUpgrade:
     DamageIncrease: 0
-    KnockBackIncrease: 0
+    KnockBackIncrease: 0.5
     CritChanceIncrease: 0
-    DefenseIncrease: 0
+    DefenseIncrease: 1
     AnimationSpeedIncrease: 0
     WeaponEffect: {fileID: 0}
     _particleSystem: {fileID: 0}
