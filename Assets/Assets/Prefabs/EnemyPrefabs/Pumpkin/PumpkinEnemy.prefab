@@ -52,7 +52,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 15dd445456c59dd469116f861f0d732e, type: 2}
+  - {fileID: 2100000, guid: b7dcbb57096897c4fa86056cdaaf600e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1192,7 +1192,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 15dd445456c59dd469116f861f0d732e, type: 2}
+  - {fileID: 2100000, guid: b7dcbb57096897c4fa86056cdaaf600e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1556,6 +1556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorLayer: 1
   _weapon: {fileID: 11400000, guid: 87bcece14bac64c489464004e1da9377, type: 2}
+  _defaultWeapon: {fileID: 0}
   targetDictionary: {fileID: 11400000, guid: d7bcdd86b4142f1499674f7579643325, type: 2}
   mainHand: {fileID: 0}
   _health: {fileID: 0}
