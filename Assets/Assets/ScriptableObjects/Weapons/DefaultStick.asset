@@ -95,7 +95,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     CritChance: 10
-  weaponEffect: {fileID: 11400000, guid: d87284aedce494547bee37ec1600f377, type: 2}
+  weaponEffect: {fileID: 0}
   specialAttack: {fileID: 0}
   particleSystem: {fileID: 0}
   SaveAttackInfo: 0
@@ -179,5 +179,4 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     CritChance: 10
-  DefaultweaponEffect: {fileID: 11400000, guid: d87284aedce494547bee37ec1600f377,
-    type: 2}
+  DefaultweaponEffect: {fileID: 0}

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Script.Entity;
 using UnityEngine;
 
 public class TeleportController : MonoBehaviour
@@ -15,6 +16,7 @@ public class TeleportController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            other.GetComponent<EntityHealth>().IncreaseHealth(15);
             PlayerTeleport?.Invoke(this,TeleportPosition.position);
             if (resetNpcs != null)
             {
