@@ -240,6 +240,7 @@ public class EntityAttack : MonoBehaviour
 
     public void ResetWeapon()
     {
+        GetComponent<InventoryHolder>().Inventory.UniversalMaterial.ClearUniMaterials();
         weapon.weaponEffect.effectsApplied.Clear();
         weapon.ResettAttackInfo();
         weapon = _defaultWeapon;
