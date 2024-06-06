@@ -7,6 +7,7 @@ public class PrepareAttack : MonoBehaviour
 {
     [SerializeField] private float _attackWindup;
     [SerializeField] private GameObject meshParent;
+    [SerializeField] private bool useEmission = true;
     
     private Material _material;
     private Animator _animator;
@@ -44,24 +45,34 @@ public class PrepareAttack : MonoBehaviour
         _time = 0;
         _animator.speed = 0;
         _agent.isStopped = true;
+        if (useEmission)
+        {
+            _material.SetTexture("_EmissionMap", Texture2D.whiteTexture);
+            _material.SetColor("_EmissionColor", Color.black);
+            _material.SetColor("_Emissive_Color", Color.black);
+        }
         
-        _material.SetTexture("_EmissionMap", Texture2D.whiteTexture);
-        _material.SetColor("_EmissionColor", Color.black);
-        _material.SetColor("_Emissive_Color", Color.black);
 
         while (1 > _time)
         {
             _time += Time.deltaTime * (1/_attackWindup);
-            Color color = Color.Lerp(Color.black, Color.white, _time);
-            _material.SetColor("_EmissionColor", color);
-            _material.SetColor("_Emissive_Color", color);
-            _material.EnableKeyword("_EMISSION");
+            if (useEmission)
+            {
+                Color color = Color.Lerp(Color.black, Color.white, _time);
+                _material.SetColor("_EmissionColor", color);
+                _material.SetColor("_Emissive_Color", color);
+                _material.EnableKeyword("_EMISSION");
+            }
+
             yield return new WaitForEndOfFrame();
         }
         _animator.speed = 1;
-         _material.SetTexture("_EmissionMap", emissionTexture);
-        _material.SetColor("_EmissionColor", Color.black);
-        _material.SetColor("_Emissive_Color", Color.black);
+        if (useEmission)
+        {
+            _material.SetTexture("_EmissionMap", emissionTexture);
+            _material.SetColor("_EmissionColor", Color.black);
+            _material.SetColor("_Emissive_Color", Color.black);
+        }
 
     }
     

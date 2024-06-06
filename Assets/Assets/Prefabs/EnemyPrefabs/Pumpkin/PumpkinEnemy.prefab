@@ -1799,6 +1799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackWindup: 0.3
   meshParent: {fileID: 6515043740919870930}
+  useEmission: 0
 --- !u!95 &3007280060107541030
 Animator:
   serializedVersion: 5
