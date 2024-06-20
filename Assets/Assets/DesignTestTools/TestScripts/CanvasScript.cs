@@ -24,8 +24,9 @@ public class CanvasScript : MonoBehaviour
     [SerializeField] private GameObject FadeController;
     
     // Inventory
-    [SerializeField] private GameObject inventoryMenu;
+  
     [SerializeField] private GameObject equipmentNMaterials;
+    [SerializeField] private GameObject inventoryMenu;
     [SerializeField] private GameObject craftingOverview;
     [SerializeField] private Button inventoryButton;
     
@@ -61,18 +62,18 @@ public class CanvasScript : MonoBehaviour
     void Update()
     {
         // Activates inventory and deactivates HUD when inventory is open. Activates HUD when inventory closes
-        if (Input.GetKeyDown(KeyCode.Tab) && inventoryMenu.activeSelf == false)
+        if (Input.GetKeyDown(KeyCode.Alpha9) && inventoryMenu.activeSelf == false)
         {
             hud.SetActive(false);
             inventoryMenu.SetActive(true);
-
+        
             if (gameStarted == true)
             {
                 inventoryButton.Select();
                 gameStarted = false;
             }
         }
-        else if ((Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown(KeyCode.Escape)) && inventoryMenu.activeSelf == true)
+        else if ((Input.GetKeyDown(KeyCode.Alpha9) || Input.GetKeyDown(KeyCode.Escape)) && inventoryMenu.activeSelf == true)
         {
             inventoryMenu.SetActive(false);
             hud.SetActive(true);

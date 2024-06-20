@@ -18,25 +18,7 @@ public class InventoryHolder : MonoBehaviour
     {
         WeaponButton.weaponBought -= OnactivateWeapon;
     }
-
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            if (TryChangeWeapon())
-            {
-                OnactivateWeapon(null,null);
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            
-            ThrowActiveItemInInventory();
-            UpdateWeaponButton?.Invoke(this,null);
-        }
-    }
+    
 
     public void ThrowActiveItemInInventory()
     {

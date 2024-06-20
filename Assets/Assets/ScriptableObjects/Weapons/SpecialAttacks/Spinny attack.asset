@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Spinny attack
   m_EditorClassIdentifier: 
   attackInfo:
-    damage: 4
+    damage: 3
     knockBack: 0
     colliderInfo:
       center: {x: 0, y: 0, z: 0}
@@ -41,4 +41,4 @@ MonoBehaviour:
   animationClip: {fileID: 0}
   canMove: 1
   radius: 3
-  attackSpeed: 0.2
+  attackSpeed: 0.5
